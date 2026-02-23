@@ -99,7 +99,7 @@
 |------|----------|------|
 | **Figure 5: Entropy Analysis (Baseline)** — Violin plot + Layer-wise line plot | `experiments/figures/fig5_entropy/fig5_entropy.png` | ✅ 완료 |
 | **Table: Entropy 통계** — text-dense vs sparse 영역 entropy 비교 | `experiments/results/04_analysis/entropy_analysis.json` | ✅ 완료 |
-| **Figure 5: Entropy Analysis (Baseline vs SFA)** — 학습 후 비교 추가 | ⏳ SFA 학습 완료 후 재생성 | ⏳ 예정 (P2-4) |
+| **Figure 5: Entropy Analysis (Baseline vs SFA)** — Violin + Layer-wise 비교 | `experiments/figures/fig5_entropy/fig5_entropy.png` | ✅ 완료 |
 
 ---
 
@@ -292,7 +292,7 @@ Epoch 3:
 
 | 자료 | 파일 경로 | 상태 |
 |------|----------|------|
-| **Loss Curve 그래프** — train.log에서 추출하여 생성 | `experiments/results/03_sfa_train/train.log` | ⏳ 그래프 생성 예정 |
+| **Loss Curve 그래프** — 264 step-level 데이터 (4.78→0.46, 90.4% 감소) | `experiments/figures/fig_loss_curve/loss_curve.png` | ✅ 완료 |
 | **Table: 학습 설정** — hyperparameter 요약 (위 표 사용) | 본문 내 표 | ✅ 완료 |
 | **Table: GPU 활용률** — 실측 GPU 메모리 (위 표 사용) | 본문 내 표 | ✅ 완료 |
 | **학습 로그 데이터** — step별 loss/lr 기록 | `experiments/results/03_sfa_train/train_log.json` | ✅ 완료 |
@@ -371,7 +371,10 @@ Epoch 3:
 
 ### Attention Map 비교 — Baseline vs SFA
 
-동일 차트 이미지에 대한 attention heatmap 비교 (추후 생성 예정)
+동일 차트 이미지("What is the value for Haiti?")에 대한 attention heatmap 비교:
+- 4개 layer (11, 17, 20, 23) × 2 모델 (Baseline, SFA) 비교
+- 두 모델 모두 정답 (6.12) 출력
+- Layer 23에서 attention 패턴 차이가 가장 뚜렷
 
 #### 📎 이 슬라이드에 포함할 자료
 
@@ -380,7 +383,8 @@ Epoch 3:
 | **Figure 7(a): Bias Heatmap** — w_row/w_col/w_dist per layer & head | `experiments/figures/fig7_structural_bias/fig7a_bias_heatmap.png` | ✅ 완료 |
 | **Figure 7(b): Bias Bar** — Layer-wise mean magnitude | `experiments/figures/fig7_structural_bias/fig7b_bias_bar.png` | ✅ 완료 |
 | **Figure 7(c): Bias Matrix** — Layer 23 structural bias matrix | `experiments/figures/fig7_structural_bias/fig7c_bias_matrix.png` | ✅ 완료 |
-| **Figure 3: Attention Heatmap (Baseline vs SFA)** — 동일 이미지 비교 | ⏳ 추후 생성 (06_attention_heatmap.py) | ⏳ 예정 |
+| **Figure 3: Attention Heatmap (Baseline vs SFA)** — 4 layers × 2 models 비교 | `experiments/figures/fig3_attention_heatmap/fig3_attention_comparison.png` | ✅ 완료 |
+| **Figure 3: Layer 23 Detail** — 최종 layer 상세 비교 | `experiments/figures/fig3_attention_heatmap/fig3_L23.png` | ✅ 완료 |
 
 ---
 
@@ -418,7 +422,7 @@ Phase 2: SFA Fine-tuning ───────────────── ✅
   ├→ P2-3: ChartQA eval ✅ (Acc: 0.509, 하락 → Catastrophic Forgetting)
   ├→ P2-4: Entropy 재측정 ✅ (Figure 5 재생성 완료)
   ├→ P2-5: Hallucination 재측정 ✅ (23.0%, 소폭 개선)
-  ├→ P2-6: Attention heatmap ⏳ (추후 생성)
+  ├→ P2-6: Attention heatmap ✅ (Figure 3 생성 완료)
   ├→ P2-7: Structural bias 시각화 ✅ (Figure 7 생성)
   └→ P2-8: Component ablation ⏳ (SFA-only ft 후 비교)
 
@@ -459,7 +463,7 @@ Phase 5: Cross-Architecture + 논문 ────── ⬜ 예정
 | 2/20 | Baseline 분석 + Density Estimator + SFA 모듈 | ✅ 완료 |
 | 2/20 | SFA 통합 + Entropy/Hallucination 분석 | ✅ 완료 |
 | 2/23 | OOM 해결 + 2-GPU 학습 시작 | ✅ 완료 |
-| 2/23~24 | SFA 학습 완료 + 후속 분석 | 🔄 진행 중 |
+| 2/23~24 | SFA 학습 완료 + 후속 분석 | ✅ 완료 |
 | 2/24~25 | ADAT 구현 + SFA+ADAT 통합 | ⬜ 예정 |
 | 2/25~26 | Full System (SCR) 학습 | ⬜ 예정 |
 | 2/27~28 | Cross-Architecture 실험 | ⬜ 예정 |
@@ -493,14 +497,16 @@ Phase 5: Cross-Architecture + 논문 ────── ⬜ 예정
 | 12 | **SFA Hallucination 분석** | `experiments/results/05_sfa_eval/hallucination_sfa.json` | Slide 8 |
 | 13 | **SFA Entropy 분석** | `experiments/results/05_sfa_eval/entropy_analysis_sfa.json` | Slide 9 |
 | 14 | 학습 로그 데이터 | `experiments/results/03_sfa_train/train_log.json` | Slide 7 |
+| 15 | **Loss Curve 그래프** | `experiments/figures/fig_loss_curve/loss_curve.png` | Slide 7 |
+| 16 | **Loss Curve Detail (Epoch 2-3)** | `experiments/figures/fig_loss_curve/loss_curve_detail.png` | Slide 7 |
+| 17 | **Figure 3: Attention Heatmap (Grid)** | `experiments/figures/fig3_attention_heatmap/fig3_attention_comparison.png` | Slide 10 |
+| 18 | **Figure 3: Layer 23 Detail** | `experiments/figures/fig3_attention_heatmap/fig3_L23.png` | Slide 10 |
 
 ### ⏳ 추후 생성 예정
 
 | # | 자료명 | 사용 슬라이드 | 비고 |
 |---|--------|-------------|------|
-| 1 | Figure 3: Attention Heatmap (Baseline vs SFA) | Slide 10 | 06_attention_heatmap.py 실행 필요 |
-| 2 | Table 3: Component Ablation | Slide 11 | SFA-only training 후 생성 |
-| 3 | Loss Curve 그래프 | Slide 7 | train.log 기반 생성 |
+| 1 | Table 3: Component Ablation | Slide 11 | SFA-only training 후 생성 |
 
 ---
 
