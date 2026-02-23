@@ -1,0 +1,8 @@
+{
+  "label": "SFA-only (7,296 params, backbone frozen)",
+  "checkpoint": "experiments/results/06_ablation_sfa_only/best.pth",
+  "chartqa_accuracy": 0.6244,
+  "chartqa_halluc_rate": 0.2024,
+  "halluc_200_accuracy": 0.65,
+  "halluc_200_rate": 0.195
+}

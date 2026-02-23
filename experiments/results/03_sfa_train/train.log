@@ -1,0 +1,313 @@
+============================================================
+SFA Fine-tuning (2-GPU Model Parallel: vision→GPU0, LLM→GPU1)
+============================================================
+Loading model from /NetDisk/j_son/internvl_35...
+The tokenizer you are loading from '/NetDisk/j_son/internvl_35' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+  Loading model-00001-of-00004.safetensors...
+  Loading model-00002-of-00004.safetensors...
+  Loading model-00003-of-00004.safetensors...
+  Loading model-00004-of-00004.safetensors...
+  [Split GPU mode] Vision → cuda:0, LLM → cuda:1
+  GPU 0 (vision): 0.6 GB
+  GPU 1 (LLM):    15.3 GB
+Model loaded (split GPU).
+Replaced 24 attention layers with SFA
+Trainable: 337,590,400 / 8,528,325,760 (4.0%)
+  Gradient checkpointing enabled for vision encoder
+  img_context_token_id: 151671
+  num_image_token: 256
+  Trainable params: 337,590,400 / 8,528,325,760 (4.0%)
+  GPU 0 (vision): 0.8 GB | GPU 1 (LLM): 15.3 GB
+[ChartQA train] 28299 samples
+
+  Epochs: 3
+  Batch size: 4 × grad_accum 8 × 1 GPUs = 32
+  Steps/epoch: 7074
+  Total optimizer steps: 2652
+  LR: 2e-05
+  Mode: 2-GPU split
+
+/home/juyeon/miniconda3/envs/docmllm/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py:600: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/juyeon/miniconda3/envs/docmllm/lib/python3.10/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+/home/juyeon/miniconda3/envs/docmllm/lib/python3.10/site-packages/torch/utils/checkpoint.py:1399: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with device_autocast_ctx, torch.cpu.amp.autocast(**cpu_autocast_kwargs), recompute_context:  # type: ignore[attr-defined]
+/home/juyeon/miniconda3/envs/docmllm/lib/python3.10/site-packages/torch/autograd/graph.py:768: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at ../aten/src/ATen/cuda/CublasHandlePool.cpp:135.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  [Epoch 1] step 80/7074 | loss: 4.7813 | lr: 2.00e-06 | G0:8.1GB G1:15.3GB | 74s
+  [Epoch 1] step 160/7074 | loss: 4.6276 | lr: 4.00e-06 | G0:8.1GB G1:15.3GB | 145s
+  [Epoch 1] step 240/7074 | loss: 4.5575 | lr: 6.00e-06 | G0:8.1GB G1:15.3GB | 217s
+  [Epoch 1] step 320/7074 | loss: 4.4451 | lr: 8.00e-06 | G0:8.1GB G1:15.3GB | 288s
+  [Epoch 1] step 400/7074 | loss: 4.3514 | lr: 1.00e-05 | G0:8.1GB G1:15.3GB | 360s
+  [Epoch 1] step 480/7074 | loss: 4.2471 | lr: 1.20e-05 | G0:8.1GB G1:15.3GB | 431s
+  [Epoch 1] step 560/7074 | loss: 4.1386 | lr: 1.40e-05 | G0:8.1GB G1:15.3GB | 502s
+  [Epoch 1] step 640/7074 | loss: 4.0079 | lr: 1.60e-05 | G0:8.1GB G1:15.3GB | 574s
+  [Epoch 1] step 720/7074 | loss: 3.8490 | lr: 1.80e-05 | G0:8.1GB G1:15.3GB | 645s
+  [Epoch 1] step 800/7074 | loss: 3.6925 | lr: 2.00e-05 | G0:8.1GB G1:15.3GB | 717s
+  [Epoch 1] step 880/7074 | loss: 3.5240 | lr: 2.00e-05 | G0:8.1GB G1:15.3GB | 788s
+  [Epoch 1] step 960/7074 | loss: 3.3687 | lr: 2.00e-05 | G0:8.1GB G1:15.3GB | 859s
+  [Epoch 1] step 1040/7074 | loss: 3.2228 | lr: 2.00e-05 | G0:8.1GB G1:15.3GB | 938s
+  [Epoch 1] step 1120/7074 | loss: 3.0960 | lr: 2.00e-05 | G0:8.1GB G1:15.3GB | 1010s
+  [Epoch 1] step 1200/7074 | loss: 2.9795 | lr: 2.00e-05 | G0:8.1GB G1:15.3GB | 1082s
+  [Epoch 1] step 1280/7074 | loss: 2.8679 | lr: 2.00e-05 | G0:8.1GB G1:15.3GB | 1153s
+  [Epoch 1] step 1360/7074 | loss: 2.7707 | lr: 2.00e-05 | G0:8.1GB G1:15.3GB | 1225s
+  [Epoch 1] step 1440/7074 | loss: 2.6780 | lr: 2.00e-05 | G0:8.1GB G1:15.3GB | 1300s
+  [Epoch 1] step 1520/7074 | loss: 2.5933 | lr: 1.99e-05 | G0:8.1GB G1:15.3GB | 1383s
+  [Epoch 1] step 1600/7074 | loss: 2.5151 | lr: 1.99e-05 | G0:8.1GB G1:15.3GB | 1468s
+  [Epoch 1] step 1680/7074 | loss: 2.4419 | lr: 1.99e-05 | G0:8.1GB G1:15.3GB | 1551s
+  [Epoch 1] step 1760/7074 | loss: 2.3741 | lr: 1.99e-05 | G0:8.1GB G1:15.3GB | 1629s
+  [Epoch 1] step 1840/7074 | loss: 2.3094 | lr: 1.99e-05 | G0:8.1GB G1:15.3GB | 1707s
+  [Epoch 1] step 1920/7074 | loss: 2.2506 | lr: 1.99e-05 | G0:8.1GB G1:15.3GB | 1785s
+  [Epoch 1] step 2000/7074 | loss: 2.1965 | lr: 1.98e-05 | G0:8.1GB G1:15.3GB | 1863s
+  [Epoch 1] step 2080/7074 | loss: 2.1478 | lr: 1.98e-05 | G0:8.1GB G1:15.3GB | 1942s
+  [Epoch 1] step 2160/7074 | loss: 2.1018 | lr: 1.98e-05 | G0:8.1GB G1:15.3GB | 2023s
+  [Epoch 1] step 2240/7074 | loss: 2.0564 | lr: 1.98e-05 | G0:8.1GB G1:15.3GB | 2101s
+  [Epoch 1] step 2320/7074 | loss: 2.0130 | lr: 1.98e-05 | G0:8.1GB G1:15.3GB | 2180s
+  [Epoch 1] step 2400/7074 | loss: 1.9735 | lr: 1.97e-05 | G0:8.1GB G1:15.3GB | 2260s
+  [Epoch 1] step 2480/7074 | loss: 1.9359 | lr: 1.97e-05 | G0:8.1GB G1:15.3GB | 2340s
+  [Epoch 1] step 2560/7074 | loss: 1.8972 | lr: 1.97e-05 | G0:8.1GB G1:15.3GB | 2418s
+  [Epoch 1] step 2640/7074 | loss: 1.8649 | lr: 1.96e-05 | G0:8.1GB G1:15.3GB | 2500s
+  [Epoch 1] step 2720/7074 | loss: 1.8330 | lr: 1.96e-05 | G0:8.1GB G1:15.3GB | 2580s
+  [Epoch 1] step 2800/7074 | loss: 1.8032 | lr: 1.96e-05 | G0:8.1GB G1:15.3GB | 2660s
+  [Epoch 1] step 2880/7074 | loss: 1.7751 | lr: 1.95e-05 | G0:8.1GB G1:15.3GB | 2738s
+  [Epoch 1] step 2960/7074 | loss: 1.7468 | lr: 1.95e-05 | G0:8.1GB G1:15.3GB | 2816s
+  [Epoch 1] step 3040/7074 | loss: 1.7206 | lr: 1.95e-05 | G0:8.1GB G1:15.3GB | 2897s
+  [Epoch 1] step 3120/7074 | loss: 1.6962 | lr: 1.94e-05 | G0:8.1GB G1:15.3GB | 2977s
+  [Epoch 1] step 3200/7074 | loss: 1.6726 | lr: 1.94e-05 | G0:8.1GB G1:15.3GB | 3049s
+  [Epoch 1] step 3280/7074 | loss: 1.6476 | lr: 1.94e-05 | G0:8.1GB G1:15.3GB | 3121s
+  [Epoch 1] step 3360/7074 | loss: 1.6258 | lr: 1.93e-05 | G0:8.1GB G1:15.3GB | 3192s
+  [Epoch 1] step 3440/7074 | loss: 1.6042 | lr: 1.93e-05 | G0:8.1GB G1:15.3GB | 3268s
+  [Epoch 1] step 3520/7074 | loss: 1.5835 | lr: 1.92e-05 | G0:8.1GB G1:15.3GB | 3340s
+  [Epoch 1] step 3600/7074 | loss: 1.5642 | lr: 1.92e-05 | G0:8.1GB G1:15.3GB | 3411s
+  [Epoch 1] step 3680/7074 | loss: 1.5454 | lr: 1.91e-05 | G0:8.1GB G1:15.3GB | 3482s
+  [Epoch 1] step 3760/7074 | loss: 1.5272 | lr: 1.91e-05 | G0:8.1GB G1:15.3GB | 3558s
+  [Epoch 1] step 3840/7074 | loss: 1.5105 | lr: 1.90e-05 | G0:8.1GB G1:15.3GB | 3629s
+  [Epoch 1] step 3920/7074 | loss: 1.4949 | lr: 1.90e-05 | G0:8.1GB G1:15.3GB | 3701s
+  [Epoch 1] step 4000/7074 | loss: 1.4782 | lr: 1.89e-05 | G0:8.1GB G1:15.3GB | 3772s
+  [Epoch 1] step 4080/7074 | loss: 1.4626 | lr: 1.89e-05 | G0:8.1GB G1:15.3GB | 3844s
+  [Epoch 1] step 4160/7074 | loss: 1.4478 | lr: 1.88e-05 | G0:8.1GB G1:15.3GB | 3915s
+  [Epoch 1] step 4240/7074 | loss: 1.4329 | lr: 1.88e-05 | G0:8.1GB G1:15.3GB | 3986s
+  [Epoch 1] step 4320/7074 | loss: 1.4170 | lr: 1.87e-05 | G0:8.1GB G1:15.3GB | 4057s
+  [Epoch 1] step 4400/7074 | loss: 1.4041 | lr: 1.87e-05 | G0:8.1GB G1:15.3GB | 4129s
+  [Epoch 1] step 4480/7074 | loss: 1.3899 | lr: 1.86e-05 | G0:8.1GB G1:15.3GB | 4200s
+  [Epoch 1] step 4560/7074 | loss: 1.3759 | lr: 1.85e-05 | G0:8.1GB G1:15.3GB | 4271s
+  [Epoch 1] step 4640/7074 | loss: 1.3634 | lr: 1.85e-05 | G0:8.1GB G1:15.3GB | 4343s
+  [Epoch 1] step 4720/7074 | loss: 1.3505 | lr: 1.84e-05 | G0:8.1GB G1:15.3GB | 4414s
+  [Epoch 1] step 4800/7074 | loss: 1.3380 | lr: 1.83e-05 | G0:8.1GB G1:15.3GB | 4493s
+  [Epoch 1] step 4880/7074 | loss: 1.3258 | lr: 1.83e-05 | G0:8.1GB G1:15.3GB | 4566s
+  [Epoch 1] step 4960/7074 | loss: 1.3155 | lr: 1.82e-05 | G0:8.1GB G1:15.3GB | 4637s
+  [Epoch 1] step 5040/7074 | loss: 1.3046 | lr: 1.82e-05 | G0:8.1GB G1:15.3GB | 4709s
+  [Epoch 1] step 5120/7074 | loss: 1.2930 | lr: 1.81e-05 | G0:8.1GB G1:15.3GB | 4785s
+  [Epoch 1] step 5200/7074 | loss: 1.2812 | lr: 1.80e-05 | G0:8.1GB G1:15.3GB | 4857s
+  [Epoch 1] step 5280/7074 | loss: 1.2697 | lr: 1.79e-05 | G0:8.1GB G1:15.3GB | 4928s
+  [Epoch 1] step 5360/7074 | loss: 1.2597 | lr: 1.79e-05 | G0:8.1GB G1:15.3GB | 4999s
+  [Epoch 1] step 5440/7074 | loss: 1.2502 | lr: 1.78e-05 | G0:8.1GB G1:15.3GB | 5076s
+  [Epoch 1] step 5520/7074 | loss: 1.2415 | lr: 1.77e-05 | G0:8.1GB G1:15.3GB | 5150s
+  [Epoch 1] step 5600/7074 | loss: 1.2330 | lr: 1.77e-05 | G0:8.1GB G1:15.3GB | 5232s
+  [Epoch 1] step 5680/7074 | loss: 1.2235 | lr: 1.76e-05 | G0:8.1GB G1:15.3GB | 5304s
+  [Epoch 1] step 5760/7074 | loss: 1.2154 | lr: 1.75e-05 | G0:8.1GB G1:15.3GB | 5376s
+  [Epoch 1] step 5840/7074 | loss: 1.2074 | lr: 1.74e-05 | G0:8.1GB G1:15.3GB | 5448s
+  [Epoch 1] step 5920/7074 | loss: 1.1988 | lr: 1.73e-05 | G0:8.1GB G1:15.3GB | 5520s
+  [Epoch 1] step 6000/7074 | loss: 1.1907 | lr: 1.73e-05 | G0:8.1GB G1:15.3GB | 5591s
+  [Epoch 1] step 6080/7074 | loss: 1.1820 | lr: 1.72e-05 | G0:8.1GB G1:15.3GB | 5663s
+  [Epoch 1] step 6160/7074 | loss: 1.1749 | lr: 1.71e-05 | G0:8.1GB G1:15.3GB | 5734s
+  [Epoch 1] step 6240/7074 | loss: 1.1680 | lr: 1.70e-05 | G0:8.1GB G1:15.3GB | 5806s
+  [Epoch 1] step 6320/7074 | loss: 1.1611 | lr: 1.69e-05 | G0:8.1GB G1:15.3GB | 5879s
+  [Epoch 1] step 6400/7074 | loss: 1.1546 | lr: 1.69e-05 | G0:8.1GB G1:15.3GB | 5950s
+  [Epoch 1] step 6480/7074 | loss: 1.1469 | lr: 1.68e-05 | G0:8.1GB G1:15.3GB | 6022s
+  [Epoch 1] step 6560/7074 | loss: 1.1399 | lr: 1.67e-05 | G0:8.1GB G1:15.3GB | 6093s
+  [Epoch 1] step 6640/7074 | loss: 1.1332 | lr: 1.66e-05 | G0:8.1GB G1:15.3GB | 6167s
+  [Epoch 1] step 6720/7074 | loss: 1.1265 | lr: 1.65e-05 | G0:8.1GB G1:15.3GB | 6238s
+  [Epoch 1] step 6800/7074 | loss: 1.1211 | lr: 1.64e-05 | G0:8.1GB G1:15.3GB | 6321s
+  [Epoch 1] step 6880/7074 | loss: 1.1154 | lr: 1.63e-05 | G0:8.1GB G1:15.3GB | 6394s
+  [Epoch 1] step 6960/7074 | loss: 1.1100 | lr: 1.63e-05 | G0:8.1GB G1:15.3GB | 6472s
+  [Epoch 1] step 7040/7074 | loss: 1.1038 | lr: 1.62e-05 | G0:8.1GB G1:15.3GB | 6544s
+
+  Epoch 1/3: loss=1.1015 (6574s)
+  Saved best checkpoint (loss=1.1015)
+  [Epoch 2] step 80/7074 | loss: 0.5691 | lr: 1.60e-05 | G0:8.1GB G1:15.3GB | 77s
+  [Epoch 2] step 160/7074 | loss: 0.5665 | lr: 1.59e-05 | G0:8.1GB G1:15.3GB | 148s
+  [Epoch 2] step 240/7074 | loss: 0.5354 | lr: 1.58e-05 | G0:8.1GB G1:15.3GB | 220s
+  [Epoch 2] step 320/7074 | loss: 0.5558 | lr: 1.58e-05 | G0:8.1GB G1:15.3GB | 291s
+  [Epoch 2] step 400/7074 | loss: 0.5560 | lr: 1.57e-05 | G0:8.1GB G1:15.3GB | 364s
+  [Epoch 2] step 480/7074 | loss: 0.5469 | lr: 1.56e-05 | G0:8.1GB G1:15.3GB | 436s
+  [Epoch 2] step 560/7074 | loss: 0.5446 | lr: 1.55e-05 | G0:8.1GB G1:15.3GB | 508s
+  [Epoch 2] step 640/7074 | loss: 0.5406 | lr: 1.54e-05 | G0:8.1GB G1:15.3GB | 579s
+  [Epoch 2] step 720/7074 | loss: 0.5469 | lr: 1.53e-05 | G0:8.1GB G1:15.3GB | 651s
+  [Epoch 2] step 800/7074 | loss: 0.5393 | lr: 1.52e-05 | G0:8.1GB G1:15.3GB | 722s
+  [Epoch 2] step 880/7074 | loss: 0.5436 | lr: 1.51e-05 | G0:8.1GB G1:15.3GB | 799s
+  [Epoch 2] step 960/7074 | loss: 0.5430 | lr: 1.50e-05 | G0:8.1GB G1:15.3GB | 870s
+  [Epoch 2] step 1040/7074 | loss: 0.5372 | lr: 1.49e-05 | G0:8.1GB G1:15.3GB | 941s
+  [Epoch 2] step 1120/7074 | loss: 0.5416 | lr: 1.48e-05 | G0:8.1GB G1:15.3GB | 1013s
+  [Epoch 2] step 1200/7074 | loss: 0.5413 | lr: 1.47e-05 | G0:8.1GB G1:15.3GB | 1084s
+  [Epoch 2] step 1280/7074 | loss: 0.5440 | lr: 1.46e-05 | G0:8.1GB G1:15.3GB | 1155s
+  [Epoch 2] step 1360/7074 | loss: 0.5403 | lr: 1.45e-05 | G0:8.1GB G1:15.3GB | 1227s
+  [Epoch 2] step 1440/7074 | loss: 0.5424 | lr: 1.44e-05 | G0:8.1GB G1:15.3GB | 1298s
+  [Epoch 2] step 1520/7074 | loss: 0.5449 | lr: 1.43e-05 | G0:8.1GB G1:15.3GB | 1370s
+  [Epoch 2] step 1600/7074 | loss: 0.5446 | lr: 1.42e-05 | G0:8.1GB G1:15.3GB | 1441s
+  [Epoch 2] step 1680/7074 | loss: 0.5453 | lr: 1.41e-05 | G0:8.1GB G1:15.3GB | 1513s
+  [Epoch 2] step 1760/7074 | loss: 0.5388 | lr: 1.40e-05 | G0:8.1GB G1:15.3GB | 1584s
+  [Epoch 2] step 1840/7074 | loss: 0.5365 | lr: 1.39e-05 | G0:8.1GB G1:15.3GB | 1655s
+  [Epoch 2] step 1920/7074 | loss: 0.5357 | lr: 1.37e-05 | G0:8.1GB G1:15.3GB | 1727s
+  [Epoch 2] step 2000/7074 | loss: 0.5342 | lr: 1.36e-05 | G0:8.1GB G1:15.3GB | 1798s
+  [Epoch 2] step 2080/7074 | loss: 0.5334 | lr: 1.35e-05 | G0:8.1GB G1:15.3GB | 1869s
+  [Epoch 2] step 2160/7074 | loss: 0.5332 | lr: 1.34e-05 | G0:8.1GB G1:15.3GB | 1941s
+  [Epoch 2] step 2240/7074 | loss: 0.5325 | lr: 1.33e-05 | G0:8.1GB G1:15.3GB | 2012s
+  [Epoch 2] step 2320/7074 | loss: 0.5321 | lr: 1.32e-05 | G0:8.1GB G1:15.3GB | 2084s
+  [Epoch 2] step 2400/7074 | loss: 0.5303 | lr: 1.31e-05 | G0:8.1GB G1:15.3GB | 2155s
+  [Epoch 2] step 2480/7074 | loss: 0.5299 | lr: 1.30e-05 | G0:8.1GB G1:15.3GB | 2227s
+  [Epoch 2] step 2560/7074 | loss: 0.5268 | lr: 1.29e-05 | G0:8.1GB G1:15.3GB | 2299s
+  [Epoch 2] step 2640/7074 | loss: 0.5286 | lr: 1.28e-05 | G0:8.1GB G1:15.3GB | 2372s
+  [Epoch 2] step 2720/7074 | loss: 0.5291 | lr: 1.27e-05 | G0:8.1GB G1:15.3GB | 2443s
+  [Epoch 2] step 2800/7074 | loss: 0.5290 | lr: 1.26e-05 | G0:8.1GB G1:15.3GB | 2515s
+  [Epoch 2] step 2880/7074 | loss: 0.5291 | lr: 1.25e-05 | G0:8.1GB G1:15.3GB | 2587s
+  [Epoch 2] step 2960/7074 | loss: 0.5296 | lr: 1.23e-05 | G0:8.1GB G1:15.3GB | 2659s
+  [Epoch 2] step 3040/7074 | loss: 0.5294 | lr: 1.22e-05 | G0:8.1GB G1:15.3GB | 2731s
+  [Epoch 2] step 3120/7074 | loss: 0.5300 | lr: 1.21e-05 | G0:8.1GB G1:15.3GB | 2803s
+  [Epoch 2] step 3200/7074 | loss: 0.5289 | lr: 1.20e-05 | G0:8.1GB G1:15.3GB | 2875s
+  [Epoch 2] step 3280/7074 | loss: 0.5288 | lr: 1.19e-05 | G0:8.1GB G1:15.3GB | 2948s
+  [Epoch 2] step 3360/7074 | loss: 0.5277 | lr: 1.18e-05 | G0:8.1GB G1:15.3GB | 3029s
+  [Epoch 2] step 3440/7074 | loss: 0.5271 | lr: 1.17e-05 | G0:8.1GB G1:15.3GB | 3104s
+  [Epoch 2] step 3520/7074 | loss: 0.5268 | lr: 1.16e-05 | G0:8.1GB G1:15.3GB | 3177s
+  [Epoch 2] step 3600/7074 | loss: 0.5260 | lr: 1.15e-05 | G0:8.1GB G1:15.3GB | 3250s
+  [Epoch 2] step 3680/7074 | loss: 0.5239 | lr: 1.14e-05 | G0:8.1GB G1:15.3GB | 3330s
+  [Epoch 2] step 3760/7074 | loss: 0.5234 | lr: 1.12e-05 | G0:8.1GB G1:15.3GB | 3403s
+  [Epoch 2] step 3840/7074 | loss: 0.5238 | lr: 1.11e-05 | G0:8.1GB G1:15.3GB | 3477s
+  [Epoch 2] step 3920/7074 | loss: 0.5229 | lr: 1.10e-05 | G0:8.1GB G1:15.3GB | 3550s
+  [Epoch 2] step 4000/7074 | loss: 0.5224 | lr: 1.09e-05 | G0:8.1GB G1:15.3GB | 3633s
+  [Epoch 2] step 4080/7074 | loss: 0.5219 | lr: 1.08e-05 | G0:8.1GB G1:15.3GB | 3707s
+  [Epoch 2] step 4160/7074 | loss: 0.5218 | lr: 1.07e-05 | G0:8.1GB G1:15.3GB | 3780s
+  [Epoch 2] step 4240/7074 | loss: 0.5197 | lr: 1.06e-05 | G0:8.1GB G1:15.3GB | 3853s
+  [Epoch 2] step 4320/7074 | loss: 0.5202 | lr: 1.05e-05 | G0:8.1GB G1:15.3GB | 3927s
+  [Epoch 2] step 4400/7074 | loss: 0.5200 | lr: 1.04e-05 | G0:8.1GB G1:15.3GB | 4020s
+  [Epoch 2] step 4480/7074 | loss: 0.5185 | lr: 1.02e-05 | G0:8.1GB G1:15.3GB | 4093s
+  [Epoch 2] step 4560/7074 | loss: 0.5195 | lr: 1.01e-05 | G0:8.1GB G1:15.3GB | 4175s
+  [Epoch 2] step 4640/7074 | loss: 0.5197 | lr: 1.00e-05 | G0:8.1GB G1:15.3GB | 4261s
+  [Epoch 2] step 4720/7074 | loss: 0.5193 | lr: 9.92e-06 | G0:8.1GB G1:15.3GB | 4367s
+  [Epoch 2] step 4800/7074 | loss: 0.5201 | lr: 9.81e-06 | G0:8.1GB G1:15.3GB | 4453s
+  [Epoch 2] step 4880/7074 | loss: 0.5200 | lr: 9.70e-06 | G0:8.1GB G1:15.3GB | 4539s
+  [Epoch 2] step 4960/7074 | loss: 0.5197 | lr: 9.59e-06 | G0:8.1GB G1:15.3GB | 4633s
+  [Epoch 2] step 5040/7074 | loss: 0.5190 | lr: 9.48e-06 | G0:8.1GB G1:15.3GB | 4740s
+  [Epoch 2] step 5120/7074 | loss: 0.5185 | lr: 9.37e-06 | G0:8.1GB G1:15.3GB | 4811s
+  [Epoch 2] step 5200/7074 | loss: 0.5182 | lr: 9.26e-06 | G0:8.1GB G1:15.3GB | 4883s
+  [Epoch 2] step 5280/7074 | loss: 0.5163 | lr: 9.15e-06 | G0:8.1GB G1:15.3GB | 4957s
+  [Epoch 2] step 5360/7074 | loss: 0.5160 | lr: 9.04e-06 | G0:8.1GB G1:15.3GB | 5029s
+  [Epoch 2] step 5440/7074 | loss: 0.5146 | lr: 8.94e-06 | G0:8.1GB G1:15.3GB | 5100s
+  [Epoch 2] step 5520/7074 | loss: 0.5142 | lr: 8.83e-06 | G0:8.1GB G1:15.3GB | 5172s
+  [Epoch 2] step 5600/7074 | loss: 0.5142 | lr: 8.72e-06 | G0:8.1GB G1:15.3GB | 5246s
+  [Epoch 2] step 5680/7074 | loss: 0.5135 | lr: 8.61e-06 | G0:8.1GB G1:15.3GB | 5325s
+  [Epoch 2] step 5760/7074 | loss: 0.5128 | lr: 8.51e-06 | G0:8.1GB G1:15.3GB | 5396s
+  [Epoch 2] step 5840/7074 | loss: 0.5136 | lr: 8.40e-06 | G0:8.1GB G1:15.3GB | 5467s
+  [Epoch 2] step 5920/7074 | loss: 0.5135 | lr: 8.29e-06 | G0:8.1GB G1:15.3GB | 5539s
+  [Epoch 2] step 6000/7074 | loss: 0.5130 | lr: 8.19e-06 | G0:8.1GB G1:15.3GB | 5610s
+  [Epoch 2] step 6080/7074 | loss: 0.5125 | lr: 8.08e-06 | G0:8.1GB G1:15.3GB | 5685s
+  [Epoch 2] step 6160/7074 | loss: 0.5113 | lr: 7.98e-06 | G0:8.1GB G1:15.3GB | 5756s
+  [Epoch 2] step 6240/7074 | loss: 0.5119 | lr: 7.88e-06 | G0:8.1GB G1:15.3GB | 5827s
+  [Epoch 2] step 6320/7074 | loss: 0.5113 | lr: 7.77e-06 | G0:8.1GB G1:15.3GB | 5898s
+  [Epoch 2] step 6400/7074 | loss: 0.5114 | lr: 7.67e-06 | G0:8.1GB G1:15.3GB | 5972s
+  [Epoch 2] step 6480/7074 | loss: 0.5110 | lr: 7.57e-06 | G0:8.1GB G1:15.3GB | 6043s
+  [Epoch 2] step 6560/7074 | loss: 0.5103 | lr: 7.46e-06 | G0:8.1GB G1:15.3GB | 6114s
+  [Epoch 2] step 6640/7074 | loss: 0.5098 | lr: 7.36e-06 | G0:8.1GB G1:15.3GB | 6185s
+  [Epoch 2] step 6720/7074 | loss: 0.5099 | lr: 7.26e-06 | G0:8.1GB G1:15.3GB | 6257s
+  [Epoch 2] step 6800/7074 | loss: 0.5098 | lr: 7.16e-06 | G0:8.1GB G1:15.3GB | 6328s
+  [Epoch 2] step 6880/7074 | loss: 0.5087 | lr: 7.06e-06 | G0:8.1GB G1:15.3GB | 6399s
+  [Epoch 2] step 6960/7074 | loss: 0.5088 | lr: 6.96e-06 | G0:8.1GB G1:15.3GB | 6471s
+  [Epoch 2] step 7040/7074 | loss: 0.5090 | lr: 6.86e-06 | G0:8.1GB G1:15.3GB | 6542s
+
+  Epoch 2/3: loss=0.5088 (6573s)
+  Saved best checkpoint (loss=0.5088)
+  [Epoch 3] step 80/7074 | loss: 0.5311 | lr: 6.73e-06 | G0:8.1GB G1:15.3GB | 72s
+  [Epoch 3] step 160/7074 | loss: 0.4854 | lr: 6.63e-06 | G0:8.1GB G1:15.3GB | 144s
+  [Epoch 3] step 240/7074 | loss: 0.4736 | lr: 6.53e-06 | G0:8.1GB G1:15.3GB | 218s
+  [Epoch 3] step 320/7074 | loss: 0.4848 | lr: 6.44e-06 | G0:8.1GB G1:15.3GB | 291s
+  [Epoch 3] step 400/7074 | loss: 0.4699 | lr: 6.34e-06 | G0:8.1GB G1:15.3GB | 364s
+  [Epoch 3] step 480/7074 | loss: 0.4672 | lr: 6.25e-06 | G0:8.1GB G1:15.3GB | 437s
+  [Epoch 3] step 560/7074 | loss: 0.4698 | lr: 6.15e-06 | G0:8.1GB G1:15.3GB | 510s
+  [Epoch 3] step 640/7074 | loss: 0.4683 | lr: 6.06e-06 | G0:8.1GB G1:15.3GB | 583s
+  [Epoch 3] step 720/7074 | loss: 0.4769 | lr: 5.97e-06 | G0:8.1GB G1:15.3GB | 656s
+  [Epoch 3] step 800/7074 | loss: 0.4743 | lr: 5.88e-06 | G0:8.1GB G1:15.3GB | 730s
+  [Epoch 3] step 880/7074 | loss: 0.4761 | lr: 5.79e-06 | G0:8.1GB G1:15.3GB | 803s
+  [Epoch 3] step 960/7074 | loss: 0.4751 | lr: 5.70e-06 | G0:8.1GB G1:15.3GB | 876s
+  [Epoch 3] step 1040/7074 | loss: 0.4794 | lr: 5.61e-06 | G0:8.1GB G1:15.3GB | 949s
+  [Epoch 3] step 1120/7074 | loss: 0.4817 | lr: 5.52e-06 | G0:8.1GB G1:15.3GB | 1022s
+  [Epoch 3] step 1200/7074 | loss: 0.4797 | lr: 5.43e-06 | G0:8.1GB G1:15.3GB | 1096s
+  [Epoch 3] step 1280/7074 | loss: 0.4801 | lr: 5.34e-06 | G0:8.1GB G1:15.3GB | 1169s
+  [Epoch 3] step 1360/7074 | loss: 0.4802 | lr: 5.26e-06 | G0:8.1GB G1:15.3GB | 1242s
+  [Epoch 3] step 1440/7074 | loss: 0.4759 | lr: 5.17e-06 | G0:8.1GB G1:15.3GB | 1315s
+  [Epoch 3] step 1520/7074 | loss: 0.4752 | lr: 5.09e-06 | G0:8.1GB G1:15.3GB | 1388s
+  [Epoch 3] step 1600/7074 | loss: 0.4751 | lr: 5.01e-06 | G0:8.1GB G1:15.3GB | 1482s
+  [Epoch 3] step 1680/7074 | loss: 0.4738 | lr: 4.92e-06 | G0:8.1GB G1:15.3GB | 1585s
+  [Epoch 3] step 1760/7074 | loss: 0.4712 | lr: 4.84e-06 | G0:8.1GB G1:15.3GB | 1685s
+  [Epoch 3] step 1840/7074 | loss: 0.4705 | lr: 4.76e-06 | G0:8.1GB G1:15.3GB | 1785s
+  [Epoch 3] step 1920/7074 | loss: 0.4677 | lr: 4.68e-06 | G0:8.1GB G1:15.3GB | 1887s
+  [Epoch 3] step 2000/7074 | loss: 0.4683 | lr: 4.60e-06 | G0:8.1GB G1:15.3GB | 1993s
+  [Epoch 3] step 2080/7074 | loss: 0.4689 | lr: 4.53e-06 | G0:8.1GB G1:15.3GB | 2103s
+  [Epoch 3] step 2160/7074 | loss: 0.4669 | lr: 4.45e-06 | G0:8.1GB G1:15.3GB | 2212s
+  [Epoch 3] step 2240/7074 | loss: 0.4678 | lr: 4.38e-06 | G0:8.1GB G1:15.3GB | 2329s
+  [Epoch 3] step 2320/7074 | loss: 0.4671 | lr: 4.30e-06 | G0:8.1GB G1:15.3GB | 2446s
+  [Epoch 3] step 2400/7074 | loss: 0.4655 | lr: 4.23e-06 | G0:8.1GB G1:15.3GB | 2565s
+  [Epoch 3] step 2480/7074 | loss: 0.4634 | lr: 4.15e-06 | G0:8.1GB G1:15.3GB | 2685s
+  [Epoch 3] step 2560/7074 | loss: 0.4650 | lr: 4.08e-06 | G0:8.1GB G1:15.3GB | 2798s
+  [Epoch 3] step 2640/7074 | loss: 0.4651 | lr: 4.01e-06 | G0:8.1GB G1:15.3GB | 2912s
+  [Epoch 3] step 2720/7074 | loss: 0.4653 | lr: 3.94e-06 | G0:8.1GB G1:15.3GB | 3014s
+  [Epoch 3] step 2800/7074 | loss: 0.4662 | lr: 3.88e-06 | G0:8.1GB G1:15.3GB | 3123s
+  [Epoch 3] step 2880/7074 | loss: 0.4642 | lr: 3.81e-06 | G0:8.1GB G1:15.3GB | 3232s
+  [Epoch 3] step 2960/7074 | loss: 0.4639 | lr: 3.74e-06 | G0:8.1GB G1:15.3GB | 3335s
+  [Epoch 3] step 3040/7074 | loss: 0.4637 | lr: 3.68e-06 | G0:8.1GB G1:15.3GB | 3445s
+  [Epoch 3] step 3120/7074 | loss: 0.4646 | lr: 3.61e-06 | G0:8.1GB G1:15.3GB | 3549s
+  [Epoch 3] step 3200/7074 | loss: 0.4645 | lr: 3.55e-06 | G0:8.1GB G1:15.3GB | 3645s
+  [Epoch 3] step 3280/7074 | loss: 0.4652 | lr: 3.49e-06 | G0:8.1GB G1:15.3GB | 3732s
+  [Epoch 3] step 3360/7074 | loss: 0.4653 | lr: 3.43e-06 | G0:8.1GB G1:15.3GB | 3804s
+  [Epoch 3] step 3440/7074 | loss: 0.4644 | lr: 3.37e-06 | G0:8.1GB G1:15.3GB | 3877s
+  [Epoch 3] step 3520/7074 | loss: 0.4644 | lr: 3.31e-06 | G0:8.1GB G1:15.3GB | 3949s
+  [Epoch 3] step 3600/7074 | loss: 0.4641 | lr: 3.25e-06 | G0:8.1GB G1:15.3GB | 4020s
+  [Epoch 3] step 3680/7074 | loss: 0.4646 | lr: 3.20e-06 | G0:8.1GB G1:15.3GB | 4092s
+  [Epoch 3] step 3760/7074 | loss: 0.4650 | lr: 3.14e-06 | G0:8.1GB G1:15.3GB | 4173s
+  [Epoch 3] step 3840/7074 | loss: 0.4649 | lr: 3.09e-06 | G0:8.1GB G1:15.3GB | 4245s
+  [Epoch 3] step 3920/7074 | loss: 0.4642 | lr: 3.04e-06 | G0:8.1GB G1:15.3GB | 4316s
+  [Epoch 3] step 4000/7074 | loss: 0.4653 | lr: 2.99e-06 | G0:8.1GB G1:15.3GB | 4387s
+  [Epoch 3] step 4080/7074 | loss: 0.4644 | lr: 2.94e-06 | G0:8.1GB G1:15.3GB | 4462s
+  [Epoch 3] step 4160/7074 | loss: 0.4631 | lr: 2.89e-06 | G0:8.1GB G1:15.3GB | 4534s
+  [Epoch 3] step 4240/7074 | loss: 0.4628 | lr: 2.84e-06 | G0:8.1GB G1:15.3GB | 4616s
+  [Epoch 3] step 4320/7074 | loss: 0.4629 | lr: 2.80e-06 | G0:8.1GB G1:15.3GB | 4687s
+  [Epoch 3] step 4400/7074 | loss: 0.4623 | lr: 2.75e-06 | G0:8.1GB G1:15.3GB | 4758s
+  [Epoch 3] step 4480/7074 | loss: 0.4619 | lr: 2.71e-06 | G0:8.1GB G1:15.3GB | 4829s
+  [Epoch 3] step 4560/7074 | loss: 0.4617 | lr: 2.66e-06 | G0:8.1GB G1:15.3GB | 4901s
+  [Epoch 3] step 4640/7074 | loss: 0.4608 | lr: 2.62e-06 | G0:8.1GB G1:15.3GB | 4975s
+  [Epoch 3] step 4720/7074 | loss: 0.4605 | lr: 2.58e-06 | G0:8.1GB G1:15.3GB | 5046s
+  [Epoch 3] step 4800/7074 | loss: 0.4605 | lr: 2.54e-06 | G0:8.1GB G1:15.3GB | 5117s
+  [Epoch 3] step 4880/7074 | loss: 0.4598 | lr: 2.51e-06 | G0:8.1GB G1:15.3GB | 5191s
+  [Epoch 3] step 4960/7074 | loss: 0.4595 | lr: 2.47e-06 | G0:8.1GB G1:15.3GB | 5265s
+  [Epoch 3] step 5040/7074 | loss: 0.4591 | lr: 2.44e-06 | G0:8.1GB G1:15.3GB | 5336s
+  [Epoch 3] step 5120/7074 | loss: 0.4584 | lr: 2.40e-06 | G0:8.1GB G1:15.3GB | 5407s
+  [Epoch 3] step 5200/7074 | loss: 0.4587 | lr: 2.37e-06 | G0:8.1GB G1:15.3GB | 5492s
+  [Epoch 3] step 5280/7074 | loss: 0.4584 | lr: 2.34e-06 | G0:8.1GB G1:15.3GB | 5577s
+  [Epoch 3] step 5360/7074 | loss: 0.4579 | lr: 2.31e-06 | G0:8.1GB G1:15.3GB | 5649s
+  [Epoch 3] step 5440/7074 | loss: 0.4589 | lr: 2.28e-06 | G0:8.1GB G1:15.3GB | 5721s
+  [Epoch 3] step 5520/7074 | loss: 0.4589 | lr: 2.26e-06 | G0:8.1GB G1:15.3GB | 5792s
+  [Epoch 3] step 5600/7074 | loss: 0.4588 | lr: 2.23e-06 | G0:8.1GB G1:15.3GB | 5864s
+  [Epoch 3] step 5680/7074 | loss: 0.4587 | lr: 2.21e-06 | G0:8.1GB G1:15.3GB | 5935s
+  [Epoch 3] step 5760/7074 | loss: 0.4587 | lr: 2.18e-06 | G0:8.1GB G1:15.3GB | 6006s
+  [Epoch 3] step 5840/7074 | loss: 0.4585 | lr: 2.16e-06 | G0:8.1GB G1:15.3GB | 6078s
+  [Epoch 3] step 5920/7074 | loss: 0.4575 | lr: 2.14e-06 | G0:8.1GB G1:15.3GB | 6149s
+  [Epoch 3] step 6000/7074 | loss: 0.4573 | lr: 2.12e-06 | G0:8.1GB G1:15.3GB | 6221s
+  [Epoch 3] step 6080/7074 | loss: 0.4572 | lr: 2.10e-06 | G0:8.1GB G1:15.3GB | 6292s
+  [Epoch 3] step 6160/7074 | loss: 0.4571 | lr: 2.09e-06 | G0:8.1GB G1:15.3GB | 6363s
+  [Epoch 3] step 6240/7074 | loss: 0.4576 | lr: 2.07e-06 | G0:8.1GB G1:15.3GB | 6435s
+  [Epoch 3] step 6320/7074 | loss: 0.4570 | lr: 2.06e-06 | G0:8.1GB G1:15.3GB | 6506s
+  [Epoch 3] step 6400/7074 | loss: 0.4575 | lr: 2.05e-06 | G0:8.1GB G1:15.3GB | 6577s
+  [Epoch 3] step 6480/7074 | loss: 0.4573 | lr: 2.04e-06 | G0:8.1GB G1:15.3GB | 6651s
+  [Epoch 3] step 6560/7074 | loss: 0.4568 | lr: 2.03e-06 | G0:8.1GB G1:15.3GB | 6723s
+  [Epoch 3] step 6640/7074 | loss: 0.4573 | lr: 2.02e-06 | G0:8.1GB G1:15.3GB | 6794s
+  [Epoch 3] step 6720/7074 | loss: 0.4575 | lr: 2.01e-06 | G0:8.1GB G1:15.3GB | 6865s
+  [Epoch 3] step 6800/7074 | loss: 0.4578 | lr: 2.01e-06 | G0:8.1GB G1:15.3GB | 6937s
+  [Epoch 3] step 6880/7074 | loss: 0.4581 | lr: 2.00e-06 | G0:8.1GB G1:15.3GB | 7008s
+  [Epoch 3] step 6960/7074 | loss: 0.4577 | lr: 2.00e-06 | G0:8.1GB G1:15.3GB | 7080s
+  [Epoch 3] step 7040/7074 | loss: 0.4576 | lr: 2.00e-06 | G0:8.1GB G1:15.3GB | 7151s
+
+  Epoch 3/3: loss=0.4579 (7182s)
+  Saved best checkpoint (loss=0.4579)
+
+Training complete. Best loss: 0.4579
+Checkpoints saved to experiments/results/03_sfa_train/

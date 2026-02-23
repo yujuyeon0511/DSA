@@ -388,22 +388,43 @@ Epoch 3:
 
 ---
 
-## Slide 11. Ablation Study
+## Slide 11. Ablation Study — Backbone Freeze vs Full Fine-tuning
 
-### Table 3: Component Ablation
+### Table 3: Training Strategy Ablation
 
-| Configuration | ChartQA Acc | Entropy Ratio | Halluc Rate |
-|--------------|-------------|---------------|-------------|
-| Baseline (no SFA) | 0.620 | 0.98x | 25.5% |
-| + row/col only | ⏳ | ⏳ | ⏳ |
-| + row/col + dist | ⏳ | ⏳ | ⏳ |
-| + full SFA (all components) | ⏳ | ⏳ | ⏳ |
+| Configuration | Trainable Params | ChartQA Acc | Halluc Rate | 비고 |
+|--------------|-----------------|-------------|-------------|------|
+| Baseline (no SFA) | 0 | 0.620 | 25.5% | Pretrained 그대로 |
+| + SFA (full encoder ft) | 337M (4.0%) | 0.509 | 23.0% | Catastrophic Forgetting |
+| **+ SFA-only (backbone frozen)** | **7,296 (0.0%)** | **0.6244** | **20.2%** | **Best: 정확도 유지 + Halluc 감소** |
+
+### 핵심 발견
+
+> **SFA-only (backbone frozen) 전략이 최적:**
+> - 정확도: 0.6244 (baseline 0.620 대비 **+0.7%**, forgetting 없음)
+> - Hallucination: 20.2% (baseline 25.5% 대비 **-5.3%p 감소**)
+> - **단 7,296개 파라미터**만 학습 (전체의 0.0%)
+>
+> Full encoder ft (337M params)는 catastrophic forgetting 유발:
+> - 정확도 0.509 (-17.9%) → pretrained 시각 능력 상실
+> - Hallucination 23.0%로 소폭 개선되었으나 정확도 하락이 심각
+
+### Hallucination 세부 분석 (200-sample subset, seed=42)
+
+| 분류 | Baseline | Full encoder ft | SFA-only (frozen) |
+|------|----------|----------------|-------------------|
+| 정답 | 130 (65.0%) | 105 (52.5%) | **130 (65.0%)** |
+| 숫자 Hallucination | 51 (25.5%) | 46 (23.0%) | **39 (19.5%)** |
+| 오답 (기타) | 19 (9.5%) | 49 (24.5%) | **31 (15.5%)** |
+
+> SFA-only: 숫자 hallucination **51→39건** (23.5% 감소), 정답 수 baseline과 동일
 
 #### 📎 이 슬라이드에 포함할 자료
 
 | 자료 | 파일 경로 | 상태 |
 |------|----------|------|
-| **Table 3: Component Ablation** — SFA 각 구성요소의 기여도 분석 | ⏳ 학습 완료 후 ablation 실험 필요 | ⏳ 예정 (P2-8) |
+| **Table 3: Training Strategy Ablation** — Baseline vs Full ft vs SFA-only | `experiments/results/06_ablation_sfa_only/eval/summary.json` | ✅ 완료 |
+| **Hallucination 세부 분석** — 200-sample subset 3-way 비교 | `experiments/results/06_ablation_sfa_only/eval/hallucination.json` | ✅ 완료 |
 
 ---
 
@@ -416,7 +437,7 @@ Phase 0: Baseline ────────────────────�
 Phase 1: 시각화 스크립트 ────────────────── ✅ 완료
   └→ Figure 1, 2, 5 스크립트 + Baseline 생성
 
-Phase 2: SFA Fine-tuning ───────────────── ✅ 주요 완료
+Phase 2: SFA Fine-tuning ───────────────── ✅ 완료
   ├→ P2-1: 스크립트 구현 ✅
   ├→ P2-2: 학습 실행 ✅ (3 epochs, loss 4.78→0.46)
   ├→ P2-3: ChartQA eval ✅ (Acc: 0.509, 하락 → Catastrophic Forgetting)
@@ -424,7 +445,7 @@ Phase 2: SFA Fine-tuning ───────────────── ✅
   ├→ P2-5: Hallucination 재측정 ✅ (23.0%, 소폭 개선)
   ├→ P2-6: Attention heatmap ✅ (Figure 3 생성 완료)
   ├→ P2-7: Structural bias 시각화 ✅ (Figure 7 생성)
-  └→ P2-8: Component ablation ⏳ (SFA-only ft 후 비교)
+  └→ P2-8: Component ablation ✅ (SFA-only: Acc 0.6244, Halluc 20.2%)
 
 Phase 3: ADAT 구현 + 통합 ─────────────── ⬜ 예정
   └→ Adaptive tokenization + Token efficiency 실측
@@ -501,12 +522,12 @@ Phase 5: Cross-Architecture + 논문 ────── ⬜ 예정
 | 16 | **Loss Curve Detail (Epoch 2-3)** | `experiments/figures/fig_loss_curve/loss_curve_detail.png` | Slide 7 |
 | 17 | **Figure 3: Attention Heatmap (Grid)** | `experiments/figures/fig3_attention_heatmap/fig3_attention_comparison.png` | Slide 10 |
 | 18 | **Figure 3: Layer 23 Detail** | `experiments/figures/fig3_attention_heatmap/fig3_L23.png` | Slide 10 |
+| 19 | **Table 3: Ablation (Strategy)** | `experiments/results/06_ablation_sfa_only/eval/summary.json` | Slide 11 |
+| 20 | **Ablation Hallucination 분석** | `experiments/results/06_ablation_sfa_only/eval/hallucination.json` | Slide 11 |
 
-### ⏳ 추후 생성 예정
+### ✅ 모든 주요 자료 완료
 
-| # | 자료명 | 사용 슬라이드 | 비고 |
-|---|--------|-------------|------|
-| 1 | Table 3: Component Ablation | Slide 11 | SFA-only training 후 생성 |
+> Phase 2 실험의 모든 Figure/Table이 완료되었습니다. (총 20개 자료)
 
 ---
 

@@ -1,0 +1,38 @@
+{
+  "config": {
+    "mode": "train",
+    "model_path": "/NetDisk/j_son/internvl_35",
+    "train_data": "/NetDisk/juyeon/train/chartQA/ChartQA Dataset/train",
+    "test_data": null,
+    "sfa_checkpoint": null,
+    "output_dir": "experiments/results/03_sfa_train",
+    "epochs": 3,
+    "lr": 2e-05,
+    "batch_size": 4,
+    "grad_accum": 8,
+    "max_samples": null
+  },
+  "logs": [
+    {
+      "epoch": 1,
+      "loss": 1.101502908754276,
+      "lr": 1.6123799091003286e-05,
+      "time_sec": 6574.1156187057495,
+      "oom_count": 0
+    },
+    {
+      "epoch": 2,
+      "loss": 0.5088290522760202,
+      "lr": 6.8235297091341345e-06,
+      "time_sec": 6572.726835489273,
+      "oom_count": 0
+    },
+    {
+      "epoch": 3,
+      "loss": 0.45786987969481063,
+      "lr": 2.0000000000000003e-06,
+      "time_sec": 7181.638509988785,
+      "oom_count": 0
+    }
+  ]
+}

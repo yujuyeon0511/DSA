@@ -365,8 +365,16 @@ def train_sfa(args):
     # 2. Patch with SFA
     model = patch_internvit_with_sfa(model)
 
-    # Enable gradient checkpointing for vision encoder
-    _enable_gradient_checkpointing(model)
+    # Enable gradient checkpointing for vision encoder (only when backbone is trainable)
+    if not args.freeze_backbone:
+        _enable_gradient_checkpointing(model)
+    else:
+        # Explicitly disable any built-in gradient checkpointing
+        vision_model = getattr(model, "vision_model", None)
+        if vision_model is not None and hasattr(vision_model, "encoder"):
+            vision_model.encoder.gradient_checkpointing = False
+        if _is_main(rank):
+            print("  Gradient checkpointing disabled (backbone frozen)")
 
     model.train()
 
@@ -375,6 +383,38 @@ def train_sfa(args):
         model.language_model.eval()
         for p in model.language_model.parameters():
             p.requires_grad = False
+
+    # Optionally freeze vision encoder backbone (SFA-only training)
+    if args.freeze_backbone:
+        frozen_count = 0
+        sfa_count = 0
+        for name, param in model.named_parameters():
+            if "vision_model" in name:
+                if "structural_bias" in name:
+                    param.requires_grad = True
+                    sfa_count += 1
+                else:
+                    param.requires_grad = False
+                    frozen_count += 1
+        if args.freeze_projector and hasattr(model, "mlp1"):
+            for p in model.mlp1.parameters():
+                p.requires_grad = False
+        # Enable requires_grad on vision encoder embedding output so gradient
+        # can flow through the encoder layers to SFA structural bias params.
+        # Without this, gradient checkpointing or encoder internals may break
+        # the computation graph when all backbone params are frozen.
+        vision_model = getattr(model, "vision_model", None)
+        if vision_model is not None:
+            def _enable_grad_hook(module, args, output):
+                if isinstance(output, torch.Tensor):
+                    return output.requires_grad_(True)
+                return output
+            vision_model.embeddings.register_forward_hook(_enable_grad_hook)
+
+        if _is_main(rank):
+            print(f"  [freeze_backbone] Frozen {frozen_count} vision backbone params, kept {sfa_count} SFA params trainable")
+            if args.freeze_projector:
+                print(f"  [freeze_projector] Projector (mlp1) also frozen")
 
     # Get image token info
     img_ctx_id = _resolve_img_context_token_id(model, tokenizer)
@@ -736,6 +776,10 @@ def main():
     parser.add_argument("--batch_size", type=int, default=4)
     parser.add_argument("--grad_accum", type=int, default=8)
     parser.add_argument("--max_samples", type=int, default=None)
+    parser.add_argument("--freeze_backbone", action="store_true",
+                        help="Freeze vision encoder backbone; only train SFA structural bias + projector")
+    parser.add_argument("--freeze_projector", action="store_true",
+                        help="Also freeze projector (mlp1). Use with --freeze_backbone for SFA-only training")
     args = parser.parse_args()
 
     if args.mode == "test":
