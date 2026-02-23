@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Model checkpoints & weights (too large for git)
+*.pth
+*.pt
+*.bin
+*.safetensors
+*.ckpt
+
+# Experiment results (data files)
+experiments/results/01_density/visualizations/
+experiments/results/00_baseline/chartqa_results.json
+experiments/results/04_analysis/*.json
+
+# Generated figures (regenerable)
+experiments/figures/fig*/
+
+# Logs
+*.log
+experiments/results/03_sfa_train/*.log
+experiments/results/03_sfa_train_node18/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Conda/venv
+.conda/
+venv/
