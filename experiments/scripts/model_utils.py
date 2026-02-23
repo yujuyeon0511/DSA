@@ -15,7 +15,8 @@ from safetensors.torch import load_file as load_safetensors
 from transformers import AutoConfig, AutoModel, AutoTokenizer
 
 
-def load_internvl(model_path, device="cuda", dtype=torch.bfloat16, quantize_llm=False):
+def load_internvl(model_path, device="cuda", dtype=torch.bfloat16, quantize_llm=False,
+                   split_gpu=False):
     """
     InternVL3.5-8B 모델을 meta tensor 이슈 없이 로드합니다.
 
@@ -23,7 +24,8 @@ def load_internvl(model_path, device="cuda", dtype=torch.bfloat16, quantize_llm=
         model_path: 모델 경로
         device: 로드할 디바이스
         dtype: 데이터 타입 (bf16)
-        quantize_llm: True이면 LLM을 4-bit로 양자화 (학습 시 VRAM 절감)
+        quantize_llm: True이면 LLM을 4-bit로 양자화 (단일 GPU 학습용)
+        split_gpu: True이면 2-GPU 모델 병렬 (vision→cuda:0, LLM→cuda:1)
 
     Returns:
         model, tokenizer
@@ -36,12 +38,30 @@ def load_internvl(model_path, device="cuda", dtype=torch.bfloat16, quantize_llm=
 
     config = AutoConfig.from_pretrained(model_path, trust_remote_code=True)
 
-    if quantize_llm:
+    if quantize_llm and not split_gpu:
         return _load_internvl_quantized(model_path, config, tokenizer, device, dtype)
 
     model = AutoModel.from_config(config, trust_remote_code=True)
 
     # Load state dict from safetensors shards
+    state_dict = _load_safetensors_shards(model_path)
+    missing, unexpected = model.load_state_dict(state_dict, strict=False)
+    if missing:
+        print(f"  Missing keys: {len(missing)}")
+    if unexpected:
+        print(f"  Unexpected keys: {len(unexpected)}")
+    del state_dict
+
+    if split_gpu:
+        return _move_to_split_gpu(model, tokenizer, dtype)
+
+    model = model.to(device=device, dtype=dtype).eval()
+    print("Model loaded.")
+    return model, tokenizer
+
+
+def _load_safetensors_shards(model_path):
+    """safetensors shard 파일들을 로드하여 state_dict 반환."""
     index_path = os.path.join(model_path, "model.safetensors.index.json")
     with open(index_path) as f:
         index = json.load(f)
@@ -50,15 +70,47 @@ def load_internvl(model_path, device="cuda", dtype=torch.bfloat16, quantize_llm=
     for shard_file in shard_files:
         print(f"  Loading {shard_file}...")
         state_dict.update(load_safetensors(os.path.join(model_path, shard_file)))
-    missing, unexpected = model.load_state_dict(state_dict, strict=False)
-    if missing:
-        print(f"  Missing keys: {len(missing)}")
-    if unexpected:
-        print(f"  Unexpected keys: {len(unexpected)}")
-    del state_dict
+    return state_dict
 
-    model = model.to(device=device, dtype=dtype).eval()
-    print("Model loaded.")
+
+def _move_to_split_gpu(model, tokenizer, dtype):
+    """
+    2-GPU 모델 병렬: Vision encoder + projector → cuda:0, LLM → cuda:1.
+    양자화 불필요 (80GB 총 VRAM). batch_size 증가 가능.
+    """
+    print("  [Split GPU mode] Vision → cuda:0, LLM → cuda:1")
+
+    model = model.to(dtype=dtype)
+
+    # Vision encoder + projector → GPU 0 (trainable)
+    model.vision_model = model.vision_model.to("cuda:0")
+    if hasattr(model, "mlp1"):
+        model.mlp1 = model.mlp1.to("cuda:0")
+
+    # LLM → GPU 1 (frozen)
+    model.language_model = model.language_model.to("cuda:1")
+
+    # Remaining top-level params/buffers
+    for name, param in model.named_parameters():
+        if param.device.type == "cpu":
+            if "vision" in name or "mlp1" in name:
+                param.data = param.data.to("cuda:0")
+            else:
+                param.data = param.data.to("cuda:1")
+    for name, buf in model.named_buffers():
+        if buf.device.type == "cpu":
+            if "vision" in name or "mlp1" in name:
+                buf.data = buf.data.to("cuda:0")
+            else:
+                buf.data = buf.data.to("cuda:1")
+
+    model.eval()
+
+    mem0 = torch.cuda.memory_allocated("cuda:0") / 1024**3
+    mem1 = torch.cuda.memory_allocated("cuda:1") / 1024**3
+    print(f"  GPU 0 (vision): {mem0:.1f} GB")
+    print(f"  GPU 1 (LLM):    {mem1:.1f} GB")
+    print("Model loaded (split GPU).")
     return model, tokenizer
 
 

@@ -244,71 +244,66 @@ def collate_fn_factory(tokenizer, img_context_token_id, num_image_token):
     return collate_fn
 
 
-def compute_vl_loss(model, batch, device, dtype):
+def compute_vl_loss(model, batch, device, dtype, llm_device=None):
     """
     Vision-Language loss 계산.
-    DDP 시: model.forward()를 통해 gradient sync 보장.
-    Single GPU 시: 수동 구현 (더 안정적).
 
-    img_context_token_id는 _resolve_img_context_token_id()로 사전 설정 필요.
+    Args:
+        model: InternVL 모델
+        batch: collated batch dict
+        device: vision encoder 디바이스 (cuda:0)
+        dtype: compute dtype
+        llm_device: LLM 디바이스 (split GPU 시 cuda:1, 아니면 None=device와 동일)
     """
+    if llm_device is None:
+        llm_device = device
+
     pixel_values = batch["pixel_values"].to(device=device, dtype=dtype)
-    input_ids = batch["input_ids"].to(device)
-    labels = batch["labels"].to(device)
-    attention_mask = batch["attention_mask"].to(device)
-    B = pixel_values.shape[0]
+    input_ids = batch["input_ids"].to(llm_device)
+    labels = batch["labels"].to(llm_device)
+    attention_mask = batch["attention_mask"].to(llm_device)
 
-    is_ddp = hasattr(model, "module")
+    raw = model.module if hasattr(model, "module") else model
 
-    if is_ddp:
-        # DDP: model.forward()로 호출하여 gradient sync hook 정상 동작
-        image_flags = torch.ones(B, 1, device=device, dtype=torch.long)
-        outputs = model(
-            pixel_values=pixel_values,
-            input_ids=input_ids,
-            attention_mask=attention_mask,
-            labels=labels,
-            image_flags=image_flags,
-        )
-        return outputs.loss
-    else:
-        # Single GPU: 수동 구현 (gradient flow 보장)
-        raw = model
+    # Vision encoder forward (on vision device)
+    vit_embeds = raw.extract_feature(pixel_values)  # (B, 256, C) on device
 
-        vit_embeds = raw.extract_feature(pixel_values)
-        input_embeds = raw.language_model.get_input_embeddings()(input_ids).clone()
+    # LLM embedding (on llm_device)
+    input_embeds = raw.language_model.get_input_embeddings()(input_ids).clone()
 
-        B, N, C = input_embeds.shape
-        input_embeds = input_embeds.reshape(B * N, C)
-        flat_ids = input_ids.reshape(B * N)
+    B, N, C = input_embeds.shape
+    input_embeds = input_embeds.reshape(B * N, C)
+    flat_ids = input_ids.reshape(B * N)
 
-        img_ctx_id = getattr(raw, "img_context_token_id", 151671)
-        selected = (flat_ids == img_ctx_id)
-        n_selected = selected.sum().item()
-        vit_flat = vit_embeds.reshape(-1, C)
+    img_ctx_id = getattr(raw, "img_context_token_id", 151671)
+    selected = (flat_ids == img_ctx_id)
+    n_selected = selected.sum().item()
 
-        if n_selected > 0 and vit_flat.shape[0] > 0:
-            n_use = min(n_selected, vit_flat.shape[0])
-            sel_indices = selected.nonzero(as_tuple=True)[0][:n_use]
-            input_embeds[sel_indices] = input_embeds[sel_indices] * 0.0 + vit_flat[:n_use].to(input_embeds.dtype)
+    # Move vit_embeds to LLM device if split
+    vit_flat = vit_embeds.reshape(-1, C).to(llm_device)
 
-        input_embeds = input_embeds.reshape(B, N, C)
+    if n_selected > 0 and vit_flat.shape[0] > 0:
+        n_use = min(n_selected, vit_flat.shape[0])
+        sel_indices = selected.nonzero(as_tuple=True)[0][:n_use]
+        input_embeds[sel_indices] = input_embeds[sel_indices] * 0.0 + vit_flat[:n_use].to(input_embeds.dtype)
 
-        outputs = raw.language_model(
-            inputs_embeds=input_embeds,
-            attention_mask=attention_mask,
-            return_dict=True,
-        )
+    input_embeds = input_embeds.reshape(B, N, C)
 
-        logits = outputs.logits
-        shift_logits = logits[..., :-1, :].contiguous()
-        shift_labels = labels[..., 1:].contiguous()
-        loss = F.cross_entropy(
-            shift_logits.view(-1, shift_logits.size(-1)),
-            shift_labels.view(-1),
-            ignore_index=-100,
-        )
-        return loss
+    outputs = raw.language_model(
+        inputs_embeds=input_embeds,
+        attention_mask=attention_mask,
+        return_dict=True,
+    )
+
+    logits = outputs.logits
+    shift_logits = logits[..., :-1, :].contiguous()
+    shift_labels = labels[..., 1:].contiguous()
+    loss = F.cross_entropy(
+        shift_logits.view(-1, shift_logits.size(-1)),
+        shift_labels.view(-1),
+        ignore_index=-100,
+    )
+    return loss
 
 
 # ─── Training ───────────────────────────────────────────
@@ -334,22 +329,37 @@ def _enable_gradient_checkpointing(model):
 
 
 def train_sfa(args):
-    """SFA fine-tuning main loop. LLM 4-bit 양자화 + gradient checkpointing."""
+    """SFA fine-tuning main loop. 2-GPU model parallel 또는 single GPU 4-bit 양자화."""
     rank, local_rank, world_size = _setup_ddp()
     is_ddp = world_size > 1
-    device = f"cuda:{local_rank}" if is_ddp else "cuda"
     dtype = torch.bfloat16
+
+    # GPU 수에 따라 로딩 전략 결정
+    num_gpus = torch.cuda.device_count()
+    use_split = (num_gpus >= 2) and (not is_ddp)
+
+    if use_split:
+        device = "cuda:0"       # vision encoder device
+        llm_device = "cuda:1"   # LLM device
+    else:
+        device = f"cuda:{local_rank}" if is_ddp else "cuda"
+        llm_device = device
 
     if _is_main(rank):
         print("=" * 60)
-        print(f"SFA Fine-tuning {'(DDP: ' + str(world_size) + ' GPUs)' if is_ddp else '(single GPU)'}")
+        if use_split:
+            print(f"SFA Fine-tuning (2-GPU Model Parallel: vision→GPU0, LLM→GPU1)")
+        elif is_ddp:
+            print(f"SFA Fine-tuning (DDP: {world_size} GPUs)")
+        else:
+            print(f"SFA Fine-tuning (single GPU, quantized)")
         print("=" * 60)
 
-    # 1. Load model (LLM quantized to 4-bit for VRAM savings)
-    use_quantize = not is_ddp  # DDP에서는 양자화 미지원, single GPU에서만 사용
+    # 1. Load model
     model, tokenizer = load_internvl(
         args.model_path, device=device, dtype=dtype,
-        quantize_llm=use_quantize,
+        quantize_llm=(not use_split and not is_ddp),
+        split_gpu=use_split,
     )
 
     # 2. Patch with SFA
@@ -376,8 +386,13 @@ def train_sfa(args):
         trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
         total_params = sum(p.numel() for p in model.parameters())
         print(f"  Trainable params: {trainable_params:,} / {total_params:,} ({trainable_params/total_params*100:.1f}%)")
-        allocated = torch.cuda.memory_allocated(device) / 1024**3
-        print(f"  GPU memory after setup: {allocated:.1f} GB")
+        if use_split:
+            mem0 = torch.cuda.memory_allocated("cuda:0") / 1024**3
+            mem1 = torch.cuda.memory_allocated("cuda:1") / 1024**3
+            print(f"  GPU 0 (vision): {mem0:.1f} GB | GPU 1 (LLM): {mem1:.1f} GB")
+        else:
+            allocated = torch.cuda.memory_allocated(device) / 1024**3
+            print(f"  GPU memory after setup: {allocated:.1f} GB")
 
     # 3. Wrap with DDP (only trainable params participate in gradient sync)
     if is_ddp:
@@ -430,7 +445,7 @@ def train_sfa(args):
         print(f"  Steps/epoch: {len(train_loader)}")
         print(f"  Total optimizer steps: {total_steps}")
         print(f"  LR: {args.lr}")
-        print(f"  Quantized LLM: {use_quantize}")
+        print(f"  Mode: {'2-GPU split' if use_split else 'quantized' if not is_ddp else 'DDP'}")
         print()
 
     for epoch in range(args.epochs):
@@ -449,7 +464,10 @@ def train_sfa(args):
         for step, batch in enumerate(train_loader):
             try:
                 with torch.amp.autocast("cuda", dtype=dtype):
-                    loss = compute_vl_loss(raw_model if not is_ddp else model, batch, device, dtype)
+                    loss = compute_vl_loss(
+                        raw_model if not is_ddp else model, batch,
+                        device, dtype, llm_device=llm_device,
+                    )
                     loss = loss / args.grad_accum
                 loss.backward()
             except RuntimeError as e:
@@ -481,9 +499,14 @@ def train_sfa(args):
                 avg = epoch_loss / epoch_steps
                 lr_now = scheduler.get_last_lr()[0]
                 elapsed = time.time() - t0
-                mem = torch.cuda.memory_allocated(device) / 1024**3
+                mem0 = torch.cuda.memory_allocated("cuda:0") / 1024**3
+                if use_split:
+                    mem1 = torch.cuda.memory_allocated("cuda:1") / 1024**3
+                    mem_str = f"G0:{mem0:.1f}GB G1:{mem1:.1f}GB"
+                else:
+                    mem_str = f"mem:{mem0:.1f}GB"
                 print(f"  [Epoch {epoch+1}] step {step+1}/{len(train_loader)} | "
-                      f"loss: {avg:.4f} | lr: {lr_now:.2e} | mem: {mem:.1f}GB | {elapsed:.0f}s")
+                      f"loss: {avg:.4f} | lr: {lr_now:.2e} | {mem_str} | {elapsed:.0f}s")
 
         # Epoch summary
         avg_loss = epoch_loss / max(epoch_steps, 1)
@@ -624,14 +647,21 @@ def _relaxed_match(pred, gt, tol=0.05):
 
 def test_training(args):
     """Quick training test — 10 steps만 실행하여 전체 파이프라인 동작 확인."""
+    num_gpus = torch.cuda.device_count()
+    use_split = num_gpus >= 2
+
     print("=" * 60)
-    print("SFA Training Pipeline Test (10 steps, quantized LLM)")
+    print(f"SFA Training Pipeline Test (10 steps, {'2-GPU split' if use_split else 'quantized LLM'})")
     print("=" * 60)
 
-    device = "cuda"
+    device = "cuda:0" if use_split else "cuda"
+    llm_device = "cuda:1" if use_split else device
     dtype = torch.bfloat16
 
-    model, tokenizer = load_internvl(args.model_path, device=device, dtype=dtype, quantize_llm=True)
+    model, tokenizer = load_internvl(
+        args.model_path, device=device, dtype=dtype,
+        quantize_llm=(not use_split), split_gpu=use_split,
+    )
     model = patch_internvit_with_sfa(model)
     _enable_gradient_checkpointing(model)
     model.train()
@@ -668,7 +698,7 @@ def test_training(args):
     for step in range(10):
         optimizer.zero_grad()
         try:
-            loss = compute_vl_loss(model, batch, device, dtype)
+            loss = compute_vl_loss(model, batch, device, dtype, llm_device=llm_device)
             loss.backward()
             torch.nn.utils.clip_grad_norm_(
                 [p for p in model.parameters() if p.requires_grad], max_norm=1.0
@@ -703,8 +733,8 @@ def main():
     parser.add_argument("--output_dir", default="experiments/results/03_sfa_train")
     parser.add_argument("--epochs", type=int, default=3)
     parser.add_argument("--lr", type=float, default=2e-5)
-    parser.add_argument("--batch_size", type=int, default=1)
-    parser.add_argument("--grad_accum", type=int, default=32)
+    parser.add_argument("--batch_size", type=int, default=4)
+    parser.add_argument("--grad_accum", type=int, default=8)
     parser.add_argument("--max_samples", type=int, default=None)
     args = parser.parse_args()
 
