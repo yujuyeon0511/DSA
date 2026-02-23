@@ -18,8 +18,8 @@ experiments/results/01_density/visualizations/
 experiments/results/00_baseline/chartqa_results.json
 experiments/results/04_analysis/*.json
 
-# Generated figures (regenerable)
-experiments/figures/fig*/
+# Large generated figures (keep PDFs and PNGs for paper)
+# experiments/figures/fig*/
 
 # Logs
 *.log
