@@ -4,7 +4,7 @@
 
 ---
 
-## 1. 연구 배경 및 문제 정의
+## Slide 1. 연구 배경 및 문제 정의
 
 ### 기존 Vision Encoder의 한계
 
@@ -25,9 +25,16 @@
 > 문서 이미지의 **구조적 특성**을 vision encoder의 attention에 직접 주입하면,
 > grounding이 안정화되고 hallucination이 줄어드는가?
 
+#### 📎 이 슬라이드에 포함할 자료
+
+| 자료 | 파일 경로 | 상태 |
+|------|----------|------|
+| **Figure 1: Motivation** — (a) Uniform grid (b) Density heatmap (c) Adaptive patching | `experiments/figures/fig1_motivation/figure1_motivation.png` | ✅ 완료 |
+| **ChartQA 샘플 이미지** — 문제 상황 예시용 차트 이미지 | `experiments/figures/sample_images/chartqa_sample.png` | ✅ 완료 |
+
 ---
 
-## 2. Baseline 분석 결과
+## Slide 2. Baseline 분석 결과
 
 ### 실험 환경
 
@@ -63,6 +70,18 @@
 | "What is the difference between highest and lowest?" | 54 | **99** | 숫자 hallucination |
 | "What's the value for the rightmost bar?" | 0.57 | **10.04** | 자릿수 오류 |
 
+#### 📎 이 슬라이드에 포함할 자료
+
+| 자료 | 파일 경로 | 상태 |
+|------|----------|------|
+| **Table: Baseline 성능** — ChartQA Relaxed Accuracy = 0.620 | `experiments/results/00_baseline/summary.json` | ✅ 완료 |
+| **Table: Hallucination 분석** — 200 samples 분류 (정답/halluc/오답) | `experiments/results/04_analysis/hallucination_analysis.json` | ✅ 완료 |
+| **Table: 오답 예시** — hallucination_analysis.json에서 대표 오답 3건 추출 | `experiments/results/04_analysis/hallucination_analysis.json` | ✅ 완료 |
+
+---
+
+## Slide 3. Attention Entropy 분석 (Baseline)
+
 ### Attention Entropy 분석
 
 | 영역 | Entropy | 차이 |
@@ -74,9 +93,17 @@
 > Text-dense/sparse 간 attention entropy 차이가 거의 없음
 > → **Vision encoder가 문서 구조를 구분하지 못함** → SFA 필요성 입증
 
+#### 📎 이 슬라이드에 포함할 자료
+
+| 자료 | 파일 경로 | 상태 |
+|------|----------|------|
+| **Figure 5: Entropy Analysis (Baseline)** — Violin plot + Layer-wise line plot | `experiments/figures/fig5_entropy/fig5_entropy.png` | ✅ 완료 |
+| **Table: Entropy 통계** — text-dense vs sparse 영역 entropy 비교 | `experiments/results/04_analysis/entropy_analysis.json` | ✅ 완료 |
+| **Figure 5: Entropy Analysis (Baseline vs SFA)** — 학습 후 비교 추가 | ⏳ SFA 학습 완료 후 재생성 | ⏳ 예정 (P2-4) |
+
 ---
 
-## 3. 제안 방법: Structure-Factorized Attention (SFA)
+## Slide 4. 제안 방법: Structure-Factorized Attention (SFA)
 
 ### 핵심 아이디어
 
@@ -118,9 +145,16 @@
 - CLS 토큰에는 structural bias 미적용 (spatial tokens만)
 - Pretrained QKV weights 유지, structural bias만 small init (std=0.02)
 
+#### 📎 이 슬라이드에 포함할 자료
+
+| 자료 | 파일 경로 | 상태 |
+|------|----------|------|
+| **Figure 2: Architecture Diagram** — 전체 파이프라인 구조도 | `experiments/figures/fig2_architecture.png` | ✅ 완료 |
+| **Table: 파라미터 효율성** — SFA 추가 파라미터 분석 (위 표 사용) | 본문 내 표 | ✅ 완료 |
+
 ---
 
-## 4. Adaptive Density-Aware Tokenization (ADAT)
+## Slide 5. Adaptive Density-Aware Tokenization (ADAT)
 
 ### 동기
 
@@ -155,9 +189,17 @@ Document Image → Canny Edge Detection → Adaptive Threshold → Gaussian Blur
 | 0.3 < D ≤ 0.7 (medium) | 14×14 | 표준 |
 | D ≤ 0.3 (low) | 32×32 | 적음 (효율) |
 
+#### 📎 이 슬라이드에 포함할 자료
+
+| 자료 | 파일 경로 | 상태 |
+|------|----------|------|
+| **Figure 1: Motivation (b) Density Heatmap** — 밀도 추정 결과 | `experiments/figures/fig1_motivation/figure1_motivation.png` (panel b) | ✅ 완료 |
+| **Density Map 시각화** — 20개 ChartQA 이미지의 density estimation 결과 | `experiments/results/01_density/visualizations/density_000~019.png` | ✅ 완료 |
+| **Token Efficiency Curve** — 밀도 기반 토큰 절약 효과 그래프 | `experiments/results/04_analysis/token_efficiency_curve.png` | ✅ 완료 |
+
 ---
 
-## 5. 학습 전략 및 OOM 해결
+## Slide 6. 학습 전략 및 OOM 해결
 
 ### 학습 구조
 
@@ -195,9 +237,17 @@ Document Image → Canny Edge Detection → Adaptive Threshold → Gaussian Blur
 - Single GPU full bf16 → OOM (17GB + optimizer + activations > 40GB)
 - DDP 2-GPU → 각 rank마다 full model 복사 → OOM
 
+#### 📎 이 슬라이드에 포함할 자료
+
+| 자료 | 파일 경로 | 상태 |
+|------|----------|------|
+| **학습 구조 다이어그램** — 2-GPU 배치 (위 ASCII 다이어그램 사용) | 본문 내 다이어그램 | ✅ 완료 |
+| **Table: OOM 해결 전략** — GPU 분할 + checkpointing 효과 (위 표 사용) | 본문 내 표 | ✅ 완료 |
+| **Table: GPU 메모리 사용량** — 실측 값 | `experiments/results/03_sfa_train/train.log` (G0:8.1GB G1:15.3GB) | ✅ 완료 |
+
 ---
 
-## 6. 현재 학습 진행 상황
+## Slide 7. SFA 학습 진행 상황 및 Loss 추이
 
 ### 학습 설정
 
@@ -221,12 +271,14 @@ Epoch 1:
 Epoch 2:
   step   80 | loss: 0.6696
   step 2000 | loss: 0.5361
-  step 6880 | loss: 0.5087  ← 현재 진행 중
+  step 7074 | loss: 0.5088  ← Epoch 2 완료
 
-Epoch 3: (진행 예정)
+Epoch 3:
+  step   80 | loss: 0.5311
+  step  240 | loss: 0.4736  ← 진행 중
 ```
 
-> **Loss: 4.78 → 0.51 (약 90% 감소)** — 학습 정상 수렴 중
+> **Loss: 4.78 → 0.47 (약 90% 감소)** — 학습 정상 수렴 중
 
 ### GPU 활용률
 
@@ -235,42 +287,112 @@ Epoch 3: (진행 예정)
 | GPU 0 | Vision (trainable) | 8.1 GB | 32.9 GB (80%) |
 | GPU 1 | LLM (frozen) | 15.3 GB | 25.7 GB (63%) |
 
----
+#### 📎 이 슬라이드에 포함할 자료
 
-## 7. 논문 Figure 생성 현황
-
-### Figure 1: Motivation (✅ 완료)
-
-3-panel 구성:
-- (a) Uniform 14×14 grid → 모든 영역에 동일 패치
-- (b) Density heatmap → 텍스트 밀집 영역 시각화
-- (c) Adaptive patching → 밀집 영역에 더 세밀한 패치
-
-### Figure 2: Architecture Diagram (✅ 완료)
-
-전체 파이프라인: Input → Density Estimator → Adaptive Tokenization → ViT + SFA → Projector → LLM → Output
-
-### Figure 5: Entropy Analysis (✅ Baseline 완료)
-
-- Violin plot: text-dense vs sparse region entropy 분포
-- Layer-wise line plot: 각 layer의 entropy 변화
-
-→ SFA 학습 후 비교 데이터 추가 예정
+| 자료 | 파일 경로 | 상태 |
+|------|----------|------|
+| **Loss Curve 그래프** — train.log에서 추출하여 생성 | `experiments/results/03_sfa_train/train.log` → 그래프 생성 필요 | ⏳ 예정 (학습 완료 후) |
+| **Table: 학습 설정** — hyperparameter 요약 (위 표 사용) | 본문 내 표 | ✅ 완료 |
+| **Table: GPU 활용률** — 실측 GPU 메모리 (위 표 사용) | 본문 내 표 | ✅ 완료 |
+| **학습 로그 데이터** — step별 loss/lr 기록 | `experiments/results/03_sfa_train/train_log.json` | ✅ 완료 |
 
 ---
 
-## 8. 실험 파이프라인 전체 구조
+## Slide 8. SFA 성능 평가 결과
+
+### Table 1: ChartQA 성능 비교 (Main Result)
+
+| Model | ChartQA Relaxed Acc | 변화 |
+|-------|-------------------|------|
+| InternVL3.5-8B (Baseline) | 0.620 | - |
+| **+ SFA (Ours)** | **⏳ 측정 예정** | **⏳** |
+
+### Table 2: Hallucination 비교 (200 samples)
+
+| 분류 | Baseline | + SFA |
+|------|----------|-------|
+| 정답 | 130 (65.0%) | ⏳ |
+| 숫자 Hallucination | 51 (25.5%) | ⏳ |
+| 오답 (기타) | 19 (9.5%) | ⏳ |
+
+#### 📎 이 슬라이드에 포함할 자료
+
+| 자료 | 파일 경로 | 상태 |
+|------|----------|------|
+| **Table 1: ChartQA 성능 비교** — Baseline vs +SFA | `experiments/results/00_baseline/summary.json` + SFA eval 결과 | ⏳ 예정 (P2-3) |
+| **Table 2: Hallucination 비교** — Baseline vs +SFA hallucination 분류 | `experiments/results/04_analysis/hallucination_analysis.json` + SFA 재측정 | ⏳ 예정 (P2-5) |
+
+---
+
+## Slide 9. Entropy 분석 — Baseline vs SFA
+
+### Attention Entropy 비교
+
+| 영역 | Baseline | + SFA | 변화 |
+|------|----------|-------|------|
+| Text-dense region | 4.3322 | ⏳ | ⏳ |
+| Sparse region | 4.4377 | ⏳ | ⏳ |
+| Dense/Sparse 비율 | 0.98x | ⏳ | ⏳ |
+
+> SFA 적용 후 text-dense 영역의 entropy가 낮아지면 → 구조 인식 강화 입증
+
+#### 📎 이 슬라이드에 포함할 자료
+
+| 자료 | 파일 경로 | 상태 |
+|------|----------|------|
+| **Figure 5: Entropy Analysis (Baseline vs SFA)** — Violin + Layer-wise 비교 | `experiments/figures/fig5_entropy/fig5_entropy.png` (Baseline 완료, SFA 후 재생성) | ⏳ 예정 (P2-4) |
+| **Table: Entropy 비교** — Baseline vs SFA entropy 통계 | `experiments/results/04_analysis/entropy_analysis.json` + SFA 재측정 | ⏳ 예정 (P2-4) |
+
+---
+
+## Slide 10. Attention Heatmap 시각화
+
+### Attention Map 비교 — Baseline vs SFA
+
+동일 차트 이미지에 대한 attention heatmap 비교:
+- **Baseline**: 전체에 고르게 분산 (구조 무시)
+- **+SFA**: 텍스트/숫자 영역에 집중 (구조 인식)
+
+#### 📎 이 슬라이드에 포함할 자료
+
+| 자료 | 파일 경로 | 상태 |
+|------|----------|------|
+| **Figure 3: Attention Heatmap (Baseline vs SFA)** — 동일 이미지 2-panel 비교 | ⏳ 학습 완료 후 생성 | ⏳ 예정 (P2-6) |
+| **Figure 7: Structural Bias 시각화** — 학습된 w_row, w_col, w_dist 값 분포 | ⏳ 학습 완료 후 생성 | ⏳ 예정 (P2-7) |
+
+---
+
+## Slide 11. Ablation Study
+
+### Table 3: Component Ablation
+
+| Configuration | ChartQA Acc | Entropy Ratio | Halluc Rate |
+|--------------|-------------|---------------|-------------|
+| Baseline (no SFA) | 0.620 | 0.98x | 25.5% |
+| + row/col only | ⏳ | ⏳ | ⏳ |
+| + row/col + dist | ⏳ | ⏳ | ⏳ |
+| + full SFA (all components) | ⏳ | ⏳ | ⏳ |
+
+#### 📎 이 슬라이드에 포함할 자료
+
+| 자료 | 파일 경로 | 상태 |
+|------|----------|------|
+| **Table 3: Component Ablation** — SFA 각 구성요소의 기여도 분석 | ⏳ 학습 완료 후 ablation 실험 필요 | ⏳ 예정 (P2-8) |
+
+---
+
+## Slide 12. 실험 파이프라인 전체 구조
 
 ```
 Phase 0: Baseline ──────────────────────── ✅ 완료
   └→ ChartQA Acc=0.620, Halluc=25.5%
 
 Phase 1: 시각화 스크립트 ────────────────── ✅ 완료
-  └→ Figure 1, 3, 5 스크립트 + Baseline 생성
+  └→ Figure 1, 2, 5 스크립트 + Baseline 생성
 
 Phase 2: SFA Fine-tuning ───────────────── 🔄 진행 중
   ├→ P2-1: 스크립트 구현 ✅
-  ├→ P2-2: 학습 실행   🔄 (Epoch 2/3)
+  ├→ P2-2: 학습 실행   🔄 (Epoch 3/3)
   ├→ P2-3: ChartQA eval → Table 1 "+SFA"
   ├→ P2-4: Entropy 재측정 → Figure 5 완성
   ├→ P2-5: Hallucination 재측정 → Table 2
@@ -290,9 +412,17 @@ Phase 5: Cross-Architecture + 논문 ────── ⬜ 예정
   └→ 논문 작성
 ```
 
+#### 📎 이 슬라이드에 포함할 자료
+
+| 자료 | 파일 경로 | 상태 |
+|------|----------|------|
+| 파이프라인 다이어그램 (위 텍스트 구조도) | 본문 내 | ✅ 완료 |
+
 ---
 
-## 9. 기대 기여점
+## Slide 13. 기대 기여점 및 타임라인
+
+### 기대 기여점
 
 1. **Structure-Factorized Attention**: 0.002% 파라미터 추가로 문서 구조 인식 강화
 2. **Adaptive Density-Aware Tokenization**: 동일 토큰 수에서 정보량 극대화
@@ -300,9 +430,7 @@ Phase 5: Cross-Architecture + 논문 ────── ⬜ 예정
 4. **Architecture-Agnostic**: InternViT/SigLIP/CLIP 등 다양한 ViT에 적용 가능
 5. **다국어 일반화**: 한국어(AIDA, AIHUB) + 영어(ChartQA, DocVQA) 동시 검증
 
----
-
-## 10. 타임라인
+### 타임라인
 
 | 기간 | 작업 | 상태 |
 |------|------|------|
@@ -314,6 +442,43 @@ Phase 5: Cross-Architecture + 논문 ────── ⬜ 예정
 | 2/25~26 | Full System (SCR) 학습 | ⬜ 예정 |
 | 2/27~28 | Cross-Architecture 실험 | ⬜ 예정 |
 | 3/1~ | 논문 작성 | ⬜ 예정 |
+
+#### 📎 이 슬라이드에 포함할 자료
+
+| 자료 | 파일 경로 | 상태 |
+|------|----------|------|
+| 타임라인 표 (위 표 사용) | 본문 내 표 | ✅ 완료 |
+
+---
+
+## 자료 현황 요약
+
+### ✅ 완료된 Figure/Table 목록
+
+| # | 자료명 | 파일 경로 | 사용 슬라이드 |
+|---|--------|----------|-------------|
+| 1 | Figure 1: Motivation (3-panel) | `experiments/figures/fig1_motivation/figure1_motivation.png` | Slide 1, 5 |
+| 2 | Figure 2: Architecture Diagram | `experiments/figures/fig2_architecture.png` | Slide 4 |
+| 3 | Figure 5: Entropy (Baseline) | `experiments/figures/fig5_entropy/fig5_entropy.png` | Slide 3 |
+| 4 | ChartQA 샘플 이미지 | `experiments/figures/sample_images/chartqa_sample.png` | Slide 1 |
+| 5 | Density Map 시각화 (20장) | `experiments/results/01_density/visualizations/density_000~019.png` | Slide 5 |
+| 6 | Token Efficiency Curve | `experiments/results/04_analysis/token_efficiency_curve.png` | Slide 5 |
+| 7 | Baseline 성능 (summary.json) | `experiments/results/00_baseline/summary.json` | Slide 2, 8 |
+| 8 | Hallucination 분석 데이터 | `experiments/results/04_analysis/hallucination_analysis.json` | Slide 2, 8 |
+| 9 | Entropy 분석 데이터 | `experiments/results/04_analysis/entropy_analysis.json` | Slide 3, 9 |
+| 10 | 학습 로그 데이터 | `experiments/results/03_sfa_train/train_log.json` | Slide 7 |
+
+### ⏳ SFA 학습 완료 후 생성 예정
+
+| # | 자료명 | 생성 Phase | 사용 슬라이드 |
+|---|--------|-----------|-------------|
+| 1 | Table 1: ChartQA 성능 비교 (Baseline vs +SFA) | P2-3 | Slide 8 |
+| 2 | Figure 5: Entropy 비교 (Baseline vs SFA, 재생성) | P2-4 | Slide 9 |
+| 3 | Table 2: Hallucination 비교 (Baseline vs +SFA) | P2-5 | Slide 8 |
+| 4 | Figure 3: Attention Heatmap (Baseline vs SFA) | P2-6 | Slide 10 |
+| 5 | Figure 7: Structural Bias 시각화 | P2-7 | Slide 10 |
+| 6 | Table 3: Component Ablation | P2-8 | Slide 11 |
+| 7 | Loss Curve 그래프 | 학습 완료 후 | Slide 7 |
 
 ---
 
