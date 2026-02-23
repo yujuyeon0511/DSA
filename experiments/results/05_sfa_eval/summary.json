@@ -1,0 +1,8 @@
+{
+  "chartqa_accuracy": 0.5088,
+  "chartqa_halluc_rate": 0.2432,
+  "halluc_200_accuracy": 0.525,
+  "halluc_200_rate": 0.23,
+  "entropy_text": 4.7396875,
+  "entropy_sparse": 4.7447265625
+}
