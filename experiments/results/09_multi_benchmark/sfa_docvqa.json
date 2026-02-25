@@ -1,0 +1,3511 @@
+{
+  "benchmark": "docvqa",
+  "mode": "sfa_adat_scr",
+  "metric": "anls",
+  "num_samples": 500,
+  "skipped": 0,
+  "avg_score": 0.5286140638534463,
+  "elapsed_sec": 564.9,
+  "details": [
+    {
+      "idx": 0,
+      "question": "What is the employee name?\nProvide a short and direct response.",
+      "gt": "J.w duran.",
+      "pred": "AV. DURAN",
+      "score": 0.6
+    },
+    {
+      "idx": 1,
+      "question": "How much is the total current assets in the given form?\nEnsure brevity in your answer. ",
+      "gt": "21,908.",
+      "pred": "21,208",
+      "score": 0.7142857142857143
+    },
+    {
+      "idx": 2,
+      "question": "Which press is mentioned?\nKeep it short and to the point.",
+      "gt": "Oxford University Press.",
+      "pred": "Oxford University Press, New York",
+      "score": 0.696969696969697
+    },
+    {
+      "idx": 3,
+      "question": "Who is the president of snack food association ?\nYour response must be concise.",
+      "gt": "James W. Shufelt.",
+      "pred": "james w. shufelt",
+      "score": 0.9411764705882353
+    },
+    {
+      "idx": 4,
+      "question": "What is the Total Income for the three months ended September 30, 1982?\nYour answer should be very brief.",
+      "gt": "13,175.",
+      "pred": "$12,000",
+      "score": 0.0
+    },
+    {
+      "idx": 5,
+      "question": "Who is the Company Secretary?\nYour answer should be very brief.",
+      "gt": "Mr. Nitesh Bakshi.",
+      "pred": "Mr. Nishok Bajaj",
+      "score": 0.5
+    },
+    {
+      "idx": 6,
+      "question": "What is written in the Letter Head ?\nKeep it short and to the point.",
+      "gt": "PRODUCT ACCEPTANCE COMMITTEE.",
+      "pred": "PRODUCT ACCEPTANCE COMMITTEE",
+      "score": 0.9655172413793104
+    },
+    {
+      "idx": 7,
+      "question": "What are the Number of pages?\nProvide a short and direct response.",
+      "gt": "8.",
+      "pred": "1",
+      "score": 0.0
+    },
+    {
+      "idx": 8,
+      "question": "Which is the Entry date?\nGive a very brief answer.",
+      "gt": "96/04/15.",
+      "pred": "04/15/96",
+      "score": 0.0
+    },
+    {
+      "idx": 9,
+      "question": "What is the table number?\nOffer a terse response.",
+      "gt": "Table 7.",
+      "pred": "7",
+      "score": 0.0
+    },
+    {
+      "idx": 10,
+      "question": "What is the po box no. of johnson & johnson company ?\nOffer a terse response.",
+      "gt": "988.",
+      "pred": "905",
+      "score": 0.0
+    },
+    {
+      "idx": 11,
+      "question": "When campaign was conducted for water analysis?\nProvide a short and direct response.",
+      "gt": "1962-63.",
+      "pred": "1960-40",
+      "score": 0.5
+    },
+    {
+      "idx": 12,
+      "question": "Who has signed the report?\nYour response must be concise.",
+      "gt": "Chief Chemist.",
+      "pred": "William H. Young",
+      "score": 0.0
+    },
+    {
+      "idx": 13,
+      "question": "What is the date mentioned in the line where RJ Reynolds is printed?\nYour response must be concise.",
+      "gt": "05/19/99.",
+      "pred": "05/19/86",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 14,
+      "question": "What is the Department Name  ?\nKeep it short and to the point.",
+      "gt": "Department of Chemistry.",
+      "pred": "FLORIDA ATLANTIC UNIVERSITY",
+      "score": 0.0
+    },
+    {
+      "idx": 15,
+      "question": "Where are all meals served?\nKeep it short and to the point.",
+      "gt": "South windsor room.",
+      "pred": "250 South Windsor Room",
+      "score": 0.7727272727272727
+    },
+    {
+      "idx": 16,
+      "question": "What is the date mentioned ?\nGive a very brief answer.",
+      "gt": "June 24, 1983.",
+      "pred": "June 24, 1983",
+      "score": 0.9285714285714286
+    },
+    {
+      "idx": 17,
+      "question": "What is the title of the document?\nEnsure brevity in your answer. ",
+      "gt": "A word about apha...",
+      "pred": "A Word About APHA",
+      "score": 0.85
+    },
+    {
+      "idx": 18,
+      "question": "What is the name of the factory ?\nKeep it short and to the point.",
+      "gt": "Sterling factory.",
+      "pred": "Sterling Factory",
+      "score": 0.9411764705882353
+    },
+    {
+      "idx": 19,
+      "question": "What is the date at top of the page ?\nOffer a very short reply.",
+      "gt": "9/24/97.",
+      "pred": "2/26/97",
+      "score": 0.625
+    },
+    {
+      "idx": 20,
+      "question": "What is the amount of unexpended balance carried forward  as shown in the report ?\nKeep it short and to the point.",
+      "gt": "$ 648.33.",
+      "pred": "$646.33",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 21,
+      "question": "What is the main heading of the document?\nYour answer should be very brief.",
+      "gt": "Consumer Insight.",
+      "pred": "Consumer Insight",
+      "score": 0.9411764705882353
+    },
+    {
+      "idx": 22,
+      "question": "What is the order no.?\nYour answer should be very brief.",
+      "gt": "32709.",
+      "pred": "32709",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 23,
+      "question": "What's  the cost of Travel clock?\nYour answer should be very brief.",
+      "gt": "$175.",
+      "pred": "$751.75",
+      "score": 0.0
+    },
+    {
+      "idx": 24,
+      "question": "What type of form is given here?\nProvide a short and direct response.",
+      "gt": "Operative and Discharge Form.",
+      "pred": "Operative and Discharge Form",
+      "score": 0.9655172413793104
+    },
+    {
+      "idx": 25,
+      "question": "What is the page number written on the top of the page?\nMake the answer very short.",
+      "gt": "3.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 26,
+      "question": "Who is the guest lecturer?\nMake the answer very short.",
+      "gt": "DR. ROBERT M. FILLER.",
+      "pred": "Dr. John W. Kelly",
+      "score": 0.0
+    },
+    {
+      "idx": 27,
+      "question": "What is the name of the company mentioned in the letterhead?\nYour answer should be compact.",
+      "gt": "DEPARTMENT OF HEALTH & HUMAN SERVICES.",
+      "pred": "DEPARTMENT OF HEALTH & HUMAN SERVICES",
+      "score": 0.9736842105263158
+    },
+    {
+      "idx": 28,
+      "question": "How high did total carton sales go with electronic security in Big Bear?\nProvide a succinct answer.",
+      "gt": "5.7% higher.",
+      "pred": "Total carton sales were 5.5% higher with electronic security.",
+      "score": 0.0
+    },
+    {
+      "idx": 29,
+      "question": "What is the date mentioned in this document?\nOffer a very short reply.",
+      "gt": "12/24/96.",
+      "pred": "15.2.46",
+      "score": 0.0
+    },
+    {
+      "idx": 30,
+      "question": "What is the page no mentioned in this document?\nProvide a succinct answer.",
+      "gt": "17.",
+      "pred": "- 7 -",
+      "score": 0.0
+    },
+    {
+      "idx": 31,
+      "question": "To which department does Dr.Robert E. Shank belong to?\nMake the answer very short.",
+      "gt": "Department of Preventive Medicine and Public Health.",
+      "pred": "Department of Preventive Medicine and Public Health",
+      "score": 0.9807692307692307
+    },
+    {
+      "idx": 32,
+      "question": "What is the Title of the document?\nProvide a short and direct response.",
+      "gt": "Major Milestones, cont.",
+      "pred": "Major Milestones, cont.",
+      "score": 1.0
+    },
+    {
+      "idx": 33,
+      "question": "Which department is involved?\nYour answer should be very brief.",
+      "gt": "DEPT. OF THE TREAS.",
+      "pred": "DEPT. OF THE TREAS.",
+      "score": 1.0
+    },
+    {
+      "idx": 34,
+      "question": "What is the source fund for the amount mentioned?\nProvide a succinct answer.",
+      "gt": "IG Fund.",
+      "pred": "16th Fund",
+      "score": 0.0
+    },
+    {
+      "idx": 35,
+      "question": "What is the DPC Direct Account name?\nKeep it short and to the point.",
+      "gt": "J. Polep.",
+      "pred": "Pole",
+      "score": 0.0
+    },
+    {
+      "idx": 36,
+      "question": "What is the word prohibited in the advertisement\nGive a very brief answer.",
+      "gt": "Naked.",
+      "pred": "MAKERS",
+      "score": 0.5
+    },
+    {
+      "idx": 37,
+      "question": "What is the Average Daily Messing Strength for Kota Bahru?\nMake the answer very short.",
+      "gt": "50.",
+      "pred": "30",
+      "score": 0.0
+    },
+    {
+      "idx": 38,
+      "question": "What is the title of the form?\nYour answer should be compact.",
+      "gt": "Wholesale \"value added\" payment request form.",
+      "pred": "Wholesale \"Value Added\" payment request form",
+      "score": 0.9777777777777777
+    },
+    {
+      "idx": 39,
+      "question": "What is the % of Primary mss Accept. for Journal of sleep Research?\nOffer a very short reply.",
+      "gt": "35.",
+      "pred": "33.33",
+      "score": 0.0
+    },
+    {
+      "idx": 40,
+      "question": "What is the budget requested and recommended for fy 1976-1977 ?\nProvide a succinct answer.",
+      "gt": "$476,468.",
+      "pred": "547,568",
+      "score": 0.5555555555555556
+    },
+    {
+      "idx": 41,
+      "question": "Who is the president of the city of hope national medical center?\nOffer a terse response.",
+      "gt": "M.E. Hersch.",
+      "pred": "GEORGE A. BRAY, M.D., PH.D.",
+      "score": 0.0
+    },
+    {
+      "idx": 42,
+      "question": "What is the Company Name ?\nProvide a succinct answer.",
+      "gt": "Academic Press Inc.",
+      "pred": "Academic Press Inc.",
+      "score": 1.0
+    },
+    {
+      "idx": 43,
+      "question": "What is this document about?\nEnsure brevity in your answer. ",
+      "gt": "METHODS OF ANALYSIS.",
+      "pred": "This document is about the introduction and changes in the \"Methods of Analysis\" for a certain subject, likely related to chemistry or analytical science. It discusses the reorganization and updating of the methods, including the abandonment of old chapters and the introduction of new ones.",
+      "score": 0.0
+    },
+    {
+      "idx": 44,
+      "question": "What is the document about?\nKeep it short and to the point.",
+      "gt": "AUDIT AGENDA.",
+      "pred": "The document is an audit agenda for a production and process control system audit.",
+      "score": 0.0
+    },
+    {
+      "idx": 45,
+      "question": "What is the Date of the document ?\nYour answer should be very brief.",
+      "gt": "September 3, 1968.",
+      "pred": "September 3, 1958",
+      "score": 0.8888888888888888
+    },
+    {
+      "idx": 46,
+      "question": "When is the Break?\nProvide a succinct answer.",
+      "gt": "3:00 - 3:30.",
+      "pred": "5:00-5:30",
+      "score": 0.5833333333333333
+    },
+    {
+      "idx": 47,
+      "question": "What is the year in the logo?\nGive a very brief answer.",
+      "gt": "1853.",
+      "pred": "1853",
+      "score": 0.8
+    },
+    {
+      "idx": 48,
+      "question": "What is the purchase order or contract no?\nEnsure brevity in your answer. ",
+      "gt": "57485.",
+      "pred": "3925020",
+      "score": 0.0
+    },
+    {
+      "idx": 49,
+      "question": "What is the total amount of bill?\nOffer a very short reply.",
+      "gt": "93.",
+      "pred": "$93",
+      "score": 0.0
+    },
+    {
+      "idx": 50,
+      "question": "To Whom is this mail addressed to?\nOffer a very short reply.",
+      "gt": "Dr. Robert E. Shank.",
+      "pred": "Dr. Robert E. Shank",
+      "score": 0.95
+    },
+    {
+      "idx": 51,
+      "question": "What  is the heading of the document?\nYour answer should be compact.",
+      "gt": "TABLE II.",
+      "pred": "Table II",
+      "score": 0.8888888888888888
+    },
+    {
+      "idx": 52,
+      "question": "What is the Total AED TRx Volume for epilepsy for 1994?\nEnsure brevity in your answer. ",
+      "gt": "12,527.",
+      "pred": "12,267",
+      "score": 0.5714285714285714
+    },
+    {
+      "idx": 53,
+      "question": "What is the heading  given to the first column  of the table?\nOffer a terse response.",
+      "gt": "Equity Owner Name.",
+      "pred": "Equity Owner Name",
+      "score": 0.9444444444444444
+    },
+    {
+      "idx": 54,
+      "question": "What is the date on the document?\nOffer a terse response.",
+      "gt": "August 14, 1975.",
+      "pred": "August 14, 1975",
+      "score": 0.9375
+    },
+    {
+      "idx": 55,
+      "question": "What is the name of the summit ?\nYour answer should be very brief.",
+      "gt": "2003 Financial Summit.",
+      "pred": "2003 Financial Summit",
+      "score": 0.9545454545454546
+    },
+    {
+      "idx": 56,
+      "question": "Who's name is written with pencil at the top of the document?\nMake the answer very short.",
+      "gt": "JIM LYON.",
+      "pred": "John",
+      "score": 0.0
+    },
+    {
+      "idx": 57,
+      "question": "What is the First Name?\nMake the answer very short.",
+      "gt": "Aila.",
+      "pred": "Ala",
+      "score": 0.6
+    },
+    {
+      "idx": 58,
+      "question": "When is annual symposium held at?\nProvide a short and direct response.",
+      "gt": "December 14, 1981.",
+      "pred": "December 14, 1981",
+      "score": 0.9444444444444444
+    },
+    {
+      "idx": 59,
+      "question": "What is the Fax Number ?\nYour answer should be very brief.",
+      "gt": "(910) 741-5327.",
+      "pred": "744-555-0007",
+      "score": 0.0
+    },
+    {
+      "idx": 60,
+      "question": "Whats the EXPENSE REPORT NO.?\nEnsure brevity in your answer. ",
+      "gt": "28906.",
+      "pred": "28906",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 61,
+      "question": "What is the agenda of the meeting?\nMake the answer very short.",
+      "gt": "Review of Procedure Notes.",
+      "pred": "Review of Procedure Notes",
+      "score": 0.9615384615384616
+    },
+    {
+      "idx": 62,
+      "question": "What is the Av. Sodium in Bread, rye (D)?\nOffer a terse response.",
+      "gt": "41.",
+      "pred": "The Av. Sodium in Bread, rye (D) is 44 mg/100g.",
+      "score": 0.0
+    },
+    {
+      "idx": 63,
+      "question": "What is the date mentioned in this document?\nEnsure brevity in your answer. ",
+      "gt": "4/17/74.",
+      "pred": "4/27/74",
+      "score": 0.75
+    },
+    {
+      "idx": 64,
+      "question": "What is the Pinnacle 100 shell (No Holes) for 48mm?\nMake the answer very short.",
+      "gt": "1217-01-048.",
+      "pred": "1217-01-048",
+      "score": 0.9166666666666666
+    },
+    {
+      "idx": 65,
+      "question": "What is the number at top-right corner of the page?\nYour answer should be compact.",
+      "gt": "118.",
+      "pred": "188",
+      "score": 0.5
+    },
+    {
+      "idx": 66,
+      "question": "What is the Title of the document?\nKeep it short and to the point.",
+      "gt": "QA Flavors & Adhesives.",
+      "pred": "QA/QC LABORATORY",
+      "score": 0.0
+    },
+    {
+      "idx": 67,
+      "question": "What is the table no.?\nYour answer should be very brief.",
+      "gt": "V.",
+      "pred": "1",
+      "score": 0.0
+    },
+    {
+      "idx": 68,
+      "question": "What is the date of the invoice given?\nYour response must be concise.",
+      "gt": "OCTOBER 21, 1996.",
+      "pred": "October 21, 1996",
+      "score": 0.9411764705882353
+    },
+    {
+      "idx": 69,
+      "question": "What is the date on the document?\nOffer a very short reply.",
+      "gt": "August 14, 1986.",
+      "pred": "August 14, 1988",
+      "score": 0.875
+    },
+    {
+      "idx": 70,
+      "question": "What is the amount deposited as per the statement?\nYour answer should be compact.",
+      "gt": "125.00.",
+      "pred": "125.00",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 71,
+      "question": "Who is the authorized designee?\nEnsure brevity in your answer. ",
+      "gt": "G. C. Petree.",
+      "pred": "G. PERRY",
+      "score": 0.0
+    },
+    {
+      "idx": 72,
+      "question": "What is the table number?\nOffer a terse response.",
+      "gt": "Table 3.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 73,
+      "question": "What is the multidisciplinary advisory panels budget for clinical monograph(to mechanical )?\nGive a very brief answer.",
+      "gt": "$90,000.",
+      "pred": "$39,000",
+      "score": 0.625
+    },
+    {
+      "idx": 74,
+      "question": "What is the title of the document?\nKeep it short and to the point.",
+      "gt": "External Communications.",
+      "pred": "EXTERNAL COMMUNICATIONS",
+      "score": 0.9583333333333334
+    },
+    {
+      "idx": 75,
+      "question": "What is the telephone number mentioned in the given page ?\nKeep it short and to the point.",
+      "gt": "(413) 545-0111.",
+      "pred": "(413) 545-0111",
+      "score": 0.9333333333333333
+    },
+    {
+      "idx": 76,
+      "question": "What is the Scrap date mentioned in the Cover Sheet ?\nProvide a succinct answer.",
+      "gt": "10/11/12.",
+      "pred": "01/01/94",
+      "score": 0.0
+    },
+    {
+      "idx": 77,
+      "question": "What is the amount for sugar with Reg.no. 210?\nOffer a terse response.",
+      "gt": "$ 44,640.",
+      "pred": "15,752",
+      "score": 0.0
+    },
+    {
+      "idx": 78,
+      "question": "When was it mailed?\nYour response must be concise.",
+      "gt": "9/28/79.",
+      "pred": "4/26/77",
+      "score": 0.5
+    },
+    {
+      "idx": 79,
+      "question": "What is the Type?\nProvide a short and direct response.",
+      "gt": "OTC.",
+      "pred": "R/B",
+      "score": 0.0
+    },
+    {
+      "idx": 80,
+      "question": "What is the name of the vendor mentioned ?\nYour answer should be compact.",
+      "gt": "R.J. REYNOLDS TOBACCO Co.",
+      "pred": "R.J.REYNOLDS",
+      "score": 0.0
+    },
+    {
+      "idx": 81,
+      "question": "What is written in the Exact Title Field ?\nGive a very brief answer.",
+      "gt": "GRADUATE STUDENT.",
+      "pred": "GRADUATE STUDENT",
+      "score": 0.9411764705882353
+    },
+    {
+      "idx": 82,
+      "question": "Whose testimony is this?\nOffer a terse response.",
+      "gt": "Antonio M. Gotto, Jr.",
+      "pred": "ANTOINE M. GOTTO, JR., M.D.",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 83,
+      "question": "What is the report file  number ?\nKeep it short and to the point.",
+      "gt": "1116.",
+      "pred": "111",
+      "score": 0.6
+    },
+    {
+      "idx": 84,
+      "question": "What is the Title of the document?\nOffer a terse response.",
+      "gt": "Expense Account for Infoods Conference.",
+      "pred": "EXPENSE ACCOUNT FOR INFORIDOS CONFERENCE",
+      "score": 0.9
+    },
+    {
+      "idx": 85,
+      "question": "What is the date on requisition sheet ?\nYour answer should be very brief.",
+      "gt": "October 1, 1968.",
+      "pred": "October 4",
+      "score": 0.5
+    },
+    {
+      "idx": 86,
+      "question": "What is the name of the passenger?\nKeep it short and to the point.",
+      "gt": "Dr. William Darby.",
+      "pred": "Dr. William Henry",
+      "score": 0.7222222222222222
+    },
+    {
+      "idx": 87,
+      "question": "When is the Break during November 3rd's program?\nYour answer should be compact.",
+      "gt": "3:30 PM - 3:45 PM.",
+      "pred": "2:50 PM - 2:55 PM",
+      "score": 0.7222222222222222
+    },
+    {
+      "idx": 88,
+      "question": "What is the name of airlines\nKeep it short and to the point.",
+      "gt": "EASTERN AIRLINES 007.",
+      "pred": "Eastern Airlines",
+      "score": 0.7619047619047619
+    },
+    {
+      "idx": 89,
+      "question": "What type of documentation is this?\nEnsure brevity in your answer. ",
+      "gt": "Advertising contract.",
+      "pred": "This is an Advertising Contract.",
+      "score": 0.65625
+    },
+    {
+      "idx": 90,
+      "question": "What is the Expenditure for Employee Benefits?\nProvide a short and direct response.",
+      "gt": "499.08.",
+      "pred": "6,213.20",
+      "score": 0.0
+    },
+    {
+      "idx": 91,
+      "question": "How much is the #in paper for cig no. 41?\nOffer a very short reply.",
+      "gt": "20.",
+      "pred": "20",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 92,
+      "question": "What is the Fullform for TE ?\nEnsure brevity in your answer. ",
+      "gt": "TRAVEL EXPENSE.",
+      "pred": "TE = Teaching Experience",
+      "score": 0.0
+    },
+    {
+      "idx": 93,
+      "question": "What is the value of experimental animal for the tissue lab no. 11348 ?\nProvide a succinct answer.",
+      "gt": "22c.",
+      "pred": "200",
+      "score": 0.0
+    },
+    {
+      "idx": 94,
+      "question": "What is the Full Name?\nYour answer should be very brief.",
+      "gt": "WILLIAM J. DARBY.",
+      "pred": "William J. Darby",
+      "score": 0.9411764705882353
+    },
+    {
+      "idx": 95,
+      "question": "What is the name of person in the form?\nMake the answer very short.",
+      "gt": "Shank, Robert E. DR.",
+      "pred": "SHANK, ROBERT E.",
+      "score": 0.8
+    },
+    {
+      "idx": 96,
+      "question": "What is the Page Number?\nEnsure brevity in your answer. ",
+      "gt": "21.",
+      "pred": "21",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 97,
+      "question": "What are the No. of Board meetings attented by Mr. R. A. Shah?\nYour answer should be very brief.",
+      "gt": "5.",
+      "pred": "2",
+      "score": 0.0
+    },
+    {
+      "idx": 98,
+      "question": "What is the amount of total pay mentioned in the given page ?\nOffer a terse response.",
+      "gt": "3333.00.",
+      "pred": "3333.33",
+      "score": 0.625
+    },
+    {
+      "idx": 99,
+      "question": "Who is the Chairman?\nProvide a succinct answer.",
+      "gt": "R.A. Shah.",
+      "pred": "R.A. SHAH",
+      "score": 0.9
+    },
+    {
+      "idx": 100,
+      "question": "When was the reunions organized?\nYour answer should be very brief.",
+      "gt": "Thursday, May 30, 1968.",
+      "pred": "Thursday, May 30, 1968",
+      "score": 0.9565217391304348
+    },
+    {
+      "idx": 101,
+      "question": "Mention the page number at top right corner of the page ?\nEnsure brevity in your answer. ",
+      "gt": "11.",
+      "pred": "11",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 102,
+      "question": "What is the designation of Davis L. Sunderland?\nYour answer should be very brief.",
+      "gt": "Assistant Manager,Scottsbluff and Gering.",
+      "pred": "Assistant Manager, Scottish and Dutch",
+      "score": 0.6585365853658536
+    },
+    {
+      "idx": 103,
+      "question": "What is the date mentioned in the given letter ?\nProvide a short and direct response.",
+      "gt": "March 15, 1957.",
+      "pred": "March 15, 1957",
+      "score": 0.9333333333333333
+    },
+    {
+      "idx": 104,
+      "question": "What is written within the logo at the left top corner of the page?\nEnsure brevity in your answer. ",
+      "gt": "ITC.",
+      "pred": "ITC",
+      "score": 0.75
+    },
+    {
+      "idx": 105,
+      "question": "What is the title of this document?\nOffer a terse response.",
+      "gt": "Chronology of Polyethylene Development.",
+      "pred": "Chronology of Polyethylene Development",
+      "score": 0.9743589743589743
+    },
+    {
+      "idx": 106,
+      "question": "What is the title of the document?\nOffer a very short reply.",
+      "gt": "Wistar press reprint price list for journal of nutrition.",
+      "pred": "UNITED STATES POSTAGE RATE LIST",
+      "score": 0.0
+    },
+    {
+      "idx": 107,
+      "question": "What is the birth date of Dr. Robert E. Shank?\nProvide a succinct answer.",
+      "gt": "09-02-14.",
+      "pred": "09-29-1947",
+      "score": 0.6
+    },
+    {
+      "idx": 108,
+      "question": "What is the total of fixed cost?\nGive a very brief answer.",
+      "gt": "$933,060.",
+      "pred": "$923,609",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 109,
+      "question": "What is the University Name ?\nGive a very brief answer.",
+      "gt": "VANDERBILT UNIVERSITY.",
+      "pred": "Vanderbilt University",
+      "score": 0.9545454545454546
+    },
+    {
+      "idx": 110,
+      "question": "What is the trade receivables, gross as on 31/03/2013 classification of assets based on security\nOffer a terse response.",
+      "gt": "14,72,51,565.",
+      "pred": "14,23,22,000",
+      "score": 0.0
+    },
+    {
+      "idx": 111,
+      "question": "What is the full form of POV?\nOffer a terse response.",
+      "gt": "Privately-Owned Vehicle.",
+      "pred": "Privately-owned vehicle",
+      "score": 0.9583333333333334
+    },
+    {
+      "idx": 112,
+      "question": "What is the date mentioned in the given page ?\nProvide a short and direct response.",
+      "gt": "October 10, 1973.",
+      "pred": "October 10, 1973",
+      "score": 0.9411764705882353
+    },
+    {
+      "idx": 113,
+      "question": "What is the Project Name ?\nYour answer should be very brief.",
+      "gt": "Eclipse Mail Order - Carton Order.",
+      "pred": "Eclipse Mail Order - Carton Order",
+      "score": 0.9705882352941176
+    },
+    {
+      "idx": 114,
+      "question": "Which company's board of directors of minutes of meeting?\nProvide a succinct answer.",
+      "gt": "THE GREAT WESTERN FOODS COMPANY.",
+      "pred": "The Great Western Foods Company",
+      "score": 0.96875
+    },
+    {
+      "idx": 115,
+      "question": "What is the delivery date ?\nOffer a terse response.",
+      "gt": "5/23/97.",
+      "pred": "5/3/97",
+      "score": 0.75
+    },
+    {
+      "idx": 116,
+      "question": "What is the Date written on top left of page\nEnsure brevity in your answer. ",
+      "gt": "7/17/2003.",
+      "pred": "11/20/2003",
+      "score": 0.5
+    },
+    {
+      "idx": 117,
+      "question": "What is the title of the table?\nYour answer should be compact.",
+      "gt": "Demographics for Selected Brands.",
+      "pred": "Demographics for Selected Brands",
+      "score": 0.9696969696969697
+    },
+    {
+      "idx": 118,
+      "question": "What is the id no.?\nYour response must be concise.",
+      "gt": "20.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 119,
+      "question": "What is the Odor?\nOffer a terse response.",
+      "gt": "Odorless.",
+      "pred": "Odorless",
+      "score": 0.8888888888888888
+    },
+    {
+      "idx": 120,
+      "question": "What is the date on the document?\nYour answer should be very brief.",
+      "gt": "March 20, 1996.",
+      "pred": "March 20, 1996",
+      "score": 0.9333333333333333
+    },
+    {
+      "idx": 121,
+      "question": "What is the amount of potassium present in lemon , or juice(r) as mentioned in the given page ?\nGive a very brief answer.",
+      "gt": "148.",
+      "pred": "1.5",
+      "score": 0.0
+    },
+    {
+      "idx": 122,
+      "question": "What is the subject mentioned in the given page ?\nGive a very brief answer.",
+      "gt": "Occupational Health.",
+      "pred": "Disease Documentation in Industry",
+      "score": 0.0
+    },
+    {
+      "idx": 123,
+      "question": "What is the Page Number?\nProvide a succinct answer.",
+      "gt": "6.",
+      "pred": "6",
+      "score": 0.5
+    },
+    {
+      "idx": 124,
+      "question": "What is the Page Number?\nGive a very brief answer.",
+      "gt": "-7-.",
+      "pred": "7",
+      "score": 0.0
+    },
+    {
+      "idx": 125,
+      "question": "What is the heading of the table given at the top of the page?\nOffer a very short reply.",
+      "gt": "Clinical Plan supporting Marketing Objectives.",
+      "pred": "Clinical Plan supporting Marketing Objectives",
+      "score": 0.9782608695652174
+    },
+    {
+      "idx": 126,
+      "question": "Where is the Workshop organized?\nEnsure brevity in your answer. ",
+      "gt": "SOUTH LOUNGE DISNEYLAND HOTEL.",
+      "pred": "South London",
+      "score": 0.0
+    },
+    {
+      "idx": 127,
+      "question": "To whom is it addressed to?\nProvide a succinct answer.",
+      "gt": "Steve Lail.",
+      "pred": "Stacey Mall",
+      "score": 0.0
+    },
+    {
+      "idx": 128,
+      "question": "What is the date mentioned in this document?\nYour response must be concise.",
+      "gt": "March 2017.",
+      "pred": "March 2017",
+      "score": 0.9090909090909091
+    },
+    {
+      "idx": 129,
+      "question": "The TBBPA is measured in terms of?\nMake the answer very short.",
+      "gt": "(mg/kg-day).",
+      "pred": "parts per billion",
+      "score": 0.0
+    },
+    {
+      "idx": 130,
+      "question": "In which factory is the analysis conducted?\nOffer a very short reply.",
+      "gt": "Johnstown Sugar.",
+      "pred": "Johnstown Sugar Factory",
+      "score": 0.6521739130434783
+    },
+    {
+      "idx": 131,
+      "question": "What is the heading to left side of the page?\nGive a very brief answer.",
+      "gt": "OAHU.",
+      "pred": "SOAHU",
+      "score": 0.6
+    },
+    {
+      "idx": 132,
+      "question": "What is the page number at top of the page?\nYour answer should be compact.",
+      "gt": "4.",
+      "pred": "4",
+      "score": 0.5
+    },
+    {
+      "idx": 133,
+      "question": "Date of purchase order?\nYour answer should be very brief.",
+      "gt": "11/15/99.",
+      "pred": "11/15/2000",
+      "score": 0.6
+    },
+    {
+      "idx": 134,
+      "question": "What is the Order No?\nGive a very brief answer.",
+      "gt": "61948.",
+      "pred": "61949",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 135,
+      "question": "What is the title of this document?\nYour answer should be very brief.",
+      "gt": "BILLING BREAKDOWN FOR ROBERT PETERSON.",
+      "pred": "BILLING BREAKDOWN FOR ROBERT PETERSON",
+      "score": 0.9736842105263158
+    },
+    {
+      "idx": 136,
+      "question": "What is the name of the division given in the approval form ?\nYour answer should be very brief.",
+      "gt": "New Products Technology R&D.",
+      "pred": "Novo Research Technology",
+      "score": 0.0
+    },
+    {
+      "idx": 137,
+      "question": "What is the 2004 YTD (Months 1-11) for Superior LOC Liner ARCOM?\nKeep it short and to the point.",
+      "gt": "$ 10,878.",
+      "pred": "1,069,999",
+      "score": 0.0
+    },
+    {
+      "idx": 138,
+      "question": "Where does the high fructose corn will come from ?\nYour response must be concise.",
+      "gt": "Major corn refiners in the midwest.",
+      "pred": "United States",
+      "score": 0.0
+    },
+    {
+      "idx": 139,
+      "question": "What type of Voucher this ?\nProvide a succinct answer.",
+      "gt": "TRAVEL EXPENSE VOUCHER.",
+      "pred": "Travel Expense Voucher",
+      "score": 0.9565217391304348
+    },
+    {
+      "idx": 140,
+      "question": "What is the Title of the document?\nEnsure brevity in your answer. ",
+      "gt": "Market-Basket Studies.",
+      "pred": "Market-Basket Studies",
+      "score": 0.9545454545454546
+    },
+    {
+      "idx": 141,
+      "question": "What is the SPEC Status ?\nYour response must be concise.",
+      "gt": "Retired.",
+      "pred": "RETIRED",
+      "score": 0.875
+    },
+    {
+      "idx": 142,
+      "question": "What is the received date mentioned ?\nYour answer should be compact.",
+      "gt": "Sep 27 1971.",
+      "pred": "OCTOBER 29, 1971",
+      "score": 0.0
+    },
+    {
+      "idx": 143,
+      "question": "What is the name of the corporation?\nYour answer should be very brief.",
+      "gt": "RANDALLS FOOD MARKETS.",
+      "pred": "R.J. Reynolds Tobacco Company",
+      "score": 0.0
+    },
+    {
+      "idx": 144,
+      "question": "Admission to which hospital is not limited to geogarphy, race or creed of the patient?\nGive a very brief answer.",
+      "gt": "St. Christopher's.",
+      "pred": "Children are accepted by physicians for inpatients.",
+      "score": 0.0
+    },
+    {
+      "idx": 145,
+      "question": "What is the first title in the document?\nEnsure brevity in your answer. ",
+      "gt": "Multiple Risk Factor Intervention Trial.",
+      "pred": "METRICA PHRE FACTORY INVESTIGATIONS",
+      "score": 0.0
+    },
+    {
+      "idx": 146,
+      "question": "Where is this PAHLAVI UNIVERSITY located?\nYour answer should be compact.",
+      "gt": "Shiraz, Iran.",
+      "pred": "SHIRAZ, IRAN",
+      "score": 0.9230769230769231
+    },
+    {
+      "idx": 147,
+      "question": "What is the budget bureau no.?\nProvide a succinct answer.",
+      "gt": "57-S70005.",
+      "pred": "400-10-100",
+      "score": 0.0
+    },
+    {
+      "idx": 148,
+      "question": "What is the number written at the top of the page?\nOffer a terse response.",
+      "gt": "51336 8616.",
+      "pred": "512346416",
+      "score": 0.0
+    },
+    {
+      "idx": 149,
+      "question": "What is the Zip code?\nGive a very brief answer.",
+      "gt": "30470.",
+      "pred": "30478",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 150,
+      "question": "What is the full form of TSCA?\nProvide a succinct answer.",
+      "gt": "Toxic Substances Control Act.",
+      "pred": "Toxics Substances Control Act",
+      "score": 0.9310344827586207
+    },
+    {
+      "idx": 151,
+      "question": "What is the full form of PUF?\nYour response must be concise.",
+      "gt": "POLYURETHANE FOAM.",
+      "pred": "polyurethane foam",
+      "score": 0.9444444444444444
+    },
+    {
+      "idx": 152,
+      "question": "When will the 'Workshop on meeting dietary problems in small hospitals and group situations' will begin ?\nProvide a short and direct response.",
+      "gt": "9:00.",
+      "pred": "9:00",
+      "score": 0.8
+    },
+    {
+      "idx": 153,
+      "question": "What is the candidate name for promotion ?\nProvide a short and direct response.",
+      "gt": "George Murdoch Saunders.",
+      "pred": "GEORGE MURPHY SCHAUBERGER",
+      "score": 0.56
+    },
+    {
+      "idx": 154,
+      "question": "The amount is deposited on which date?\nProvide a short and direct response.",
+      "gt": "October 15 1976.",
+      "pred": "October 15 76",
+      "score": 0.8125
+    },
+    {
+      "idx": 155,
+      "question": "Who does Yugoslavia pardon?\nYour answer should be compact.",
+      "gt": "Toth.",
+      "pred": "Yugoslavia",
+      "score": 0.0
+    },
+    {
+      "idx": 156,
+      "question": "What is the invoice number?\nOffer a very short reply.",
+      "gt": "#174-0213.",
+      "pred": "#174-0213",
+      "score": 0.9
+    },
+    {
+      "idx": 157,
+      "question": "What is the position of carl s. nadler ?\nProvide a short and direct response.",
+      "gt": "TREASURER.",
+      "pred": "부장",
+      "score": 0.0
+    },
+    {
+      "idx": 158,
+      "question": "What is the Sheet No.?\nEnsure brevity in your answer. ",
+      "gt": "1.",
+      "pred": "1",
+      "score": 0.5
+    },
+    {
+      "idx": 159,
+      "question": "What are expenses of air?\nProvide a short and direct response.",
+      "gt": "198.00.",
+      "pred": "198.00",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 160,
+      "question": "What is the telephone number mentioned in the document?\nYour response must be concise.",
+      "gt": "912-896-3206.",
+      "pred": "912-865-1306",
+      "score": 0.6153846153846154
+    },
+    {
+      "idx": 161,
+      "question": "What is the title of the proposal given in the document?\nYour response must be concise.",
+      "gt": "Iron and copper fortification of milk.",
+      "pred": "Iron and copper fortification of milk",
+      "score": 0.9736842105263158
+    },
+    {
+      "idx": 162,
+      "question": "What is the name of the seminar?\nGive a very brief answer.",
+      "gt": "1996 Tobacco Disease & Insect Control.",
+      "pred": "1996 TOBACCO DISEASE CONTROL SEMINAR",
+      "score": 0.6052631578947368
+    },
+    {
+      "idx": 163,
+      "question": "What is the Fax number given?\nProvide a succinct answer.",
+      "gt": "(910) 741-2526.",
+      "pred": "(910)271-5527",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 164,
+      "question": "What is the date in the RESPONSE CODE REQUEST CONFIRMATION ?\nEnsure brevity in your answer. ",
+      "gt": "April 22, 1996.",
+      "pred": "Aug 22, 1996",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 165,
+      "question": "What is the title of table VI-11?\nProvide a short and direct response.",
+      "gt": "Mean height in meters for children aged 7 to 14 years, brazil.",
+      "pred": "AGE AT DEATH BY SEX AND RACE",
+      "score": 0.0
+    },
+    {
+      "idx": 166,
+      "question": "What is the response code assigned ?\nProvide a short and direct response.",
+      "gt": "At6.",
+      "pred": "ATB",
+      "score": 0.5
+    },
+    {
+      "idx": 167,
+      "question": "What is the council name?\nOffer a very short reply.",
+      "gt": "American chemistry.",
+      "pred": "American Chemistry Council",
+      "score": 0.6923076923076923
+    },
+    {
+      "idx": 168,
+      "question": "What is the document title?\nOffer a very short reply.",
+      "gt": "ACTIVITY REPORT.",
+      "pred": "ACTIVITY REPORT",
+      "score": 0.9375
+    },
+    {
+      "idx": 169,
+      "question": "What is #CTN total?\nOffer a very short reply.",
+      "gt": "20.",
+      "pred": "20",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 170,
+      "question": "What is the title of the document?\nOffer a very short reply.",
+      "gt": "Estrogens and the skin.",
+      "pred": "ESTROGENS AND THE SKIN",
+      "score": 0.9565217391304348
+    },
+    {
+      "idx": 171,
+      "question": "Mention page number at bottom of the page ?\nYour response must be concise.",
+      "gt": "1.",
+      "pred": "1",
+      "score": 0.5
+    },
+    {
+      "idx": 172,
+      "question": "What is the Room Number ?\nProvide a succinct answer.",
+      "gt": "2141.",
+      "pred": "104",
+      "score": 0.0
+    },
+    {
+      "idx": 173,
+      "question": "What is the name of the association ?\nProvide a short and direct response.",
+      "gt": "AMERICAN MEDICAL ASSOCIATION.",
+      "pred": "AMERICAN MEDICAL ASSOCIATION",
+      "score": 0.9655172413793104
+    },
+    {
+      "idx": 174,
+      "question": "What is the Exhibit No mentioned in the document?\nOffer a very short reply.",
+      "gt": "32.",
+      "pred": "32",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 175,
+      "question": "Telegram comes under which class of service?\nProvide a succinct answer.",
+      "gt": "Domestic services.",
+      "pred": "domestic services",
+      "score": 0.9444444444444444
+    },
+    {
+      "idx": 176,
+      "question": "What is the appendix no.?\nYour answer should be compact.",
+      "gt": "3.",
+      "pred": "3",
+      "score": 0.5
+    },
+    {
+      "idx": 177,
+      "question": "What is the nfi grant no. ?\nProvide a succinct answer.",
+      "gt": "517E.",
+      "pred": "5176",
+      "score": 0.6
+    },
+    {
+      "idx": 178,
+      "question": "What is the first title in the document?\nYour answer should be compact.",
+      "gt": "The Marketing Toxic Working Group.",
+      "pred": "3.",
+      "score": 0.0
+    },
+    {
+      "idx": 179,
+      "question": "What is the Company Name ?\nProvide a succinct answer.",
+      "gt": "VST DISTRIBUTION.",
+      "pred": "VIST DISTRIBUTION, STORAGE & LEASING COMPANY PRIVATE LIMITED",
+      "score": 0.0
+    },
+    {
+      "idx": 180,
+      "question": "What is the Company or foundation?\nYour answer should be compact.",
+      "gt": "Pet milk, inc.",
+      "pred": "Patricke Two",
+      "score": 0.0
+    },
+    {
+      "idx": 181,
+      "question": "What type of voucher is given here?\nYour answer should be compact.",
+      "gt": "Public voucher for purchases and services other than personal.",
+      "pred": "PUBLIC VOUCHER FOR PURCHASE AND SERVICES OTHER THAN PERSONAL",
+      "score": 0.967741935483871
+    },
+    {
+      "idx": 182,
+      "question": "What is the page number at top of the page?\nMake the answer very short.",
+      "gt": "Page 2.",
+      "pred": "2",
+      "score": 0.0
+    },
+    {
+      "idx": 183,
+      "question": "What is the Page Number?\nEnsure brevity in your answer. ",
+      "gt": "32.",
+      "pred": "32",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 184,
+      "question": "Where is it held?\nEnsure brevity in your answer. ",
+      "gt": "War memorial auditorium.",
+      "pred": "at the auditorium of the Washington University",
+      "score": 0.0
+    },
+    {
+      "idx": 185,
+      "question": "What is the Cross currency interest rate swaps for Level 2 for Assets?\nOffer a terse response.",
+      "gt": "98.",
+      "pred": "42",
+      "score": 0.0
+    },
+    {
+      "idx": 186,
+      "question": "What is phone number of of Roy Taylor?\nGive a very brief answer.",
+      "gt": "912-464-3498.",
+      "pred": "802-734-2466",
+      "score": 0.0
+    },
+    {
+      "idx": 187,
+      "question": "Which financial year estimation is it?\nGive a very brief answer.",
+      "gt": "1967-68.",
+      "pred": "2007-08",
+      "score": 0.0
+    },
+    {
+      "idx": 188,
+      "question": "What is cash balance at 5/31/76?\nYour response must be concise.",
+      "gt": "$61.23.",
+      "pred": "$4,444.00",
+      "score": 0.0
+    },
+    {
+      "idx": 189,
+      "question": "What is the routing number given?\nProvide a short and direct response.",
+      "gt": "MB81.",
+      "pred": "8239a 4 8239b",
+      "score": 0.0
+    },
+    {
+      "idx": 190,
+      "question": "What is the issued date of this document?\nKeep it short and to the point.",
+      "gt": "SEPTEMBER 15, 1975.",
+      "pred": "September 15, 1973",
+      "score": 0.8947368421052632
+    },
+    {
+      "idx": 191,
+      "question": "What is the date mentioned above?\nYour answer should be very brief.",
+      "gt": "June 21, 1976.",
+      "pred": "June 21, 1976",
+      "score": 0.9285714285714286
+    },
+    {
+      "idx": 192,
+      "question": "What is the name of the hotel?\nGive a very brief answer.",
+      "gt": "Delmonico's Hotel.",
+      "pred": "Delmonico's Hotel",
+      "score": 0.9444444444444444
+    },
+    {
+      "idx": 193,
+      "question": "Who is it completed by?\nYour response must be concise.",
+      "gt": "P. F. Knouse, Jr.",
+      "pred": "F. E. Cook, Jr.",
+      "score": 0.5882352941176471
+    },
+    {
+      "idx": 194,
+      "question": "What is the First Name?\nOffer a very short reply.",
+      "gt": "Brenda.",
+      "pred": "Eugene",
+      "score": 0.0
+    },
+    {
+      "idx": 195,
+      "question": "What is the date of the Invoice?\nProvide a succinct answer.",
+      "gt": "3/7/79.",
+      "pred": "Mar. 12, 1979",
+      "score": 0.0
+    },
+    {
+      "idx": 196,
+      "question": "When is the Memorandum dated on ?\nOffer a very short reply.",
+      "gt": "March 25, 1974.",
+      "pred": "March 25, 1974",
+      "score": 0.9333333333333333
+    },
+    {
+      "idx": 197,
+      "question": "What is the word written in bold on the top of the document?\nProvide a short and direct response.",
+      "gt": "Takeda.",
+      "pred": "Takeda",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 198,
+      "question": "Who is requesting the response code confirmation?\nOffer a very short reply.",
+      "gt": "Joyce Bagby.",
+      "pred": "Joyce Bagby",
+      "score": 0.9166666666666666
+    },
+    {
+      "idx": 199,
+      "question": "What is the unit cost of  Celebrate America Coll. Card Album?\nOffer a terse response.",
+      "gt": "$ 5.51.",
+      "pred": "$0.00",
+      "score": 0.0
+    },
+    {
+      "idx": 200,
+      "question": "What is the document about?\nKeep it short and to the point.",
+      "gt": "APPLICATION FOR ACCREDITATION OF CONTINUING MEDICAL EDUCATION PROGRAM.",
+      "pred": "The document is an application for accreditation of a continuing medical education program.",
+      "score": 0.7692307692307692
+    },
+    {
+      "idx": 201,
+      "question": "How is the market share value of Phillip Morris company in 1997?\nMake the answer very short.",
+      "gt": "52.50.",
+      "pred": "40.00",
+      "score": 0.0
+    },
+    {
+      "idx": 202,
+      "question": "How many water samples are collected per week?\nEnsure brevity in your answer. ",
+      "gt": "Three catch samples per week.",
+      "pred": "three",
+      "score": 0.0
+    },
+    {
+      "idx": 203,
+      "question": "What is the voucher no.?\nOffer a very short reply.",
+      "gt": "73.",
+      "pred": "64113 333",
+      "score": 0.0
+    },
+    {
+      "idx": 204,
+      "question": "Which Resort's Agenda is given here?\nKeep it short and to the point.",
+      "gt": "RENAISSANCE VINOY RESORT.",
+      "pred": "BERKELEY VACATION RESORT",
+      "score": 0.0
+    },
+    {
+      "idx": 205,
+      "question": "What is the table heading?\nOffer a very short reply.",
+      "gt": "Mercury determinations on samples.",
+      "pred": "Table 1.",
+      "score": 0.0
+    },
+    {
+      "idx": 206,
+      "question": "What is lunch time?\nGive a very brief answer.",
+      "gt": "12.30 - 1.45.",
+      "pred": "12:30 - 1:45",
+      "score": 0.7692307692307692
+    },
+    {
+      "idx": 207,
+      "question": "To whom is the Thesis proposal submitted to?\nYour response must be concise.",
+      "gt": "GRADUATE COMMITTEE.",
+      "pred": "Graduate Committee",
+      "score": 0.9473684210526316
+    },
+    {
+      "idx": 208,
+      "question": "What is the Quantity for Trade Date 02-24-77?\nOffer a terse response.",
+      "gt": "1,000.",
+      "pred": "1,000",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 209,
+      "question": "Who is it addressed to?\nMake the answer very short.",
+      "gt": "Dr. Darby.",
+      "pred": "Dr. Darby",
+      "score": 0.9
+    },
+    {
+      "idx": 210,
+      "question": "What is the full form of GCC?\nYour answer should be very brief.",
+      "gt": "Global Climate Coalition.",
+      "pred": "Global Climate Coalition",
+      "score": 0.96
+    },
+    {
+      "idx": 211,
+      "question": "What is the date mentioned in the top of the document ?\nProvide a succinct answer.",
+      "gt": "3-11-87.",
+      "pred": "1999-04-01",
+      "score": 0.0
+    },
+    {
+      "idx": 212,
+      "question": "How much amount was paid as 'Audit fees' in the current year in rupees?\nGive a very brief answer.",
+      "gt": "7,50,000.",
+      "pred": "7,800",
+      "score": 0.0
+    },
+    {
+      "idx": 213,
+      "question": "What is the Page Number?\nMake the answer very short.",
+      "gt": "18.",
+      "pred": "18",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 214,
+      "question": "What does ERT stand for?\nYour answer should be very brief.",
+      "gt": "Estrogen replacement therapy.",
+      "pred": "Earthquake risk treatment",
+      "score": 0.0
+    },
+    {
+      "idx": 215,
+      "question": "What is the patent number mentioned in the given form ?\nOffer a terse response.",
+      "gt": "5,108,761.",
+      "pred": "5,807,676",
+      "score": 0.5
+    },
+    {
+      "idx": 216,
+      "question": "What is the Page Number?\nYour answer should be compact.",
+      "gt": "20.",
+      "pred": "20",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 217,
+      "question": "In which city is lea & febiger at?\nProvide a short and direct response.",
+      "gt": "Philadelphia.",
+      "pred": "philadelphia",
+      "score": 0.9230769230769231
+    },
+    {
+      "idx": 218,
+      "question": "What is the date mentioned in this document?\nKeep it short and to the point.",
+      "gt": "July 1, 1975.",
+      "pred": "July 1, 1975",
+      "score": 0.9230769230769231
+    },
+    {
+      "idx": 219,
+      "question": "What is the name of the brand?\nKeep it short and to the point.",
+      "gt": "AUSTIN.",
+      "pred": "AUSTIN",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 220,
+      "question": "Who will head IP update?\nYour answer should be compact.",
+      "gt": "Sally Williard.",
+      "pred": "Sally Williams",
+      "score": 0.8
+    },
+    {
+      "idx": 221,
+      "question": "What is plotted in the y-axis of second graph?\nYour answer should be very brief.",
+      "gt": "Percentage of Patients.",
+      "pred": "percentage of patients",
+      "score": 0.9565217391304348
+    },
+    {
+      "idx": 222,
+      "question": "What is the page number at bottom of the page?\nEnsure brevity in your answer. ",
+      "gt": "-11-.",
+      "pred": "11",
+      "score": 0.0
+    },
+    {
+      "idx": 223,
+      "question": "Which company's royalty payment form is this?\nProvide a succinct answer.",
+      "gt": "BIOMET, INC.",
+      "pred": "BIOMET, INC.",
+      "score": 1.0
+    },
+    {
+      "idx": 224,
+      "question": "What is the amount of cash income for milk mentioned in the given page ?\nGive a very brief answer.",
+      "gt": "4,554,322.",
+      "pred": "1,750,000",
+      "score": 0.0
+    },
+    {
+      "idx": 225,
+      "question": "What is the Page Number?\nYour response must be concise.",
+      "gt": "24.",
+      "pred": "25",
+      "score": 0.0
+    },
+    {
+      "idx": 226,
+      "question": "What is the Direct Mail Packs for Gold Launch?\nProvide a succinct answer.",
+      "gt": "270.",
+      "pred": "270",
+      "score": 0.75
+    },
+    {
+      "idx": 227,
+      "question": "What is the timing for YA PRESENTATION by Bruce Clark?\nGive a very brief answer.",
+      "gt": "12:30 - 2:30.",
+      "pred": "12:30 - 2:30",
+      "score": 0.9230769230769231
+    },
+    {
+      "idx": 228,
+      "question": "What is the telephone no mentioned in the form?\nOffer a very short reply.",
+      "gt": "714 572-2991.",
+      "pred": "714 572-2791",
+      "score": 0.8461538461538461
+    },
+    {
+      "idx": 229,
+      "question": "What is the unit on Y axis of the graph in FIGURE VI-2?\nOffer a very short reply.",
+      "gt": "Mm.",
+      "pred": "mm",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 230,
+      "question": "What is the page number at top of the page?\nYour answer should be compact.",
+      "gt": "49.",
+      "pred": "49",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 231,
+      "question": "What  is the date mentioned ?\nGive a very brief answer.",
+      "gt": "Mar 14, 1997.",
+      "pred": "Mar 14, 1997",
+      "score": 0.9230769230769231
+    },
+    {
+      "idx": 232,
+      "question": "Who is the Chairman mentioned in the document?\nProvide a succinct answer.",
+      "gt": "Mr. candy.",
+      "pred": "Dr. Eichler",
+      "score": 0.0
+    },
+    {
+      "idx": 233,
+      "question": "How much fee percentage will be returned in case of cancellation prior to October 15,1977?\nYour answer should be very brief.",
+      "gt": "90%.",
+      "pred": "50%",
+      "score": 0.5
+    },
+    {
+      "idx": 234,
+      "question": "What is the name of the medal in which gold medal and honorarium of $ 2,000 awarded approximately every three years for important contributions to medical science ?\nYour response must be concise.",
+      "gt": "Jessie Stevenson Kovalenko Medal.",
+      "pred": "Jesse Stevenson Kovitz Medal",
+      "score": 0.7575757575757576
+    },
+    {
+      "idx": 235,
+      "question": "What is the date mentioned in the given page ?\nGive a very brief answer.",
+      "gt": "8/17/70.",
+      "pred": "8/17/70.",
+      "score": 1.0
+    },
+    {
+      "idx": 236,
+      "question": "What is the first title in the document?\nEnsure brevity in your answer. ",
+      "gt": "Operating Profit by segment.",
+      "pred": "2019 Consolidated Financial Statements",
+      "score": 0.0
+    },
+    {
+      "idx": 237,
+      "question": "What is the unit of quantity for cigarette paper ?\nEnsure brevity in your answer. ",
+      "gt": "Bobbin.",
+      "pred": "Ream",
+      "score": 0.0
+    },
+    {
+      "idx": 238,
+      "question": "What is the Company Name ?\nGive a very brief answer.",
+      "gt": "R.J. REYNOLDS TOBACCO COMPANY.",
+      "pred": "RJ REYNOLDS TOBACCO COMPANY",
+      "score": 0.9
+    },
+    {
+      "idx": 239,
+      "question": "What is the Invoice No.?\nOffer a very short reply.",
+      "gt": "7862.",
+      "pred": "7662",
+      "score": 0.6
+    },
+    {
+      "idx": 240,
+      "question": "When is the special meeting of Directors held?\nYour response must be concise.",
+      "gt": "May 2nd, 1929.",
+      "pred": "My rind, 1999",
+      "score": 0.6428571428571428
+    },
+    {
+      "idx": 241,
+      "question": "What is the % of total sample mentioned in the given page ?\nProvide a succinct answer.",
+      "gt": "100%.",
+      "pred": "100",
+      "score": 0.6
+    },
+    {
+      "idx": 242,
+      "question": "What is Marguerite Watner's contact number?\nProvide a short and direct response.",
+      "gt": "212-258-5956.",
+      "pred": "212-588-2956",
+      "score": 0.6923076923076923
+    },
+    {
+      "idx": 243,
+      "question": "What is plotted in the y-axis?\nProvide a short and direct response.",
+      "gt": "Percentage of procedure type.",
+      "pred": "Type of tree",
+      "score": 0.0
+    },
+    {
+      "idx": 244,
+      "question": "What is the date mentioned in the document?\nOffer a very short reply.",
+      "gt": "Tuesday, september5.",
+      "pred": "Tuesday, September 5",
+      "score": 0.9
+    },
+    {
+      "idx": 245,
+      "question": "This is an AGENDA for which meeting?\nOffer a very short reply.",
+      "gt": "AE meeting.",
+      "pred": "AE Meeting",
+      "score": 0.9090909090909091
+    },
+    {
+      "idx": 246,
+      "question": "What is the revision level mentioned in the document?\nGive a very brief answer.",
+      "gt": "DRAFT.",
+      "pred": "001",
+      "score": 0.0
+    },
+    {
+      "idx": 247,
+      "question": "Which firm is mentioned at the top of the page?\nEnsure brevity in your answer. ",
+      "gt": "Accu-Weather, Inc.",
+      "pred": "Accu-Weather, Inc.",
+      "score": 1.0
+    },
+    {
+      "idx": 248,
+      "question": "By whom is this ethics agreement written?\nEnsure brevity in your answer. ",
+      "gt": "Michael L. Dourson.",
+      "pred": "Michael J. Dauson",
+      "score": 0.7894736842105263
+    },
+    {
+      "idx": 249,
+      "question": "What is the reporting date mentioned ?\nMake the answer very short.",
+      "gt": "5/4/98 - 7/17/98.",
+      "pred": "04/27/2017",
+      "score": 0.0
+    },
+    {
+      "idx": 250,
+      "question": "Where is Wistar Institute of Anatomy and Biology located?\nYour answer should be very brief.",
+      "gt": "Philadelphia.",
+      "pred": "Philadelphia",
+      "score": 0.9230769230769231
+    },
+    {
+      "idx": 251,
+      "question": "Which company's fax is this?\nProvide a succinct answer.",
+      "gt": "DesignWrite Incorporated.",
+      "pred": "DesignWrite",
+      "score": 0.0
+    },
+    {
+      "idx": 252,
+      "question": "How many acres of Rubber?\nOffer a very short reply.",
+      "gt": "3,500,000.",
+      "pred": "1,200,000",
+      "score": 0.7
+    },
+    {
+      "idx": 253,
+      "question": "Who is the chairman of subcommittee on range research techniques?\nYour answer should be compact.",
+      "gt": "C. Wayne Cook.",
+      "pred": "C. W. Cook",
+      "score": 0.6428571428571428
+    },
+    {
+      "idx": 254,
+      "question": "What is the value of N?\nEnsure brevity in your answer. ",
+      "gt": "20.",
+      "pred": "20",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 255,
+      "question": "What is the First Name?\nOffer a very short reply.",
+      "gt": "JONNA.",
+      "pred": "Jonna",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 256,
+      "question": "This article is reprinted from which issue?\nKeep it short and to the point.",
+      "gt": "Sept. - Oct. issue.",
+      "pred": "The American Journal of Clinical Nutrition",
+      "score": 0.0
+    },
+    {
+      "idx": 257,
+      "question": "What is the full form of ess?\nYour answer should be very brief.",
+      "gt": "Expanded Shredded Stems.",
+      "pred": "Expanded Stems",
+      "score": 0.5833333333333333
+    },
+    {
+      "idx": 258,
+      "question": "When is the Memorandum dated on ?\nGive a very brief answer.",
+      "gt": "5/21/87.",
+      "pred": "9/28/97",
+      "score": 0.5
+    },
+    {
+      "idx": 259,
+      "question": "What is the Manuscript Title?\nProvide a succinct answer.",
+      "gt": "Dosing and titration in neuropathic pain.",
+      "pred": "Doping and braking in neuromuscular pain",
+      "score": 0.6097560975609756
+    },
+    {
+      "idx": 260,
+      "question": "What is the date mentioned?\nGive a very brief answer.",
+      "gt": "September 20, 1985.",
+      "pred": "September 20, 1985",
+      "score": 0.9473684210526316
+    },
+    {
+      "idx": 261,
+      "question": "What is the name mentioned in the given card ?\nEnsure brevity in your answer. ",
+      "gt": "ROBERT E. SHANK.",
+      "pred": "Robert E. Shank, M.D.",
+      "score": 0.7619047619047619
+    },
+    {
+      "idx": 262,
+      "question": "What is the date mentioned in the given letter ?\nProvide a short and direct response.",
+      "gt": "Aug. 3, 1980.",
+      "pred": "Aug. 3, 82",
+      "score": 0.6923076923076923
+    },
+    {
+      "idx": 263,
+      "question": "What is the title of the document?\nProvide a succinct answer.",
+      "gt": "Posterolateral Surgical Approach.",
+      "pred": "Posterolateral Surgical Approach",
+      "score": 0.9696969696969697
+    },
+    {
+      "idx": 264,
+      "question": "What is the fullform of ARS?\nYour response must be concise.",
+      "gt": "Agricultural Research Service.",
+      "pred": "Agricultural Research Service",
+      "score": 0.9666666666666667
+    },
+    {
+      "idx": 265,
+      "question": "What is the study code ?\nGive a very brief answer.",
+      "gt": "PIN.",
+      "pred": "349",
+      "score": 0.0
+    },
+    {
+      "idx": 266,
+      "question": "What is the division number?\nMake the answer very short.",
+      "gt": "1229.",
+      "pred": "0704",
+      "score": 0.0
+    },
+    {
+      "idx": 267,
+      "question": "What is on the y-axis of the  graph?\nGive a very brief answer.",
+      "gt": "% PREVALENCE.",
+      "pred": "FREQUENCY",
+      "score": 0.0
+    },
+    {
+      "idx": 268,
+      "question": "When is the TMG Publication Management Meeting held?\nOffer a very short reply.",
+      "gt": "May 7, 2003.",
+      "pred": "May 7, 2003",
+      "score": 0.9166666666666666
+    },
+    {
+      "idx": 269,
+      "question": "What is the birth date ?\nYour answer should be very brief.",
+      "gt": "JUNE 30, 1926.",
+      "pred": "June 30, 1926",
+      "score": 0.9285714285714286
+    },
+    {
+      "idx": 270,
+      "question": "Which Airlines ticket is provided?\nKeep it short and to the point.",
+      "gt": "American.",
+      "pred": "American Airlines",
+      "score": 0.0
+    },
+    {
+      "idx": 271,
+      "question": "When is the Memorandum dated on ?\nYour answer should be compact.",
+      "gt": "May 17, 1976.",
+      "pred": "May 17, 1976",
+      "score": 0.9230769230769231
+    },
+    {
+      "idx": 272,
+      "question": "What is the name of the program ?\nYour response must be concise.",
+      "gt": "2003 Salem Field Marketing Program .",
+      "pred": "2003 Salem Field Marketing Program",
+      "score": 0.9444444444444444
+    },
+    {
+      "idx": 273,
+      "question": "Charles B. Broeg is the vice-president of which company?\nEnsure brevity in your answer. ",
+      "gt": "Revere Sugar Corporation.",
+      "pred": "Nabisco",
+      "score": 0.0
+    },
+    {
+      "idx": 274,
+      "question": "What is Attachment 2?\nKeep it short and to the point.",
+      "gt": "Authorized agent and point of delivery.",
+      "pred": "Authorized Agent and Point of Delivery",
+      "score": 0.9743589743589743
+    },
+    {
+      "idx": 275,
+      "question": "What is the account SIS# mentioned in the document?\nGive a very brief answer.",
+      "gt": "555334.",
+      "pred": "555334",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 276,
+      "question": "What date is honorarium dated for?\nMake the answer very short.",
+      "gt": "Jan., 1976.",
+      "pred": "Jan. 1, 1976",
+      "score": 0.75
+    },
+    {
+      "idx": 277,
+      "question": "What is the date mentioned in this document?\nEnsure brevity in your answer. ",
+      "gt": "9/30/68.",
+      "pred": "9/30/68",
+      "score": 0.875
+    },
+    {
+      "idx": 278,
+      "question": "Who is the Grower?\nYour answer should be compact.",
+      "gt": "Jim Waters.",
+      "pred": "Jim waters",
+      "score": 0.9090909090909091
+    },
+    {
+      "idx": 279,
+      "question": "How much is the idfc mutual fund as at 31.3.2012?\nYour answer should be compact.",
+      "gt": "500.00.",
+      "pred": "250.00",
+      "score": 0.5714285714285714
+    },
+    {
+      "idx": 280,
+      "question": "What is plotted in the x-axis ?\nEnsure brevity in your answer. ",
+      "gt": "Week.",
+      "pred": "Week",
+      "score": 0.8
+    },
+    {
+      "idx": 281,
+      "question": "What is the Total Current Fund Expenditures as % of GNP for 1975-76?\nYour answer should be very brief.",
+      "gt": "2.42.",
+      "pred": "2.42",
+      "score": 0.8
+    },
+    {
+      "idx": 282,
+      "question": "What is the central tenet of LCSA as per RECOMMENDATION?\nEnsure brevity in your answer. ",
+      "gt": "Greater transparency.",
+      "pred": "Transparency in the prioritization process is critical to enable the regulated community to understand the process and to build trust and confidence in the process.",
+      "score": 0.0
+    },
+    {
+      "idx": 283,
+      "question": "On which date nams meeting was conducted ?\nYour response must be concise.",
+      "gt": "September 19-23 , 2003.",
+      "pred": "September 12, 2003",
+      "score": 0.782608695652174
+    },
+    {
+      "idx": 284,
+      "question": "What is the Name mentioned in the top right of the document ?\nYour response must be concise.",
+      "gt": "H. W. Dahlberg.",
+      "pred": "W. E. Darby",
+      "score": 0.0
+    },
+    {
+      "idx": 285,
+      "question": "What is the amount of total drinkers mentioned ?\nGive a very brief answer.",
+      "gt": "3,027.",
+      "pred": "3,027",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 286,
+      "question": "How much amount in the voucher?\nMake the answer very short.",
+      "gt": "$7,560.00.",
+      "pred": "$76,500.00",
+      "score": 0.7
+    },
+    {
+      "idx": 287,
+      "question": "What is the total number of cartons sold in 1 week?\nYour answer should be very brief.",
+      "gt": "2,020.",
+      "pred": "2,020 cartons",
+      "score": 0.0
+    },
+    {
+      "idx": 288,
+      "question": "What is the main heading of document ?\nEnsure brevity in your answer. ",
+      "gt": "MARKETING RESEARCH PROPOSAL.",
+      "pred": "MARKETING RESEARCH PROPOSAL",
+      "score": 0.9642857142857143
+    },
+    {
+      "idx": 289,
+      "question": "Whose book is now available bound in leather?\nOffer a very short reply.",
+      "gt": "Francis robinson's.",
+      "pred": "Franco Rubini's",
+      "score": 0.631578947368421
+    },
+    {
+      "idx": 290,
+      "question": "Who  prepared this Advertisement  ?\nYour answer should be compact.",
+      "gt": "LongHaymesCarrLINTAS.",
+      "pred": "R.A. REYNOLDS TOBACCO CO.",
+      "score": 0.0
+    },
+    {
+      "idx": 291,
+      "question": "Which hotel is mentioned?\nYour response must be concise.",
+      "gt": "HOTEL DU PONT.",
+      "pred": "HOTEL BISTRO",
+      "score": 0.0
+    },
+    {
+      "idx": 292,
+      "question": "What are the calories for chemical anlysis of 2 day food composite?\nYour response must be concise.",
+      "gt": "1960.",
+      "pred": "2,423",
+      "score": 0.0
+    },
+    {
+      "idx": 293,
+      "question": "On which date, the fax is sent?\nProvide a short and direct response.",
+      "gt": "October 23, 1998.",
+      "pred": "10/10/2005",
+      "score": 0.0
+    },
+    {
+      "idx": 294,
+      "question": "What is the ID mentioned under 'Activity Report' heading?\nMake the answer very short.",
+      "gt": "ID:3369831289.",
+      "pred": "90000000",
+      "score": 0.0
+    },
+    {
+      "idx": 295,
+      "question": "What is the third dish in 8.LUNCHEON?\nMake the answer very short.",
+      "gt": "Margarine (1 pat).",
+      "pred": "CREAMY VEGETABLE SOUP",
+      "score": 0.0
+    },
+    {
+      "idx": 296,
+      "question": "What is the telephone number?\nKeep it short and to the point.",
+      "gt": "(212) 360-1797.",
+      "pred": "(212) 666-1777",
+      "score": 0.7333333333333334
+    },
+    {
+      "idx": 297,
+      "question": "What is the Page Number?\nMake the answer very short.",
+      "gt": "31.",
+      "pred": "1",
+      "score": 0.0
+    },
+    {
+      "idx": 298,
+      "question": "Nephew of arthur h bunker\nProvide a succinct answer.",
+      "gt": "John Bunker.",
+      "pred": "John Bunker",
+      "score": 0.9166666666666666
+    },
+    {
+      "idx": 299,
+      "question": "What is the value of N?\nOffer a terse response.",
+      "gt": "N = 438.",
+      "pred": "40",
+      "score": 0.0
+    },
+    {
+      "idx": 300,
+      "question": "What is the date of expiration date?\nYour answer should be very brief.",
+      "gt": "12/31/96.",
+      "pred": "12/31/96",
+      "score": 0.8888888888888888
+    },
+    {
+      "idx": 301,
+      "question": "What is the payee's name given in the voucher?\nYour response must be concise.",
+      "gt": "ROBERT E. SHANK, M.D.",
+      "pred": "Dr. Herbert L. Shank, M.D.",
+      "score": 0.7307692307692308
+    },
+    {
+      "idx": 302,
+      "question": "What is written within the company logo in bold letters?\nProvide a short and direct response.",
+      "gt": "ITC.",
+      "pred": "ITC",
+      "score": 0.75
+    },
+    {
+      "idx": 303,
+      "question": "Mention the page number at bottom right corner of the page ?\nProvide a short and direct response.",
+      "gt": "1.",
+      "pred": "1",
+      "score": 0.5
+    },
+    {
+      "idx": 304,
+      "question": "What is the R/A Number of the car?\nYour answer should be compact.",
+      "gt": "29544374.",
+      "pred": "92954374",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 305,
+      "question": "What is the Phone Number ?\nGive a very brief answer.",
+      "gt": "Ja 2-1400.",
+      "pred": "212-343-4000",
+      "score": 0.0
+    },
+    {
+      "idx": 306,
+      "question": "What is the date?\nProvide a short and direct response.",
+      "gt": "July 21, 1955.",
+      "pred": "July 24, 1995",
+      "score": 0.7857142857142857
+    },
+    {
+      "idx": 307,
+      "question": "What are the products added to base blend?\nProvide a short and direct response.",
+      "gt": "G7, G19, CRES, and SPS.",
+      "pred": "GT, G19, CRE5, and SPS",
+      "score": 0.8695652173913043
+    },
+    {
+      "idx": 308,
+      "question": "What is the date mentioned in the top of the document ?\nYour response must be concise.",
+      "gt": "October 15th, 1976.",
+      "pred": "October 15th, 1976",
+      "score": 0.9473684210526316
+    },
+    {
+      "idx": 309,
+      "question": "What is the amount of Zinc Chloride present in mineral calcium-fortified chewable lozenges as given in Example V?\nYour response must be concise.",
+      "gt": "31.3 mg.",
+      "pred": "3.13 g",
+      "score": 0.5
+    },
+    {
+      "idx": 310,
+      "question": "What are the dates scheduled for the meeting as mentioned in the given page ?\nYour response must be concise.",
+      "gt": "September 5-9, 1980.",
+      "pred": "Sept. 5-6, 1960",
+      "score": 0.6
+    },
+    {
+      "idx": 311,
+      "question": "WHAT IS THE TOTAL VALUE OF LEAFY GREEN VEGETABLES?\nEnsure brevity in your answer. ",
+      "gt": "273.",
+      "pred": "227",
+      "score": 0.0
+    },
+    {
+      "idx": 312,
+      "question": "What is written in the Letter Head ?\nProvide a succinct answer.",
+      "gt": "Certificate of analysis.",
+      "pred": "Certificate of Analysis",
+      "score": 0.9583333333333334
+    },
+    {
+      "idx": 313,
+      "question": "What is the Title of the Document ?\nProvide a succinct answer.",
+      "gt": "Nutrition reviews.",
+      "pred": "NUTRITION REVIEWS",
+      "score": 0.9444444444444444
+    },
+    {
+      "idx": 314,
+      "question": "What is the Page Number?\nYour response must be concise.",
+      "gt": "28.",
+      "pred": "28",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 315,
+      "question": "What is written in the letter head ?\nProvide a short and direct response.",
+      "gt": "Table I.",
+      "pred": "Table 1",
+      "score": 0.75
+    },
+    {
+      "idx": 316,
+      "question": "What is the contact number of phone for r.j. reynolds?\nYour answer should be compact.",
+      "gt": "303-799-0038.",
+      "pred": "303-799-2020",
+      "score": 0.6923076923076923
+    },
+    {
+      "idx": 317,
+      "question": "What is the title of this page?\nProvide a succinct answer.",
+      "gt": "Actos plan overview.",
+      "pred": "Actos Plan Overview",
+      "score": 0.95
+    },
+    {
+      "idx": 318,
+      "question": "What is the document about?\nProvide a short and direct response.",
+      "gt": "REQUEST FOR PAYMENT.",
+      "pred": "The document is a receipt for payment, detailing a transaction between DEMCO, INC. and VERDUNN.",
+      "score": 0.0
+    },
+    {
+      "idx": 319,
+      "question": "What is the first title in the document?\nProvide a succinct answer.",
+      "gt": "Republic of Lebanon.",
+      "pred": "Republic of Lebanon",
+      "score": 0.95
+    },
+    {
+      "idx": 320,
+      "question": "What is the number of pages in the fax including cover sheet?\nYour response must be concise.",
+      "gt": "3.",
+      "pred": "3",
+      "score": 0.5
+    },
+    {
+      "idx": 321,
+      "question": "When is the estimated delivery date for Phase 2 Test Module?\nYour answer should be compact.",
+      "gt": "September 22, 1999.",
+      "pred": "October 17, 1999",
+      "score": 0.5789473684210527
+    },
+    {
+      "idx": 322,
+      "question": "What is the date of dts?\nProvide a short and direct response.",
+      "gt": "2/21/00.",
+      "pred": "4/22/99",
+      "score": 0.0
+    },
+    {
+      "idx": 323,
+      "question": "What is the name of the foundation mentioned ?\nEnsure brevity in your answer. ",
+      "gt": "International sugar research foundation.",
+      "pred": "International Sugar Research Foundation, Inc.",
+      "score": 0.8888888888888888
+    },
+    {
+      "idx": 324,
+      "question": "What is the account number mentioned in the given page ?\nKeep it short and to the point.",
+      "gt": "011099130.",
+      "pred": "0112971710",
+      "score": 0.5
+    },
+    {
+      "idx": 325,
+      "question": "What is the name of the industry mentioned ?\nMake the answer very short.",
+      "gt": "American Brewing Industry.",
+      "pred": "AMERICAN BREWING INDUSTRY",
+      "score": 0.9615384615384616
+    },
+    {
+      "idx": 326,
+      "question": "What is the title of the given document?\nEnsure brevity in your answer. ",
+      "gt": "Schedule for japan air lines/hong kong project.",
+      "pred": "Schedule for Japan Air Lines/Hong Kong Project",
+      "score": 0.9787234042553191
+    },
+    {
+      "idx": 327,
+      "question": "What is the page number at top of the page?\nYour answer should be very brief.",
+      "gt": "2.",
+      "pred": "2",
+      "score": 0.5
+    },
+    {
+      "idx": 328,
+      "question": "In which date is the higher TAR rate shown in the graph?\nYour response must be concise.",
+      "gt": "4/11/94.",
+      "pred": "2000-05-01",
+      "score": 0.0
+    },
+    {
+      "idx": 329,
+      "question": "Which department does stare belongs to?\nEnsure brevity in your answer. ",
+      "gt": "Department of Nutrition.",
+      "pred": "Department of Nutrition",
+      "score": 0.9583333333333334
+    },
+    {
+      "idx": 330,
+      "question": "Who is the author of the 'WORKBOOK IN CLINICAL ELECTROCARDIOGRAPHY'?\nYour answer should be very brief.",
+      "gt": "Hyman M. Chernoff.",
+      "pred": "William J. Peper",
+      "score": 0.0
+    },
+    {
+      "idx": 331,
+      "question": "What is the Unit Price of the item 'Eye test chart' mentioned in 'Description'?\nYour answer should be compact.",
+      "gt": "38.25.",
+      "pred": "30.23",
+      "score": 0.5
+    },
+    {
+      "idx": 332,
+      "question": "What is the title of the table given?\nYour answer should be very brief.",
+      "gt": "Return Rates By Age and Sex.",
+      "pred": "Return Rates by Age and Sex",
+      "score": 0.9642857142857143
+    },
+    {
+      "idx": 333,
+      "question": "What is the title mentioned in 14.1?\nMake the answer very short.",
+      "gt": "Deaths occurred during hospitalization.",
+      "pred": "Deaths occurred during hospitalization",
+      "score": 0.9743589743589743
+    },
+    {
+      "idx": 334,
+      "question": "What are the flavors mentioned here?\nOffer a terse response.",
+      "gt": "Menthol, Exotics.",
+      "pred": "Menthol Exotics",
+      "score": 0.8823529411764706
+    },
+    {
+      "idx": 335,
+      "question": "What is the date mentioned in this document?\nOffer a terse response.",
+      "gt": "June 18, 1956.",
+      "pred": "June 14, 1956",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 336,
+      "question": "What is the date mentioned in the document?\nYour answer should be very brief.",
+      "gt": "July 1950.",
+      "pred": "1962",
+      "score": 0.0
+    },
+    {
+      "idx": 337,
+      "question": "What is the page no mentioned in this document?\nYour response must be concise.",
+      "gt": "23.",
+      "pred": "23",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 338,
+      "question": "What is the fax mentioned ?\nProvide a succinct answer.",
+      "gt": "06 6204 2244.",
+      "pred": "TAKEDA REDEVELOP H19156",
+      "score": 0.0
+    },
+    {
+      "idx": 339,
+      "question": "What is the document title?\nYour answer should be compact.",
+      "gt": "CMT 300 (Loudon, NH) 8/30/98.",
+      "pred": "CMT 300 (Loudon, NH) 5/5/98",
+      "score": 0.8620689655172413
+    },
+    {
+      "idx": 340,
+      "question": "What is the Page number ?\nOffer a very short reply.",
+      "gt": "Page 3.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 341,
+      "question": "What is the date mentioned in the top of the document ?\nMake the answer very short.",
+      "gt": "Tuesday, August 4.",
+      "pred": "Tuesday, August 4",
+      "score": 0.9444444444444444
+    },
+    {
+      "idx": 342,
+      "question": "What is the Program Name mentioned in this document?\nMake the answer very short.",
+      "gt": "Winston no bull 5 sweeps.",
+      "pred": "TOYOTA MOTOR CORPORATION",
+      "score": 0.0
+    },
+    {
+      "idx": 343,
+      "question": "Which year National Asthma Campaign conducted?\nOffer a very short reply.",
+      "gt": "1999.",
+      "pred": "1999",
+      "score": 0.8
+    },
+    {
+      "idx": 344,
+      "question": "What is heading of the document\nOffer a terse response.",
+      "gt": "WATER ANALYSIS.",
+      "pred": "WATER ANALYSIS",
+      "score": 0.9333333333333333
+    },
+    {
+      "idx": 345,
+      "question": "In which hospital does dr.lori mosca work ?\nMake the answer very short.",
+      "gt": "New York Presbyterian Hospital.",
+      "pred": "New York Presbyterian Hospital",
+      "score": 0.967741935483871
+    },
+    {
+      "idx": 346,
+      "question": "What is the Title of the document?\nMake the answer very short.",
+      "gt": "Preservatives and your Family.",
+      "pred": "Preservatives and your family...",
+      "score": 0.9375
+    },
+    {
+      "idx": 347,
+      "question": "What is the document title?\nMake the answer very short.",
+      "gt": "CONFIDENTIAL STATEMENT OF EMPLOYMENT AND FINANCIAL INTERESTS.",
+      "pred": "STATEMENT OF EMPLOYMENT AND FINANCIAL INTERESTS",
+      "score": 0.7704918032786885
+    },
+    {
+      "idx": 348,
+      "question": "What is the date of the issue?\nProvide a short and direct response.",
+      "gt": "31 jan 80.",
+      "pred": "21 JAN 01",
+      "score": 0.7
+    },
+    {
+      "idx": 349,
+      "question": "What is the date on the document?\nKeep it short and to the point.",
+      "gt": "10/2/81.",
+      "pred": "10/28/88",
+      "score": 0.625
+    },
+    {
+      "idx": 350,
+      "question": "What is the page number at bottom of the page?\nYour answer should be compact.",
+      "gt": "37.",
+      "pred": "37",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 351,
+      "question": "What is size group?\nYour response must be concise.",
+      "gt": "Decile 5.",
+      "pred": "Dec 5",
+      "score": 0.5555555555555556
+    },
+    {
+      "idx": 352,
+      "question": "What type of voucher is given here?\nYour answer should be compact.",
+      "gt": "TRAVEL EXPENSE VOUCHER.",
+      "pred": "TRAVEL EXPENSE VOUCHER",
+      "score": 0.9565217391304348
+    },
+    {
+      "idx": 353,
+      "question": "What is the name of the meeting ?\nYour answer should be very brief.",
+      "gt": "Board of directors meeting.",
+      "pred": "Houses of November 9 Meeting",
+      "score": 0.5
+    },
+    {
+      "idx": 354,
+      "question": "Which firm is mentioned at the top of the page?\nEnsure brevity in your answer. ",
+      "gt": "Maggs bros. ltd.",
+      "pred": "MAGGS BROS. LTD",
+      "score": 0.9375
+    },
+    {
+      "idx": 355,
+      "question": "What is the percentage increase by source of income of business from 1970-74 mentioned in the given graph ?\nOffer a terse response.",
+      "gt": "+13%.",
+      "pred": "4.1%",
+      "score": 0.0
+    },
+    {
+      "idx": 356,
+      "question": "Who's picture is shown in the newspaper?\nYour answer should be very brief.",
+      "gt": "DR. ELIZABETH WHELAN.",
+      "pred": "D. Eisen Hebrew",
+      "score": 0.0
+    },
+    {
+      "idx": 357,
+      "question": "Number of cartons of WINSTON BOX ?\nEnsure brevity in your answer. ",
+      "gt": "10.",
+      "pred": "10",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 358,
+      "question": "What time is the registration for the sessions done?\nYour response must be concise.",
+      "gt": "8:30 a.m.",
+      "pred": "8:30 a.m.",
+      "score": 1.0
+    },
+    {
+      "idx": 359,
+      "question": "Who is husband of jerry ?\nKeep it short and to the point.",
+      "gt": "DUDLEY, THOMAS H.",
+      "pred": "Joyce AILENE",
+      "score": 0.0
+    },
+    {
+      "idx": 360,
+      "question": "Where was the meeting held?\nOffer a very short reply.",
+      "gt": "Atlanta.",
+      "pred": "New York",
+      "score": 0.0
+    },
+    {
+      "idx": 361,
+      "question": "When is the memorandum dated?\nYour answer should be very brief.",
+      "gt": "March 24, 1958.",
+      "pred": "March 22, 1995",
+      "score": 0.7333333333333334
+    },
+    {
+      "idx": 362,
+      "question": "When is the certificate dated?\nProvide a short and direct response.",
+      "gt": "February 22, 1997.",
+      "pred": "February 22, 1992",
+      "score": 0.8888888888888888
+    },
+    {
+      "idx": 363,
+      "question": "What is this document about?\nYour answer should be very brief.",
+      "gt": "Nutrition reviews.",
+      "pred": "NUTRITION REVIEWS",
+      "score": 0.9444444444444444
+    },
+    {
+      "idx": 364,
+      "question": "Who is the Source?\nYour response must be concise.",
+      "gt": "Supermarket News.",
+      "pred": "Supermarket News",
+      "score": 0.9411764705882353
+    },
+    {
+      "idx": 365,
+      "question": "What is plotted in the x-axis ?\nGive a very brief answer.",
+      "gt": "Years.",
+      "pred": "Years",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 366,
+      "question": "What is the store name given in the document?\nOffer a very short reply.",
+      "gt": "Fry's food stores.",
+      "pred": "Erys Food Stores",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 367,
+      "question": "What is the heading at top of the page ?\nKeep it short and to the point.",
+      "gt": "Agenda.",
+      "pred": "-AGENDA-",
+      "score": 0.75
+    },
+    {
+      "idx": 368,
+      "question": "Mention the type of organization ?\nKeep it short and to the point.",
+      "gt": "Corporation.",
+      "pred": "Corporation",
+      "score": 0.9166666666666666
+    },
+    {
+      "idx": 369,
+      "question": "What is the title mentioned in this document?\nKeep it short and to the point.",
+      "gt": "CSF's and Marketing Objectives.",
+      "pred": "CSF's and Marketing Objectives",
+      "score": 0.967741935483871
+    },
+    {
+      "idx": 370,
+      "question": "What is the full form of FMI?\nMake the answer very short.",
+      "gt": "Food marketing institute.",
+      "pred": "Food Marketing Institute",
+      "score": 0.96
+    },
+    {
+      "idx": 371,
+      "question": "What is the Fullform of PTC ?\nGive a very brief answer.",
+      "gt": "Parametric Technology Corporation.",
+      "pred": "PTC stands for Public Technical Conference.",
+      "score": 0.0
+    },
+    {
+      "idx": 372,
+      "question": "What is the date on the document?\nOffer a very short reply.",
+      "gt": "January 17, 2002.",
+      "pred": "January 17, 2002",
+      "score": 0.9411764705882353
+    },
+    {
+      "idx": 373,
+      "question": "To whom this letter was written ?\nProvide a succinct answer.",
+      "gt": "Jim lyon.",
+      "pred": "Jim Irwin",
+      "score": 0.0
+    },
+    {
+      "idx": 374,
+      "question": "What is the number at top of the page ?\nKeep it short and to the point.",
+      "gt": "4.",
+      "pred": "*",
+      "score": 0.0
+    },
+    {
+      "idx": 375,
+      "question": "Which product was launched in four key markets by Godfrey phillips India after several tests?\nProvide a short and direct response.",
+      "gt": "Pan Vilas.",
+      "pred": "Dabur's 'Dabur Chawal'",
+      "score": 0.0
+    },
+    {
+      "idx": 376,
+      "question": "What is the RJR Brand?\nMake the answer very short.",
+      "gt": "Winston.",
+      "pred": "WINSTON",
+      "score": 0.875
+    },
+    {
+      "idx": 377,
+      "question": "In which city registered office is located ?\nYour response must be concise.",
+      "gt": "Kolkata.",
+      "pred": "Mumbai",
+      "score": 0.0
+    },
+    {
+      "idx": 378,
+      "question": "Which company's royalty payment form is this?\nProvide a succinct answer.",
+      "gt": "BIOMET, INC.",
+      "pred": "BIOMET, INC.",
+      "score": 1.0
+    },
+    {
+      "idx": 379,
+      "question": "To whom is this Document addressed to?\nMake the answer very short.",
+      "gt": "Our forsyth partner.",
+      "pred": "Our Foreyth Partner",
+      "score": 0.9
+    },
+    {
+      "idx": 380,
+      "question": "Who is the Host for the Saccharin for Public Service Programming?\nProvide a succinct answer.",
+      "gt": "RON JANUARY.",
+      "pred": "Merv Janes",
+      "score": 0.0
+    },
+    {
+      "idx": 381,
+      "question": "What is the date on the letter?\nGive a very brief answer.",
+      "gt": "May 24, 1957.",
+      "pred": "May 22, 1977",
+      "score": 0.7692307692307692
+    },
+    {
+      "idx": 382,
+      "question": "What is the total in 1937?\nMake the answer very short.",
+      "gt": "4,854,707.",
+      "pred": "4,588,707",
+      "score": 0.6
+    },
+    {
+      "idx": 383,
+      "question": "What is the amount of line rate for kansas dailies,including combinations ?\nProvide a short and direct response.",
+      "gt": "$5.79.",
+      "pred": "5.79",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 384,
+      "question": "What is the date?\nOffer a terse response.",
+      "gt": "1/4/96.",
+      "pred": "29-1-2006",
+      "score": 0.0
+    },
+    {
+      "idx": 385,
+      "question": "Who wins the battle on privacy issue?\nOffer a terse response.",
+      "gt": "MDs.",
+      "pred": "MDs",
+      "score": 0.75
+    },
+    {
+      "idx": 386,
+      "question": "What is the page no mentioned in this document?\nOffer a terse response.",
+      "gt": "2.",
+      "pred": "-2-",
+      "score": 0.0
+    },
+    {
+      "idx": 387,
+      "question": "What is the page number written on the bottom?\nYour response must be concise.",
+      "gt": "Page 12.",
+      "pred": "12",
+      "score": 0.0
+    },
+    {
+      "idx": 388,
+      "question": "What is the name in expense account?\nOffer a very short reply.",
+      "gt": "Dr. Robert E. Shank.",
+      "pred": "DR. ROBERT L. SHANK",
+      "score": 0.9
+    },
+    {
+      "idx": 389,
+      "question": "How many seasonal employees will lose those part time jobs around middle of february 1998?\nYour answer should be very brief.",
+      "gt": "200.",
+      "pred": "100",
+      "score": 0.5
+    },
+    {
+      "idx": 390,
+      "question": "What is the title of the document?\nYour response must be concise.",
+      "gt": "COLOR LEGEND.",
+      "pred": "OCCO COLOR LIST",
+      "score": 0.0
+    },
+    {
+      "idx": 391,
+      "question": "What is the Tracker for Marlboro?\nYour answer should be very brief.",
+      "gt": "26.5.",
+      "pred": "26.8",
+      "score": 0.6
+    },
+    {
+      "idx": 392,
+      "question": "What is the Title of the Document?\nProvide a short and direct response.",
+      "gt": "UCSD FULLY EXECUTED AWARD.",
+      "pred": "UDC PIIY PROJECT SUMMARY",
+      "score": 0.0
+    },
+    {
+      "idx": 393,
+      "question": "How many independents were used in this test?\nProvide a succinct answer.",
+      "gt": "Twenty four.",
+      "pred": "Twenty-four independents",
+      "score": 0.0
+    },
+    {
+      "idx": 394,
+      "question": "When was the meeting held ?\nProvide a short and direct response.",
+      "gt": "2/11/85.",
+      "pred": "2/11/75",
+      "score": 0.75
+    },
+    {
+      "idx": 395,
+      "question": "What is the emp. no. of john w brewer jr as mentioned in the given page ?\nProvide a succinct answer.",
+      "gt": "120000.",
+      "pred": "0000000000",
+      "score": 0.0
+    },
+    {
+      "idx": 396,
+      "question": "What is the value of coefficient of heat for eaton in the 1st body ?\nYour response must be concise.",
+      "gt": "1001.",
+      "pred": "833",
+      "score": 0.0
+    },
+    {
+      "idx": 397,
+      "question": "What is the Date?\nEnsure brevity in your answer. ",
+      "gt": "3/27/91.",
+      "pred": "6/26/97",
+      "score": 0.5
+    },
+    {
+      "idx": 398,
+      "question": "What is handwritten date on the document?\nEnsure brevity in your answer. ",
+      "gt": "10-6-72.",
+      "pred": "Aug 6, 1972",
+      "score": 0.0
+    },
+    {
+      "idx": 399,
+      "question": "What is the age mentioned in the given form ?\nProvide a short and direct response.",
+      "gt": "48 yrs.",
+      "pred": "42",
+      "score": 0.0
+    },
+    {
+      "idx": 400,
+      "question": "What is the date mentioned in this document?\nOffer a terse response.",
+      "gt": "Nov. 14, 1967.",
+      "pred": "Nov. 14, 1967",
+      "score": 0.9285714285714286
+    },
+    {
+      "idx": 401,
+      "question": "What is the mean value of viceroy smokers brand family in the years smoking ?\nMake the answer very short.",
+      "gt": "21.",
+      "pred": "21",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 402,
+      "question": "What is the date printed at the top of the document in small letters?\nMake the answer very short.",
+      "gt": "06/28/95.",
+      "pred": "05-20-90",
+      "score": 0.0
+    },
+    {
+      "idx": 403,
+      "question": "How much amount of a, i.u. nutrients present in milk as mentioned in the given form ?\nMake the answer very short.",
+      "gt": "1920.",
+      "pred": "1920",
+      "score": 0.8
+    },
+    {
+      "idx": 404,
+      "question": "What is the name written in the form ?\nKeep it short and to the point.",
+      "gt": "MARGARET OMAN.",
+      "pred": "MARCARET OMAN",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 405,
+      "question": "What is the date on the document?\nOffer a very short reply.",
+      "gt": "March 24, 2003.",
+      "pred": "10/10/2017",
+      "score": 0.0
+    },
+    {
+      "idx": 406,
+      "question": "What is the name of the person in the application?\nYour answer should be compact.",
+      "gt": "RObERT SCOTT KNORR.",
+      "pred": "Dorothy M. Carter",
+      "score": 0.0
+    },
+    {
+      "idx": 407,
+      "question": "What is the amount of check given in the letter ?\nOffer a terse response.",
+      "gt": "$5,000.00.",
+      "pred": "$ 55,000.00",
+      "score": 0.7272727272727273
+    },
+    {
+      "idx": 408,
+      "question": "Which company logo is seen ?\nYour response must be concise.",
+      "gt": "DePuy.",
+      "pred": "DePuy",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 409,
+      "question": "What is the name of heart association at top of the page?\nKeep it short and to the point.",
+      "gt": "American Heart Association.",
+      "pred": "Heart Association",
+      "score": 0.6296296296296297
+    },
+    {
+      "idx": 410,
+      "question": "What is title of the page?\nMake the answer very short.",
+      "gt": "What expenses are covered?.",
+      "pred": "What's Included",
+      "score": 0.0
+    },
+    {
+      "idx": 411,
+      "question": "What is the Title of the document?\nKeep it short and to the point.",
+      "gt": "Citizens' Commission.",
+      "pred": "CITIZENS' COMMISSION",
+      "score": 0.9523809523809523
+    },
+    {
+      "idx": 412,
+      "question": "What is the Family name of the applicant?\nEnsure brevity in your answer. ",
+      "gt": "Darby.",
+      "pred": "Billings",
+      "score": 0.0
+    },
+    {
+      "idx": 413,
+      "question": "Who is the editor of the upbeet magazine ?\nYour answer should be compact.",
+      "gt": "Mr. Larry L. McGhee.",
+      "pred": "Mr. Larry J. Nichols",
+      "score": 0.65
+    },
+    {
+      "idx": 414,
+      "question": "What is the date on the document?\nProvide a succinct answer.",
+      "gt": "December 17, 1974.",
+      "pred": "December 17, 1974",
+      "score": 0.9444444444444444
+    },
+    {
+      "idx": 415,
+      "question": "What is the number at top of the page ?\nOffer a very short reply.",
+      "gt": "16.",
+      "pred": "16",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 416,
+      "question": "What is the received date of this document?\nOffer a very short reply.",
+      "gt": "3/30/61.",
+      "pred": "3/30/61",
+      "score": 0.875
+    },
+    {
+      "idx": 417,
+      "question": "What is the date in the document?\nYour answer should be very brief.",
+      "gt": "August 14, 1979.",
+      "pred": "August 10, 1979",
+      "score": 0.875
+    },
+    {
+      "idx": 418,
+      "question": "What is the Trial ID Number?\nOffer a terse response.",
+      "gt": "97-020.",
+      "pred": "FPILO",
+      "score": 0.0
+    },
+    {
+      "idx": 419,
+      "question": "What is the Average for trial time 4:00?\nOffer a terse response.",
+      "gt": "147.8.",
+      "pred": "147.8",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 420,
+      "question": "What is the name of health association given ?\nEnsure brevity in your answer. ",
+      "gt": "American Heart Association.",
+      "pred": "AMERICAN HEART ASSOCIATION",
+      "score": 0.962962962962963
+    },
+    {
+      "idx": 421,
+      "question": "Who is the President & Scientific Director of National Vitamin Foundation?\nYour answer should be very brief.",
+      "gt": "Robert s. goodhart, m.d.",
+      "pred": "ROBERT S. GOODHART, M.D.",
+      "score": 1.0
+    },
+    {
+      "idx": 422,
+      "question": "What is the number at bottom left page?\nOffer a very short reply.",
+      "gt": "8.",
+      "pred": "1",
+      "score": 0.0
+    },
+    {
+      "idx": 423,
+      "question": "What is the date?\nEnsure brevity in your answer. ",
+      "gt": "November 2, 1956.",
+      "pred": "November 2, 1962",
+      "score": 0.8823529411764706
+    },
+    {
+      "idx": 424,
+      "question": "What is the subject of the memorandum?\nOffer a very short reply.",
+      "gt": "Great Western '70 Magazine.",
+      "pred": "Great Western '70 Magazine",
+      "score": 0.962962962962963
+    },
+    {
+      "idx": 425,
+      "question": "What is the phone number of the mike belniak?\nProvide a short and direct response.",
+      "gt": "508 435 8613.",
+      "pred": "508-454-8613",
+      "score": 0.6153846153846154
+    },
+    {
+      "idx": 426,
+      "question": "Which University is mentioned in the letter head?\nYour response must be concise.",
+      "gt": "The Johns Hopkins University.",
+      "pred": "The Johns Hopkins University",
+      "score": 0.9655172413793104
+    },
+    {
+      "idx": 427,
+      "question": "What does NOP stand for ?\nMake the answer very short.",
+      "gt": "NOW Offensive Plan.",
+      "pred": "non-ounce product",
+      "score": 0.0
+    },
+    {
+      "idx": 428,
+      "question": "What is represented by a bold line?\nMake the answer very short.",
+      "gt": "Canadian population.",
+      "pred": "Systolic Pressure",
+      "score": 0.0
+    },
+    {
+      "idx": 429,
+      "question": "What is the date of issue mentioned in the given form ?\nProvide a succinct answer.",
+      "gt": "15 SEP 80.",
+      "pred": "15 DEC 80",
+      "score": 0.7
+    },
+    {
+      "idx": 430,
+      "question": "What  is the letter about?\nYour answer should be compact.",
+      "gt": "About Beet Payments.",
+      "pred": "Best Payments",
+      "score": 0.6
+    },
+    {
+      "idx": 431,
+      "question": "What is the phone number ?\nProvide a succinct answer.",
+      "gt": "919-870-7743.",
+      "pred": "910-682-1010",
+      "score": 0.0
+    },
+    {
+      "idx": 432,
+      "question": "Who is the Executive Director of the Institute of Food Technologists?\nMake the answer very short.",
+      "gt": "Calvert Wiley.",
+      "pred": "James Lyons",
+      "score": 0.0
+    },
+    {
+      "idx": 433,
+      "question": "What is the title of Table 3 given in the document?\nEnsure brevity in your answer. ",
+      "gt": "ANALYTIC PROGRAMS FOR ACCESSING THE RETRIEVAL FILES.",
+      "pred": "Analytic Program for the Net-Enrollment File",
+      "score": 0.6153846153846154
+    },
+    {
+      "idx": 434,
+      "question": "Who is the Secretary?\nEnsure brevity in your answer. ",
+      "gt": "Reita Crossen.",
+      "pred": "Rita Cross",
+      "score": 0.7142857142857143
+    },
+    {
+      "idx": 435,
+      "question": "What is the net amount of honorarium?\nProvide a short and direct response.",
+      "gt": "100.00.",
+      "pred": "100.00",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 436,
+      "question": "What is the ALVAL Score mentioned in the document?\nEnsure brevity in your answer. ",
+      "gt": "3+4+3.",
+      "pred": "3424",
+      "score": 0.0
+    },
+    {
+      "idx": 437,
+      "question": "Who is a member of the dial corporation?\nYour response must be concise.",
+      "gt": "Robert E. Wilmoth.",
+      "pred": "Dial Corporation",
+      "score": 0.0
+    },
+    {
+      "idx": 438,
+      "question": "What is the title of position for jon vanderhoof ?\nMake the answer very short.",
+      "gt": "Principal investigator.",
+      "pred": "ASSISTANT PROFESSOR",
+      "score": 0.0
+    },
+    {
+      "idx": 439,
+      "question": "What is the name of the program ?\nGive a very brief answer.",
+      "gt": "Tobacco control program.",
+      "pred": "TOBACCO CONTROL PROGRAM",
+      "score": 0.9583333333333334
+    },
+    {
+      "idx": 440,
+      "question": "What is the heading at top of the page ?\nOffer a very short reply.",
+      "gt": "Method of or absence of advertising.",
+      "pred": "METHOD OF OR ABSENCE OF ADVERTISING",
+      "score": 0.9722222222222222
+    },
+    {
+      "idx": 441,
+      "question": "What is the title of the document?\nYour response must be concise.",
+      "gt": "Routing Slip.",
+      "pred": "Routing Slip",
+      "score": 0.9230769230769231
+    },
+    {
+      "idx": 442,
+      "question": "Who is the treasurer mentioned in the document ?\nOffer a terse response.",
+      "gt": "Dr. habil. w. klein.",
+      "pred": "Dr. Habib W. Klein",
+      "score": 0.85
+    },
+    {
+      "idx": 443,
+      "question": "What is the Cost of Phase I for January 1 - June 30, 1968?\nEnsure brevity in your answer. ",
+      "gt": "$10,650.",
+      "pred": "$10,650",
+      "score": 0.875
+    },
+    {
+      "idx": 444,
+      "question": "What is the date mentioned in the document ?\nOffer a very short reply.",
+      "gt": "January 26, 1978.",
+      "pred": "January 26, 1978",
+      "score": 0.9411764705882353
+    },
+    {
+      "idx": 445,
+      "question": "What is the ID Number?\nProvide a short and direct response.",
+      "gt": "0149.",
+      "pred": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "score": 0.0
+    },
+    {
+      "idx": 446,
+      "question": "What is the Objective of the document?\nOffer a very short reply.",
+      "gt": "Develop A KOOL KS Product That Is Superior To Newport Among KOOL KS Smokers.",
+      "pred": "Develop A KOOL KS Product That Is Superior To Newport Among KOOL KS Smokers",
+      "score": 0.9868421052631579
+    },
+    {
+      "idx": 447,
+      "question": "What is the figure number mentioned ?\nOffer a very short reply.",
+      "gt": "D.2.",
+      "pred": "8.2",
+      "score": 0.5
+    },
+    {
+      "idx": 448,
+      "question": "What is the document title?\nMake the answer very short.",
+      "gt": "2000 Inventory of Industry Voluntary Actions.",
+      "pred": "2000 Inventory Of Industry Voluntary Actions",
+      "score": 0.9777777777777777
+    },
+    {
+      "idx": 449,
+      "question": "Who is the Moderator?\nGive a very brief answer.",
+      "gt": "Prof. rashad sakr.",
+      "pred": "Prof. Reshma Sankar",
+      "score": 0.6842105263157895
+    },
+    {
+      "idx": 450,
+      "question": "When is the document dated?\nOffer a very short reply.",
+      "gt": "MARCH 1, 1961.",
+      "pred": "March 3, 1961",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 451,
+      "question": "What is the ID mentioned in the form?\nGive a very brief answer.",
+      "gt": "149.",
+      "pred": "Fup0214 #6",
+      "score": 0.0
+    },
+    {
+      "idx": 452,
+      "question": "What is the Procedure Note No?\nGive a very brief answer.",
+      "gt": "95-12.",
+      "pred": "95-12",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 453,
+      "question": "Who is the dean, washington university ?\nOffer a very short reply.",
+      "gt": "Edward w. dempsey.",
+      "pred": "Dr. Harold Aars",
+      "score": 0.0
+    },
+    {
+      "idx": 454,
+      "question": "What is the address of annual reviews inc.?\nYour answer should be very brief.",
+      "gt": "Palo Alto, Calif. 94306 USA.",
+      "pred": "10000 De Soto Ave., Suite 100, Irvine, CA 92618",
+      "score": 0.0
+    },
+    {
+      "idx": 455,
+      "question": "What is the date on the document?\nOffer a very short reply.",
+      "gt": "4/10/01.",
+      "pred": "4/18/01",
+      "score": 0.75
+    },
+    {
+      "idx": 456,
+      "question": "When is the document dated?\nEnsure brevity in your answer. ",
+      "gt": "December 11, 1962.",
+      "pred": "December 11, 1983",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 457,
+      "question": "What is the name of the meeting ?\nYour answer should be very brief.",
+      "gt": "Hazardous Materials Advisory Committee Meeting.",
+      "pred": "Hazardous Materials Committee Meeting",
+      "score": 0.7872340425531915
+    },
+    {
+      "idx": 458,
+      "question": "What is the name of health association given ?\nProvide a succinct answer.",
+      "gt": "The American Public Health Association.",
+      "pred": "THE AMERICAN PUBLIC HEALTH ASSOCIATION",
+      "score": 0.9743589743589743
+    },
+    {
+      "idx": 459,
+      "question": "What is the emp. no. of celeste amitin ?\nEnsure brevity in your answer. ",
+      "gt": "041744.",
+      "pred": "12345",
+      "score": 0.0
+    },
+    {
+      "idx": 460,
+      "question": "What is the page number at top of the page?\nOffer a very short reply.",
+      "gt": "3.",
+      "pred": "3",
+      "score": 0.5
+    },
+    {
+      "idx": 461,
+      "question": "In which state is stouffer's riverfront inn located ?\nProvide a short and direct response.",
+      "gt": "Missouri.",
+      "pred": "St. Louis, Missouri",
+      "score": 0.0
+    },
+    {
+      "idx": 462,
+      "question": "What is the date on the document?\nGive a very brief answer.",
+      "gt": "January 5, 1960.",
+      "pred": "January 5, 1960",
+      "score": 0.9375
+    },
+    {
+      "idx": 463,
+      "question": "What will be the final display in the program?\nYour response must be concise.",
+      "gt": "BUY2 GET1 FREE.",
+      "pred": "A BUY1 GET1 FREE on our Value priced brand of Doral.",
+      "score": 0.0
+    },
+    {
+      "idx": 464,
+      "question": "What is given in \"Other Designations\"?\nEnsure brevity in your answer. ",
+      "gt": "EPA REG NO: 54248-6.",
+      "pred": "EPA SARA Title III",
+      "score": 0.0
+    },
+    {
+      "idx": 465,
+      "question": "At what place the solvay conference in chemistry was held ?\nKeep it short and to the point.",
+      "gt": "Auditorium.",
+      "pred": "auditorium",
+      "score": 0.9090909090909091
+    },
+    {
+      "idx": 466,
+      "question": "What is the number at bottom right of the page?\nProvide a short and direct response.",
+      "gt": "79.",
+      "pred": "79",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 467,
+      "question": "What is the Case No.?\nOffer a terse response.",
+      "gt": "96-11651-PBS.",
+      "pred": "94-1161-PBS",
+      "score": 0.7692307692307692
+    },
+    {
+      "idx": 468,
+      "question": "What is the Contract No.?\nGive a very brief answer.",
+      "gt": "7162 00 00.",
+      "pred": "71802 00 00",
+      "score": 0.7272727272727273
+    },
+    {
+      "idx": 469,
+      "question": "What is the first title in the document?\nGive a very brief answer.",
+      "gt": "B-Grade Molasses.",
+      "pred": "B-GRADE MOLASSES",
+      "score": 0.9411764705882353
+    },
+    {
+      "idx": 470,
+      "question": "Which year is mentioned first in the x axis?\nYour answer should be compact.",
+      "gt": "1950.",
+      "pred": "1950",
+      "score": 0.8
+    },
+    {
+      "idx": 471,
+      "question": "Who is the Memorandum Address to ?\nMake the answer very short.",
+      "gt": "Miss Christine S. Wilson.",
+      "pred": "Mrs. Elizabeth n. Wilson",
+      "score": 0.0
+    },
+    {
+      "idx": 472,
+      "question": "What is the Fund Balances, end of year for Unrestricted current funds?\nYour response must be concise.",
+      "gt": "$18,985,593.",
+      "pred": "$1,049,999",
+      "score": 0.0
+    },
+    {
+      "idx": 473,
+      "question": "To whom is the fax sent?\nMake the answer very short.",
+      "gt": "LYNN.",
+      "pred": "LYNN",
+      "score": 0.8
+    },
+    {
+      "idx": 474,
+      "question": "Heading of the document\nYour response must be concise.",
+      "gt": "Domestic Product Development (cont'd.).",
+      "pred": "DOMESTIC PRODUCT DEVELOPMENT (cont-4)",
+      "score": 0.8974358974358975
+    },
+    {
+      "idx": 475,
+      "question": "What is the title of table 1?\nProvide a succinct answer.",
+      "gt": "Reliability Data.",
+      "pred": "RELIABILITY DATA",
+      "score": 0.9411764705882353
+    },
+    {
+      "idx": 476,
+      "question": "Who is the moderator of the Cosmetic Session?\nKeep it short and to the point.",
+      "gt": "Peter Barton Hutt, ESQ.",
+      "pred": "PETER BARTON, ESQ.",
+      "score": 0.782608695652174
+    },
+    {
+      "idx": 477,
+      "question": "What is the date on the document?\nProvide a short and direct response.",
+      "gt": "December, 1966.",
+      "pred": "1/14",
+      "score": 0.0
+    },
+    {
+      "idx": 478,
+      "question": "What is the Total?\nGive a very brief answer.",
+      "gt": "45,646.60.",
+      "pred": "45,464.60",
+      "score": 0.7
+    },
+    {
+      "idx": 479,
+      "question": "What is the date mentioned in the document?\nYour answer should be very brief.",
+      "gt": "Friday, August 10.",
+      "pred": "Friday, August 18",
+      "score": 0.8888888888888888
+    },
+    {
+      "idx": 480,
+      "question": "What is the designation of walter f. brueggemann?\nKeep it short and to the point.",
+      "gt": "Hospital Research Associate.",
+      "pred": "Hospital Research Associate",
+      "score": 0.9642857142857143
+    },
+    {
+      "idx": 481,
+      "question": "Who is the chief, special dietary foods branch sc-740, division of nutrition, bureau of science ?\nGive a very brief answer.",
+      "gt": "J. William Boehne.",
+      "pred": "J. W. Potts",
+      "score": 0.0
+    },
+    {
+      "idx": 482,
+      "question": "What is the Agenda number 2?\nKeep it short and to the point.",
+      "gt": "Advertising allowances.",
+      "pred": "Advertising allowances.",
+      "score": 1.0
+    },
+    {
+      "idx": 483,
+      "question": "What is the ID Number?\nGive a very brief answer.",
+      "gt": "20.",
+      "pred": "000000000",
+      "score": 0.0
+    },
+    {
+      "idx": 484,
+      "question": "What is the Total?\nYour answer should be compact.",
+      "gt": "42,282.62.",
+      "pred": "42,962.92",
+      "score": 0.6
+    },
+    {
+      "idx": 485,
+      "question": "What is the designation of dr. minerva belen-inciong ?\nOffer a terse response.",
+      "gt": "Executive Director.",
+      "pred": "deputy director",
+      "score": 0.631578947368421
+    },
+    {
+      "idx": 486,
+      "question": "From whom the mail was written ?\nYour answer should be very brief.",
+      "gt": "William J Darby.",
+      "pred": "William J Darby",
+      "score": 0.9375
+    },
+    {
+      "idx": 487,
+      "question": "What is the Page Number?\nProvide a succinct answer.",
+      "gt": "36.",
+      "pred": "16",
+      "score": 0.0
+    },
+    {
+      "idx": 488,
+      "question": "Who is sender?\nYour answer should be very brief.",
+      "gt": "Lori Mosca.",
+      "pred": "Ira Moresca",
+      "score": 0.0
+    },
+    {
+      "idx": 489,
+      "question": "What is the code for the sis#?\nEnsure brevity in your answer. ",
+      "gt": "599854.",
+      "pred": "598854",
+      "score": 0.7142857142857143
+    },
+    {
+      "idx": 490,
+      "question": "What is the document title?\nYour answer should be compact.",
+      "gt": "Public Voucher for Purchases and Services Other Than Personal.",
+      "pred": "Public Voucher for Purchases and Services Other Than Personal",
+      "score": 0.9838709677419355
+    },
+    {
+      "idx": 491,
+      "question": "What is the date on the document?\nGive a very brief answer.",
+      "gt": "August 18 1981.",
+      "pred": "August 18 1981",
+      "score": 0.9333333333333333
+    },
+    {
+      "idx": 492,
+      "question": "Mention \"AVERAGAE 1938-9 DELIVERIES, SHORT TONS, RAW VALUE\" of \"Beet Processors\"?\nProvide a succinct answer.",
+      "gt": "1,629,660.",
+      "pred": "$168,041.60",
+      "score": 0.0
+    },
+    {
+      "idx": 493,
+      "question": "Who is the secretary of Sub-panel 8?\nMake the answer very short.",
+      "gt": "Jan van Schilfgaarde.",
+      "pred": "Jen van Schiltigge",
+      "score": 0.6190476190476191
+    },
+    {
+      "idx": 494,
+      "question": "What is the Promotion #  mentioned in the document?\nYour answer should be very brief.",
+      "gt": "800362.",
+      "pred": "80226",
+      "score": 0.0
+    },
+    {
+      "idx": 495,
+      "question": "What is the cost of round trip ticket champaign to chicago ?\nYour answer should be very brief.",
+      "gt": "7.37.",
+      "pred": "7.37",
+      "score": 0.8
+    },
+    {
+      "idx": 496,
+      "question": "What is the date on the document?\nGive a very brief answer.",
+      "gt": "July 23, 1973.",
+      "pred": "July 23, 1973",
+      "score": 0.9285714285714286
+    },
+    {
+      "idx": 497,
+      "question": "What is the name of the university ?\nProvide a succinct answer.",
+      "gt": "Vanderbilt university.",
+      "pred": "Vanderbilt University",
+      "score": 0.9545454545454546
+    },
+    {
+      "idx": 498,
+      "question": "What is the value of carbohydrate (% total calories) in period 1 ?\nProvide a succinct answer.",
+      "gt": "50.",
+      "pred": "50",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 499,
+      "question": "How many meetings have K. Vaidyanath attended at the audit committee meetings during the financial year ?\nGive a very brief answer.",
+      "gt": "8.",
+      "pred": "1",
+      "score": 0.0
+    }
+  ]
+}

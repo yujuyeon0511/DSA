@@ -485,10 +485,14 @@ Phase 3: ADAT 구현 + 통합 ─────────────── ✅ 
 Phase 4: Full System (SCR) ────────────── ✅ 완료
   └→ Entropy regularization: Acc 0.6288, Halluc 20.0% (200-sample: 19.0%)
 
-Phase 5: Cross-Architecture + 논문 ────── ⬜ 예정
-  ├→ SFA → Qwen2.5-VL (SigLIP+Qwen) 적용
-  ├→ SFA → LLaVA-OV (CLIP+LLaMA) 적용
-  └→ 논문 작성
+Phase 5: 논문 작성 ───────────────────── ✅ 완료
+  └→ eccv2016submission.tex + egbib.bib (31 references)
+
+Phase 6: Multi-Benchmark 평가 ──────── ✅ 완료
+  ├→ DocVQA (ANLS): Baseline 0.536 → SFA 0.529
+  ├→ InfographicVQA (ANLS): Baseline 0.387 → SFA 0.385
+  ├→ DVQA (Exact Match): Baseline 0.410 → SFA 0.408
+  └→ FigureQA (Exact Match): Baseline 0.956 → SFA 0.956
 ```
 
 #### 📎 이 슬라이드에 포함할 자료
@@ -519,8 +523,8 @@ Phase 5: Cross-Architecture + 논문 ────── ⬜ 예정
 | 2/23~24 | SFA 학습 완료 + 후속 분석 | ✅ 완료 |
 | 2/24~25 | ADAT 구현 + SFA+ADAT 통합 | ✅ 완료 |
 | 2/25 | Full System (SCR) 학습 + 평가 | ✅ 완료 |
-| 2/27~28 | Cross-Architecture 실험 | ⬜ 예정 |
-| 3/1~ | 논문 작성 | ⬜ 예정 |
+| 2/25 | 논문 작성 | ✅ 완료 |
+| 2/25 | Multi-Benchmark 평가 (DocVQA, InfographicVQA, DVQA, FigureQA) | ✅ 완료 |
 
 #### 📎 이 슬라이드에 포함할 자료
 
@@ -565,9 +569,19 @@ Phase 5: Cross-Architecture + 논문 ────── ⬜ 예정
 | 27 | **SCR Hallucination 분석** | `experiments/results/08_scr/eval/hallucination.json` | Slide 11 |
 | 28 | **SCR ChartQA 상세 결과** | `experiments/results/08_scr/eval/chartqa_eval.json` | Slide 11 |
 
+| 29 | **Multi-Benchmark Summary** | `experiments/results/09_multi_benchmark/summary.json` | Slide 11 |
+| 30 | **Baseline DocVQA 결과** | `experiments/results/09_multi_benchmark/baseline_docvqa.json` | Slide 11 |
+| 31 | **SFA DocVQA 결과** | `experiments/results/09_multi_benchmark/sfa_docvqa.json` | Slide 11 |
+| 32 | **Baseline InfographicVQA 결과** | `experiments/results/09_multi_benchmark/baseline_infographic_vqa.json` | Slide 11 |
+| 33 | **SFA InfographicVQA 결과** | `experiments/results/09_multi_benchmark/sfa_infographic_vqa.json` | Slide 11 |
+| 34 | **Baseline DVQA 결과** | `experiments/results/09_multi_benchmark/baseline_dvqa.json` | Slide 11 |
+| 35 | **SFA DVQA 결과** | `experiments/results/09_multi_benchmark/sfa_dvqa.json` | Slide 11 |
+| 36 | **Baseline FigureQA 결과** | `experiments/results/09_multi_benchmark/baseline_figureqa.json` | Slide 11 |
+| 37 | **SFA FigureQA 결과** | `experiments/results/09_multi_benchmark/sfa_figureqa.json` | Slide 11 |
+
 ### ✅ 모든 주요 자료 완료
 
-> Phase 2~4 실험의 모든 Figure/Table이 완료되었습니다. (총 28개 자료)
+> Phase 2~6 실험의 모든 Figure/Table이 완료되었습니다. (총 37개 자료)
 
 ---
 

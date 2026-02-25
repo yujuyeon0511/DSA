@@ -1,0 +1,3511 @@
+{
+  "benchmark": "infographic_vqa",
+  "mode": "sfa_adat_scr",
+  "metric": "anls",
+  "num_samples": 500,
+  "skipped": 0,
+  "avg_score": 0.38508065033483263,
+  "elapsed_sec": 485.3,
+  "details": [
+    {
+      "idx": 0,
+      "question": "How many vessel hijacking attempts were reported in 2011 in Somalia according to the US Naval Intelligence 2014?\nWrite a very short answer.",
+      "gt": "139.",
+      "pred": "7",
+      "score": 0.0
+    },
+    {
+      "idx": 1,
+      "question": "What percentage of Americans does not celebrate Easter?\nAnswer briefly.",
+      "gt": "16.",
+      "pred": "16%",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 2,
+      "question": "How many people were tested for COVID-19 in Virginia?\nAnswer briefly.",
+      "gt": "58,354.",
+      "pred": "58,354",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 3,
+      "question": "What is the estimated secondary COVID-19 infections per case if self isolation is done within home for symptomatic cases?\nQuick response, please.",
+      "gt": "1.8.",
+      "pred": "1.6",
+      "score": 0.5
+    },
+    {
+      "idx": 4,
+      "question": "What is the number of photos uploaded on Instagram?\nShort answer required.",
+      "gt": "38,194.",
+      "pred": "3.2 Million",
+      "score": 0.0
+    },
+    {
+      "idx": 5,
+      "question": "What percentage of people can see reduced incidence in type 2 diabetes due to weight loss, 27%, 71% or 58%?\nAnswer briefly.",
+      "gt": "58%.",
+      "pred": "58%",
+      "score": 0.75
+    },
+    {
+      "idx": 6,
+      "question": "How many goals were played inside the box by Ronaldo as of June, 2013?\nShort answer required.",
+      "gt": "29.",
+      "pred": "85%",
+      "score": 0.0
+    },
+    {
+      "idx": 7,
+      "question": "What type of brush can be used for cleaning?\nKeep it brief.",
+      "gt": "Stiff, non-metallic, short-bristled brush.",
+      "pred": "A soft, non-metallic, short-bristled brush can be used for cleaning.",
+      "score": 0.5588235294117647
+    },
+    {
+      "idx": 8,
+      "question": "What is an anion that move towards the earth called?\nShort answer required.",
+      "gt": "STEP LEADERS.",
+      "pred": "STEP 2",
+      "score": 0.0
+    },
+    {
+      "idx": 9,
+      "question": "What strategy is essential to reduce the overall cigarette smoking in context of laws?\nShort answer required.",
+      "gt": "Implement smoke-free laws.",
+      "pred": "Tobacco smoke-free laws",
+      "score": 0.6153846153846154
+    },
+    {
+      "idx": 10,
+      "question": "How many public shooting incidents are listed in this image?\nBe succinct.",
+      "gt": "17.",
+      "pred": "17",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 11,
+      "question": "Which one of the following is not under the \"Formal\" category - regards, namaste, sincerely or thanks?\nConcise answer only.",
+      "gt": "Namaste.",
+      "pred": "namaste",
+      "score": 0.875
+    },
+    {
+      "idx": 12,
+      "question": "How many asylum seekers from Iran arrived in Australia by boat in 2012?\nBe succinct.",
+      "gt": "1317.",
+      "pred": "2,234",
+      "score": 0.0
+    },
+    {
+      "idx": 13,
+      "question": "What is the minimum age required to attend the survey of GfK?\nShort answer required.",
+      "gt": "16.",
+      "pred": "16",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 14,
+      "question": "By which year is the total global population estimated to cross 10 billion?\nBe succinct.",
+      "gt": "2060.",
+      "pred": "2057",
+      "score": 0.0
+    },
+    {
+      "idx": 15,
+      "question": "how many types of temperature ranges are shown\nGive a very brief answer.",
+      "gt": "3.",
+      "pred": "3",
+      "score": 0.5
+    },
+    {
+      "idx": 16,
+      "question": "What percentage of total ad spend in UK is for mobile ad in 2014?\nWrite a very short answer.",
+      "gt": "13.4%.",
+      "pred": "13.4%",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 17,
+      "question": "In which year Gregory Piatetsky-Shapiro arranged a knowledge discovery in the databases workshop?\nConcise answer only.",
+      "gt": "1989.",
+      "pred": "1989",
+      "score": 0.8
+    },
+    {
+      "idx": 18,
+      "question": "How many videos were viewed in youtube in 60 seconds?\nWrite a very short answer.",
+      "gt": "4.5 Million.",
+      "pred": "4.5 Million",
+      "score": 0.9166666666666666
+    },
+    {
+      "idx": 19,
+      "question": "What is the number of weakly average audience for news radio in 2015?\nWrite a very short answer.",
+      "gt": "36,812,258.",
+      "pred": "36,812,258",
+      "score": 0.9090909090909091
+    },
+    {
+      "idx": 20,
+      "question": "What % of total population of Central and Southern Africa think that vaccines are unsafe\nAnswer briefly.",
+      "gt": "23.",
+      "pred": "22%",
+      "score": 0.0
+    },
+    {
+      "idx": 21,
+      "question": "where was hottest summer 2.54 above average\nConcise answer only.",
+      "gt": "Victoria.",
+      "pred": "Queensland",
+      "score": 0.0
+    },
+    {
+      "idx": 22,
+      "question": "What spending has increased by 1.6% from 2016-2017?\nConcise answer only.",
+      "gt": "All personal consumption expenditure.",
+      "pred": "Personal consumption",
+      "score": 0.5405405405405406
+    },
+    {
+      "idx": 23,
+      "question": "Which is the French mathematicians image is displayed in the document, Albert Einstein, Blaise Pascal, or John Adams?\nKeep it brief.",
+      "gt": "Blaise Pascal.",
+      "pred": "Blaise Pascal",
+      "score": 0.9285714285714286
+    },
+    {
+      "idx": 24,
+      "question": "How much is the fund granted through business support schemes through Brent?\nGive a very brief answer.",
+      "gt": "£34.5m.",
+      "pred": "£34.5m",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 25,
+      "question": "What is the number of active COVID-19 cases reported in Ocean City as of April 8, 2020?\nGive a very brief answer.",
+      "gt": "7.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 26,
+      "question": "Which country has the second highest percentage of market shipments done through chrome in Qtr 3 2015?\nQuick response, please.",
+      "gt": "Canada.",
+      "pred": "Canada",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 27,
+      "question": "On which channel will the Raycom Media Camelia Bowl be broadcast?\nAnswer briefly.",
+      "gt": "ESPN.",
+      "pred": "ESPN",
+      "score": 0.8
+    },
+    {
+      "idx": 28,
+      "question": "What is the overall no of people who are infected in Vietnam?\nAnswer briefly.",
+      "gt": "1,036.",
+      "pred": "1,036",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 29,
+      "question": "which social media is second least used in India\nConcise answer only.",
+      "gt": "Photo sharing.",
+      "pred": "Facebook",
+      "score": 0.0
+    },
+    {
+      "idx": 30,
+      "question": "How many points are discussed?\nKeep it brief.",
+      "gt": "9.",
+      "pred": "6",
+      "score": 0.0
+    },
+    {
+      "idx": 31,
+      "question": "Who has the second-highest number of ODI matches?\nWrite a very short answer.",
+      "gt": "M Jayawardena.",
+      "pred": "Rahul Dravid",
+      "score": 0.0
+    },
+    {
+      "idx": 32,
+      "question": "What is the total homosexual population in the United States?\nKeep it brief.",
+      "gt": "8.8 Million.",
+      "pred": "3.6 Million",
+      "score": 0.75
+    },
+    {
+      "idx": 33,
+      "question": "How many points are under the heading \"Could china take this currency devaluation further\"?\nWrite a very short answer.",
+      "gt": "4.",
+      "pred": "2",
+      "score": 0.0
+    },
+    {
+      "idx": 34,
+      "question": "What is the total number of confirmed COVID-19 cases reported in the Maine state of U.S. as of 4/2/2020?\nKeep it brief.",
+      "gt": "376.",
+      "pred": "As of 4/2/2020, there were a total of 215,329 confirmed COVID-19 cases reported in the Maine state of U.S.",
+      "score": 0.0
+    },
+    {
+      "idx": 35,
+      "question": "In which age group most number of cases belong?\nAnswer briefly.",
+      "gt": "18-49.",
+      "pred": "0-27",
+      "score": 0.0
+    },
+    {
+      "idx": 36,
+      "question": "What is the 2009 federal budget estimate for veteran homelessness in the U.S.?\nShort answer required.",
+      "gt": "$400 Million.",
+      "pred": "$1.5 billion",
+      "score": 0.6153846153846154
+    },
+    {
+      "idx": 37,
+      "question": "How many countries have more than 40% portion of the total national population on Facebook?\nKeep it brief.",
+      "gt": "7.",
+      "pred": "2.0",
+      "score": 0.0
+    },
+    {
+      "idx": 38,
+      "question": "What percentage of MINUSMA troops were deployed in the North?\nShort answer required.",
+      "gt": "80%.",
+      "pred": "80%",
+      "score": 0.75
+    },
+    {
+      "idx": 39,
+      "question": "How many times Rajya Sabha met without Sachin Tendulkar?\nBe succinct.",
+      "gt": "173.",
+      "pred": "179",
+      "score": 0.5
+    },
+    {
+      "idx": 40,
+      "question": "How many adults were surveyed?\nWrite a very short answer.",
+      "gt": "8,259.",
+      "pred": "8,259",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 41,
+      "question": "How many places have 1000 or more cases?\nBe succinct.",
+      "gt": "7.",
+      "pred": "1",
+      "score": 0.0
+    },
+    {
+      "idx": 42,
+      "question": "What % of internet traffic do emails and streaming cover\nQuick response, please.",
+      "gt": "14.",
+      "pred": "79%",
+      "score": 0.0
+    },
+    {
+      "idx": 43,
+      "question": "What percent of senior citizens use smartphone in the UK?\nShort answer required.",
+      "gt": "9%.",
+      "pred": "42%",
+      "score": 0.0
+    },
+    {
+      "idx": 44,
+      "question": "What percentage has more than 5 employees\nConcise answer only.",
+      "gt": "6.",
+      "pred": "34%",
+      "score": 0.0
+    },
+    {
+      "idx": 45,
+      "question": "which year has the spend been second lowest\nBe succinct.",
+      "gt": "2000.",
+      "pred": "2000",
+      "score": 0.8
+    },
+    {
+      "idx": 46,
+      "question": "What is the average annual rent in AED for a 2BR apartment in Jebel Ali Village?\nWrite a very short answer.",
+      "gt": "85.",
+      "pred": "18,000",
+      "score": 0.0
+    },
+    {
+      "idx": 47,
+      "question": "Which country in Latin America has largest sovereign spread?\nConcise answer only.",
+      "gt": "Mexico.",
+      "pred": "Mexico",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 48,
+      "question": "How many steps lead to a vaccine to be available?\nConcise answer only.",
+      "gt": "5.",
+      "pred": "5",
+      "score": 0.5
+    },
+    {
+      "idx": 49,
+      "question": "What percent of children in Tanzania are not affected by multidimensional poverty?\nConcise answer only.",
+      "gt": "26%.",
+      "pred": "26%",
+      "score": 0.75
+    },
+    {
+      "idx": 50,
+      "question": "What percentage of job seekers registered with Disability Employment Services are on Disability Support Pension in Australia in 2012?\nQuick response, please.",
+      "gt": "18.9%.",
+      "pred": "70.50%",
+      "score": 0.0
+    },
+    {
+      "idx": 51,
+      "question": "who is the prime minister of Iraq?\nWrite a very short answer.",
+      "gt": "Haider Al-Abadi.",
+      "pred": "Haider al-Abadi",
+      "score": 0.9375
+    },
+    {
+      "idx": 52,
+      "question": "What were the three operations waged against Iraq?\nWrite a very short answer.",
+      "gt": "Operation desert shield, operation desert storm, operation desert Sabre.",
+      "pred": "Operation Desert Shield, Operation Desert Storm, Operation Desert Sabre",
+      "score": 0.9861111111111112
+    },
+    {
+      "idx": 53,
+      "question": "How many games has Kobe Bryant played in his NBA career?\nKeep it brief.",
+      "gt": "1346.",
+      "pred": "1346",
+      "score": 0.8
+    },
+    {
+      "idx": 54,
+      "question": "How much is the federal funding for Arts & Humanities?\nQuick response, please.",
+      "gt": "$250 MILLLION.",
+      "pred": "0.03%",
+      "score": 0.0
+    },
+    {
+      "idx": 55,
+      "question": "Who is the policy maker of Charles Bean?\nWrite a very short answer.",
+      "gt": "Olivier Blanchard.",
+      "pred": "R. E. Frank",
+      "score": 0.0
+    },
+    {
+      "idx": 56,
+      "question": "What percent of people believe that Child Sexual Abuse is a major issue?\nShort answer required.",
+      "gt": "92%.",
+      "pred": "92%",
+      "score": 0.75
+    },
+    {
+      "idx": 57,
+      "question": "What is the indoor ski area of Ski Dubai?\nShort answer required.",
+      "gt": "22,500M.",
+      "pred": "22,500m of snow",
+      "score": 0.0
+    },
+    {
+      "idx": 58,
+      "question": "Which states had more active high school girls?\nShort answer required.",
+      "gt": "States with p.e. requirements.",
+      "pred": "PE requirements, high school girls services states",
+      "score": 0.0
+    },
+    {
+      "idx": 59,
+      "question": "Which color is used to represent Rock Island New-blue, yellow, red or white?\nShort answer required.",
+      "gt": "Red.",
+      "pred": "red",
+      "score": 0.75
+    },
+    {
+      "idx": 60,
+      "question": "Which year has the third lowest number of female entrants?\nWrite a very short answer.",
+      "gt": "2000.",
+      "pred": "2008",
+      "score": 0.6
+    },
+    {
+      "idx": 61,
+      "question": "What is the current unexplained infant death rate in the UK for live births?\nKeep it brief.",
+      "gt": "1 per 3,845.",
+      "pred": "3,845 per year",
+      "score": 0.0
+    },
+    {
+      "idx": 62,
+      "question": "When did WHO report the first case outside china?\nBe succinct.",
+      "gt": "Jan. 13.",
+      "pred": "Jan. 13",
+      "score": 0.875
+    },
+    {
+      "idx": 63,
+      "question": "What is written inside the image of the smart phone?\nAnswer briefly.",
+      "gt": "Digital Policing Vision for the Future.",
+      "pred": "Digital Policing Vision and Plan",
+      "score": 0.641025641025641
+    },
+    {
+      "idx": 64,
+      "question": "What did Tim Duncan win in 1998\nConcise answer only.",
+      "gt": "NBA Rookie of the year award.",
+      "pred": "NBA Finals MVP",
+      "score": 0.0
+    },
+    {
+      "idx": 65,
+      "question": "How many wins for India?\nBe succinct.",
+      "gt": "6.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 66,
+      "question": "What is the difference between the case reported in Harris and Dallas counties?\nConcise answer only.",
+      "gt": "6677.",
+      "pred": "10,000",
+      "score": 0.0
+    },
+    {
+      "idx": 67,
+      "question": "What percentage of millennial's do their all kind of surfing through phone?\nGive a very brief answer.",
+      "gt": "45%.",
+      "pred": "90%",
+      "score": 0.0
+    },
+    {
+      "idx": 68,
+      "question": "How many hospital beds are there in total including licensed, ICU and staffed beds?\nGive a very brief answer.",
+      "gt": "53.",
+      "pred": "30",
+      "score": 0.0
+    },
+    {
+      "idx": 69,
+      "question": "Who watches more of OUTtv?\nWrite a very short answer.",
+      "gt": "Male.",
+      "pred": "women",
+      "score": 0.0
+    },
+    {
+      "idx": 70,
+      "question": "what is the difference between military spending of Germany and Italy in billion dollars?\nWrite a very short answer.",
+      "gt": "15.6.",
+      "pred": "10",
+      "score": 0.0
+    },
+    {
+      "idx": 71,
+      "question": "What percentage of flood related deaths are by drowning in a vehicle?\nWrite a very short answer.",
+      "gt": "32%.",
+      "pred": "32%",
+      "score": 0.75
+    },
+    {
+      "idx": 72,
+      "question": "What is the estimated Australian population as on April 2017?\nConcise answer only.",
+      "gt": "24.415 million.",
+      "pred": "24.415 million",
+      "score": 0.9333333333333333
+    },
+    {
+      "idx": 73,
+      "question": "which has higher energy efficiency - egg or milk?\nConcise answer only.",
+      "gt": "Milk.",
+      "pred": "egg",
+      "score": 0.0
+    },
+    {
+      "idx": 74,
+      "question": "Which quarters were considered in the consumer confidence\nWrite a very short answer.",
+      "gt": "Q2, Q3.",
+      "pred": "Q2 and Q3",
+      "score": 0.0
+    },
+    {
+      "idx": 75,
+      "question": "What is the color of heading text -white or black?\nWrite a very short answer.",
+      "gt": "White.",
+      "pred": "black",
+      "score": 0.0
+    },
+    {
+      "idx": 76,
+      "question": "What is the percentage increase of users in India who order food online through mobile phones?\nWrite a very short answer.",
+      "gt": "52%.",
+      "pred": "4%",
+      "score": 0.0
+    },
+    {
+      "idx": 77,
+      "question": "What is the total health spending per person (U.S. dollars) in U.S. in the year 2015?\nGive a very brief answer.",
+      "gt": "$9,451.",
+      "pred": "$9,451",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 78,
+      "question": "Which is the fourth most popular phishing email?\nQuick response, please.",
+      "gt": "Important recall notice.",
+      "pred": "IT Helpdesk: Mailbox Quota Reached",
+      "score": 0.0
+    },
+    {
+      "idx": 79,
+      "question": "Which professional sports league has generated the highest revenue?\nShort answer required.",
+      "gt": "NFL.",
+      "pred": "NFL",
+      "score": 0.75
+    },
+    {
+      "idx": 80,
+      "question": "What is the percentage of the population in the age group of 60+ and 15-59, taken together?\nQuick response, please.",
+      "gt": "55.1%.",
+      "pred": "90.9%",
+      "score": 0.0
+    },
+    {
+      "idx": 81,
+      "question": "Which is the opinion which has second highest no of votes?\nGive a very brief answer.",
+      "gt": "A few more weeks.",
+      "pred": "A few more months",
+      "score": 0.6470588235294117
+    },
+    {
+      "idx": 82,
+      "question": "What percent of men own half of all the stocks in the US?\nBe succinct.",
+      "gt": "50%.",
+      "pred": "50%",
+      "score": 0.75
+    },
+    {
+      "idx": 83,
+      "question": "When was modern medical alert system with a live operator was introduced\nKeep it brief.",
+      "gt": "1980s.",
+      "pred": "1980s",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 84,
+      "question": "Which factor does equally influences people to like their favorite NFL team as winning record of the team?\nGive a very brief answer.",
+      "gt": "Like the city they are in.",
+      "pred": "Winning record of the team",
+      "score": 0.0
+    },
+    {
+      "idx": 85,
+      "question": "What is the Foreign Direct Investment from Netherlands?\nGive a very brief answer.",
+      "gt": "35.",
+      "pred": "55",
+      "score": 0.0
+    },
+    {
+      "idx": 86,
+      "question": "How many people were affected by the MERS virus globally as of  November 2013 since the onset?\nConcise answer only.",
+      "gt": "160.",
+      "pred": "68",
+      "score": 0.0
+    },
+    {
+      "idx": 87,
+      "question": "What is the rule when a batsmen gets out?\nAnswer briefly.",
+      "gt": "Social distancing should be maintained during wicket celebrations.",
+      "pred": "Handshake to the ball at any time, before play and every 6 over at all times",
+      "score": 0.0
+    },
+    {
+      "idx": 88,
+      "question": "What percentage of people undergoing drug treatment are women?\nGive a very brief answer.",
+      "gt": "27%.",
+      "pred": "27%",
+      "score": 0.75
+    },
+    {
+      "idx": 89,
+      "question": "Who made the most number of mentions about women's rights in print media, men, women, or organizations?\nQuick response, please.",
+      "gt": "52.",
+      "pred": "women",
+      "score": 0.0
+    },
+    {
+      "idx": 90,
+      "question": "Which teams did the golden state warriors beat out\nAnswer briefly.",
+      "gt": "New orleans pelicans, memphis grizzlies.",
+      "pred": "Rockets, Grizzlies, Timberwolves, Jazz, Trailblazers",
+      "score": 0.0
+    },
+    {
+      "idx": 91,
+      "question": "How many people are shown in the infographic?\nQuick response, please.",
+      "gt": "6.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 92,
+      "question": "How many students took online courses  in 2009\nBe succinct.",
+      "gt": "60440000.",
+      "pred": "6.1 million students",
+      "score": 0.0
+    },
+    {
+      "idx": 93,
+      "question": "What is the difference between the prediction of homes needed in 20 years?\nBe succinct.",
+      "gt": "119300.",
+      "pred": "199,300",
+      "score": 0.5714285714285714
+    },
+    {
+      "idx": 94,
+      "question": "What percentage of plastic waste are incinerated?\nGive a very brief answer.",
+      "gt": "12%.",
+      "pred": "12%",
+      "score": 0.75
+    },
+    {
+      "idx": 95,
+      "question": "What percentage of trans youth reported self esteem are with supportive parents?\nShort answer required.",
+      "gt": "64%.",
+      "pred": "64%",
+      "score": 0.75
+    },
+    {
+      "idx": 96,
+      "question": "What color represents \"global disease challenges\" in the infographic purple, blue or yellow?\nKeep it brief.",
+      "gt": "Blue.",
+      "pred": "Blue",
+      "score": 0.8
+    },
+    {
+      "idx": 97,
+      "question": "What is the number written on the head of the cow\nShort answer required.",
+      "gt": "1/10.",
+      "pred": "2000",
+      "score": 0.0
+    },
+    {
+      "idx": 98,
+      "question": "What percentage of data shows that Covid-19 is not at all affecting the ability to produce administrative data statistics of Central and Sub-Saharan Africa - more than 50 or less than 50?\nWrite a very",
+      "gt": "Less than 50.",
+      "pred": "More than 50",
+      "score": 0.6153846153846154
+    },
+    {
+      "idx": 99,
+      "question": "Which is the most actively exploited malware family in covid-19 phishing campaigns?\nQuick response, please.",
+      "gt": "AgentTesla.",
+      "pred": "AgentTesla",
+      "score": 0.9090909090909091
+    },
+    {
+      "idx": 100,
+      "question": "What percentage of companies outsources their content marketing in 2011?\nQuick response, please.",
+      "gt": "55%.",
+      "pred": "50%",
+      "score": 0.5
+    },
+    {
+      "idx": 101,
+      "question": "What percentage of the Irish people are not obese according to the Irish health survey in 2015?\nKeep it brief.",
+      "gt": "47%.",
+      "pred": "47%",
+      "score": 0.75
+    },
+    {
+      "idx": 102,
+      "question": "How many active clinical trials are there in Manitoba?\nKeep it brief.",
+      "gt": "499.",
+      "pred": "10",
+      "score": 0.0
+    },
+    {
+      "idx": 103,
+      "question": "What is the brand name of the sensing device shown in the image, Amazon, Philips, or WeMo?\nQuick response, please.",
+      "gt": "Philips.",
+      "pred": "Philips",
+      "score": 0.875
+    },
+    {
+      "idx": 104,
+      "question": "What went down by 0.3% on 15th September?\nKeep it brief.",
+      "gt": "Retail sales.",
+      "pred": "Home prices",
+      "score": 0.0
+    },
+    {
+      "idx": 105,
+      "question": "How many don't are mentioned  in this infographic image?\nAnswer briefly.",
+      "gt": "1.",
+      "pred": "1",
+      "score": 0.5
+    },
+    {
+      "idx": 106,
+      "question": "What is the fourth level of autism mentioned?\nKeep it brief.",
+      "gt": "Childhood disintegrative disorder.",
+      "pred": "Childhood孤独症谱系障碍",
+      "score": 0.0
+    },
+    {
+      "idx": 107,
+      "question": "How many times the word 82 appeared in this infographics?\nGive a very brief answer.",
+      "gt": "1.",
+      "pred": "1",
+      "score": 0.5
+    },
+    {
+      "idx": 108,
+      "question": "In which year Info graphics got a good reach after so many years of Ups and Downs??\nGive a very brief answer.",
+      "gt": "2010.",
+      "pred": "2010",
+      "score": 0.8
+    },
+    {
+      "idx": 109,
+      "question": "what do we use to interact with AI daily\nWrite a very short answer.",
+      "gt": "Siri Apple, Alexa (Amazon), Watson (IBM).",
+      "pred": "Siri, Alexa, and Watson",
+      "score": 0.0
+    },
+    {
+      "idx": 110,
+      "question": "Other than letter writing, what are the other ideas to get creative\nQuick response, please.",
+      "gt": "Bushwalks, lego, movies.",
+      "pred": "Cooking, drawing, painting, dancing, or making a craft",
+      "score": 0.0
+    },
+    {
+      "idx": 111,
+      "question": "What is the percentage of females?\nQuick response, please.",
+      "gt": "43.2%.",
+      "pred": "43.2%",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 112,
+      "question": "How many Monorails are there in America?\nBe succinct.",
+      "gt": "16.",
+      "pred": "15",
+      "score": 0.0
+    },
+    {
+      "idx": 113,
+      "question": "How many sixes were scored by MDT Kamini  in India-South Africa test match on Nov 16, 2014?\nKeep it brief.",
+      "gt": "1.",
+      "pred": "1",
+      "score": 0.5
+    },
+    {
+      "idx": 114,
+      "question": "Who constitutes majority of Latinos in the US?\nConcise answer only.",
+      "gt": "Mexican.",
+      "pred": "MEXICAN",
+      "score": 0.875
+    },
+    {
+      "idx": 115,
+      "question": "What percentage of new hires are not women?\nShort answer required.",
+      "gt": "47%.",
+      "pred": "46%",
+      "score": 0.5
+    },
+    {
+      "idx": 116,
+      "question": "Which job had the most growth during 2010-2020?\nGive a very brief answer.",
+      "gt": "REGISTERED NURSE.",
+      "pred": "Nursing,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,助产士,",
+      "score": 0.0
+    },
+    {
+      "idx": 117,
+      "question": "What is stated second as example of face mask labelling issue?\nQuick response, please.",
+      "gt": "Misleading product descriptions.",
+      "pred": "\"Fairtrade\"",
+      "score": 0.0
+    },
+    {
+      "idx": 118,
+      "question": "How many symptoms are shown in the image?\nConcise answer only.",
+      "gt": "6.",
+      "pred": "6",
+      "score": 0.5
+    },
+    {
+      "idx": 119,
+      "question": "Which year did Australia earn maximum in tourism?\nBe succinct.",
+      "gt": "2018.",
+      "pred": "2018",
+      "score": 0.8
+    },
+    {
+      "idx": 120,
+      "question": "Which country is projected to have the highest tablets and e-books penetration in 2012?\nConcise answer only.",
+      "gt": "Korea.",
+      "pred": "China",
+      "score": 0.0
+    },
+    {
+      "idx": 121,
+      "question": "What was the number of British armed forces in 1918?\nQuick response, please.",
+      "gt": "4,000,000.",
+      "pred": "205,850",
+      "score": 0.0
+    },
+    {
+      "idx": 122,
+      "question": "How many active daily users in Pinterest\nBe succinct.",
+      "gt": "3.5 million.",
+      "pred": "3.5 million",
+      "score": 0.9166666666666666
+    },
+    {
+      "idx": 123,
+      "question": "Which city has second highest antibody estimate?\nBe succinct.",
+      "gt": "London.",
+      "pred": "London",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 124,
+      "question": "How many times did the US House of Representatives vote on choice-related issues in 2010?\nBe succinct.",
+      "gt": "1.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 125,
+      "question": "Which is the second type of personal data as given in the infographic?\nBe succinct.",
+      "gt": "Mental.",
+      "pred": "genetic",
+      "score": 0.0
+    },
+    {
+      "idx": 126,
+      "question": "Which famous landmark is mentioned?\nShort answer required.",
+      "gt": "THE EMPIRE STATE BUILDING.",
+      "pred": "The Empire State Building",
+      "score": 0.9615384615384616
+    },
+    {
+      "idx": 127,
+      "question": "What percentage of people are not concerned about social disruption?\nConcise answer only.",
+      "gt": "29%.",
+      "pred": "68%",
+      "score": 0.0
+    },
+    {
+      "idx": 128,
+      "question": "What are the different type of connections of internet of things technology?\nBe succinct.",
+      "gt": "Human to human, device to human, device to device.",
+      "pred": "Cellular, Wi-Fi, Bluetooth, NFC, RFID, Z-Wave, Zigbee, WiZnet, Z-Wave, Zigbee, WiZnet, Z-Wave, Zigbee, WiZnet, Z-Wave, Zigbee, WiZnet, Z-Wave, Zigbee, WiZnet, Z-Wave, Zigbee, WiZnet, Z-Wave, Zigbee, WiZnet, Z-Wave, Zigbee, WiZnet, Z-Wave, Zigbee, WiZnet, Z-Wave, Zigbee, WiZnet, Z-Wave, Zigbee",
+      "score": 0.0
+    },
+    {
+      "idx": 129,
+      "question": "Which among given metropolitan areas has the highest population growth?\nBe succinct.",
+      "gt": "Calgary.",
+      "pred": "Vancouver",
+      "score": 0.0
+    },
+    {
+      "idx": 130,
+      "question": "How many countries in Northern region of Africa are likely to face absolute scarcity of water?\nWrite a very short answer.",
+      "gt": "3.",
+      "pred": "10",
+      "score": 0.0
+    },
+    {
+      "idx": 131,
+      "question": "Out of the total tests, how many were negative?\nKeep it brief.",
+      "gt": "28,879.",
+      "pred": "26,297",
+      "score": 0.0
+    },
+    {
+      "idx": 132,
+      "question": "What percentage of feature films released by a major studio in the last five years were not directed by women?\nGive a very brief answer.",
+      "gt": "95.3%.",
+      "pred": "95.4%",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 133,
+      "question": "Which all are the cities in Canada with fast growth?\nQuick response, please.",
+      "gt": "Kelowna, Saskatoon, Regina.",
+      "pred": "Kelowna, Saskatoon, Regina",
+      "score": 0.962962962962963
+    },
+    {
+      "idx": 134,
+      "question": "How many females are affected by diabetes\nKeep it brief.",
+      "gt": "3.6%.",
+      "pred": "3.6%",
+      "score": 0.8
+    },
+    {
+      "idx": 135,
+      "question": "How much of outside money will be spent on campaigning\nBe succinct.",
+      "gt": "$508 million.",
+      "pred": "$500 Million",
+      "score": 0.8461538461538461
+    },
+    {
+      "idx": 136,
+      "question": "What is the GDP of the United States?\nAnswer briefly.",
+      "gt": "18,124.70.",
+      "pred": "18,124.70",
+      "score": 0.9
+    },
+    {
+      "idx": 137,
+      "question": "What percentage of Australians donate goods to charities?\nGive a very brief answer.",
+      "gt": "59%.",
+      "pred": "13%",
+      "score": 0.0
+    },
+    {
+      "idx": 138,
+      "question": "How many symptoms are shown in the image?\nAnswer briefly.",
+      "gt": "5.",
+      "pred": "5",
+      "score": 0.5
+    },
+    {
+      "idx": 139,
+      "question": "What is the existing home sale in 2016, 5.3-5.4M, 1.5-2.0M, or 1.25-1.35M?\nKeep it brief.",
+      "gt": "5.3-5.4M.",
+      "pred": "The existing home sale in 2016 is 5.3-5.4M.",
+      "score": 0.0
+    },
+    {
+      "idx": 140,
+      "question": "What is the minimum age?\nBe succinct.",
+      "gt": "2.0.",
+      "pred": "2.0",
+      "score": 0.75
+    },
+    {
+      "idx": 141,
+      "question": "According to the survey what is the second most considerable drawback while moving to Ireland?\nBe succinct.",
+      "gt": "Cost of living.",
+      "pred": "Climate",
+      "score": 0.0
+    },
+    {
+      "idx": 142,
+      "question": "Which data plan of Netzero costs free every month?\nBe succinct.",
+      "gt": "200mb.",
+      "pred": "200mb",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 143,
+      "question": "How much protein is in the chicken?\nQuick response, please.",
+      "gt": "2.5 lb.",
+      "pred": "2.5 lb",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 144,
+      "question": "Which illnesses have fatigue as common symptoms?\nShort answer required.",
+      "gt": "SEASONAL FLU, COVID-19.",
+      "pred": "SEASONAL FLU, COVID-19",
+      "score": 0.9565217391304348
+    },
+    {
+      "idx": 145,
+      "question": "What is the starting salary of a police officer in UK?\nQuick response, please.",
+      "gt": "£23k.",
+      "pred": "£23k",
+      "score": 0.8
+    },
+    {
+      "idx": 146,
+      "question": "how many malls have been mentioned here\nGive a very brief answer.",
+      "gt": "4.",
+      "pred": "2",
+      "score": 0.0
+    },
+    {
+      "idx": 147,
+      "question": "Which workers are protected from hiring bias?\nAnswer briefly.",
+      "gt": "Heterosexual.",
+      "pred": "LGBT workers",
+      "score": 0.0
+    },
+    {
+      "idx": 148,
+      "question": "In which all years the percentage of children's books is about people of color?\nShort answer required.",
+      "gt": "1996, 1998, 2012.",
+      "pred": "1994-2012",
+      "score": 0.0
+    },
+    {
+      "idx": 149,
+      "question": "What is the distance specified for physical distancing?\nBe succinct.",
+      "gt": "6 FEET.",
+      "pred": "1.5m",
+      "score": 0.0
+    },
+    {
+      "idx": 150,
+      "question": "Which year saw a political head send the first email?\nBe succinct.",
+      "gt": "1976.",
+      "pred": "1971",
+      "score": 0.6
+    },
+    {
+      "idx": 151,
+      "question": "What is the third physical activity mentioned that helps to manage anxiety?\nWrite a very short answer.",
+      "gt": "Dance.",
+      "pred": "Yoga",
+      "score": 0.0
+    },
+    {
+      "idx": 152,
+      "question": "Which NFL Team came in third among the top 5 teams on hotel room revenue?\nBe succinct.",
+      "gt": "Chicago Bears.",
+      "pred": "New York Jets",
+      "score": 0.0
+    },
+    {
+      "idx": 153,
+      "question": "Which are was the fourth most preferred area of residence in Dubai?\nKeep it brief.",
+      "gt": "Dubai Silicon Oasis.",
+      "pred": "JLT",
+      "score": 0.0
+    },
+    {
+      "idx": 154,
+      "question": "How many of the females report their supervisors are male?\nGive a very brief answer.",
+      "gt": "8 in 10.",
+      "pred": "22%",
+      "score": 0.0
+    },
+    {
+      "idx": 155,
+      "question": "What is the difference between the GDP growth of Ireland in 2017 and 2018?\nAnswer briefly.",
+      "gt": "-0.7%.",
+      "pred": "0.2%",
+      "score": 0.5
+    },
+    {
+      "idx": 156,
+      "question": "What process does the question mark imply\nKeep it brief.",
+      "gt": "Define the problem.",
+      "pred": "The question mark in the image implies the \"Define the Problem\" stage in the design process. This stage is crucial as it involves identifying and understanding the problem that needs to be solved. It sets the foundation for the entire design process by clearly defining the objectives and requirements of the project.",
+      "score": 0.0
+    },
+    {
+      "idx": 157,
+      "question": "How many rings in the Olympic logo\nKeep it brief.",
+      "gt": "5.",
+      "pred": "5",
+      "score": 0.5
+    },
+    {
+      "idx": 158,
+      "question": "How many hundreds scored by Sachin and Kohli together after 146 one-day international?\nAnswer briefly.",
+      "gt": "32.",
+      "pred": "32",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 159,
+      "question": "Which mask offers the highest protection against bacteria?\nWrite a very short answer.",
+      "gt": "N95.",
+      "pred": "N95",
+      "score": 0.75
+    },
+    {
+      "idx": 160,
+      "question": "Which method of payment is preferable?\nConcise answer only.",
+      "gt": "Contactless payment.",
+      "pred": "contactless payment",
+      "score": 0.95
+    },
+    {
+      "idx": 161,
+      "question": "What is written inside the logo of Oklahoma City Thunder\nGive a very brief answer.",
+      "gt": "Thunder DKC.",
+      "pred": "OKC",
+      "score": 0.0
+    },
+    {
+      "idx": 162,
+      "question": "How many choose not to reach out to a crisis support service in a crisis?\nConcise answer only.",
+      "gt": "71%.",
+      "pred": "71%",
+      "score": 0.75
+    },
+    {
+      "idx": 163,
+      "question": "Which country's abortion laws were changed in May 2018?\nBe succinct.",
+      "gt": "Ireland.",
+      "pred": "Ireland",
+      "score": 0.875
+    },
+    {
+      "idx": 164,
+      "question": "What is the total number of confirmed COVID-19 cases reported in the CARPHA Member States as of July 1, 2020?\nBe succinct.",
+      "gt": "8,589.",
+      "pred": "10,357,725",
+      "score": 0.0
+    },
+    {
+      "idx": 165,
+      "question": "Which are the Genes originating from the Tree Root?\nGive a very brief answer.",
+      "gt": "Gene A, Gene B.",
+      "pred": "Gene A, Gene B, Gene C, Gene D",
+      "score": 0.0
+    },
+    {
+      "idx": 166,
+      "question": "What percentage of American students are proficient in their eight grade's science standards?\nQuick response, please.",
+      "gt": "29%.",
+      "pred": "13%",
+      "score": 0.0
+    },
+    {
+      "idx": 167,
+      "question": "What percent are senior citizens according to the pie chart?\nGive a very brief answer.",
+      "gt": "25%.",
+      "pred": "25%",
+      "score": 0.75
+    },
+    {
+      "idx": 168,
+      "question": "How many economic regions mentioned in this infographic?\nShort answer required.",
+      "gt": "3.",
+      "pred": "3",
+      "score": 0.5
+    },
+    {
+      "idx": 169,
+      "question": "How many gowns have been shipped\nAnswer briefly.",
+      "gt": "17.0 million.",
+      "pred": "93.0 million",
+      "score": 0.7692307692307692
+    },
+    {
+      "idx": 170,
+      "question": "What percent of people use smartphones while eating?\nWrite a very short answer.",
+      "gt": "48%.",
+      "pred": "40%",
+      "score": 0.5
+    },
+    {
+      "idx": 171,
+      "question": "What was the cost of immigration detention for the year 2013?\nShort answer required.",
+      "gt": "$2,050,545,000.",
+      "pred": "$2,050,545,000",
+      "score": 0.9333333333333333
+    },
+    {
+      "idx": 172,
+      "question": "What was the GVA for IT, software and games sector in 2016?\nGive a very brief answer.",
+      "gt": "34,704.",
+      "pred": "34,704",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 173,
+      "question": "How many calories 8 oz of crickets and steak constitutes?\nKeep it brief.",
+      "gt": "914.",
+      "pred": "324",
+      "score": 0.0
+    },
+    {
+      "idx": 174,
+      "question": "Which country has second highest internet speed among first ten countries?\nGive a very brief answer.",
+      "gt": "Sweden.",
+      "pred": "Sweden",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 175,
+      "question": "What is the difference between the case counts of males and females in the age group of 60-69?\nQuick response, please.",
+      "gt": "43.",
+      "pred": "10",
+      "score": 0.0
+    },
+    {
+      "idx": 176,
+      "question": "What is the percentage of British and Aussies following cricket on Facebook?\nAnswer briefly.",
+      "gt": "3%.",
+      "pred": "11%",
+      "score": 0.0
+    },
+    {
+      "idx": 177,
+      "question": "What number is written on the T shirt\nShort answer required.",
+      "gt": "6.",
+      "pred": "6",
+      "score": 0.5
+    },
+    {
+      "idx": 178,
+      "question": "Which gender have been more affected by Covid-19\nWrite a very short answer.",
+      "gt": "Female.",
+      "pred": "Female",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 179,
+      "question": "What is the inverse percentage of rapid city localities who carry graduation or post-graduation?\nBe succinct.",
+      "gt": "70.7.",
+      "pred": "70.7",
+      "score": 0.8
+    },
+    {
+      "idx": 180,
+      "question": "in which year was the skateboard the longest\nAnswer briefly.",
+      "gt": "1964.",
+      "pred": "1970",
+      "score": 0.0
+    },
+    {
+      "idx": 181,
+      "question": "How many actions are at low risk?\nBe succinct.",
+      "gt": "5.",
+      "pred": "5",
+      "score": 0.5
+    },
+    {
+      "idx": 182,
+      "question": "What percent of UK coffee outlets are independents?\nQuick response, please.",
+      "gt": "36.3%.",
+      "pred": "44%",
+      "score": 0.0
+    },
+    {
+      "idx": 183,
+      "question": "How many tips are mentioned to improve mental health?\nKeep it brief.",
+      "gt": "4.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 184,
+      "question": "How many mining locations are shown in the map ?\nConcise answer only.",
+      "gt": "7.",
+      "pred": "7",
+      "score": 0.5
+    },
+    {
+      "idx": 185,
+      "question": "What percentage of the Asia Pacific and North America constitutes the global Facebook Population, taken together?\nConcise answer only.",
+      "gt": "53%.",
+      "pred": "44%",
+      "score": 0.0
+    },
+    {
+      "idx": 186,
+      "question": "How many batteries are used in a microphone?\nAnswer briefly.",
+      "gt": "2.",
+      "pred": "32",
+      "score": 0.0
+    },
+    {
+      "idx": 187,
+      "question": "Which is the second most used Easter sweet?\nKeep it brief.",
+      "gt": "Easter Bunny.",
+      "pred": "Eggs",
+      "score": 0.0
+    },
+    {
+      "idx": 188,
+      "question": "Which agency is doing an interview about CARE on TVA in Quebec?\nQuick response, please.",
+      "gt": "CARE CANADA.",
+      "pred": "CARE CANADA",
+      "score": 0.9166666666666666
+    },
+    {
+      "idx": 189,
+      "question": "What are the factors that affect happiness around the world?\nGive a very brief answer.",
+      "gt": "A sense of community, frequent community celebrations.",
+      "pred": "The factors that affect happiness around the world include a sense of community and frequent community activities.",
+      "score": 0.0
+    },
+    {
+      "idx": 190,
+      "question": "What is the expected rise in bird deaths due to turbines in 2030 from the current figure?\nConcise answer only.",
+      "gt": "560,000.",
+      "pred": "20,000",
+      "score": 0.625
+    },
+    {
+      "idx": 191,
+      "question": "Which are the three locations of most dangerous roads ?\nConcise answer only.",
+      "gt": "Summit of Death, Darien Gap, Atacama Desert.",
+      "pred": "Summit of Death, Darien Gap, Atacama Desert",
+      "score": 0.9772727272727273
+    },
+    {
+      "idx": 192,
+      "question": "What is the percentage difference in contribution between Japan and the UK to the UN peacekeeping budget?\nAnswer briefly.",
+      "gt": "3.9%.",
+      "pred": "2.5%",
+      "score": 0.0
+    },
+    {
+      "idx": 193,
+      "question": "Calculate the difference between Hospice providers in 2010 and 2006?\nQuick response, please.",
+      "gt": "650.",
+      "pred": "1,000",
+      "score": 0.0
+    },
+    {
+      "idx": 194,
+      "question": "How many official and working languages in United Nations?\nQuick response, please.",
+      "gt": "6.",
+      "pred": "6",
+      "score": 0.5
+    },
+    {
+      "idx": 195,
+      "question": "What is the second-largest difficulty faced by women entrepreneurs?\nWrite a very short answer.",
+      "gt": "Lack of Mentors & role models.",
+      "pred": "Lack of funding",
+      "score": 0.0
+    },
+    {
+      "idx": 196,
+      "question": "which continent is the least populous?\nWrite a very short answer.",
+      "gt": "Oceania.",
+      "pred": "Oceania",
+      "score": 0.875
+    },
+    {
+      "idx": 197,
+      "question": "How many states have banned Sunday spirits sales?\nAnswer briefly.",
+      "gt": "12.",
+      "pred": "40",
+      "score": 0.0
+    },
+    {
+      "idx": 198,
+      "question": "what percentage people do not know they have diabetes\nBe succinct.",
+      "gt": "25.",
+      "pred": "10%",
+      "score": 0.0
+    },
+    {
+      "idx": 199,
+      "question": "What percentage of charities are meeting the full needs of the people they assist?\nBe succinct.",
+      "gt": "37%.",
+      "pred": "37%",
+      "score": 0.75
+    },
+    {
+      "idx": 200,
+      "question": "As of February 24, how many deaths were reported in Italy?\nShort answer required.",
+      "gt": "3.",
+      "pred": "3",
+      "score": 0.5
+    },
+    {
+      "idx": 201,
+      "question": "Which industries will face an \"increased demand\" due to an increase in population in 2050?\nWrite a very short answer.",
+      "gt": "Food, fiber, fuel.",
+      "pred": "food and fiber",
+      "score": 0.0
+    },
+    {
+      "idx": 202,
+      "question": "Which place has highest average monthly cost of childcare?\nGive a very brief answer.",
+      "gt": "Washington, D.C.",
+      "pred": "New York",
+      "score": 0.0
+    },
+    {
+      "idx": 203,
+      "question": "Who has the highest world rank in batting-Ravichandran Ashwin or Murali Vijay?\nGive a very brief answer.",
+      "gt": "Murali Vijay.",
+      "pred": "Murali Vijay",
+      "score": 0.9230769230769231
+    },
+    {
+      "idx": 204,
+      "question": "Which color is used to represent Western Pacific-green, red, orange, or yellow?\nWrite a very short answer.",
+      "gt": "Orange.",
+      "pred": "red",
+      "score": 0.0
+    },
+    {
+      "idx": 205,
+      "question": "How many employed in women-owned businesses?\nQuick response, please.",
+      "gt": "7.7 million.",
+      "pred": "7.1M",
+      "score": 0.0
+    },
+    {
+      "idx": 206,
+      "question": "What percent of jobseekers do not have a social networking profile?\nAnswer briefly.",
+      "gt": "12%.",
+      "pred": "12%",
+      "score": 0.75
+    },
+    {
+      "idx": 207,
+      "question": "Which is the top rated area in Dubai according to the service market survey over 1400 residents?\nGive a very brief answer.",
+      "gt": "Motor City.",
+      "pred": "Motor City",
+      "score": 0.9090909090909091
+    },
+    {
+      "idx": 208,
+      "question": "What is the number of confirmed cases of COVID-19 reported globally as of May 18, 2020?\nConcise answer only.",
+      "gt": "4,713,620.",
+      "pred": "4,713,620",
+      "score": 0.9
+    },
+    {
+      "idx": 209,
+      "question": "How many social media network icons are shown in this infographic?\nWrite a very short answer.",
+      "gt": "6.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 210,
+      "question": "How many people are working in the U.S. labor force in February 2020?\nConcise answer only.",
+      "gt": "165 MILLION.",
+      "pred": "165 million",
+      "score": 0.9166666666666666
+    },
+    {
+      "idx": 211,
+      "question": "Which country has highest death rate?\nQuick response, please.",
+      "gt": "Ecuador.",
+      "pred": "Mexico",
+      "score": 0.0
+    },
+    {
+      "idx": 212,
+      "question": "What percent of the Trump supporters in 2016 Elections are more likely to be unemployed?\nBe succinct.",
+      "gt": "82%.",
+      "pred": "82%",
+      "score": 0.75
+    },
+    {
+      "idx": 213,
+      "question": "How many elective surgeries are performed on an average day in AIHW?\nAnswer briefly.",
+      "gt": "6,000.",
+      "pred": "6,000",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 214,
+      "question": "Which social media tool is the least used by men, Twitter, Instagram, or Pinterest?\nWrite a very short answer.",
+      "gt": "Pinterest.",
+      "pred": "Pinterest",
+      "score": 0.9
+    },
+    {
+      "idx": 215,
+      "question": "What are the expected enhanced features of Communication technologies?\nConcise answer only.",
+      "gt": "Accelerate expansion, Enable remote operation, embrace automation.",
+      "pred": "Accelerate expansion, Enable remote operation, Embrace 5G",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 216,
+      "question": "What is the average cost of bottled water in Australia per litre?\nGive a very brief answer.",
+      "gt": "$2.61.",
+      "pred": "$2.61",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 217,
+      "question": "Which side/part of the brain is considered as System 2 Thinking?\nBe succinct.",
+      "gt": "Left.",
+      "pred": "Left",
+      "score": 0.8
+    },
+    {
+      "idx": 218,
+      "question": "How many countries have less than 500 million population?\nBe succinct.",
+      "gt": "11.",
+      "pred": "10",
+      "score": 0.0
+    },
+    {
+      "idx": 219,
+      "question": "What is the number of facebook followers of EPL as of 10 August 2012?\nAnswer briefly.",
+      "gt": "1,679,400.",
+      "pred": "1679400",
+      "score": 0.7
+    },
+    {
+      "idx": 220,
+      "question": "What is reason 1 for reassesing your population health strategy\nQuick response, please.",
+      "gt": "Not earning incentives.",
+      "pred": "Not Earning Incentives",
+      "score": 0.9565217391304348
+    },
+    {
+      "idx": 221,
+      "question": "What percentage of people resides in Dubai do not have health insurance?\nConcise answer only.",
+      "gt": "9.",
+      "pred": "9",
+      "score": 0.5
+    },
+    {
+      "idx": 222,
+      "question": "Which age group of Australians have a credit card debt with an average balance of $5000?\nKeep it brief.",
+      "gt": "65-74.",
+      "pred": "Australians aged 35-44 have a credit card debt with an average balance of $5000.",
+      "score": 0.0
+    },
+    {
+      "idx": 223,
+      "question": "How many messages came for Aaron Rodgers on Feb 1?\nWrite a very short answer.",
+      "gt": "1,457.",
+      "pred": "5,846",
+      "score": 0.0
+    },
+    {
+      "idx": 224,
+      "question": "In Syria, how many children are at the risk of being undernourished?\nQuick response, please.",
+      "gt": "2 million.",
+      "pred": "6.8 million",
+      "score": 0.6363636363636364
+    },
+    {
+      "idx": 225,
+      "question": "What is the food price change of fruit and vegetables, taken together?\nShort answer required.",
+      "gt": "57.7%.",
+      "pred": "63.2%",
+      "score": 0.0
+    },
+    {
+      "idx": 226,
+      "question": "How many recreational purposes are in this infographic?\nKeep it brief.",
+      "gt": "5.",
+      "pred": "5",
+      "score": 0.5
+    },
+    {
+      "idx": 227,
+      "question": "How many tips are given in this infographic to prevent COVID-19?\nWrite a very short answer.",
+      "gt": "6.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 228,
+      "question": "How many working days were lost due to labour disputes in 1984?\nConcise answer only.",
+      "gt": "27 million.",
+      "pred": "28",
+      "score": 0.0
+    },
+    {
+      "idx": 229,
+      "question": "Which region had the highest average yearly real GDP growth in the period 2009-2013?\nWrite a very short answer.",
+      "gt": "Turkey.",
+      "pred": "Baltics",
+      "score": 0.0
+    },
+    {
+      "idx": 230,
+      "question": "What percentage of newspaper revenue is from advertising and circulation, taken together?\nWrite a very short answer.",
+      "gt": "90%.",
+      "pred": "95%",
+      "score": 0.5
+    },
+    {
+      "idx": 231,
+      "question": "In which risk category of COVID-19 does 'grocery shopping' belong to?\nQuick response, please.",
+      "gt": "Low / Medium.",
+      "pred": "Low / Medium",
+      "score": 0.9230769230769231
+    },
+    {
+      "idx": 232,
+      "question": "Percentage of Children from which country use social networking sites the most?\nConcise answer only.",
+      "gt": "Denmark.",
+      "pred": "US",
+      "score": 0.0
+    },
+    {
+      "idx": 233,
+      "question": "Which country is listed in the infographic, India, USA or Tanzania?\nBe succinct.",
+      "gt": "Tanzania.",
+      "pred": "Tanzania",
+      "score": 0.8888888888888888
+    },
+    {
+      "idx": 234,
+      "question": "What are the total migrants in North America and Europe at mid-year 2019?\nConcise answer only.",
+      "gt": "140.9 million.",
+      "pred": "142.2 million",
+      "score": 0.7857142857142857
+    },
+    {
+      "idx": 235,
+      "question": "What is increase in percentage of skilled women in workforce in 2004, 28%, 46%, or 23%?\nKeep it brief.",
+      "gt": "46%.",
+      "pred": "The increase in the percentage of skilled women in the workforce in 2004 is 46%.",
+      "score": 0.0
+    },
+    {
+      "idx": 236,
+      "question": "what is the colour in which the states are written, yellow or red?\nQuick response, please.",
+      "gt": "Yellow.",
+      "pred": "yellow",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 237,
+      "question": "Which party has lesser percent of seats in 2011 compared to 2007?\nShort answer required.",
+      "gt": "Liberal democrats.",
+      "pred": "New Labour",
+      "score": 0.0
+    },
+    {
+      "idx": 238,
+      "question": "what has been the spend on domestic tourism?\nKeep it brief.",
+      "gt": "$57.9 billion.",
+      "pred": "The spend on domestic tourism is $57.9 billion.",
+      "score": 0.0
+    },
+    {
+      "idx": 239,
+      "question": "How many scenarios are in this infographic?\nKeep it brief.",
+      "gt": "3.",
+      "pred": "3",
+      "score": 0.5
+    },
+    {
+      "idx": 240,
+      "question": "What percentage of covid patients in Arizona are females as of 4/12/2020?\nBe succinct.",
+      "gt": "53%.",
+      "pred": "53%",
+      "score": 0.75
+    },
+    {
+      "idx": 241,
+      "question": "How many hexagons have been divided into two equal parts?\nQuick response, please.",
+      "gt": "3.",
+      "pred": "3",
+      "score": 0.5
+    },
+    {
+      "idx": 242,
+      "question": "What is the name of the disease that is transmitted between species?\nKeep it brief.",
+      "gt": "Zoonotic diseases.",
+      "pred": "COVID-19",
+      "score": 0.0
+    },
+    {
+      "idx": 243,
+      "question": "How many principal organs are there for United Nations?\nShort answer required.",
+      "gt": "6.",
+      "pred": "6",
+      "score": 0.5
+    },
+    {
+      "idx": 244,
+      "question": "How many people are not disabled in Australia considering five people?\nKeep it brief.",
+      "gt": "4.",
+      "pred": "4",
+      "score": 0.5
+    },
+    {
+      "idx": 245,
+      "question": "Which color depicts the top 10%  precipitation ranking, blue , green or purple?\nQuick response, please.",
+      "gt": "Purple.",
+      "pred": "purple",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 246,
+      "question": "how many home-based businesses have been started in every two minutes?\nShort answer required.",
+      "gt": "10.",
+      "pred": "7,200",
+      "score": 0.0
+    },
+    {
+      "idx": 247,
+      "question": "How many common sources of contamination are shown in the infographic?\nWrite a very short answer.",
+      "gt": "3.",
+      "pred": "3",
+      "score": 0.5
+    },
+    {
+      "idx": 248,
+      "question": "How many places are written in red color ?\nQuick response, please.",
+      "gt": "4.",
+      "pred": "4",
+      "score": 0.5
+    },
+    {
+      "idx": 249,
+      "question": "What percentage of fresh water is used in irrigation purposes in the 21st century?\nWrite a very short answer.",
+      "gt": "70%.",
+      "pred": "70%",
+      "score": 0.75
+    },
+    {
+      "idx": 250,
+      "question": "What percent of americans recognize the importance of taking vacation?\nQuick response, please.",
+      "gt": "96%.",
+      "pred": "96%",
+      "score": 0.75
+    },
+    {
+      "idx": 251,
+      "question": "What is the population of Ethiopia and Congo, taken together over the next 30 years?\nShort answer required.",
+      "gt": "383M.",
+      "pred": "273M",
+      "score": 0.0
+    },
+    {
+      "idx": 252,
+      "question": "What percentage of Australians are saving money to buy a house?\nGive a very brief answer.",
+      "gt": "36%.",
+      "pred": "48%",
+      "score": 0.0
+    },
+    {
+      "idx": 253,
+      "question": "What percentage of respondents believed that the purpose of ads is to bring awareness to the issue?\nBe succinct.",
+      "gt": "53%.",
+      "pred": "56%",
+      "score": 0.5
+    },
+    {
+      "idx": 254,
+      "question": "By what number did businesses rise from 2013-14 to 2014-15?\nWrite a very short answer.",
+      "gt": "10,000.",
+      "pred": "10,000",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 255,
+      "question": "What is the number of mobile-broadband subscriptions in the world in 2013?\nAnswer briefly.",
+      "gt": "2 BILLION.",
+      "pred": "750 million",
+      "score": 0.5454545454545454
+    },
+    {
+      "idx": 256,
+      "question": "What percentage of U.S. smartphone users definitely would use a contact tracing app for COVID-19 as per the survey?\nWrite a very short answer.",
+      "gt": "17%.",
+      "pred": "17%",
+      "score": 0.75
+    },
+    {
+      "idx": 257,
+      "question": "How many permanent members are there in the UN?\nAnswer briefly.",
+      "gt": "5.",
+      "pred": "There are five permanent members in the UN Security Council.",
+      "score": 0.0
+    },
+    {
+      "idx": 258,
+      "question": "Which is the second item in the third row of the table Key Deals?\nConcise answer only.",
+      "gt": "Tbc.",
+      "pred": "Dubai Industrial Park (Industrial City)",
+      "score": 0.0
+    },
+    {
+      "idx": 259,
+      "question": "What are the parts of the face?\nWrite a very short answer.",
+      "gt": "Eyes, nose, mouth.",
+      "pred": "nose, mouth, eyes",
+      "score": 0.0
+    },
+    {
+      "idx": 260,
+      "question": "Which is higher - number of kids with smartphone or number of kids with tablet?\nWrite a very short answer.",
+      "gt": "Number of kids with tablet.",
+      "pred": "number of kids with smartphone",
+      "score": 0.7
+    },
+    {
+      "idx": 261,
+      "question": "Which animal is depicted on the red helmet- horse, elephant or rabbit?\nConcise answer only.",
+      "gt": "Horse.",
+      "pred": "elephant",
+      "score": 0.0
+    },
+    {
+      "idx": 262,
+      "question": "Identify the player with jersey number 12 ?\nGive a very brief answer.",
+      "gt": "Howard.",
+      "pred": "Devin Booker",
+      "score": 0.0
+    },
+    {
+      "idx": 263,
+      "question": "Which has the industry has the second highest share of output ?\nShort answer required.",
+      "gt": "Mining.",
+      "pred": "Agriculture",
+      "score": 0.0
+    },
+    {
+      "idx": 264,
+      "question": "Out of 10, how many people on earth are not under 25, and the vast majority did not live in developing countries?\nAnswer briefly.",
+      "gt": "6.",
+      "pred": "6",
+      "score": 0.5
+    },
+    {
+      "idx": 265,
+      "question": "Who were the humanitarians in the 20th century?\nWrite a very short answer.",
+      "gt": "Harriet Tubman, Mother Teresa.",
+      "pred": "Rosa Parks, Malala Yousafzai, and Wangari Maathai",
+      "score": 0.0
+    },
+    {
+      "idx": 266,
+      "question": "WHich country has a minimum number of 1\nWrite a very short answer.",
+      "gt": "Saudi Arabia.",
+      "pred": "Saudi Arabia",
+      "score": 0.9230769230769231
+    },
+    {
+      "idx": 267,
+      "question": "Which country has performed the highest number of COVID-19 tests per million population among the selected countries as of April 06, 2020?\nQuick response, please.",
+      "gt": "United Arab Emirates.",
+      "pred": "United Arab Emirates",
+      "score": 0.9523809523809523
+    },
+    {
+      "idx": 268,
+      "question": "In which year did the number of users reach 150 million?\nQuick response, please.",
+      "gt": "2015.",
+      "pred": "2014",
+      "score": 0.6
+    },
+    {
+      "idx": 269,
+      "question": "What is the total period in years considered in this report\nQuick response, please.",
+      "gt": "15.",
+      "pred": "16",
+      "score": 0.0
+    },
+    {
+      "idx": 270,
+      "question": "What promotes critical thinking\nShort answer required.",
+      "gt": "Close reading.",
+      "pred": "Close reading",
+      "score": 0.9285714285714286
+    },
+    {
+      "idx": 271,
+      "question": "How many years Michael Jordan got NBA Most valuable player award?\nWrite a very short answer.",
+      "gt": "5.",
+      "pred": "5",
+      "score": 0.5
+    },
+    {
+      "idx": 272,
+      "question": "What is the grain required in kilograms to produce 1 pound of meat, 16, 5, or 7.25?\nShort answer required.",
+      "gt": "7.25.",
+      "pred": "7.25",
+      "score": 0.8
+    },
+    {
+      "idx": 273,
+      "question": "What percentage of men in the age group of 30-44 are in the management position in UK?\nWrite a very short answer.",
+      "gt": "62%.",
+      "pred": "38%",
+      "score": 0.0
+    },
+    {
+      "idx": 274,
+      "question": "What is the number of same-sex couples who are raising kids in the U.S.?\nGive a very brief answer.",
+      "gt": "650,000.",
+      "pred": "650,000",
+      "score": 0.875
+    },
+    {
+      "idx": 275,
+      "question": "What is the total fishing trips done as per the U.S. Recreational Fisheries 2013 survey?\nAnswer briefly.",
+      "gt": "71 million.",
+      "pred": "71 million",
+      "score": 0.9090909090909091
+    },
+    {
+      "idx": 276,
+      "question": "death due to cancer is lower than which other disease\nAnswer briefly.",
+      "gt": "Heart disease.",
+      "pred": "Heart Disease",
+      "score": 0.9285714285714286
+    },
+    {
+      "idx": 277,
+      "question": "During which time period, the Russian flu pandemic happened?\nAnswer briefly.",
+      "gt": "1889-1890.",
+      "pred": "1977-1978",
+      "score": 0.0
+    },
+    {
+      "idx": 278,
+      "question": "Which county has second highest number of tweets?\nConcise answer only.",
+      "gt": "Waterford.",
+      "pred": "Kildare",
+      "score": 0.0
+    },
+    {
+      "idx": 279,
+      "question": "What is the name of the anti microbial drug which is used to treat virus?\nBe succinct.",
+      "gt": "Antivirus.",
+      "pred": "antivirals",
+      "score": 0.7
+    },
+    {
+      "idx": 280,
+      "question": "Who is the second most generous in the world?\nWrite a very short answer.",
+      "gt": "France.",
+      "pred": "Canada",
+      "score": 0.0
+    },
+    {
+      "idx": 281,
+      "question": "What is the glycemic index of eggs per 60g serve size?\nShort answer required.",
+      "gt": "0.",
+      "pred": "15",
+      "score": 0.0
+    },
+    {
+      "idx": 282,
+      "question": "What is the Jersey number of Tapp?\nAnswer briefly.",
+      "gt": "55.",
+      "pred": "55",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 283,
+      "question": "What is the salary of federal women employees in white-collar jobs in the U.S. in 2012?\nWrite a very short answer.",
+      "gt": "87 cents.",
+      "pred": "70 cents",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 284,
+      "question": "What percentage of domestic beers are used in America?\nWrite a very short answer.",
+      "gt": "94.1%.",
+      "pred": "94.1%",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 285,
+      "question": "how many mails and calls\nAnswer briefly.",
+      "gt": "70808.",
+      "pred": "60,306",
+      "score": 0.0
+    },
+    {
+      "idx": 286,
+      "question": "What percentage of respondents disagree that coronavirus affects their shopping behavior?\nAnswer briefly.",
+      "gt": "25%.",
+      "pred": "25%",
+      "score": 0.75
+    },
+    {
+      "idx": 287,
+      "question": "What is EXL's solution for volume surge problem?\nAnswer briefly.",
+      "gt": "Augment capacity to meet the current surge through rapidly deployable workforce.",
+      "pred": "Augment capacity to most of the current surge through rapidly deployable workforce",
+      "score": 0.926829268292683
+    },
+    {
+      "idx": 288,
+      "question": "What is the daytime population per square mile?\nKeep it brief.",
+      "gt": "588.4.",
+      "pred": "2,640",
+      "score": 0.0
+    },
+    {
+      "idx": 289,
+      "question": "which part of america is severely affected by the drought for producing corn, eastern part or western part?\nKeep it brief.",
+      "gt": "Western part.",
+      "pred": "The western part of America is severely affected by the drought for producing corn. The map shows a D2 drought severity level in states like California (CA), Nevada (NV), and Arizona (AZ), which are in the western region. These areas are crucial for corn production, and the drought conditions are likely to have a significant impact on corn yields.",
+      "score": 0.0
+    },
+    {
+      "idx": 290,
+      "question": "When did the debts of the US cross triple digit numbers ?\nConcise answer only.",
+      "gt": "1943.",
+      "pred": "1985",
+      "score": 0.0
+    },
+    {
+      "idx": 291,
+      "question": "What percentage of UK people believe that being creative makes a real difference to their lives?\nQuick response, please.",
+      "gt": "78%.",
+      "pred": "71%",
+      "score": 0.5
+    },
+    {
+      "idx": 292,
+      "question": "What are the three main 'visible' parts of an egg?\nWrite a very short answer.",
+      "gt": "Egg shell, egg white, egg yolk.",
+      "pred": "Egg white, air, shell",
+      "score": 0.0
+    },
+    {
+      "idx": 293,
+      "question": "What is the revenue generated by biopharmaceutical companies in UK in 2015?\nBe succinct.",
+      "gt": "£11bn.",
+      "pred": "£45.123bn",
+      "score": 0.0
+    },
+    {
+      "idx": 294,
+      "question": "Which causes the highest amount of noise pollution, road vehicles, wild frogs, or trains?\nKeep it brief.",
+      "gt": "Trains.",
+      "pred": "Trains cause the highest amount of noise pollution, with a decibel level of 100.",
+      "score": 0.0
+    },
+    {
+      "idx": 295,
+      "question": "Out of every three women 'how many' have experienced physical violence?\nKeep it brief.",
+      "gt": "1.",
+      "pred": "One",
+      "score": 0.0
+    },
+    {
+      "idx": 296,
+      "question": "How long is the touring route?\nConcise answer only.",
+      "gt": "2,750KM.",
+      "pred": "3,750km",
+      "score": 0.75
+    },
+    {
+      "idx": 297,
+      "question": "What percentage of the world's workers make a living from agriculture?\nBe succinct.",
+      "gt": "33.33%.",
+      "pred": "33.33%",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 298,
+      "question": "What percentage of gamers are females in Australia?\nBe succinct.",
+      "gt": "47%.",
+      "pred": "47%",
+      "score": 0.75
+    },
+    {
+      "idx": 299,
+      "question": "What percentage of news audiences expect to see advertising on mobile?\nAnswer briefly.",
+      "gt": "84%.",
+      "pred": "79%",
+      "score": 0.0
+    },
+    {
+      "idx": 300,
+      "question": "Which color is used to represent \"Listened to radio programs/news\"-yellow, green, red, blue?\nBe succinct.",
+      "gt": "Red.",
+      "pred": "red",
+      "score": 0.75
+    },
+    {
+      "idx": 301,
+      "question": "How many children are dancing in this infographic?\nAnswer briefly.",
+      "gt": "2.",
+      "pred": "2",
+      "score": 0.5
+    },
+    {
+      "idx": 302,
+      "question": "How  any workforce profiles are listed?\nBe succinct.",
+      "gt": "20.",
+      "pred": "250",
+      "score": 0.0
+    },
+    {
+      "idx": 303,
+      "question": "What percentage of the Canadian men are members or participants of a political party according to the General Social Survey in 2013?\nKeep it brief.",
+      "gt": "4.9%.",
+      "pred": "4.2%",
+      "score": 0.6
+    },
+    {
+      "idx": 304,
+      "question": "What percentage of UK employers think that hiring will return to pre-Covid-19 levels  within 4-9 months as of Q2 2020?\nAnswer briefly.",
+      "gt": "23%.",
+      "pred": "23%",
+      "score": 0.75
+    },
+    {
+      "idx": 305,
+      "question": "How many provinces mentioned in this infographic?\nShort answer required.",
+      "gt": "4.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 306,
+      "question": "How many children are shown here?\nShort answer required.",
+      "gt": "3.",
+      "pred": "3",
+      "score": 0.5
+    },
+    {
+      "idx": 307,
+      "question": "How much is the rate of increase in population in Alberta?\nConcise answer only.",
+      "gt": "+1.6%.",
+      "pred": "14.6%",
+      "score": 0.5
+    },
+    {
+      "idx": 308,
+      "question": "What percentage of projects facilitated by PYXERA Global is aimed at women's education during 2008-2017?\nShort answer required.",
+      "gt": "10%.",
+      "pred": "10%",
+      "score": 0.75
+    },
+    {
+      "idx": 309,
+      "question": "What percent of people in U.S have been refused a job due to their disabilities?\nWrite a very short answer.",
+      "gt": "51%.",
+      "pred": "28.7%",
+      "score": 0.0
+    },
+    {
+      "idx": 310,
+      "question": "What percentage of total trained people in Ireland were male as of 2019 annual report?\nQuick response, please.",
+      "gt": "55%.",
+      "pred": "55%",
+      "score": 0.75
+    },
+    {
+      "idx": 311,
+      "question": "Which food type increases the carbon footprint, meat, fruits, or vegetables?\nConcise answer only.",
+      "gt": "Meat.",
+      "pred": "meat",
+      "score": 0.8
+    },
+    {
+      "idx": 312,
+      "question": "What percentage of people read daily information online?\nShort answer required.",
+      "gt": "46%.",
+      "pred": "46%",
+      "score": 0.75
+    },
+    {
+      "idx": 313,
+      "question": "Who earn only 1/10 of world's income?\nBe succinct.",
+      "gt": "Women.",
+      "pred": "women",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 314,
+      "question": "How many confirmed COVID-19 cases are reported in the City of Lockport?\nBe succinct.",
+      "gt": "170.",
+      "pred": "170",
+      "score": 0.75
+    },
+    {
+      "idx": 315,
+      "question": "how many below 35 years have a computer at home\nAnswer briefly.",
+      "gt": "110685.",
+      "pred": "91,719",
+      "score": 0.0
+    },
+    {
+      "idx": 316,
+      "question": "What percentage of people in the age 25-44 die from cancer and heart disease?\nQuick response, please.",
+      "gt": "24.2%.",
+      "pred": "38.6%",
+      "score": 0.0
+    },
+    {
+      "idx": 317,
+      "question": "How many cases of coronavirus has been confirmed in India?\nGive a very brief answer.",
+      "gt": "1 to 10.",
+      "pred": "31 to 75",
+      "score": 0.5
+    },
+    {
+      "idx": 318,
+      "question": "Which country had exponential growth in Covid-19 cases after New York?\nAnswer briefly.",
+      "gt": "California.",
+      "pred": "California",
+      "score": 0.9090909090909091
+    },
+    {
+      "idx": 319,
+      "question": "How many organ systems are show in the diagram?\nQuick response, please.",
+      "gt": "4.",
+      "pred": "4",
+      "score": 0.5
+    },
+    {
+      "idx": 320,
+      "question": "Which is the least visited domestic destination in Western Australia in the year 2014?\nWrite a very short answer.",
+      "gt": "Perth.",
+      "pred": "Perth",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 321,
+      "question": "How many states have average tax returns Below $2,499 - four, five or six?\nBe succinct.",
+      "gt": "Six.",
+      "pred": "Five",
+      "score": 0.0
+    },
+    {
+      "idx": 322,
+      "question": "Which feature of Facebook can be seen by anyone who have a Facebook account in the year 2005?\nConcise answer only.",
+      "gt": "Gender, Picture.",
+      "pred": "Photos, Posts, Friends, Network",
+      "score": 0.0
+    },
+    {
+      "idx": 323,
+      "question": "What percentage of women over the age of 50 have incidence of cancer?\nBe succinct.",
+      "gt": "27%.",
+      "pred": "82%",
+      "score": 0.0
+    },
+    {
+      "idx": 324,
+      "question": "How many nations contribute to the rest of the share of world population in 'Others' category?\nKeep it brief.",
+      "gt": "170.",
+      "pred": "25",
+      "score": 0.0
+    },
+    {
+      "idx": 325,
+      "question": "What does orange line signify?\nAnswer briefly.",
+      "gt": "Budget 2019-20.",
+      "pred": "Step 1: Identify the orange line in the graph.\nStep 2: Recognize it as 'Budget 2019-20' based on the legend.\n\nAnswer: Budget 2019-20",
+      "score": 0.0
+    },
+    {
+      "idx": 326,
+      "question": "What is the population of mixed race community in UK?\nShort answer required.",
+      "gt": "1.2 MILLION.",
+      "pred": "1.4 million",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 327,
+      "question": "Out of 57, how many hornbill species not found in the Philippines?\nConcise answer only.",
+      "gt": "47.",
+      "pred": "47",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 328,
+      "question": "Which essential vitamins are found in a fish?\nConcise answer only.",
+      "gt": "A, D, B12.",
+      "pred": "A, D, B12, B3, B6, B2, B1",
+      "score": 0.0
+    },
+    {
+      "idx": 329,
+      "question": "What is the money given to the banks per capita in Iceland?\nGive a very brief answer.",
+      "gt": "€4,032.",
+      "pred": "€4,032",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 330,
+      "question": "What percent of women are stem graduates?\nAnswer briefly.",
+      "gt": "10%.",
+      "pred": "10%",
+      "score": 0.75
+    },
+    {
+      "idx": 331,
+      "question": "The population of which age group is seen to be decreasing by 2050?\nAnswer briefly.",
+      "gt": "0-14.",
+      "pred": "0-14",
+      "score": 0.8
+    },
+    {
+      "idx": 332,
+      "question": "Which country is the most densely populated?\nBe succinct.",
+      "gt": "United Kingdom.",
+      "pred": "Nigeria",
+      "score": 0.0
+    },
+    {
+      "idx": 333,
+      "question": "What is the Facebook profile given?\nGive a very brief answer.",
+      "gt": "Australia in Thailand.",
+      "pred": "@AustraliaInTHK",
+      "score": 0.5454545454545454
+    },
+    {
+      "idx": 334,
+      "question": "How many children in Glasgow were estimated to be living in poverty in 2016?\nAnswer briefly.",
+      "gt": "Over 37,000.",
+      "pred": "37,000",
+      "score": 0.5
+    },
+    {
+      "idx": 335,
+      "question": "LIver is a source of how many of the vitamins shown here?\nConcise answer only.",
+      "gt": "6.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 336,
+      "question": "What is the area of the City of London?\nWrite a very short answer.",
+      "gt": "1.12 square miles.",
+      "pred": "12 square miles",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 337,
+      "question": "Which month was Facebook launched, January, February, or June?\nConcise answer only.",
+      "gt": "February.",
+      "pred": "February",
+      "score": 0.8888888888888888
+    },
+    {
+      "idx": 338,
+      "question": "Which is the fourth \"Coordinating Conjunctions\" listed in the infographic?\nAnswer briefly.",
+      "gt": "BUT.",
+      "pred": "but",
+      "score": 0.75
+    },
+    {
+      "idx": 339,
+      "question": "What percentage of challenges takes place in school libraries according to the statistics of the American Library Association?\nAnswer briefly.",
+      "gt": "23%.",
+      "pred": "42%",
+      "score": 0.0
+    },
+    {
+      "idx": 340,
+      "question": "What is the number of non-recyclable plastic gift cards produced each year in the U.S.?\nQuick response, please.",
+      "gt": "2 BILLION.",
+      "pred": "2 billion",
+      "score": 0.9
+    },
+    {
+      "idx": 341,
+      "question": "Which factors affect Ireland's housing shortage problem?\nBe succinct.",
+      "gt": "Population Growth, Migrants, Homelessness.",
+      "pred": "Step 1: The figure lists top factors affecting housing shortage.\nStep 2: Population Growth, Migrants, and Homelessness are highlighted.\n\nAnswer: Population Growth, Migrants, Homelessness",
+      "score": 0.0
+    },
+    {
+      "idx": 342,
+      "question": "What is the jersey number of Jadeveon Clowney?\nQuick response, please.",
+      "gt": "7.",
+      "pred": "7",
+      "score": 0.5
+    },
+    {
+      "idx": 343,
+      "question": "What are the common symptoms of COVID-19?\nShort answer required.",
+      "gt": "Fever, Cough, Difficulty breathing.",
+      "pred": "fever, cough, difficulty breathing",
+      "score": 0.9714285714285714
+    },
+    {
+      "idx": 344,
+      "question": "What percentage of the global infant formula is not produced in Ireland?\nQuick response, please.",
+      "gt": "90%.",
+      "pred": "75%",
+      "score": 0.0
+    },
+    {
+      "idx": 345,
+      "question": "What is the main reason for book challenges & bans during 1990-2010?\nWrite a very short answer.",
+      "gt": "SEXUALLY EXPLICIT.",
+      "pred": "Sexuality",
+      "score": 0.0
+    },
+    {
+      "idx": 346,
+      "question": "How many types of activities are healthcare organistions able to do by using the insights gleaned from big data\nBe succinct.",
+      "gt": "4.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 347,
+      "question": "What is the third way to get sick if we are near an infected person?\nQuick response, please.",
+      "gt": "Carpools with you.",
+      "pred": "Carpool with you",
+      "score": 0.8888888888888888
+    },
+    {
+      "idx": 348,
+      "question": "Which has the highest share-the hunger project Australia, other hunger project countries?\nWrite a very short answer.",
+      "gt": "Other hunger project countries.",
+      "pred": "other hunger project countries",
+      "score": 0.967741935483871
+    },
+    {
+      "idx": 349,
+      "question": "What is the total number of business grant applications received by the East Dunbartonshire Council as of 16 June?\nKeep it brief.",
+      "gt": "1176.",
+      "pred": "1176",
+      "score": 0.8
+    },
+    {
+      "idx": 350,
+      "question": "Which is the first group game listed?\nShort answer required.",
+      "gt": "Scavenger hunt.",
+      "pred": "MOTIVATE",
+      "score": 0.0
+    },
+    {
+      "idx": 351,
+      "question": "What percentage of employees work part time in the construction firm in Australia in 2018?\nShort answer required.",
+      "gt": "15%.",
+      "pred": "32%",
+      "score": 0.0
+    },
+    {
+      "idx": 352,
+      "question": "What percentage of participants do not rely on hourly paid work in Irish academia?\nShort answer required.",
+      "gt": "37%.",
+      "pred": "37%",
+      "score": 0.75
+    },
+    {
+      "idx": 353,
+      "question": "What is the difference in percentage between North America and South America?\nAnswer briefly.",
+      "gt": "1%.",
+      "pred": "1%",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 354,
+      "question": "What is total percentage of donors deceased in 2010 in the categories White, Black, Hispanci and Asian?\nAnswer briefly.",
+      "gt": "98.3%.",
+      "pred": "96%",
+      "score": 0.0
+    },
+    {
+      "idx": 355,
+      "question": "What is to be done first when you see someone collapse?\nWrite a very short answer.",
+      "gt": "Call 9-1-1.",
+      "pred": "Call 911 and ask for help.",
+      "score": 0.0
+    },
+    {
+      "idx": 356,
+      "question": "What percentage of people are not using IoT?\nWrite a very short answer.",
+      "gt": "79.",
+      "pred": "35%",
+      "score": 0.0
+    },
+    {
+      "idx": 357,
+      "question": "What is the difference between cases and deaths per million population in Germany?\nShort answer required.",
+      "gt": "2057.",
+      "pred": "2350",
+      "score": 0.0
+    },
+    {
+      "idx": 358,
+      "question": "When was PR Newswire founded?\nConcise answer only.",
+      "gt": "1954.",
+      "pred": "1996",
+      "score": 0.0
+    },
+    {
+      "idx": 359,
+      "question": "What was the percent of household waste recovery a decade ago?\nQuick response, please.",
+      "gt": "9%.",
+      "pred": "9%",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 360,
+      "question": "For which Taxi highest charge increase will occur in 2021?\nConcise answer only.",
+      "gt": "DTC Hybrid Taxi.",
+      "pred": "DTC School Buses",
+      "score": 0.0
+    },
+    {
+      "idx": 361,
+      "question": "What is the percentage contributed by Muslims, Buddhist and Other Christians?\nKeep it brief.",
+      "gt": "2.9%.",
+      "pred": "7%",
+      "score": 0.0
+    },
+    {
+      "idx": 362,
+      "question": "What is the operational range of SS-9?\nKeep it brief.",
+      "gt": "16,000 km.",
+      "pred": "16,000 km",
+      "score": 0.9
+    },
+    {
+      "idx": 363,
+      "question": "What percent of the total surveyed follow the covid-19 news very closely?\nWrite a very short answer.",
+      "gt": "60%.",
+      "pred": "21%",
+      "score": 0.0
+    },
+    {
+      "idx": 364,
+      "question": "What percent of homeless people do not have a long term disability?\nQuick response, please.",
+      "gt": "53.8%.",
+      "pred": "53.8%",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 365,
+      "question": "What is the number of COVID-19 deaths in India as per the given data?\nGive a very brief answer.",
+      "gt": "31,358.",
+      "pred": "31,358",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 366,
+      "question": "How much higher in % are home buyers single females than single males\nConcise answer only.",
+      "gt": "10.",
+      "pred": "10%",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 367,
+      "question": "In which days the number of hospitalized cases were more than 800?\nAnswer briefly.",
+      "gt": "26-May, 27-May, 28-May.",
+      "pred": "26-May, 27-May, 28-May, 29-May, 30-May, 31-May, 1-Jun, 2-Jun, 3-Jun, 4-Jun",
+      "score": 0.0
+    },
+    {
+      "idx": 368,
+      "question": "What percentage of women and men in the world currently married?\nGive a very brief answer.",
+      "gt": "128.",
+      "pred": "40% of women and 61% of men in the world are currently married.",
+      "score": 0.0
+    },
+    {
+      "idx": 369,
+      "question": "How many states have credit score above 700?\nKeep it brief.",
+      "gt": "8.",
+      "pred": "10",
+      "score": 0.0
+    },
+    {
+      "idx": 370,
+      "question": "In how many different ways a person can be affected with Corona?\nQuick response, please.",
+      "gt": "3.",
+      "pred": "3",
+      "score": 0.5
+    },
+    {
+      "idx": 371,
+      "question": "Which is the Sea Monster found in Casco Bay, Maine?\nBe succinct.",
+      "gt": "Cassie.",
+      "pred": "Thunderhead",
+      "score": 0.0
+    },
+    {
+      "idx": 372,
+      "question": "What percentage of tech startups were founded by women in London?\nAnswer briefly.",
+      "gt": "18%.",
+      "pred": "14%",
+      "score": 0.5
+    },
+    {
+      "idx": 373,
+      "question": "In how many places should you wear mask?\nAnswer briefly.",
+      "gt": "3.",
+      "pred": "3",
+      "score": 0.5
+    },
+    {
+      "idx": 374,
+      "question": "Which is the iconic drink in North Dakota and Iowa?\nKeep it brief.",
+      "gt": "BUSCH LIGHT.",
+      "pred": "North Dakota: Northern Lights, Iowa: IOWA 76",
+      "score": 0.0
+    },
+    {
+      "idx": 375,
+      "question": "How many energy statistical sources are given?\nConcise answer only.",
+      "gt": "5.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 376,
+      "question": "What percentage of couples are struggling with infertility in U.S.?\nGive a very brief answer.",
+      "gt": "52%.",
+      "pred": "6%",
+      "score": 0.0
+    },
+    {
+      "idx": 377,
+      "question": "How many places are shown in pink colour?\nQuick response, please.",
+      "gt": "19.",
+      "pred": "15",
+      "score": 0.0
+    },
+    {
+      "idx": 378,
+      "question": "What type of t-shirts a graphic designer wear usually?\nWrite a very short answer.",
+      "gt": "Graphic tee.",
+      "pred": "Graphic tee",
+      "score": 0.9166666666666666
+    },
+    {
+      "idx": 379,
+      "question": "How many points are listed under the heading \"Genuine Assistance\"?\nGive a very brief answer.",
+      "gt": "3.",
+      "pred": "3",
+      "score": 0.5
+    },
+    {
+      "idx": 380,
+      "question": "What percentage of adults does not agree that one of the keys to success is college education?\nConcise answer only.",
+      "gt": "22.",
+      "pred": "10%",
+      "score": 0.0
+    },
+    {
+      "idx": 381,
+      "question": "In the graph representing cases-7 days average, which region is the green line indicating\nConcise answer only.",
+      "gt": "US.",
+      "pred": "Metro",
+      "score": 0.0
+    },
+    {
+      "idx": 382,
+      "question": "what % of countries have achieved parity in secondary education\nShort answer required.",
+      "gt": "37.",
+      "pred": "37",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 383,
+      "question": "How many images of money are in this infographic?\nConcise answer only.",
+      "gt": "3.",
+      "pred": "1",
+      "score": 0.0
+    },
+    {
+      "idx": 384,
+      "question": "Which COVID 19 trend in CARPHA member states is represented by green colour?\nAnswer briefly.",
+      "gt": "Imported Case (68%).",
+      "pred": "Community transmission",
+      "score": 0.0
+    },
+    {
+      "idx": 385,
+      "question": "what has been the increase in total exports\nAnswer briefly.",
+      "gt": "1.9%.",
+      "pred": "1.9%",
+      "score": 0.8
+    },
+    {
+      "idx": 386,
+      "question": "Which is the third place listed in the infographic to be not visited to?\nWrite a very short answer.",
+      "gt": "Holding cells.",
+      "pred": "Correctional Centres",
+      "score": 0.0
+    },
+    {
+      "idx": 387,
+      "question": "Into how many parts Soft Security is divided?\nGive a very brief answer.",
+      "gt": "6.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 388,
+      "question": "How many states have Arabic as an immigrant language?\nGive a very brief answer.",
+      "gt": "4.",
+      "pred": "2",
+      "score": 0.0
+    },
+    {
+      "idx": 389,
+      "question": "What is the average household size in the Redlands City, CA?\nShort answer required.",
+      "gt": "2.70.",
+      "pred": "3.7",
+      "score": 0.0
+    },
+    {
+      "idx": 390,
+      "question": "What step should be taken if a person is not a registered voter?\nGive a very brief answer.",
+      "gt": "REGISTER ONLINE, Register Online.",
+      "pred": "If a person is not a registered voter, they should follow the path marked 'NO' from the 'ARE YOU REGISTERED?' question, which leads to 'FIND OUT HERE' for more information on how to register.",
+      "score": 0.0
+    },
+    {
+      "idx": 391,
+      "question": "What is the wage for utility services?\nAnswer briefly.",
+      "gt": "$95,565.",
+      "pred": "$57,200",
+      "score": 0.0
+    },
+    {
+      "idx": 392,
+      "question": "What was the GDP Fall during the Great Depression\nQuick response, please.",
+      "gt": "10.",
+      "pred": "10",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 393,
+      "question": "Which is the second business issue mentioned in the infographic?\nKeep it brief.",
+      "gt": "Improving quality of products and processes.",
+      "pred": "Increasing profitability",
+      "score": 0.0
+    },
+    {
+      "idx": 394,
+      "question": "Which member state has the equal number of disapprovals to the CPRD and OP ?\nQuick response, please.",
+      "gt": "Africa.",
+      "pred": "Canada",
+      "score": 0.0
+    },
+    {
+      "idx": 395,
+      "question": "which country among North Korea and South Korea has higher population?\nShort answer required.",
+      "gt": "North Korea.",
+      "pred": "North Korea",
+      "score": 0.9166666666666666
+    },
+    {
+      "idx": 396,
+      "question": "What percentage of people believe their salary is more saved due to Covid-19 restrictions?\nAnswer briefly.",
+      "gt": "7.6%.",
+      "pred": "40.9%",
+      "score": 0.0
+    },
+    {
+      "idx": 397,
+      "question": "Which is the most popular professional spectator sport in the U.S?\nShort answer required.",
+      "gt": "NFL.",
+      "pred": "NASCAR",
+      "score": 0.0
+    },
+    {
+      "idx": 398,
+      "question": "What percentage of Americans are green tea drinkers?\nKeep it brief.",
+      "gt": "17%.",
+      "pred": "17%",
+      "score": 0.75
+    },
+    {
+      "idx": 399,
+      "question": "What would be the % drop in poverty if all children developed basic reading skills?\nAnswer briefly.",
+      "gt": "12%.",
+      "pred": "12%",
+      "score": 0.75
+    },
+    {
+      "idx": 400,
+      "question": "What is the percentage ratio of female to male earnings in Canada in 1993?\nGive a very brief answer.",
+      "gt": "72%.",
+      "pred": "64%",
+      "score": 0.0
+    },
+    {
+      "idx": 401,
+      "question": "What is the average age of the non-aboriginal population according to the 2016 Federal Census?\nGive a very brief answer.",
+      "gt": "37.4 YEARS.",
+      "pred": "37.4 years",
+      "score": 0.9090909090909091
+    },
+    {
+      "idx": 402,
+      "question": "What is the National Rank of Columbia University?\nShort answer required.",
+      "gt": "4.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 403,
+      "question": "What is the number on the T shirt\nAnswer briefly.",
+      "gt": "24.",
+      "pred": "24",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 404,
+      "question": "What is the total number of cases?\nKeep it brief.",
+      "gt": "7.",
+      "pred": "7",
+      "score": 0.5
+    },
+    {
+      "idx": 405,
+      "question": "What is the Twitter handle given?\nKeep it brief.",
+      "gt": "@transstudent.",
+      "pred": "@transstudent",
+      "score": 0.9285714285714286
+    },
+    {
+      "idx": 406,
+      "question": "What develops vocabulary, grammar, writing style and spelling\nShort answer required.",
+      "gt": "Reading for pleasure.",
+      "pred": "literacy development",
+      "score": 0.0
+    },
+    {
+      "idx": 407,
+      "question": "What are the factors that result in better content?\nGive a very brief answer.",
+      "gt": "Quality Content, Distribution, Retargeting.",
+      "pred": "Dramatic content, show how it's done, and show how it's done in a compelling way",
+      "score": 0.0
+    },
+    {
+      "idx": 408,
+      "question": "ODI number 3223 was played at which place?\nQuick response, please.",
+      "gt": "Indore (Madhya Pradesh).",
+      "pred": "Indore",
+      "score": 0.0
+    },
+    {
+      "idx": 409,
+      "question": "What is the annual cost of traffic delays and congestion, in wasted time and fuel?\nConcise answer only.",
+      "gt": "$160 billion.",
+      "pred": "$160 billion",
+      "score": 0.9230769230769231
+    },
+    {
+      "idx": 410,
+      "question": "How many myths are listed in the info graphic?\nQuick response, please.",
+      "gt": "5.",
+      "pred": "5",
+      "score": 0.5
+    },
+    {
+      "idx": 411,
+      "question": "How many categories of the population mentioned in this infographic?\nGive a very brief answer.",
+      "gt": "6.",
+      "pred": "6",
+      "score": 0.5
+    },
+    {
+      "idx": 412,
+      "question": "What are the common symptoms of COVID-19?\nAnswer briefly.",
+      "gt": "COUGH, HIGH TEMPERATURE, SHORTNESS OF BREATH.",
+      "pred": "The common symptoms of COVID-19 include fever, cough, and shortness of breath.",
+      "score": 0.0
+    },
+    {
+      "idx": 413,
+      "question": "What is the number of respondents worried about own health of both sexes 35 to 44?\nGive a very brief answer.",
+      "gt": "35.",
+      "pred": "30",
+      "score": 0.0
+    },
+    {
+      "idx": 414,
+      "question": "What is the age criteria of a candidate for presidency according to the U.S. Constitution?\nKeep it brief.",
+      "gt": "Atleast 35 years old.",
+      "pred": "35 years or older",
+      "score": 0.0
+    },
+    {
+      "idx": 415,
+      "question": "How many oceans are shown in the map ?\nKeep it brief.",
+      "gt": "2.",
+      "pred": "Two",
+      "score": 0.0
+    },
+    {
+      "idx": 416,
+      "question": "What is the difference between the number of cases and number of deaths in Malaysia?\nShort answer required.",
+      "gt": "22.",
+      "pred": "2,202",
+      "score": 0.0
+    },
+    {
+      "idx": 417,
+      "question": "What is the difference in China GDP growth and world average GDP growth in 2019?\nShort answer required.",
+      "gt": "3.3.",
+      "pred": "1.0",
+      "score": 0.0
+    },
+    {
+      "idx": 418,
+      "question": "Which country has the best net approval rating for government handling of COVID-19 as of 2 June?\nAnswer briefly.",
+      "gt": "Vietnam.",
+      "pred": "Vietnam",
+      "score": 0.875
+    },
+    {
+      "idx": 419,
+      "question": "What percentage of high schools are not offering computer science courses?\nQuick response, please.",
+      "gt": "90%.",
+      "pred": "80%",
+      "score": 0.5
+    },
+    {
+      "idx": 420,
+      "question": "How many Ingredients are required for the preparation of Absinthe?\nAnswer briefly.",
+      "gt": "7.",
+      "pred": "6",
+      "score": 0.0
+    },
+    {
+      "idx": 421,
+      "question": "What is the total number of counties in England?\nWrite a very short answer.",
+      "gt": "48.",
+      "pred": "48",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 422,
+      "question": "how many women in over 100 countries will benefit from a joint Fondation L'Oreal / UNESCO program\nAnswer briefly.",
+      "gt": "2,000+.",
+      "pred": "2,000+",
+      "score": 0.8571428571428572
+    },
+    {
+      "idx": 423,
+      "question": "what is the benefit of 1 extra year of girl education\nWrite a very short answer.",
+      "gt": "Can earn 20% more as an adult.",
+      "pred": "20% more as an adult",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 424,
+      "question": "What is the difference in average salary for mechanical engineers per annum while compared with the average salary for UK as a whole?\nGive a very brief answer.",
+      "gt": "£18k.",
+      "pred": "£32,000",
+      "score": 0.0
+    },
+    {
+      "idx": 425,
+      "question": "Exports to which destination fell by 9% in the time period 2009-2020?\nGive a very brief answer.",
+      "gt": "UK.",
+      "pred": "UK",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 426,
+      "question": "What jersey number of the player?\nAnswer briefly.",
+      "gt": "31.",
+      "pred": "31",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 427,
+      "question": "Who is from New York Knicks\nBe succinct.",
+      "gt": "Carmelo Anthony.",
+      "pred": "Dwight Howard",
+      "score": 0.0
+    },
+    {
+      "idx": 428,
+      "question": "How many regions are plotted on the graph?\nAnswer briefly.",
+      "gt": "5.",
+      "pred": "6",
+      "score": 0.0
+    },
+    {
+      "idx": 429,
+      "question": "What percentage of the population is using the internet in Asia and Europe, taken together?\nGive a very brief answer.",
+      "gt": "66.9%.",
+      "pred": "93.5%",
+      "score": 0.0
+    },
+    {
+      "idx": 430,
+      "question": "Can Irish PAYE refund be claimed for home jacuzzi?\nBe succinct.",
+      "gt": "Cant claim.",
+      "pred": "No",
+      "score": 0.0
+    },
+    {
+      "idx": 431,
+      "question": "What percent of Canadian fathers felt closer to their children during the COVID-19 period according to the research conducted by CMHF?\nBe succinct.",
+      "gt": "60%.",
+      "pred": "60%",
+      "score": 0.75
+    },
+    {
+      "idx": 432,
+      "question": "What is the percentage of kids and young adults together in Salt Lake City?\nBe succinct.",
+      "gt": "58.6%.",
+      "pred": "46%",
+      "score": 0.0
+    },
+    {
+      "idx": 433,
+      "question": "How many countries were affected by the MERS disease outbreak?\nWrite a very short answer.",
+      "gt": "27.",
+      "pred": "27",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 434,
+      "question": "in which category BBC and Reuters belong?\nKeep it brief.",
+      "gt": "Mainstream.",
+      "pred": "Mainstream",
+      "score": 0.9090909090909091
+    },
+    {
+      "idx": 435,
+      "question": "How many election issues were reported by ABC?\nQuick response, please.",
+      "gt": "8.",
+      "pred": "10",
+      "score": 0.0
+    },
+    {
+      "idx": 436,
+      "question": "What is the number of newly confirmed COVID-19 cases in South Korea on March 11?\nGive a very brief answer.",
+      "gt": "242.",
+      "pred": "242",
+      "score": 0.75
+    },
+    {
+      "idx": 437,
+      "question": "what is the painter painting\nBe succinct.",
+      "gt": "Cloud.",
+      "pred": "cloud",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 438,
+      "question": "What is represented by the green line\nShort answer required.",
+      "gt": "STOXX.",
+      "pred": "DAX",
+      "score": 0.0
+    },
+    {
+      "idx": 439,
+      "question": "Which are the sensors mapped in the yellow region?\nAnswer briefly.",
+      "gt": "Acceleration / Tilt, Machine Vision / Optical Ambient Light.",
+      "pred": "Position/ Presence/ Proximity",
+      "score": 0.0
+    },
+    {
+      "idx": 440,
+      "question": "What are the first three symptoms shown?\nShort answer required.",
+      "gt": "Fever, cough, trouble breathing.",
+      "pred": "Fever, Cough, Tiredness",
+      "score": 0.53125
+    },
+    {
+      "idx": 441,
+      "question": "What percentage of educators do not report an increase in the student engagement in blended learning?\nBe succinct.",
+      "gt": "27%.",
+      "pred": "30%",
+      "score": 0.0
+    },
+    {
+      "idx": 442,
+      "question": "what schedule has been shared\nQuick response, please.",
+      "gt": "Wyoming football schedule.",
+      "pred": "2019 one & only wofying schedule",
+      "score": 0.0
+    },
+    {
+      "idx": 443,
+      "question": "which sustainable goal is defined by the cell in the 2nd row and 3rd column\nShort answer required.",
+      "gt": "Industry innovation and infrastructure.",
+      "pred": "Zero Hunger",
+      "score": 0.0
+    },
+    {
+      "idx": 444,
+      "question": "which class teachers have the survey considered\nBe succinct.",
+      "gt": "K-12.",
+      "pred": "K-12",
+      "score": 0.8
+    },
+    {
+      "idx": 445,
+      "question": "What is the fourth predominant shirt colour?\nConcise answer only.",
+      "gt": "Red.",
+      "pred": "Yellow",
+      "score": 0.0
+    },
+    {
+      "idx": 446,
+      "question": "What percentage of respondents feel that business plays a big role in comparison to IT in BI, Analytics, and Data warehousing ?\nConcise answer only.",
+      "gt": "22%.",
+      "pred": "57%",
+      "score": 0.0
+    },
+    {
+      "idx": 447,
+      "question": "What percentage of women felt very proud to be Canadian according to the General Social Survey on Social Identity in 2013?\nBe succinct.",
+      "gt": "63%.",
+      "pred": "63%",
+      "score": 0.75
+    },
+    {
+      "idx": 448,
+      "question": "Which airport saw highest number of departures on 30th March 2020?\nShort answer required.",
+      "gt": "Perth Airport.",
+      "pred": "Melbourne Airport",
+      "score": 0.5294117647058824
+    },
+    {
+      "idx": 449,
+      "question": "What do you call networks that learn with less errors, less data, by preserving hierarchical relationships?\nQuick response, please.",
+      "gt": "Capsule networks.",
+      "pred": "Capsule networks",
+      "score": 0.9411764705882353
+    },
+    {
+      "idx": 450,
+      "question": "What is the red colour device shown that was launched in 2015\nQuick response, please.",
+      "gt": "Alexa.",
+      "pred": "Amazon Echo",
+      "score": 0.0
+    },
+    {
+      "idx": 451,
+      "question": "Which states have more than 50 million people during lockdown?\nConcise answer only.",
+      "gt": "Maharashtra, Rajasthan, Bihar.",
+      "pred": "Uttar Pradesh, Maharashtra, Rajasthan, Punjab",
+      "score": 0.5333333333333333
+    },
+    {
+      "idx": 452,
+      "question": "Who show better performance at work - regular cyclists or non-cyclists?\nBe succinct.",
+      "gt": "Regular cyclists.",
+      "pred": "Regular cyclists",
+      "score": 0.9411764705882353
+    },
+    {
+      "idx": 453,
+      "question": "What percentage of people are not using heat maps as data visualization?\nKeep it brief.",
+      "gt": "64%.",
+      "pred": "50%",
+      "score": 0.0
+    },
+    {
+      "idx": 454,
+      "question": "How many people in the state of Georgia are affected by epilepsy?\nKeep it brief.",
+      "gt": "150,000.",
+      "pred": "150,000 Georgians",
+      "score": 0.0
+    },
+    {
+      "idx": 455,
+      "question": "What is the number of internet users (in millions) in urban regions of India as of Oct 2013?\nShort answer required.",
+      "gt": "137.",
+      "pred": "127.0",
+      "score": 0.6
+    },
+    {
+      "idx": 456,
+      "question": "How many people reported spending more time on laptop computer?\nKeep it brief.",
+      "gt": "45%.",
+      "pred": "45%",
+      "score": 0.75
+    },
+    {
+      "idx": 457,
+      "question": "For which two illnesses do the symptoms begin gradually?\nWrite a very short answer.",
+      "gt": "ALLERGIES, COLD.",
+      "pred": "Allergy symptoms, COVID-19 symptoms",
+      "score": 0.0
+    },
+    {
+      "idx": 458,
+      "question": "How many international partners does UN have for peacekeeping mission?\nKeep it brief.",
+      "gt": "2.",
+      "pred": "16",
+      "score": 0.0
+    },
+    {
+      "idx": 459,
+      "question": "What 'percentage' of UK businesses have changed the way they make and receive payments?\nGive a very brief answer.",
+      "gt": "80%.",
+      "pred": "80%",
+      "score": 0.75
+    },
+    {
+      "idx": 460,
+      "question": "What is the number of people without mobile subscriptions?\nConcise answer only.",
+      "gt": "420m.",
+      "pred": "350m",
+      "score": 0.0
+    },
+    {
+      "idx": 461,
+      "question": "To which factor, Obama gave a second highest preference during the presidential election campaign?\nShort answer required.",
+      "gt": "Media.",
+      "pred": "Media",
+      "score": 0.8333333333333334
+    },
+    {
+      "idx": 462,
+      "question": "what is the colour of the gun, black or white\nQuick response, please.",
+      "gt": "Black.",
+      "pred": "The gun is black.",
+      "score": 0.0
+    },
+    {
+      "idx": 463,
+      "question": "How much electronic waste was thrown in landfills in tons?\nConcise answer only.",
+      "gt": "1,790,000.",
+      "pred": "1,790,000",
+      "score": 0.9
+    },
+    {
+      "idx": 464,
+      "question": "How many masks are shown in the infographic?\nShort answer required.",
+      "gt": "1.",
+      "pred": "1",
+      "score": 0.5
+    },
+    {
+      "idx": 465,
+      "question": "What percentage of fans are watching baseball not on the T.V?\nConcise answer only.",
+      "gt": "24%.",
+      "pred": "24%",
+      "score": 0.75
+    },
+    {
+      "idx": 466,
+      "question": "In which year was Boston Latin School founded?\nQuick response, please.",
+      "gt": "1635.",
+      "pred": "1635",
+      "score": 0.8
+    },
+    {
+      "idx": 467,
+      "question": "As per the color code, in which range does median household income for the state of NJ fall?\nGive a very brief answer.",
+      "gt": "Best.",
+      "pred": "Best",
+      "score": 0.8
+    },
+    {
+      "idx": 468,
+      "question": "Which type of sweet is tough to be paired with wine?\nBe succinct.",
+      "gt": "CHOCOLATE.",
+      "pred": "Candy",
+      "score": 0.0
+    },
+    {
+      "idx": 469,
+      "question": "Which country in UK spend most of the money on holidays?\nQuick response, please.",
+      "gt": "Northern Ireland.",
+      "pred": "United Kingdom",
+      "score": 0.0
+    },
+    {
+      "idx": 470,
+      "question": "Which part of the body is more prone to injuries ?\nShort answer required.",
+      "gt": "Lower Limb.",
+      "pred": "UPPER LIMB",
+      "score": 0.6363636363636364
+    },
+    {
+      "idx": 471,
+      "question": "What percentage of Americans do not suffer from anxiety disorders?\nKeep it brief.",
+      "gt": "80%.",
+      "pred": "80%",
+      "score": 0.75
+    },
+    {
+      "idx": 472,
+      "question": "Which are the two components of RNA of coronavirus?\nKeep it brief.",
+      "gt": "Protein, Fat.",
+      "pred": "RNA1 and RNA2",
+      "score": 0.0
+    },
+    {
+      "idx": 473,
+      "question": "How many peacekeepers died in the earthquake?\nQuick response, please.",
+      "gt": "102.",
+      "pred": "720",
+      "score": 0.0
+    },
+    {
+      "idx": 474,
+      "question": "What percentage of all new websites are not powered by WordPress?\nBe succinct.",
+      "gt": "78%.",
+      "pred": "78%",
+      "score": 0.75
+    },
+    {
+      "idx": 475,
+      "question": "How many SMS marketing targeting options mentioned in this infographic?\nWrite a very short answer.",
+      "gt": "11.",
+      "pred": "15",
+      "score": 0.0
+    },
+    {
+      "idx": 476,
+      "question": "How many number of activities for developing mindfulness in children have been listed in the infographic?\nBe succinct.",
+      "gt": "16.",
+      "pred": "16",
+      "score": 0.6666666666666667
+    },
+    {
+      "idx": 477,
+      "question": "What is the number of confirmed COVID-19 deaths?\nAnswer briefly.",
+      "gt": "227.",
+      "pred": "227",
+      "score": 0.75
+    },
+    {
+      "idx": 478,
+      "question": "Which Asian countries have been mentioned in the report\nWrite a very short answer.",
+      "gt": "Japan, China, Israel.",
+      "pred": "China, Japan, Korea, Singapore, China, Japan and the U.S.",
+      "score": 0.0
+    },
+    {
+      "idx": 479,
+      "question": "What are two methods that can be followed to ensure good hand hygiene?\nGive a very brief answer.",
+      "gt": "Soap and water, Hand sanitizer.",
+      "pred": "Soap and water, Hand sanitizer",
+      "score": 0.967741935483871
+    },
+    {
+      "idx": 480,
+      "question": "which state of South Africa has been reported highest number of confirmed cases?\nShort answer required.",
+      "gt": "Gauteng.",
+      "pred": "Gauteng",
+      "score": 0.875
+    },
+    {
+      "idx": 481,
+      "question": "How many points are under the heading \"Love and Hormones\"?\nWrite a very short answer.",
+      "gt": "2.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 482,
+      "question": "The photos of how many players are shown in this infographic?\nQuick response, please.",
+      "gt": "6.",
+      "pred": "6",
+      "score": 0.5
+    },
+    {
+      "idx": 483,
+      "question": "What percentage of the world's poor are not women?\nWrite a very short answer.",
+      "gt": "30%.",
+      "pred": "90%",
+      "score": 0.5
+    },
+    {
+      "idx": 484,
+      "question": "How many don'ts are mentioned in this infographic image?\nWrite a very short answer.",
+      "gt": "2.",
+      "pred": "2",
+      "score": 0.5
+    },
+    {
+      "idx": 485,
+      "question": "What is the population of limerick city in 1911?\nKeep it brief.",
+      "gt": "143,069.",
+      "pred": "109,000",
+      "score": 0.0
+    },
+    {
+      "idx": 486,
+      "question": "How much lesser is the number of coronavirus cases on May 6th, when compared to Jan 21?\nKeep it brief.",
+      "gt": "136.",
+      "pred": "On May 6th, there were 295 coronavirus cases, which is 376 less than the 431 cases on Jan 21.",
+      "score": 0.0
+    },
+    {
+      "idx": 487,
+      "question": "What is the population of Australia?\nAnswer briefly.",
+      "gt": "22.7 million.",
+      "pred": "22.7 million",
+      "score": 0.9230769230769231
+    },
+    {
+      "idx": 488,
+      "question": "How many cars are shown in the infographic?\nQuick response, please.",
+      "gt": "15.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 489,
+      "question": "Where did the first coronavirus death occur in Brazil\nGive a very brief answer.",
+      "gt": "Rio de Janerio.",
+      "pred": "Rio de Janeiro",
+      "score": 0.8
+    },
+    {
+      "idx": 490,
+      "question": "How many confirmed positive cases of COVID-19 were reported in Richland county as of August 28, 2020?\nQuick response, please.",
+      "gt": "654.",
+      "pred": "654",
+      "score": 0.75
+    },
+    {
+      "idx": 491,
+      "question": "How many  variety of dogs had  come for the gathering?\nWrite a very short answer.",
+      "gt": "9.",
+      "pred": "100",
+      "score": 0.0
+    },
+    {
+      "idx": 492,
+      "question": "Which state in India has the highest no of deaths due to Corona?\nAnswer briefly.",
+      "gt": "Maharashtra.",
+      "pred": "Uttar Pradesh",
+      "score": 0.0
+    },
+    {
+      "idx": 493,
+      "question": "How much more expensive is Foster care Placement when compared to Relative placement?\nBe succinct.",
+      "gt": "5,628.",
+      "pred": "Foster care placement is $102,348 per child annually, while Relative placement is $4,212 per child annually. Therefore, Foster care placement is $98,136 more expensive than Relative placement.",
+      "score": 0.0
+    },
+    {
+      "idx": 494,
+      "question": "What is the total no of active nonprofit organizations available in the United States?\nBe succinct.",
+      "gt": "1,800,000+.",
+      "pred": "1,800,000+",
+      "score": 0.9090909090909091
+    },
+    {
+      "idx": 495,
+      "question": "Which device registered the highest growth in Electronics, Imaging and Telecommunication devices, Notebooks, or LCD televisions?\nAnswer briefly.",
+      "gt": "LCD televisions.",
+      "pred": "LCD televisions",
+      "score": 0.9375
+    },
+    {
+      "idx": 496,
+      "question": "What could have been the first step done when police and social services perform a risk assessment\nBe succinct.",
+      "gt": "She is recognised as having needs and being at risk because of the abuse.",
+      "pred": "The first step could have been to ensure Katrina's immediate safety and well-being by providing a safe and stable environment.",
+      "score": 0.0
+    },
+    {
+      "idx": 497,
+      "question": "What percentage of private businesses in the U.S are owned by women?\nAnswer briefly.",
+      "gt": "30%.",
+      "pred": "30%",
+      "score": 0.75
+    },
+    {
+      "idx": 498,
+      "question": "During which fiscal year did central government cut funding by 304.558 million?\nGive a very brief answer.",
+      "gt": "2015/16.",
+      "pred": "2016/17",
+      "score": 0.625
+    },
+    {
+      "idx": 499,
+      "question": "Which has the second best TV Ratings?\nConcise answer only.",
+      "gt": "Rose Bowl.",
+      "pred": "2012 Super Bowl",
+      "score": 0.0
+    }
+  ]
+}

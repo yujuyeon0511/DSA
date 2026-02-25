@@ -1,0 +1,3512 @@
+{
+  "benchmark": "dvqa",
+  "mode": "sfa_adat_scr",
+  "metric": "exact_match",
+  "num_samples": 500,
+  "skipped": 0,
+  "avg_score": 0.408,
+  "elapsed_sec": 331.1,
+  "details": [
+    {
+      "idx": 0,
+      "question": "How many objects are preferred by less than 3 people in at least one category?\nOffer a very short reply.",
+      "gt": "One.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 1,
+      "question": "How many algorithms have accuracy higher than 80 in at least one dataset?\nEnsure brevity in your answer. ",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 2,
+      "question": "Which algorithm has the highest accuracy?\nGive a very brief answer.",
+      "gt": "Stem.",
+      "pred": "stem",
+      "score": 1.0
+    },
+    {
+      "idx": 3,
+      "question": "Which bar has the largest value?\nProvide a succinct answer.",
+      "gt": "Band.",
+      "pred": "band",
+      "score": 1.0
+    },
+    {
+      "idx": 4,
+      "question": "Which bar has the largest value?\nYour answer should be compact.",
+      "gt": "Page.",
+      "pred": "page",
+      "score": 1.0
+    },
+    {
+      "idx": 5,
+      "question": "Which object is the most preferred?\nEnsure brevity in your answer. ",
+      "gt": "Night.",
+      "pred": "night",
+      "score": 1.0
+    },
+    {
+      "idx": 6,
+      "question": "Which bar has the largest value?\nYour answer should be compact.",
+      "gt": "Patrol.",
+      "pred": "patrol",
+      "score": 1.0
+    },
+    {
+      "idx": 7,
+      "question": "How many objects are preferred by more than 60 percent of people in at least one category?\nKeep it short and to the point.",
+      "gt": "Two.",
+      "pred": "1.0",
+      "score": 0.0
+    },
+    {
+      "idx": 8,
+      "question": "How many groups of bars contain at least one bar with value smaller than 8?\nKeep it short and to the point.",
+      "gt": "Three.",
+      "pred": "3.0",
+      "score": 0.0
+    },
+    {
+      "idx": 9,
+      "question": "How many items sold less than 1 units in at least one store?\nYour answer should be very brief.",
+      "gt": "Zero.",
+      "pred": "0",
+      "score": 0.0
+    },
+    {
+      "idx": 10,
+      "question": "Which algorithm has the highest accuracy?\nYour answer should be very brief.",
+      "gt": "Vision.",
+      "pred": "vision",
+      "score": 1.0
+    },
+    {
+      "idx": 11,
+      "question": "How many objects are preferred by less than 3 people in at least one category?\nMake the answer very short.",
+      "gt": "Two.",
+      "pred": "2",
+      "score": 0.0
+    },
+    {
+      "idx": 12,
+      "question": "How many algorithms have accuracies lower than 20?\nEnsure brevity in your answer. ",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 13,
+      "question": "Which algorithm has the highest accuracy?\nYour answer should be compact.",
+      "gt": "Soul.",
+      "pred": "soul",
+      "score": 1.0
+    },
+    {
+      "idx": 14,
+      "question": "Which bar has the largest value?\nOffer a terse response.",
+      "gt": "Motel.",
+      "pred": "motel",
+      "score": 1.0
+    },
+    {
+      "idx": 15,
+      "question": "How many groups of bars contain at least one bar with value smaller than 20?\nYour answer should be very brief.",
+      "gt": "Two.",
+      "pred": "2",
+      "score": 0.0
+    },
+    {
+      "idx": 16,
+      "question": "How many algorithms have accuracy higher than 3 in at least one dataset?\nEnsure brevity in your answer. ",
+      "gt": "Six.",
+      "pred": "6.00",
+      "score": 0.0
+    },
+    {
+      "idx": 17,
+      "question": "Which algorithm has the lowest accuracy?\nProvide a short and direct response.",
+      "gt": "Bag.",
+      "pred": "bag",
+      "score": 1.0
+    },
+    {
+      "idx": 18,
+      "question": "How many algorithms have accuracy higher than 8 in at least one dataset?\nProvide a short and direct response.",
+      "gt": "One.",
+      "pred": "0",
+      "score": 0.0
+    },
+    {
+      "idx": 19,
+      "question": "Which algorithm has the highest accuracy?\nGive a very brief answer.",
+      "gt": "Appeal.",
+      "pred": "appeal",
+      "score": 1.0
+    },
+    {
+      "idx": 20,
+      "question": "Which item sold the most units?\nYour response must be concise.",
+      "gt": "Cure.",
+      "pred": "cure",
+      "score": 1.0
+    },
+    {
+      "idx": 21,
+      "question": "Which algorithm has the lowest accuracy?\nEnsure brevity in your answer. ",
+      "gt": "Killer.",
+      "pred": "killer",
+      "score": 1.0
+    },
+    {
+      "idx": 22,
+      "question": "How many items sold less than 1 units in at least one store?\nEnsure brevity in your answer. ",
+      "gt": "Zero.",
+      "pred": "0",
+      "score": 0.0
+    },
+    {
+      "idx": 23,
+      "question": "How many items sold less than 3 units?\nMake the answer very short.",
+      "gt": "Zero.",
+      "pred": "zero",
+      "score": 1.0
+    },
+    {
+      "idx": 24,
+      "question": "Which bar has the largest value?\nEnsure brevity in your answer. ",
+      "gt": "Change.",
+      "pred": "change",
+      "score": 1.0
+    },
+    {
+      "idx": 25,
+      "question": "How many objects are preferred by more than 20 percent of people in at least one category?\nOffer a very short reply.",
+      "gt": "Four.",
+      "pred": "4.00",
+      "score": 0.0
+    },
+    {
+      "idx": 26,
+      "question": "How many objects are preferred by more than 6 people in at least one category?\nMake the answer very short.",
+      "gt": "Two.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 27,
+      "question": "How many algorithms have accuracy lower than 4 in at least one dataset?\nYour answer should be very brief.",
+      "gt": "Three.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 28,
+      "question": "How many groups of bars contain at least one bar with value smaller than 5?\nYour response must be concise.",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 29,
+      "question": "How many groups of bars contain at least one bar with value smaller than 3?\nKeep it short and to the point.",
+      "gt": "Three.",
+      "pred": "4.0",
+      "score": 0.0
+    },
+    {
+      "idx": 30,
+      "question": "Which bar has the largest value?\nYour answer should be very brief.",
+      "gt": "Gown.",
+      "pred": "gown",
+      "score": 1.0
+    },
+    {
+      "idx": 31,
+      "question": "How many groups of bars contain at least one bar with value greater than 5?\nYour response must be concise.",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 32,
+      "question": "Which object is the most preferred?\nProvide a succinct answer.",
+      "gt": "Shot.",
+      "pred": "shot",
+      "score": 1.0
+    },
+    {
+      "idx": 33,
+      "question": "Which algorithm has the highest accuracy?\nOffer a very short reply.",
+      "gt": "Note.",
+      "pred": "note",
+      "score": 1.0
+    },
+    {
+      "idx": 34,
+      "question": "How many algorithms have accuracy lower than 6 in at least one dataset?\nYour answer should be very brief.",
+      "gt": "Six.",
+      "pred": "6",
+      "score": 0.0
+    },
+    {
+      "idx": 35,
+      "question": "Which bar has the largest value?\nYour answer should be very brief.",
+      "gt": "Round.",
+      "pred": "round",
+      "score": 1.0
+    },
+    {
+      "idx": 36,
+      "question": "How many algorithms have accuracy higher than 1 in at least one dataset?\nYour answer should be compact.",
+      "gt": "Four.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 37,
+      "question": "How many objects are preferred by less than 60 percent of people in at least one category?\nKeep it short and to the point.",
+      "gt": "Four.",
+      "pred": "4.0",
+      "score": 0.0
+    },
+    {
+      "idx": 38,
+      "question": "How many groups of bars contain at least one bar with value smaller than 20?\nMake the answer very short.",
+      "gt": "Four.",
+      "pred": "4.00",
+      "score": 0.0
+    },
+    {
+      "idx": 39,
+      "question": "How many groups of bars contain at least one bar with value smaller than 3?\nYour answer should be very brief.",
+      "gt": "Four.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 40,
+      "question": "Which object is the most preferred?\nOffer a very short reply.",
+      "gt": "Dear.",
+      "pred": "dear",
+      "score": 1.0
+    },
+    {
+      "idx": 41,
+      "question": "Which item sold the most units?\nGive a very brief answer.",
+      "gt": "Origin.",
+      "pred": "origin",
+      "score": 1.0
+    },
+    {
+      "idx": 42,
+      "question": "Which object is the most preferred?\nGive a very brief answer.",
+      "gt": "Plane.",
+      "pred": "plane",
+      "score": 1.0
+    },
+    {
+      "idx": 43,
+      "question": "Which bar has the largest value?\nOffer a very short reply.",
+      "gt": "Market.",
+      "pred": "market",
+      "score": 1.0
+    },
+    {
+      "idx": 44,
+      "question": "How many groups of bars contain at least one bar with value greater than 20?\nGive a very brief answer.",
+      "gt": "Two.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 45,
+      "question": "Which algorithm has the highest accuracy?\nProvide a short and direct response.",
+      "gt": "Voting.",
+      "pred": "voting",
+      "score": 1.0
+    },
+    {
+      "idx": 46,
+      "question": "Which bar has the largest value?\nMake the answer very short.",
+      "gt": "Part.",
+      "pred": "part",
+      "score": 1.0
+    },
+    {
+      "idx": 47,
+      "question": "Which bar has the smallest value?\nYour response must be concise.",
+      "gt": "Sale.",
+      "pred": "sale",
+      "score": 1.0
+    },
+    {
+      "idx": 48,
+      "question": "Which object is the most preferred?\nYour answer should be compact.",
+      "gt": "Column.",
+      "pred": "column",
+      "score": 1.0
+    },
+    {
+      "idx": 49,
+      "question": "How many objects are preferred by less than 4 people in at least one category?\nMake the answer very short.",
+      "gt": "Two.",
+      "pred": "2",
+      "score": 0.0
+    },
+    {
+      "idx": 50,
+      "question": "How many algorithms have accuracy higher than 6 in at least one dataset?\nYour answer should be very brief.",
+      "gt": "Three.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 51,
+      "question": "Which item sold the most units?\nProvide a succinct answer.",
+      "gt": "Relief.",
+      "pred": "relief",
+      "score": 1.0
+    },
+    {
+      "idx": 52,
+      "question": "How many stacks of bars contain at least one element with value smaller than 30?\nYour answer should be compact.",
+      "gt": "Zero.",
+      "pred": "0",
+      "score": 0.0
+    },
+    {
+      "idx": 53,
+      "question": "How many algorithms have accuracy higher than 4 in at least one dataset?\nOffer a terse response.",
+      "gt": "Three.",
+      "pred": "4.0",
+      "score": 0.0
+    },
+    {
+      "idx": 54,
+      "question": "Which algorithm has the highest accuracy?\nKeep it short and to the point.",
+      "gt": "Appeal.",
+      "pred": "appeal",
+      "score": 1.0
+    },
+    {
+      "idx": 55,
+      "question": "Which bar has the largest value?\nKeep it short and to the point.",
+      "gt": "Vision.",
+      "pred": "vision",
+      "score": 1.0
+    },
+    {
+      "idx": 56,
+      "question": "How many algorithms have accuracy lower than 50 in at least one dataset?\nProvide a succinct answer.",
+      "gt": "Three.",
+      "pred": "3.00",
+      "score": 0.0
+    },
+    {
+      "idx": 57,
+      "question": "Which object is the most preferred?\nGive a very brief answer.",
+      "gt": "Plain.",
+      "pred": "plain",
+      "score": 1.0
+    },
+    {
+      "idx": 58,
+      "question": "How many groups of bars contain at least one bar with value greater than 2?\nOffer a very short reply.",
+      "gt": "Four.",
+      "pred": "4.00",
+      "score": 0.0
+    },
+    {
+      "idx": 59,
+      "question": "Which object is the most preferred?\nEnsure brevity in your answer. ",
+      "gt": "Holder.",
+      "pred": "holder",
+      "score": 1.0
+    },
+    {
+      "idx": 60,
+      "question": "How many objects are preferred by more than 90 percent of people in at least one category?\nKeep it short and to the point.",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 61,
+      "question": "How many items sold more than 8 units in at least one store?\nYour response must be concise.",
+      "gt": "One.",
+      "pred": "1",
+      "score": 0.0
+    },
+    {
+      "idx": 62,
+      "question": "How many items sold less than 4 units in at least one store?\nYour answer should be very brief.",
+      "gt": "Four.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 63,
+      "question": "How many groups of bars contain at least one bar with value greater than 3?\nOffer a very short reply.",
+      "gt": "Four.",
+      "pred": "4.00",
+      "score": 0.0
+    },
+    {
+      "idx": 64,
+      "question": "Which algorithm has the highest accuracy?\nGive a very brief answer.",
+      "gt": "Idea.",
+      "pred": "idea",
+      "score": 1.0
+    },
+    {
+      "idx": 65,
+      "question": "Which bar has the largest value?\nEnsure brevity in your answer. ",
+      "gt": "Tool.",
+      "pred": "tool",
+      "score": 1.0
+    },
+    {
+      "idx": 66,
+      "question": "Which bar has the largest value?\nYour response must be concise.",
+      "gt": "Sera.",
+      "pred": "sera",
+      "score": 1.0
+    },
+    {
+      "idx": 67,
+      "question": "Which bar has the largest value?\nMake the answer very short.",
+      "gt": "Cloth.",
+      "pred": "cloth",
+      "score": 1.0
+    },
+    {
+      "idx": 68,
+      "question": "How many objects are preferred by more than 50 percent of people in at least one category?\nMake the answer very short.",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 69,
+      "question": "How many items sold less than 8 units in at least one store?\nEnsure brevity in your answer. ",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 70,
+      "question": "Which algorithm has the highest accuracy?\nMake the answer very short.",
+      "gt": "Harbor.",
+      "pred": "harbor",
+      "score": 1.0
+    },
+    {
+      "idx": 71,
+      "question": "Which bar has the largest value?\nMake the answer very short.",
+      "gt": "Wire.",
+      "pred": "wire",
+      "score": 1.0
+    },
+    {
+      "idx": 72,
+      "question": "Which object is the most preferred?\nYour answer should be very brief.",
+      "gt": "Moon.",
+      "pred": "moon",
+      "score": 1.0
+    },
+    {
+      "idx": 73,
+      "question": "Which object is the most preferred?\nMake the answer very short.",
+      "gt": "Belt.",
+      "pred": "belt",
+      "score": 1.0
+    },
+    {
+      "idx": 74,
+      "question": "Which bar has the largest value?\nEnsure brevity in your answer. ",
+      "gt": "Gang.",
+      "pred": "gang",
+      "score": 1.0
+    },
+    {
+      "idx": 75,
+      "question": "Which object is the most preferred?\nKeep it short and to the point.",
+      "gt": "Soil.",
+      "pred": "soil",
+      "score": 1.0
+    },
+    {
+      "idx": 76,
+      "question": "Which item sold the most units?\nYour response must be concise.",
+      "gt": "Mercy.",
+      "pred": "mercy",
+      "score": 1.0
+    },
+    {
+      "idx": 77,
+      "question": "How many items sold less than 8 units in at least one store?\nProvide a succinct answer.",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 78,
+      "question": "How many objects are preferred by more than 4 people in at least one category?\nKeep it short and to the point.",
+      "gt": "Five.",
+      "pred": "5.0",
+      "score": 0.0
+    },
+    {
+      "idx": 79,
+      "question": "Which bar has the smallest value?\nYour response must be concise.",
+      "gt": "Jungle.",
+      "pred": "jungle",
+      "score": 1.0
+    },
+    {
+      "idx": 80,
+      "question": "Which item sold the most units?\nYour answer should be very brief.",
+      "gt": "Worker.",
+      "pred": "worker",
+      "score": 1.0
+    },
+    {
+      "idx": 81,
+      "question": "Which bar has the largest value?\nYour answer should be compact.",
+      "gt": "Light.",
+      "pred": "light",
+      "score": 1.0
+    },
+    {
+      "idx": 82,
+      "question": "Which object is the most preferred?\nProvide a succinct answer.",
+      "gt": "Wave.",
+      "pred": "wave",
+      "score": 1.0
+    },
+    {
+      "idx": 83,
+      "question": "How many algorithms have accuracy lower than 8 in at least one dataset?\nEnsure brevity in your answer. ",
+      "gt": "Three.",
+      "pred": "3.0",
+      "score": 0.0
+    },
+    {
+      "idx": 84,
+      "question": "How many algorithms have accuracy lower than 40 in at least one dataset?\nProvide a short and direct response.",
+      "gt": "Two.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 85,
+      "question": "How many groups of bars contain at least one bar with value smaller than 80?\nEnsure brevity in your answer. ",
+      "gt": "Six.",
+      "pred": "6",
+      "score": 0.0
+    },
+    {
+      "idx": 86,
+      "question": "Which object is the most preferred?\nProvide a succinct answer.",
+      "gt": "Effect.",
+      "pred": "effect",
+      "score": 1.0
+    },
+    {
+      "idx": 87,
+      "question": "How many objects are preferred by less than 40 percent of people in at least one category?\nYour answer should be compact.",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 88,
+      "question": "How many objects are preferred by less than 4 people in at least one category?\nOffer a terse response.",
+      "gt": "Two.",
+      "pred": "2.0",
+      "score": 0.0
+    },
+    {
+      "idx": 89,
+      "question": "How many items sold less than 2 units in at least one store?\nMake the answer very short.",
+      "gt": "Two.",
+      "pred": "1",
+      "score": 0.0
+    },
+    {
+      "idx": 90,
+      "question": "Which item sold the most units?\nOffer a very short reply.",
+      "gt": "Mind.",
+      "pred": "mind",
+      "score": 1.0
+    },
+    {
+      "idx": 91,
+      "question": "How many groups of bars contain at least one bar with value greater than 60?\nYour answer should be compact.",
+      "gt": "Two.",
+      "pred": "2",
+      "score": 0.0
+    },
+    {
+      "idx": 92,
+      "question": "Which bar has the largest value?\nProvide a short and direct response.",
+      "gt": "Depth.",
+      "pred": "depth",
+      "score": 1.0
+    },
+    {
+      "idx": 93,
+      "question": "Which object is the most preferred?\nEnsure brevity in your answer. ",
+      "gt": "Order.",
+      "pred": "order",
+      "score": 1.0
+    },
+    {
+      "idx": 94,
+      "question": "Which object is the most preferred?\nYour answer should be compact.",
+      "gt": "Force.",
+      "pred": "force",
+      "score": 1.0
+    },
+    {
+      "idx": 95,
+      "question": "How many algorithms have accuracy higher than 9 in at least one dataset?\nOffer a terse response.",
+      "gt": "Zero.",
+      "pred": "Zero",
+      "score": 1.0
+    },
+    {
+      "idx": 96,
+      "question": "How many algorithms have accuracy lower than 10 in at least one dataset?\nEnsure brevity in your answer. ",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 97,
+      "question": "Which bar has the largest value?\nYour answer should be compact.",
+      "gt": "Light.",
+      "pred": "light",
+      "score": 1.0
+    },
+    {
+      "idx": 98,
+      "question": "How many groups of bars contain at least one bar with value greater than 8?\nKeep it short and to the point.",
+      "gt": "One.",
+      "pred": "1.0",
+      "score": 0.0
+    },
+    {
+      "idx": 99,
+      "question": "Which bar has the largest value?\nYour answer should be very brief.",
+      "gt": "Stand.",
+      "pred": "stand",
+      "score": 1.0
+    },
+    {
+      "idx": 100,
+      "question": "How many algorithms have accuracy lower than 90 in at least one dataset?\nProvide a succinct answer.",
+      "gt": "Six.",
+      "pred": "7.00",
+      "score": 0.0
+    },
+    {
+      "idx": 101,
+      "question": "Which bar has the largest value?\nKeep it short and to the point.",
+      "gt": "Fuel.",
+      "pred": "fuel",
+      "score": 1.0
+    },
+    {
+      "idx": 102,
+      "question": "How many algorithms have accuracy lower than 90 in at least one dataset?\nKeep it short and to the point.",
+      "gt": "Four.",
+      "pred": "4.0",
+      "score": 0.0
+    },
+    {
+      "idx": 103,
+      "question": "How many groups of bars contain at least one bar with value smaller than 6?\nYour response must be concise.",
+      "gt": "Six.",
+      "pred": "7",
+      "score": 0.0
+    },
+    {
+      "idx": 104,
+      "question": "How many groups of bars contain at least one bar with value greater than 40?\nKeep it short and to the point.",
+      "gt": "One.",
+      "pred": "1.00",
+      "score": 0.0
+    },
+    {
+      "idx": 105,
+      "question": "How many groups of bars contain at least one bar with value smaller than 50?\nOffer a very short reply.",
+      "gt": "Two.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 106,
+      "question": "Which algorithm has the lowest accuracy?\nYour answer should be compact.",
+      "gt": "Joy.",
+      "pred": "joy",
+      "score": 1.0
+    },
+    {
+      "idx": 107,
+      "question": "Which bar has the smallest value?\nYour response must be concise.",
+      "gt": "Wonder.",
+      "pred": "wonder",
+      "score": 1.0
+    },
+    {
+      "idx": 108,
+      "question": "How many objects are preferred by more than 1 people in at least one category?\nEnsure brevity in your answer. ",
+      "gt": "Six.",
+      "pred": "6.00",
+      "score": 0.0
+    },
+    {
+      "idx": 109,
+      "question": "How many groups of bars contain at least one bar with value greater than 10?\nYour response must be concise.",
+      "gt": "Five.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 110,
+      "question": "Which item sold the most units?\nOffer a terse response.",
+      "gt": "Error.",
+      "pred": "error",
+      "score": 1.0
+    },
+    {
+      "idx": 111,
+      "question": "Which bar has the largest value?\nEnsure brevity in your answer. ",
+      "gt": "Smell.",
+      "pred": "smell",
+      "score": 1.0
+    },
+    {
+      "idx": 112,
+      "question": "Which bar has the largest value?\nEnsure brevity in your answer. ",
+      "gt": "Soap.",
+      "pred": "soap",
+      "score": 1.0
+    },
+    {
+      "idx": 113,
+      "question": "Which algorithm has the lowest accuracy?\nProvide a succinct answer.",
+      "gt": "Prize.",
+      "pred": "prize",
+      "score": 1.0
+    },
+    {
+      "idx": 114,
+      "question": "Which object is the most preferred?\nProvide a short and direct response.",
+      "gt": "Bomb.",
+      "pred": "bomb",
+      "score": 1.0
+    },
+    {
+      "idx": 115,
+      "question": "Which algorithm has the highest accuracy?\nYour answer should be very brief.",
+      "gt": "Family.",
+      "pred": "family",
+      "score": 1.0
+    },
+    {
+      "idx": 116,
+      "question": "How many groups of bars contain at least one bar with value smaller than 90?\nYour answer should be compact.",
+      "gt": "Five.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 117,
+      "question": "How many objects are preferred by less than 5 people in at least one category?\nProvide a short and direct response.",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 118,
+      "question": "How many groups of bars contain at least one bar with value smaller than 10?\nProvide a short and direct response.",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 119,
+      "question": "Which bar has the largest value?\nOffer a very short reply.",
+      "gt": "Steel.",
+      "pred": "steel",
+      "score": 1.0
+    },
+    {
+      "idx": 120,
+      "question": "How many groups of bars contain at least one bar with value smaller than -3?\nYour response must be concise.",
+      "gt": "Zero.",
+      "pred": "Zero",
+      "score": 1.0
+    },
+    {
+      "idx": 121,
+      "question": "Which object is the most preferred?\nYour response must be concise.",
+      "gt": "Savage.",
+      "pred": "savage",
+      "score": 1.0
+    },
+    {
+      "idx": 122,
+      "question": "Which bar has the largest value?\nProvide a succinct answer.",
+      "gt": "Tree.",
+      "pred": "tree",
+      "score": 1.0
+    },
+    {
+      "idx": 123,
+      "question": "Which algorithm has the highest accuracy?\nYour answer should be compact.",
+      "gt": "Holder.",
+      "pred": "holder",
+      "score": 1.0
+    },
+    {
+      "idx": 124,
+      "question": "How many objects are preferred by less than 6 people in at least one category?\nGive a very brief answer.",
+      "gt": "Six.",
+      "pred": "6",
+      "score": 0.0
+    },
+    {
+      "idx": 125,
+      "question": "Which bar has the smallest value?\nProvide a succinct answer.",
+      "gt": "Genius.",
+      "pred": "genius",
+      "score": 1.0
+    },
+    {
+      "idx": 126,
+      "question": "How many algorithms have accuracy lower than 5 in at least one dataset?\nYour answer should be very brief.",
+      "gt": "Four.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 127,
+      "question": "How many objects are liked by more than 4 people?\nOffer a very short reply.",
+      "gt": "Two.",
+      "pred": "2.0",
+      "score": 0.0
+    },
+    {
+      "idx": 128,
+      "question": "How many groups of bars contain at least one bar with value smaller than 9?\nOffer a terse response.",
+      "gt": "One.",
+      "pred": "1.0",
+      "score": 0.0
+    },
+    {
+      "idx": 129,
+      "question": "Which object is the least preferred?\nGive a very brief answer.",
+      "gt": "Pilot.",
+      "pred": "pilot",
+      "score": 1.0
+    },
+    {
+      "idx": 130,
+      "question": "Which bar has the largest value?\nProvide a short and direct response.",
+      "gt": "Site.",
+      "pred": "site",
+      "score": 1.0
+    },
+    {
+      "idx": 131,
+      "question": "How many objects are preferred by more than 40 percent of people in at least one category?\nYour answer should be compact.",
+      "gt": "Two.",
+      "pred": "2",
+      "score": 0.0
+    },
+    {
+      "idx": 132,
+      "question": "How many groups of bars contain at least one bar with value smaller than 3?\nKeep it short and to the point.",
+      "gt": "Two.",
+      "pred": "3.0",
+      "score": 0.0
+    },
+    {
+      "idx": 133,
+      "question": "Which bar has the largest value?\nMake the answer very short.",
+      "gt": "Parade.",
+      "pred": "parade",
+      "score": 1.0
+    },
+    {
+      "idx": 134,
+      "question": "How many groups of bars contain at least one bar with value smaller than 7?\nProvide a succinct answer.",
+      "gt": "Five.",
+      "pred": "6",
+      "score": 0.0
+    },
+    {
+      "idx": 135,
+      "question": "How many algorithms have accuracy lower than 5 in at least one dataset?\nOffer a terse response.",
+      "gt": "Five.",
+      "pred": "5.0",
+      "score": 0.0
+    },
+    {
+      "idx": 136,
+      "question": "Which algorithm has the highest accuracy?\nProvide a short and direct response.",
+      "gt": "Image.",
+      "pred": "image",
+      "score": 1.0
+    },
+    {
+      "idx": 137,
+      "question": "How many groups of bars contain at least one bar with value greater than 6?\nProvide a succinct answer.",
+      "gt": "Six.",
+      "pred": "6",
+      "score": 0.0
+    },
+    {
+      "idx": 138,
+      "question": "Which bar has the largest value?\nEnsure brevity in your answer. ",
+      "gt": "Access.",
+      "pred": "access",
+      "score": 1.0
+    },
+    {
+      "idx": 139,
+      "question": "How many algorithms have accuracy higher than 5 in at least one dataset?\nOffer a terse response.",
+      "gt": "Seven.",
+      "pred": "6.0",
+      "score": 0.0
+    },
+    {
+      "idx": 140,
+      "question": "How many groups of bars contain at least one bar with value greater than 10?\nYour answer should be very brief.",
+      "gt": "Eight.",
+      "pred": "9",
+      "score": 0.0
+    },
+    {
+      "idx": 141,
+      "question": "How many objects are preferred by more than 70 percent of people in at least one category?\nEnsure brevity in your answer. ",
+      "gt": "One.",
+      "pred": "1.0",
+      "score": 0.0
+    },
+    {
+      "idx": 142,
+      "question": "How many groups of bars contain at least one bar with value smaller than 9?\nYour response must be concise.",
+      "gt": "Four.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 143,
+      "question": "How many items sold less than 9 units in at least one store?\nEnsure brevity in your answer. ",
+      "gt": "Nine.",
+      "pred": "9",
+      "score": 0.0
+    },
+    {
+      "idx": 144,
+      "question": "How many algorithms have accuracy lower than 8 in at least one dataset?\nProvide a short and direct response.",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 145,
+      "question": "How many groups of bars contain at least one bar with value greater than 4?\nEnsure brevity in your answer. ",
+      "gt": "One.",
+      "pred": "1.0",
+      "score": 0.0
+    },
+    {
+      "idx": 146,
+      "question": "How many groups of bars contain at least one bar with value greater than 30?\nYour answer should be very brief.",
+      "gt": "Two.",
+      "pred": "2",
+      "score": 0.0
+    },
+    {
+      "idx": 147,
+      "question": "How many algorithms have accuracy higher than 6 in at least one dataset?\nGive a very brief answer.",
+      "gt": "Three.",
+      "pred": "5.0",
+      "score": 0.0
+    },
+    {
+      "idx": 148,
+      "question": "Which object is the most preferred?\nProvide a succinct answer.",
+      "gt": "Legs.",
+      "pred": "legs",
+      "score": 1.0
+    },
+    {
+      "idx": 149,
+      "question": "How many groups of bars contain at least one bar with value greater than 5?\nKeep it short and to the point.",
+      "gt": "Two.",
+      "pred": "2.0",
+      "score": 0.0
+    },
+    {
+      "idx": 150,
+      "question": "Which bar has the largest value?\nOffer a terse response.",
+      "gt": "Girl.",
+      "pred": "girl",
+      "score": 1.0
+    },
+    {
+      "idx": 151,
+      "question": "How many groups of bars contain at least one bar with value greater than 20?\nProvide a succinct answer.",
+      "gt": "Four.",
+      "pred": "4.00",
+      "score": 0.0
+    },
+    {
+      "idx": 152,
+      "question": "How many algorithms have accuracy lower than 8 in at least one dataset?\nProvide a short and direct response.",
+      "gt": "Four.",
+      "pred": "4.00",
+      "score": 0.0
+    },
+    {
+      "idx": 153,
+      "question": "How many objects are preferred by less than 60 percent of people in at least one category?\nProvide a short and direct response.",
+      "gt": "Four.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 154,
+      "question": "How many items sold more than 8 units in at least one store?\nProvide a short and direct response.",
+      "gt": "Zero.",
+      "pred": "Zero",
+      "score": 1.0
+    },
+    {
+      "idx": 155,
+      "question": "How many algorithms have accuracy higher than 6 in at least one dataset?\nYour response must be concise.",
+      "gt": "One.",
+      "pred": "1",
+      "score": 0.0
+    },
+    {
+      "idx": 156,
+      "question": "Which bar has the largest value?\nProvide a succinct answer.",
+      "gt": "Disk.",
+      "pred": "disk",
+      "score": 1.0
+    },
+    {
+      "idx": 157,
+      "question": "How many groups of bars contain at least one bar with value greater than 2?\nEnsure brevity in your answer. ",
+      "gt": "Four.",
+      "pred": "4.0",
+      "score": 0.0
+    },
+    {
+      "idx": 158,
+      "question": "How many items sold more than 1 units in at least one store?\nKeep it short and to the point.",
+      "gt": "Six.",
+      "pred": "6.0",
+      "score": 0.0
+    },
+    {
+      "idx": 159,
+      "question": "How many objects are preferred by less than 40 percent of people in at least one category?\nMake the answer very short.",
+      "gt": "Two.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 160,
+      "question": "How many objects are preferred by more than 3 people in at least one category?\nEnsure brevity in your answer. ",
+      "gt": "Seven.",
+      "pred": "7",
+      "score": 0.0
+    },
+    {
+      "idx": 161,
+      "question": "How many groups of bars contain at least one bar with value smaller than 30?\nYour response must be concise.",
+      "gt": "Two.",
+      "pred": "2.0",
+      "score": 0.0
+    },
+    {
+      "idx": 162,
+      "question": "Which object is the most preferred?\nMake the answer very short.",
+      "gt": "Share.",
+      "pred": "share",
+      "score": 1.0
+    },
+    {
+      "idx": 163,
+      "question": "Which algorithm has the highest accuracy?\nOffer a terse response.",
+      "gt": "Blonde.",
+      "pred": "blonde",
+      "score": 1.0
+    },
+    {
+      "idx": 164,
+      "question": "How many algorithms have accuracy lower than 50 in at least one dataset?\nGive a very brief answer.",
+      "gt": "Three.",
+      "pred": "3.0",
+      "score": 0.0
+    },
+    {
+      "idx": 165,
+      "question": "How many groups of bars contain at least one bar with value greater than 100000000?\nKeep it short and to the point.",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 166,
+      "question": "How many objects are preferred by more than 1 people in at least one category?\nOffer a very short reply.",
+      "gt": "Three.",
+      "pred": "3.0",
+      "score": 0.0
+    },
+    {
+      "idx": 167,
+      "question": "How many items sold more than 2 units in at least one store?\nEnsure brevity in your answer. ",
+      "gt": "Three.",
+      "pred": "3.00",
+      "score": 0.0
+    },
+    {
+      "idx": 168,
+      "question": "How many items sold more than 4 units in at least one store?\nYour response must be concise.",
+      "gt": "Four.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 169,
+      "question": "Which object is the least preferred?\nYour answer should be compact.",
+      "gt": "Number.",
+      "pred": "number",
+      "score": 1.0
+    },
+    {
+      "idx": 170,
+      "question": "How many items sold more than 7 units in at least one store?\nOffer a terse response.",
+      "gt": "Two.",
+      "pred": "1.00",
+      "score": 0.0
+    },
+    {
+      "idx": 171,
+      "question": "How many groups of bars contain at least one bar with value greater than 60?\nProvide a succinct answer.",
+      "gt": "One.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 172,
+      "question": "How many groups of bars contain at least one bar with value greater than 10000?\nGive a very brief answer.",
+      "gt": "Two.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 173,
+      "question": "How many groups of bars contain at least one bar with value greater than 5?\nProvide a succinct answer.",
+      "gt": "Three.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 174,
+      "question": "Which object is the most preferred?\nProvide a succinct answer.",
+      "gt": "Travel.",
+      "pred": "travel",
+      "score": 1.0
+    },
+    {
+      "idx": 175,
+      "question": "How many objects are preferred by more than 9 people in at least one category?\nProvide a succinct answer.",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 176,
+      "question": "How many groups of bars contain at least one bar with value smaller than 7?\nProvide a short and direct response.",
+      "gt": "Six.",
+      "pred": "6",
+      "score": 0.0
+    },
+    {
+      "idx": 177,
+      "question": "Which object is the most preferred?\nMake the answer very short.",
+      "gt": "Habit.",
+      "pred": "habit",
+      "score": 1.0
+    },
+    {
+      "idx": 178,
+      "question": "How many algorithms have accuracy lower than 5 in at least one dataset?\nYour answer should be very brief.",
+      "gt": "Two.",
+      "pred": "2",
+      "score": 0.0
+    },
+    {
+      "idx": 179,
+      "question": "How many algorithms have accuracy lower than 6 in at least one dataset?\nProvide a succinct answer.",
+      "gt": "Four.",
+      "pred": "4.00",
+      "score": 0.0
+    },
+    {
+      "idx": 180,
+      "question": "How many algorithms have accuracy lower than 7 in at least one dataset?\nYour answer should be very brief.",
+      "gt": "Four.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 181,
+      "question": "How many algorithms have accuracy higher than 5 in at least one dataset?\nYour answer should be compact.",
+      "gt": "Eight.",
+      "pred": "9",
+      "score": 0.0
+    },
+    {
+      "idx": 182,
+      "question": "Which object is the most preferred?\nMake the answer very short.",
+      "gt": "Spite.",
+      "pred": "spite",
+      "score": 1.0
+    },
+    {
+      "idx": 183,
+      "question": "How many groups of bars contain at least one bar with value smaller than 2?\nYour answer should be compact.",
+      "gt": "Zero.",
+      "pred": "0",
+      "score": 0.0
+    },
+    {
+      "idx": 184,
+      "question": "Which bar has the largest value?\nProvide a succinct answer.",
+      "gt": "Host.",
+      "pred": "host",
+      "score": 1.0
+    },
+    {
+      "idx": 185,
+      "question": "How many objects are preferred by more than 4 people in at least one category?\nEnsure brevity in your answer. ",
+      "gt": "Five.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 186,
+      "question": "How many objects are liked by less than 5 people?\nYour response must be concise.",
+      "gt": "Zero.",
+      "pred": "Zero",
+      "score": 1.0
+    },
+    {
+      "idx": 187,
+      "question": "Which item sold the most units?\nYour answer should be very brief.",
+      "gt": "Belief.",
+      "pred": "belief",
+      "score": 1.0
+    },
+    {
+      "idx": 188,
+      "question": "How many objects are preferred by less than 2 people in at least one category?\nKeep it short and to the point.",
+      "gt": "Two.",
+      "pred": "2.0",
+      "score": 0.0
+    },
+    {
+      "idx": 189,
+      "question": "Which bar has the smallest value?\nOffer a very short reply.",
+      "gt": "List.",
+      "pred": "list",
+      "score": 1.0
+    },
+    {
+      "idx": 190,
+      "question": "How many items sold less than 4 units in at least one store?\nOffer a very short reply.",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 191,
+      "question": "How many objects are preferred by less than 9 people in at least one category?\nProvide a short and direct response.",
+      "gt": "Two.",
+      "pred": "2",
+      "score": 0.0
+    },
+    {
+      "idx": 192,
+      "question": "Which bar has the largest value?\nProvide a succinct answer.",
+      "gt": "Brass.",
+      "pred": "brass",
+      "score": 1.0
+    },
+    {
+      "idx": 193,
+      "question": "How many objects are preferred by more than 6 people in at least one category?\nKeep it short and to the point.",
+      "gt": "One.",
+      "pred": "1.0",
+      "score": 0.0
+    },
+    {
+      "idx": 194,
+      "question": "How many objects are preferred by more than 20 percent of people in at least one category?\nProvide a succinct answer.",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 195,
+      "question": "How many items sold more than 9 units in at least one store?\nOffer a very short reply.",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 196,
+      "question": "How many algorithms have accuracy lower than 7 in at least one dataset?\nYour response must be concise.",
+      "gt": "Five.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 197,
+      "question": "How many stacks of bars contain at least one element with value smaller than 5?\nGive a very brief answer.",
+      "gt": "Four.",
+      "pred": "3.0",
+      "score": 0.0
+    },
+    {
+      "idx": 198,
+      "question": "How many groups of bars contain at least one bar with value greater than 1000000000?\nKeep it short and to the point.",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 199,
+      "question": "Which object is the most preferred?\nGive a very brief answer.",
+      "gt": "Sir.",
+      "pred": "sir",
+      "score": 1.0
+    },
+    {
+      "idx": 200,
+      "question": "How many algorithms have accuracy higher than 2 in at least one dataset?\nOffer a terse response.",
+      "gt": "Two.",
+      "pred": "1.00",
+      "score": 0.0
+    },
+    {
+      "idx": 201,
+      "question": "Which algorithm has the highest accuracy?\nKeep it short and to the point.",
+      "gt": "Bundle.",
+      "pred": "bundle",
+      "score": 1.0
+    },
+    {
+      "idx": 202,
+      "question": "How many objects are preferred by less than 7 people in at least one category?\nEnsure brevity in your answer. ",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 203,
+      "question": "Which object is the most preferred?\nGive a very brief answer.",
+      "gt": "Plain.",
+      "pred": "plain",
+      "score": 1.0
+    },
+    {
+      "idx": 204,
+      "question": "How many items sold less than 7 units in at least one store?\nProvide a short and direct response.",
+      "gt": "Two.",
+      "pred": "2",
+      "score": 0.0
+    },
+    {
+      "idx": 205,
+      "question": "Which algorithm has the highest accuracy?\nKeep it short and to the point.",
+      "gt": "Suit.",
+      "pred": "suit",
+      "score": 1.0
+    },
+    {
+      "idx": 206,
+      "question": "Which algorithm has the highest accuracy?\nYour response must be concise.",
+      "gt": "Fight.",
+      "pred": "fight",
+      "score": 1.0
+    },
+    {
+      "idx": 207,
+      "question": "How many groups of bars contain at least one bar with value greater than 10?\nMake the answer very short.",
+      "gt": "Five.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 208,
+      "question": "How many algorithms have accuracy lower than 40 in at least one dataset?\nGive a very brief answer.",
+      "gt": "Two.",
+      "pred": "3.0",
+      "score": 0.0
+    },
+    {
+      "idx": 209,
+      "question": "Which algorithm has the highest accuracy?\nEnsure brevity in your answer. ",
+      "gt": "Gate.",
+      "pred": "gate",
+      "score": 1.0
+    },
+    {
+      "idx": 210,
+      "question": "How many items sold less than 1 units in at least one store?\nOffer a terse response.",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 211,
+      "question": "Which object is the most preferred?\nOffer a terse response.",
+      "gt": "Week.",
+      "pred": "week",
+      "score": 1.0
+    },
+    {
+      "idx": 212,
+      "question": "How many algorithms have accuracy lower than 2 in at least one dataset?\nEnsure brevity in your answer. ",
+      "gt": "One.",
+      "pred": "1.00",
+      "score": 0.0
+    },
+    {
+      "idx": 213,
+      "question": "How many groups of bars contain at least one bar with value greater than 7?\nGive a very brief answer.",
+      "gt": "One.",
+      "pred": "1.00",
+      "score": 0.0
+    },
+    {
+      "idx": 214,
+      "question": "How many algorithms have accuracy higher than 6 in at least one dataset?\nEnsure brevity in your answer. ",
+      "gt": "Zero.",
+      "pred": "Zero",
+      "score": 1.0
+    },
+    {
+      "idx": 215,
+      "question": "How many groups of bars contain at least one bar with value greater than 10?\nOffer a very short reply.",
+      "gt": "Eight.",
+      "pred": "8.0",
+      "score": 0.0
+    },
+    {
+      "idx": 216,
+      "question": "Which object is the most preferred?\nYour answer should be very brief.",
+      "gt": "Method.",
+      "pred": "method",
+      "score": 1.0
+    },
+    {
+      "idx": 217,
+      "question": "How many objects are preferred by more than 70 percent of people in at least one category?\nOffer a terse response.",
+      "gt": "Three.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 218,
+      "question": "Which bar has the largest value?\nKeep it short and to the point.",
+      "gt": "Minute.",
+      "pred": "minute",
+      "score": 1.0
+    },
+    {
+      "idx": 219,
+      "question": "How many objects are preferred by more than 5 people in at least one category?\nYour answer should be very brief.",
+      "gt": "Four.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 220,
+      "question": "How many groups of bars contain at least one bar with value smaller than 100000000?\nEnsure brevity in your answer. ",
+      "gt": "Five.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 221,
+      "question": "How many objects are preferred by less than 7 people in at least one category?\nYour answer should be very brief.",
+      "gt": "Four.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 222,
+      "question": "How many groups of bars contain at least one bar with value greater than 5?\nGive a very brief answer.",
+      "gt": "Two.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 223,
+      "question": "How many objects are preferred by more than 1 people in at least one category?\nProvide a succinct answer.",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 224,
+      "question": "How many groups of bars contain at least one bar with value greater than 5?\nGive a very brief answer.",
+      "gt": "One.",
+      "pred": "1.0",
+      "score": 0.0
+    },
+    {
+      "idx": 225,
+      "question": "How many items sold less than 3 units in at least one store?\nKeep it short and to the point.",
+      "gt": "One.",
+      "pred": "1.0",
+      "score": 0.0
+    },
+    {
+      "idx": 226,
+      "question": "How many algorithms have accuracy higher than 2 in at least one dataset?\nOffer a very short reply.",
+      "gt": "Four.",
+      "pred": "4.00",
+      "score": 0.0
+    },
+    {
+      "idx": 227,
+      "question": "How many items sold less than 8 units in at least one store?\nYour answer should be compact.",
+      "gt": "Eight.",
+      "pred": "9",
+      "score": 0.0
+    },
+    {
+      "idx": 228,
+      "question": "Which bar has the largest value?\nYour response must be concise.",
+      "gt": "Use.",
+      "pred": "use",
+      "score": 1.0
+    },
+    {
+      "idx": 229,
+      "question": "Which bar has the largest value?\nOffer a terse response.",
+      "gt": "Editor.",
+      "pred": "editor",
+      "score": 1.0
+    },
+    {
+      "idx": 230,
+      "question": "How many algorithms have accuracy higher than 8 in at least one dataset?\nOffer a terse response.",
+      "gt": "One.",
+      "pred": "1.0",
+      "score": 0.0
+    },
+    {
+      "idx": 231,
+      "question": "Which algorithm has the lowest accuracy?\nYour response must be concise.",
+      "gt": "Guitar.",
+      "pred": "guitar",
+      "score": 1.0
+    },
+    {
+      "idx": 232,
+      "question": "How many items sold more than 2 units in at least one store?\nOffer a very short reply.",
+      "gt": "Seven.",
+      "pred": "7",
+      "score": 0.0
+    },
+    {
+      "idx": 233,
+      "question": "How many objects are preferred by more than 4 people in at least one category?\nEnsure brevity in your answer. ",
+      "gt": "Six.",
+      "pred": "6",
+      "score": 0.0
+    },
+    {
+      "idx": 234,
+      "question": "How many groups of bars contain at least one bar with value smaller than 2?\nOffer a terse response.",
+      "gt": "Two.",
+      "pred": "2.0",
+      "score": 0.0
+    },
+    {
+      "idx": 235,
+      "question": "Which bar has the largest value?\nGive a very brief answer.",
+      "gt": "Worry.",
+      "pred": "worry",
+      "score": 1.0
+    },
+    {
+      "idx": 236,
+      "question": "How many groups of bars contain at least one bar with value greater than 100000000?\nProvide a short and direct response.",
+      "gt": "One.",
+      "pred": "1.00",
+      "score": 0.0
+    },
+    {
+      "idx": 237,
+      "question": "Which algorithm has the highest accuracy?\nOffer a very short reply.",
+      "gt": "Museum.",
+      "pred": "museum",
+      "score": 1.0
+    },
+    {
+      "idx": 238,
+      "question": "Which item sold the most units?\nProvide a short and direct response.",
+      "gt": "Killer.",
+      "pred": "killer",
+      "score": 1.0
+    },
+    {
+      "idx": 239,
+      "question": "How many items sold less than 5 units in at least one store?\nMake the answer very short.",
+      "gt": "One.",
+      "pred": "1",
+      "score": 0.0
+    },
+    {
+      "idx": 240,
+      "question": "Which bar has the smallest value?\nYour answer should be compact.",
+      "gt": "Thirty.",
+      "pred": "thirty",
+      "score": 1.0
+    },
+    {
+      "idx": 241,
+      "question": "How many groups of bars contain at least one bar with value greater than 5?\nProvide a short and direct response.",
+      "gt": "Five.",
+      "pred": "5.00",
+      "score": 0.0
+    },
+    {
+      "idx": 242,
+      "question": "Which bar has the largest value?\nProvide a succinct answer.",
+      "gt": "Flow.",
+      "pred": "flow",
+      "score": 1.0
+    },
+    {
+      "idx": 243,
+      "question": "Which algorithm has the highest accuracy?\nGive a very brief answer.",
+      "gt": "Dog.",
+      "pred": "dog",
+      "score": 1.0
+    },
+    {
+      "idx": 244,
+      "question": "How many objects are preferred by more than 7 people in at least one category?\nKeep it short and to the point.",
+      "gt": "Three.",
+      "pred": "2.0",
+      "score": 0.0
+    },
+    {
+      "idx": 245,
+      "question": "How many stacks of bars contain at least one element with value greater than 9?\nGive a very brief answer.",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 246,
+      "question": "How many groups of bars contain at least one bar with value greater than 80?\nYour response must be concise.",
+      "gt": "One.",
+      "pred": "1",
+      "score": 0.0
+    },
+    {
+      "idx": 247,
+      "question": "How many groups of bars contain at least one bar with value greater than 1?\nYour response must be concise.",
+      "gt": "Four.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 248,
+      "question": "How many algorithms have accuracy lower than 8 in at least one dataset?\nYour response must be concise.",
+      "gt": "Six.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 249,
+      "question": "How many groups of bars contain at least one bar with value greater than 8?\nProvide a short and direct response.",
+      "gt": "One.",
+      "pred": "1.00",
+      "score": 0.0
+    },
+    {
+      "idx": 250,
+      "question": "How many groups of bars contain at least one bar with value greater than 2?\nYour response must be concise.",
+      "gt": "Six.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 251,
+      "question": "Which object is the most preferred?\nMake the answer very short.",
+      "gt": "Poem.",
+      "pred": "poem",
+      "score": 1.0
+    },
+    {
+      "idx": 252,
+      "question": "Which item sold the most units?\nKeep it short and to the point.",
+      "gt": "County.",
+      "pred": "county",
+      "score": 1.0
+    },
+    {
+      "idx": 253,
+      "question": "How many items sold less than 2 units in at least one store?\nKeep it short and to the point.",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 254,
+      "question": "How many algorithms have accuracies higher than 1?\nOffer a very short reply.",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 255,
+      "question": "How many groups of bars contain at least one bar with value greater than 8?\nKeep it short and to the point.",
+      "gt": "Two.",
+      "pred": "2.0",
+      "score": 0.0
+    },
+    {
+      "idx": 256,
+      "question": "Which object is the most preferred?\nProvide a short and direct response.",
+      "gt": "Choice.",
+      "pred": "choice",
+      "score": 1.0
+    },
+    {
+      "idx": 257,
+      "question": "How many groups of bars contain at least one bar with value smaller than 7?\nGive a very brief answer.",
+      "gt": "Seven.",
+      "pred": "9",
+      "score": 0.0
+    },
+    {
+      "idx": 258,
+      "question": "Which object is the most preferred?\nEnsure brevity in your answer. ",
+      "gt": "Score.",
+      "pred": "score",
+      "score": 1.0
+    },
+    {
+      "idx": 259,
+      "question": "How many algorithms have accuracy lower than 7 in at least one dataset?\nYour answer should be very brief.",
+      "gt": "Two.",
+      "pred": "1",
+      "score": 0.0
+    },
+    {
+      "idx": 260,
+      "question": "Which algorithm has the highest accuracy?\nGive a very brief answer.",
+      "gt": "Effect.",
+      "pred": "effect",
+      "score": 1.0
+    },
+    {
+      "idx": 261,
+      "question": "Which bar has the largest value?\nKeep it short and to the point.",
+      "gt": "Risk.",
+      "pred": "risk",
+      "score": 1.0
+    },
+    {
+      "idx": 262,
+      "question": "How many objects are preferred by less than 6 people in at least one category?\nYour answer should be very brief.",
+      "gt": "Five.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 263,
+      "question": "How many groups of bars contain at least one bar with value greater than 20?\nKeep it short and to the point.",
+      "gt": "Three.",
+      "pred": "3.0",
+      "score": 0.0
+    },
+    {
+      "idx": 264,
+      "question": "How many items sold less than 1 units in at least one store?\nYour response must be concise.",
+      "gt": "Zero.",
+      "pred": "0",
+      "score": 0.0
+    },
+    {
+      "idx": 265,
+      "question": "Which bar has the largest value?\nMake the answer very short.",
+      "gt": "Type.",
+      "pred": "type",
+      "score": 1.0
+    },
+    {
+      "idx": 266,
+      "question": "Which algorithm has the highest accuracy?\nMake the answer very short.",
+      "gt": "Bird.",
+      "pred": "bird",
+      "score": 1.0
+    },
+    {
+      "idx": 267,
+      "question": "Which bar has the smallest value?\nProvide a succinct answer.",
+      "gt": "Engine.",
+      "pred": "engine",
+      "score": 1.0
+    },
+    {
+      "idx": 268,
+      "question": "Which algorithm has the highest accuracy?\nEnsure brevity in your answer. ",
+      "gt": "Fuel.",
+      "pred": "fuel",
+      "score": 1.0
+    },
+    {
+      "idx": 269,
+      "question": "How many groups of bars contain at least one bar with value greater than 10?\nOffer a terse response.",
+      "gt": "Two.",
+      "pred": "2.0",
+      "score": 0.0
+    },
+    {
+      "idx": 270,
+      "question": "How many items sold more than 7 units in at least one store?\nYour response must be concise.",
+      "gt": "One.",
+      "pred": "1",
+      "score": 0.0
+    },
+    {
+      "idx": 271,
+      "question": "How many items sold less than 6 units in at least one store?\nOffer a terse response.",
+      "gt": "One.",
+      "pred": "1.0",
+      "score": 0.0
+    },
+    {
+      "idx": 272,
+      "question": "How many groups of bars contain at least one bar with value smaller than 20?\nOffer a terse response.",
+      "gt": "One.",
+      "pred": "1.0",
+      "score": 0.0
+    },
+    {
+      "idx": 273,
+      "question": "How many items sold more than 1 units in at least one store?\nGive a very brief answer.",
+      "gt": "Two.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 274,
+      "question": "Which algorithm has the highest accuracy?\nProvide a short and direct response.",
+      "gt": "Route.",
+      "pred": "route",
+      "score": 1.0
+    },
+    {
+      "idx": 275,
+      "question": "Which object is the most preferred?\nProvide a short and direct response.",
+      "gt": "Stem.",
+      "pred": "stem",
+      "score": 1.0
+    },
+    {
+      "idx": 276,
+      "question": "How many algorithms have accuracy lower than 8 in at least one dataset?\nOffer a terse response.",
+      "gt": "Five.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 277,
+      "question": "How many algorithms have accuracy higher than 1 in at least one dataset?\nYour response must be concise.",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 278,
+      "question": "How many groups of bars contain at least one bar with value greater than 10?\nGive a very brief answer.",
+      "gt": "Two.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 279,
+      "question": "How many groups of bars contain at least one bar with value greater than 1?\nGive a very brief answer.",
+      "gt": "Two.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 280,
+      "question": "Which bar has the smallest value?\nYour answer should be compact.",
+      "gt": "Crop.",
+      "pred": "crop",
+      "score": 1.0
+    },
+    {
+      "idx": 281,
+      "question": "How many algorithms have accuracy lower than 2 in at least one dataset?\nYour response must be concise.",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 282,
+      "question": "How many objects are preferred by less than 1 people in at least one category?\nProvide a succinct answer.",
+      "gt": "Zero.",
+      "pred": "0",
+      "score": 0.0
+    },
+    {
+      "idx": 283,
+      "question": "Which object is the most preferred?\nMake the answer very short.",
+      "gt": "Sky.",
+      "pred": "sky",
+      "score": 1.0
+    },
+    {
+      "idx": 284,
+      "question": "Which object is the most preferred?\nYour answer should be very brief.",
+      "gt": "Clock.",
+      "pred": "clock",
+      "score": 1.0
+    },
+    {
+      "idx": 285,
+      "question": "How many objects are preferred by more than 70 percent of people in at least one category?\nGive a very brief answer.",
+      "gt": "Zero.",
+      "pred": "Zero",
+      "score": 1.0
+    },
+    {
+      "idx": 286,
+      "question": "Which bar has the largest value?\nOffer a very short reply.",
+      "gt": "Screen.",
+      "pred": "screen",
+      "score": 1.0
+    },
+    {
+      "idx": 287,
+      "question": "How many groups of bars contain at least one bar with value greater than 1?\nEnsure brevity in your answer. ",
+      "gt": "Four.",
+      "pred": "4.00",
+      "score": 0.0
+    },
+    {
+      "idx": 288,
+      "question": "How many items sold more than 6 units in at least one store?\nMake the answer very short.",
+      "gt": "Five.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 289,
+      "question": "How many groups of bars contain at least one bar with value smaller than 100000000?\nOffer a terse response.",
+      "gt": "Four.",
+      "pred": "5.0",
+      "score": 0.0
+    },
+    {
+      "idx": 290,
+      "question": "Which bar has the largest value?\nYour answer should be compact.",
+      "gt": "Dawn.",
+      "pred": "dawn",
+      "score": 1.0
+    },
+    {
+      "idx": 291,
+      "question": "Which bar has the smallest value?\nKeep it short and to the point.",
+      "gt": "Chest.",
+      "pred": "The smallest value is found in 'chest' category.",
+      "score": 0.0
+    },
+    {
+      "idx": 292,
+      "question": "Which algorithm has the highest accuracy?\nGive a very brief answer.",
+      "gt": "Stock.",
+      "pred": "stock",
+      "score": 1.0
+    },
+    {
+      "idx": 293,
+      "question": "Which bar has the smallest value?\nEnsure brevity in your answer. ",
+      "gt": "Charm.",
+      "pred": "charm",
+      "score": 1.0
+    },
+    {
+      "idx": 294,
+      "question": "How many objects are preferred by more than 9 people in at least one category?\nEnsure brevity in your answer. ",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 295,
+      "question": "Which bar has the largest value?\nProvide a succinct answer.",
+      "gt": "Belt.",
+      "pred": "belt",
+      "score": 1.0
+    },
+    {
+      "idx": 296,
+      "question": "Which algorithm has the highest accuracy?\nProvide a short and direct response.",
+      "gt": "Foot.",
+      "pred": "foot",
+      "score": 1.0
+    },
+    {
+      "idx": 297,
+      "question": "How many groups of bars contain at least one bar with value smaller than 50?\nOffer a very short reply.",
+      "gt": "Two.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 298,
+      "question": "How many groups of bars contain at least one bar with value greater than 90?\nYour answer should be compact.",
+      "gt": "Zero.",
+      "pred": "0",
+      "score": 0.0
+    },
+    {
+      "idx": 299,
+      "question": "How many items sold more than 3 units in at least one store?\nOffer a very short reply.",
+      "gt": "Five.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 300,
+      "question": "How many items sold less than 7 units in at least one store?\nYour response must be concise.",
+      "gt": "Seven.",
+      "pred": "7",
+      "score": 0.0
+    },
+    {
+      "idx": 301,
+      "question": "How many groups of bars contain at least one bar with value smaller than 100000?\nYour answer should be very brief.",
+      "gt": "Four.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 302,
+      "question": "How many items sold more than 1 units in at least one store?\nProvide a succinct answer.",
+      "gt": "Two.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 303,
+      "question": "Which bar has the largest value?\nProvide a succinct answer.",
+      "gt": "Lesson.",
+      "pred": "lesson",
+      "score": 1.0
+    },
+    {
+      "idx": 304,
+      "question": "How many algorithms have accuracy lower than 20 in at least one dataset?\nYour response must be concise.",
+      "gt": "Zero.",
+      "pred": "0",
+      "score": 0.0
+    },
+    {
+      "idx": 305,
+      "question": "Which algorithm has the highest accuracy?\nYour answer should be compact.",
+      "gt": "Teeth.",
+      "pred": "teeth",
+      "score": 1.0
+    },
+    {
+      "idx": 306,
+      "question": "How many objects are preferred by less than 4 people in at least one category?\nProvide a succinct answer.",
+      "gt": "Three.",
+      "pred": "5.0",
+      "score": 0.0
+    },
+    {
+      "idx": 307,
+      "question": "How many groups of bars contain at least one bar with value greater than 3?\nYour answer should be very brief.",
+      "gt": "One.",
+      "pred": "One",
+      "score": 1.0
+    },
+    {
+      "idx": 308,
+      "question": "Which bar has the smallest value?\nProvide a succinct answer.",
+      "gt": "Snake.",
+      "pred": "snake",
+      "score": 1.0
+    },
+    {
+      "idx": 309,
+      "question": "How many stacks of bars contain at least one element with value greater than 2?\nKeep it short and to the point.",
+      "gt": "Three.",
+      "pred": "3.0",
+      "score": 0.0
+    },
+    {
+      "idx": 310,
+      "question": "How many objects are preferred by more than 30 percent of people in at least one category?\nOffer a terse response.",
+      "gt": "Three.",
+      "pred": "3.0",
+      "score": 0.0
+    },
+    {
+      "idx": 311,
+      "question": "How many algorithms have accuracy lower than 4 in at least one dataset?\nProvide a succinct answer.",
+      "gt": "Three.",
+      "pred": "4.00",
+      "score": 0.0
+    },
+    {
+      "idx": 312,
+      "question": "Which bar has the largest value?\nGive a very brief answer.",
+      "gt": "Hen.",
+      "pred": "hen",
+      "score": 1.0
+    },
+    {
+      "idx": 313,
+      "question": "How many groups of bars contain at least one bar with value greater than -7?\nMake the answer very short.",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 314,
+      "question": "Which algorithm has the highest accuracy?\nOffer a very short reply.",
+      "gt": "Legend.",
+      "pred": "legend",
+      "score": 1.0
+    },
+    {
+      "idx": 315,
+      "question": "How many objects are preferred by less than 6 people in at least one category?\nOffer a terse response.",
+      "gt": "Six.",
+      "pred": "4.0",
+      "score": 0.0
+    },
+    {
+      "idx": 316,
+      "question": "Which algorithm has the lowest accuracy?\nOffer a very short reply.",
+      "gt": "Joy.",
+      "pred": "joy",
+      "score": 1.0
+    },
+    {
+      "idx": 317,
+      "question": "How many objects are preferred by more than 70 percent of people in at least one category?\nYour answer should be very brief.",
+      "gt": "One.",
+      "pred": "One",
+      "score": 1.0
+    },
+    {
+      "idx": 318,
+      "question": "Which bar has the largest value?\nMake the answer very short.",
+      "gt": "School.",
+      "pred": "2",
+      "score": 0.0
+    },
+    {
+      "idx": 319,
+      "question": "Which bar has the smallest value?\nMake the answer very short.",
+      "gt": "Disk.",
+      "pred": "disk",
+      "score": 1.0
+    },
+    {
+      "idx": 320,
+      "question": "Which bar has the largest value?\nGive a very brief answer.",
+      "gt": "Bowl.",
+      "pred": "bowl",
+      "score": 1.0
+    },
+    {
+      "idx": 321,
+      "question": "How many groups of bars contain at least one bar with value greater than 4?\nKeep it short and to the point.",
+      "gt": "One.",
+      "pred": "One",
+      "score": 1.0
+    },
+    {
+      "idx": 322,
+      "question": "Which object is the most preferred?\nOffer a very short reply.",
+      "gt": "Sorry.",
+      "pred": "sorry",
+      "score": 1.0
+    },
+    {
+      "idx": 323,
+      "question": "Which algorithm has the highest accuracy?\nOffer a very short reply.",
+      "gt": "Merit.",
+      "pred": "merit",
+      "score": 1.0
+    },
+    {
+      "idx": 324,
+      "question": "How many items sold more than 8 units?\nProvide a succinct answer.",
+      "gt": "Two.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 325,
+      "question": "Which bar has the smallest value?\nProvide a short and direct response.",
+      "gt": "Pocket.",
+      "pred": "pocket",
+      "score": 1.0
+    },
+    {
+      "idx": 326,
+      "question": "How many items sold more than 7 units in at least one store?\nEnsure brevity in your answer. ",
+      "gt": "Zero.",
+      "pred": "0",
+      "score": 0.0
+    },
+    {
+      "idx": 327,
+      "question": "How many groups of bars contain at least one bar with value smaller than 100000000?\nOffer a terse response.",
+      "gt": "Seven.",
+      "pred": "7.0",
+      "score": 0.0
+    },
+    {
+      "idx": 328,
+      "question": "How many groups of bars contain at least one bar with value greater than 100?\nYour answer should be compact.",
+      "gt": "Eight.",
+      "pred": "9",
+      "score": 0.0
+    },
+    {
+      "idx": 329,
+      "question": "How many algorithms have accuracy lower than 9 in at least one dataset?\nKeep it short and to the point.",
+      "gt": "Four.",
+      "pred": "4.0",
+      "score": 0.0
+    },
+    {
+      "idx": 330,
+      "question": "How many stacks of bars contain at least one element with value smaller than 70?\nMake the answer very short.",
+      "gt": "Five.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 331,
+      "question": "How many items sold more than 8 units in at least one store?\nOffer a terse response.",
+      "gt": "One.",
+      "pred": "1.0",
+      "score": 0.0
+    },
+    {
+      "idx": 332,
+      "question": "Which bar has the largest value?\nOffer a very short reply.",
+      "gt": "Pure.",
+      "pred": "pure",
+      "score": 1.0
+    },
+    {
+      "idx": 333,
+      "question": "Which item sold the most units?\nMake the answer very short.",
+      "gt": "Gas.",
+      "pred": "gas",
+      "score": 1.0
+    },
+    {
+      "idx": 334,
+      "question": "Which algorithm has the highest accuracy?\nEnsure brevity in your answer. ",
+      "gt": "Fate.",
+      "pred": "fate",
+      "score": 1.0
+    },
+    {
+      "idx": 335,
+      "question": "Which bar has the largest value?\nYour answer should be very brief.",
+      "gt": "Bass.",
+      "pred": "bass",
+      "score": 1.0
+    },
+    {
+      "idx": 336,
+      "question": "How many algorithms have accuracy lower than 1 in at least one dataset?\nProvide a short and direct response.",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 337,
+      "question": "Which bar has the largest value?\nGive a very brief answer.",
+      "gt": "Charm.",
+      "pred": "charm",
+      "score": 1.0
+    },
+    {
+      "idx": 338,
+      "question": "How many algorithms have accuracy lower than 2 in at least one dataset?\nProvide a succinct answer.",
+      "gt": "One.",
+      "pred": "1.00",
+      "score": 0.0
+    },
+    {
+      "idx": 339,
+      "question": "Which algorithm has the highest accuracy?\nEnsure brevity in your answer. ",
+      "gt": "Land.",
+      "pred": "land",
+      "score": 1.0
+    },
+    {
+      "idx": 340,
+      "question": "How many algorithms have accuracy higher than 1 in at least one dataset?\nOffer a very short reply.",
+      "gt": "Three.",
+      "pred": "3.00",
+      "score": 0.0
+    },
+    {
+      "idx": 341,
+      "question": "How many groups of bars contain at least one bar with value greater than 20?\nEnsure brevity in your answer. ",
+      "gt": "Six.",
+      "pred": "6",
+      "score": 0.0
+    },
+    {
+      "idx": 342,
+      "question": "Which object is the most preferred?\nYour answer should be very brief.",
+      "gt": "Color.",
+      "pred": "color",
+      "score": 1.0
+    },
+    {
+      "idx": 343,
+      "question": "Which algorithm has the highest accuracy?\nEnsure brevity in your answer. ",
+      "gt": "Deal.",
+      "pred": "deal",
+      "score": 1.0
+    },
+    {
+      "idx": 344,
+      "question": "How many groups of bars contain at least one bar with value greater than 2?\nProvide a succinct answer.",
+      "gt": "Seven.",
+      "pred": "7.0",
+      "score": 0.0
+    },
+    {
+      "idx": 345,
+      "question": "How many algorithms have accuracy lower than 8 in at least one dataset?\nOffer a very short reply.",
+      "gt": "Six.",
+      "pred": "6",
+      "score": 0.0
+    },
+    {
+      "idx": 346,
+      "question": "How many stacks of bars contain at least one element with value smaller than 8?\nProvide a short and direct response.",
+      "gt": "Six.",
+      "pred": "6",
+      "score": 0.0
+    },
+    {
+      "idx": 347,
+      "question": "How many groups of bars contain at least one bar with value greater than 8?\nOffer a very short reply.",
+      "gt": "Two.",
+      "pred": "3.0",
+      "score": 0.0
+    },
+    {
+      "idx": 348,
+      "question": "Which object is the most preferred?\nProvide a short and direct response.",
+      "gt": "File.",
+      "pred": "file",
+      "score": 1.0
+    },
+    {
+      "idx": 349,
+      "question": "Which bar has the largest value?\nEnsure brevity in your answer. ",
+      "gt": "Start.",
+      "pred": "start",
+      "score": 1.0
+    },
+    {
+      "idx": 350,
+      "question": "How many objects are preferred by more than 80 percent of people in at least one category?\nProvide a succinct answer.",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 351,
+      "question": "How many groups of bars contain at least one bar with value greater than 0?\nYour response must be concise.",
+      "gt": "Two.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 352,
+      "question": "Which item sold the most units?\nYour answer should be compact.",
+      "gt": "Dust.",
+      "pred": "dust",
+      "score": 1.0
+    },
+    {
+      "idx": 353,
+      "question": "How many items sold less than 8 units in at least one store?\nYour response must be concise.",
+      "gt": "Six.",
+      "pred": "7",
+      "score": 0.0
+    },
+    {
+      "idx": 354,
+      "question": "How many groups of bars contain at least one bar with value smaller than 9?\nMake the answer very short.",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 355,
+      "question": "How many objects are preferred by more than 5 people in at least one category?\nYour response must be concise.",
+      "gt": "Four.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 356,
+      "question": "Which algorithm has the highest accuracy?\nOffer a terse response.",
+      "gt": "Band.",
+      "pred": "band",
+      "score": 1.0
+    },
+    {
+      "idx": 357,
+      "question": "How many groups of bars contain at least one bar with value smaller than 7?\nGive a very brief answer.",
+      "gt": "Six.",
+      "pred": "6",
+      "score": 0.0
+    },
+    {
+      "idx": 358,
+      "question": "How many objects are preferred by more than 9 people in at least one category?\nOffer a very short reply.",
+      "gt": "Zero.",
+      "pred": "Zero",
+      "score": 1.0
+    },
+    {
+      "idx": 359,
+      "question": "How many groups of bars contain at least one bar with value greater than 100?\nGive a very brief answer.",
+      "gt": "Three.",
+      "pred": "3.0",
+      "score": 0.0
+    },
+    {
+      "idx": 360,
+      "question": "Which bar has the largest value?\nEnsure brevity in your answer. ",
+      "gt": "Kid.",
+      "pred": "kid",
+      "score": 1.0
+    },
+    {
+      "idx": 361,
+      "question": "How many objects are preferred by less than 4 people in at least one category?\nYour answer should be very brief.",
+      "gt": "Five.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 362,
+      "question": "Which algorithm has the highest accuracy?\nOffer a terse response.",
+      "gt": "Desk.",
+      "pred": "desk",
+      "score": 1.0
+    },
+    {
+      "idx": 363,
+      "question": "Which bar has the largest value?\nYour response must be concise.",
+      "gt": "Sale.",
+      "pred": "sale",
+      "score": 1.0
+    },
+    {
+      "idx": 364,
+      "question": "How many groups of bars contain at least one bar with value greater than 8?\nMake the answer very short.",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 365,
+      "question": "How many algorithms have accuracy lower than 70 in at least one dataset?\nProvide a succinct answer.",
+      "gt": "Two.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 366,
+      "question": "Which bar has the largest value?\nGive a very brief answer.",
+      "gt": "Frame.",
+      "pred": "frame",
+      "score": 1.0
+    },
+    {
+      "idx": 367,
+      "question": "How many objects are preferred by less than 50 percent of people in at least one category?\nYour answer should be very brief.",
+      "gt": "Three.",
+      "pred": "Three",
+      "score": 1.0
+    },
+    {
+      "idx": 368,
+      "question": "How many groups of bars contain at least one bar with value smaller than -5?\nOffer a terse response.",
+      "gt": "Zero.",
+      "pred": "One",
+      "score": 0.0
+    },
+    {
+      "idx": 369,
+      "question": "Which item sold the most units?\nYour answer should be compact.",
+      "gt": "Cold.",
+      "pred": "cold",
+      "score": 1.0
+    },
+    {
+      "idx": 370,
+      "question": "How many objects are preferred by less than 30 percent of people in at least one category?\nOffer a very short reply.",
+      "gt": "Two.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 371,
+      "question": "How many algorithms have accuracy higher than 6 in at least one dataset?\nProvide a short and direct response.",
+      "gt": "Two.",
+      "pred": "4.00",
+      "score": 0.0
+    },
+    {
+      "idx": 372,
+      "question": "How many groups of bars contain at least one bar with value smaller than 9?\nYour response must be concise.",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 373,
+      "question": "How many stacks of bars contain at least one element with value greater than 7?\nOffer a terse response.",
+      "gt": "Two.",
+      "pred": "3.0",
+      "score": 0.0
+    },
+    {
+      "idx": 374,
+      "question": "How many groups of bars contain at least one bar with value greater than 0?\nEnsure brevity in your answer. ",
+      "gt": "Two.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 375,
+      "question": "Which bar has the largest value?\nYour answer should be compact.",
+      "gt": "Season.",
+      "pred": "season",
+      "score": 1.0
+    },
+    {
+      "idx": 376,
+      "question": "How many groups of bars contain at least one bar with value greater than 9?\nYour response must be concise.",
+      "gt": "Zero.",
+      "pred": "0",
+      "score": 0.0
+    },
+    {
+      "idx": 377,
+      "question": "Which algorithm has the highest accuracy?\nYour answer should be compact.",
+      "gt": "Talk.",
+      "pred": "talk",
+      "score": 1.0
+    },
+    {
+      "idx": 378,
+      "question": "How many objects are preferred by more than 7 people in at least one category?\nYour answer should be very brief.",
+      "gt": "One.",
+      "pred": "1",
+      "score": 0.0
+    },
+    {
+      "idx": 379,
+      "question": "How many objects are preferred by more than 2 people in at least one category?\nGive a very brief answer.",
+      "gt": "Six.",
+      "pred": "6.0",
+      "score": 0.0
+    },
+    {
+      "idx": 380,
+      "question": "How many groups of bars contain at least one bar with value smaller than 9?\nEnsure brevity in your answer. ",
+      "gt": "Five.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 381,
+      "question": "How many items sold more than 7 units in at least one store?\nOffer a terse response.",
+      "gt": "Four.",
+      "pred": "3.00",
+      "score": 0.0
+    },
+    {
+      "idx": 382,
+      "question": "How many groups of bars contain at least one bar with value smaller than 6?\nOffer a terse response.",
+      "gt": "One.",
+      "pred": "1.0",
+      "score": 0.0
+    },
+    {
+      "idx": 383,
+      "question": "Which algorithm has the highest accuracy?\nYour response must be concise.",
+      "gt": "Means.",
+      "pred": "means",
+      "score": 1.0
+    },
+    {
+      "idx": 384,
+      "question": "How many groups of bars contain at least one bar with value smaller than 1?\nProvide a short and direct response.",
+      "gt": "Two.",
+      "pred": "1.00",
+      "score": 0.0
+    },
+    {
+      "idx": 385,
+      "question": "How many objects are preferred by more than 3 people in at least one category?\nProvide a succinct answer.",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 386,
+      "question": "How many algorithms have accuracies higher than 7?\nOffer a very short reply.",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 387,
+      "question": "How many algorithms have accuracy higher than 1 in at least one dataset?\nMake the answer very short.",
+      "gt": "Four.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 388,
+      "question": "How many groups of bars contain at least one bar with value smaller than 2?\nOffer a very short reply.",
+      "gt": "One.",
+      "pred": "1.00",
+      "score": 0.0
+    },
+    {
+      "idx": 389,
+      "question": "How many objects are preferred by less than 7 people in at least one category?\nYour answer should be compact.",
+      "gt": "Six.",
+      "pred": "6",
+      "score": 0.0
+    },
+    {
+      "idx": 390,
+      "question": "Which bar has the largest value?\nEnsure brevity in your answer. ",
+      "gt": "Entry.",
+      "pred": "entry",
+      "score": 1.0
+    },
+    {
+      "idx": 391,
+      "question": "How many items sold more than 3 units in at least one store?\nEnsure brevity in your answer. ",
+      "gt": "Four.",
+      "pred": "4.00",
+      "score": 0.0
+    },
+    {
+      "idx": 392,
+      "question": "Which bar has the largest value?\nOffer a very short reply.",
+      "gt": "Suite.",
+      "pred": "suite",
+      "score": 1.0
+    },
+    {
+      "idx": 393,
+      "question": "Which object is the most preferred?\nYour answer should be very brief.",
+      "gt": "Feed.",
+      "pred": "feed",
+      "score": 1.0
+    },
+    {
+      "idx": 394,
+      "question": "How many algorithms have accuracy higher than 4 in at least one dataset?\nProvide a short and direct response.",
+      "gt": "Two.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 395,
+      "question": "How many groups of bars contain at least one bar with value smaller than 8?\nOffer a terse response.",
+      "gt": "Three.",
+      "pred": "4.00",
+      "score": 0.0
+    },
+    {
+      "idx": 396,
+      "question": "How many groups of bars contain at least one bar with value smaller than 8?\nYour answer should be very brief.",
+      "gt": "Two.",
+      "pred": "2",
+      "score": 0.0
+    },
+    {
+      "idx": 397,
+      "question": "Which object is the most preferred?\nYour answer should be compact.",
+      "gt": "Grace.",
+      "pred": "grace",
+      "score": 1.0
+    },
+    {
+      "idx": 398,
+      "question": "How many algorithms have accuracy lower than 1 in at least one dataset?\nGive a very brief answer.",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 399,
+      "question": "Which bar has the largest value?\nEnsure brevity in your answer. ",
+      "gt": "Habit.",
+      "pred": "habit",
+      "score": 1.0
+    },
+    {
+      "idx": 400,
+      "question": "Which bar has the largest value?\nEnsure brevity in your answer. ",
+      "gt": "Barrel.",
+      "pred": "barrel",
+      "score": 1.0
+    },
+    {
+      "idx": 401,
+      "question": "How many objects are preferred by more than 8 people in at least one category?\nOffer a terse response.",
+      "gt": "Zero.",
+      "pred": "Zero",
+      "score": 1.0
+    },
+    {
+      "idx": 402,
+      "question": "How many algorithms have accuracy higher than 70 in at least one dataset?\nYour answer should be compact.",
+      "gt": "One.",
+      "pred": "1",
+      "score": 0.0
+    },
+    {
+      "idx": 403,
+      "question": "How many groups of bars contain at least one bar with value greater than 9?\nYour answer should be very brief.",
+      "gt": "Zero.",
+      "pred": "0",
+      "score": 0.0
+    },
+    {
+      "idx": 404,
+      "question": "How many algorithms have accuracy lower than 8 in at least one dataset?\nYour answer should be compact.",
+      "gt": "Four.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 405,
+      "question": "How many items sold less than 6 units in at least one store?\nYour answer should be very brief.",
+      "gt": "Two.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 406,
+      "question": "How many algorithms have accuracies lower than 30?\nYour response must be concise.",
+      "gt": "Zero.",
+      "pred": "0",
+      "score": 0.0
+    },
+    {
+      "idx": 407,
+      "question": "How many groups of bars contain at least one bar with value smaller than 10?\nProvide a short and direct response.",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 408,
+      "question": "How many algorithms have accuracy higher than 50 in at least one dataset?\nOffer a terse response.",
+      "gt": "Three.",
+      "pred": "3.0",
+      "score": 0.0
+    },
+    {
+      "idx": 409,
+      "question": "Which item sold the most units?\nEnsure brevity in your answer. ",
+      "gt": "Line.",
+      "pred": "line",
+      "score": 1.0
+    },
+    {
+      "idx": 410,
+      "question": "How many groups of bars contain at least one bar with value smaller than 50?\nYour response must be concise.",
+      "gt": "Four.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 411,
+      "question": "Which algorithm has the highest accuracy?\nYour answer should be very brief.",
+      "gt": "Panel.",
+      "pred": "panel",
+      "score": 1.0
+    },
+    {
+      "idx": 412,
+      "question": "How many groups of bars contain at least one bar with value greater than 4?\nEnsure brevity in your answer. ",
+      "gt": "One.",
+      "pred": "1.00",
+      "score": 0.0
+    },
+    {
+      "idx": 413,
+      "question": "Which bar has the largest value?\nYour answer should be very brief.",
+      "gt": "Style.",
+      "pred": "style",
+      "score": 1.0
+    },
+    {
+      "idx": 414,
+      "question": "How many groups of bars contain at least one bar with value smaller than 7?\nEnsure brevity in your answer. ",
+      "gt": "Six.",
+      "pred": "7",
+      "score": 0.0
+    },
+    {
+      "idx": 415,
+      "question": "How many groups of bars contain at least one bar with value greater than 4?\nGive a very brief answer.",
+      "gt": "Six.",
+      "pred": "6.00",
+      "score": 0.0
+    },
+    {
+      "idx": 416,
+      "question": "How many groups of bars contain at least one bar with value greater than 9?\nGive a very brief answer.",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 417,
+      "question": "How many groups of bars contain at least one bar with value smaller than 6?\nYour answer should be compact.",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 418,
+      "question": "How many groups of bars contain at least one bar with value greater than 3?\nYour response must be concise.",
+      "gt": "Four.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 419,
+      "question": "How many items sold more than 8 units in at least one store?\nOffer a very short reply.",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 420,
+      "question": "How many algorithms have accuracy lower than 8 in at least one dataset?\nKeep it short and to the point.",
+      "gt": "Four.",
+      "pred": "4.0",
+      "score": 0.0
+    },
+    {
+      "idx": 421,
+      "question": "How many groups of bars contain at least one bar with value greater than 1?\nMake the answer very short.",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 422,
+      "question": "Which bar has the largest value?\nOffer a very short reply.",
+      "gt": "Ratio.",
+      "pred": "ratio",
+      "score": 1.0
+    },
+    {
+      "idx": 423,
+      "question": "How many stacks of bars contain at least one element with value smaller than 7?\nGive a very brief answer.",
+      "gt": "Four.",
+      "pred": "4.00",
+      "score": 0.0
+    },
+    {
+      "idx": 424,
+      "question": "How many objects are preferred by less than 4 people in at least one category?\nProvide a short and direct response.",
+      "gt": "Two.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 425,
+      "question": "How many algorithms have accuracies lower than 5?\nOffer a very short reply.",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 426,
+      "question": "Which bar has the largest value?\nOffer a very short reply.",
+      "gt": "Drop.",
+      "pred": "drop",
+      "score": 1.0
+    },
+    {
+      "idx": 427,
+      "question": "Which object is the least preferred?\nGive a very brief answer.",
+      "gt": "Name.",
+      "pred": "name",
+      "score": 1.0
+    },
+    {
+      "idx": 428,
+      "question": "How many items sold less than 7 units in at least one store?\nGive a very brief answer.",
+      "gt": "Two.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 429,
+      "question": "How many algorithms have accuracy lower than 80 in at least one dataset?\nEnsure brevity in your answer. ",
+      "gt": "Five.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 430,
+      "question": "How many objects are preferred by less than 5 people in at least one category?\nYour response must be concise.",
+      "gt": "Two.",
+      "pred": "2",
+      "score": 0.0
+    },
+    {
+      "idx": 431,
+      "question": "Which bar has the largest value?\nOffer a terse response.",
+      "gt": "Cereal.",
+      "pred": "cereal",
+      "score": 1.0
+    },
+    {
+      "idx": 432,
+      "question": "Which item sold the most units?\nProvide a succinct answer.",
+      "gt": "Cool.",
+      "pred": "cool",
+      "score": 1.0
+    },
+    {
+      "idx": 433,
+      "question": "Which algorithm has the highest accuracy?\nGive a very brief answer.",
+      "gt": "Sex.",
+      "pred": "sex",
+      "score": 1.0
+    },
+    {
+      "idx": 434,
+      "question": "Which object is the most preferred?\nGive a very brief answer.",
+      "gt": "Rifle.",
+      "pred": "rifle",
+      "score": 1.0
+    },
+    {
+      "idx": 435,
+      "question": "How many groups of bars contain at least one bar with value smaller than 5?\nOffer a very short reply.",
+      "gt": "Four.",
+      "pred": "4.00",
+      "score": 0.0
+    },
+    {
+      "idx": 436,
+      "question": "How many groups of bars contain at least one bar with value smaller than 5?\nYour response must be concise.",
+      "gt": "One.",
+      "pred": "1",
+      "score": 0.0
+    },
+    {
+      "idx": 437,
+      "question": "How many groups of bars contain at least one bar with value smaller than 5?\nYour answer should be compact.",
+      "gt": "Five.",
+      "pred": "6",
+      "score": 0.0
+    },
+    {
+      "idx": 438,
+      "question": "How many groups of bars contain at least one bar with value greater than 10?\nProvide a succinct answer.",
+      "gt": "Five.",
+      "pred": "4.00",
+      "score": 0.0
+    },
+    {
+      "idx": 439,
+      "question": "How many objects are preferred by less than 9 people in at least one category?\nProvide a short and direct response.",
+      "gt": "Five.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 440,
+      "question": "How many items sold more than 9 units in at least one store?\nGive a very brief answer.",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 441,
+      "question": "How many stacks of bars contain at least one element with value smaller than 8?\nMake the answer very short.",
+      "gt": "Five.",
+      "pred": "6",
+      "score": 0.0
+    },
+    {
+      "idx": 442,
+      "question": "How many groups of bars contain at least one bar with value smaller than 2?\nProvide a succinct answer.",
+      "gt": "Four.",
+      "pred": "3.0",
+      "score": 0.0
+    },
+    {
+      "idx": 443,
+      "question": "How many groups of bars contain at least one bar with value smaller than 4?\nOffer a terse response.",
+      "gt": "Three.",
+      "pred": "3.0",
+      "score": 0.0
+    },
+    {
+      "idx": 444,
+      "question": "Which bar has the largest value?\nGive a very brief answer.",
+      "gt": "Paint.",
+      "pred": "paint",
+      "score": 1.0
+    },
+    {
+      "idx": 445,
+      "question": "How many algorithms have accuracy lower than 3 in at least one dataset?\nOffer a terse response.",
+      "gt": "One.",
+      "pred": "1.0",
+      "score": 0.0
+    },
+    {
+      "idx": 446,
+      "question": "How many groups of bars contain at least one bar with value greater than 10?\nYour answer should be compact.",
+      "gt": "Eight.",
+      "pred": "9",
+      "score": 0.0
+    },
+    {
+      "idx": 447,
+      "question": "How many groups of bars contain at least one bar with value smaller than 2?\nMake the answer very short.",
+      "gt": "Three.",
+      "pred": "3.00",
+      "score": 0.0
+    },
+    {
+      "idx": 448,
+      "question": "Which bar has the smallest value?\nEnsure brevity in your answer. ",
+      "gt": "Hen.",
+      "pred": "hen",
+      "score": 1.0
+    },
+    {
+      "idx": 449,
+      "question": "How many algorithms have accuracy lower than 5 in at least one dataset?\nProvide a short and direct response.",
+      "gt": "Six.",
+      "pred": "6",
+      "score": 0.0
+    },
+    {
+      "idx": 450,
+      "question": "How many groups of bars contain at least one bar with value smaller than 4?\nMake the answer very short.",
+      "gt": "Three.",
+      "pred": "2",
+      "score": 0.0
+    },
+    {
+      "idx": 451,
+      "question": "How many objects are preferred by more than 9 people in at least one category?\nOffer a very short reply.",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 452,
+      "question": "How many stacks of bars contain at least one element with value greater than 3?\nOffer a very short reply.",
+      "gt": "Four.",
+      "pred": "4.00",
+      "score": 0.0
+    },
+    {
+      "idx": 453,
+      "question": "How many items sold less than 7 units in at least one store?\nProvide a short and direct response.",
+      "gt": "Eight.",
+      "pred": "8",
+      "score": 0.0
+    },
+    {
+      "idx": 454,
+      "question": "How many bars have values larger than 90?\nYour answer should be compact.",
+      "gt": "Zero.",
+      "pred": "0",
+      "score": 0.0
+    },
+    {
+      "idx": 455,
+      "question": "Which bar has the smallest value?\nEnsure brevity in your answer. ",
+      "gt": "Pure.",
+      "pred": "pure",
+      "score": 1.0
+    },
+    {
+      "idx": 456,
+      "question": "Which item sold the most units?\nMake the answer very short.",
+      "gt": "Birth.",
+      "pred": "birth",
+      "score": 1.0
+    },
+    {
+      "idx": 457,
+      "question": "How many objects are preferred by more than 3 people in at least one category?\nProvide a short and direct response.",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 458,
+      "question": "How many groups of bars contain at least one bar with value greater than 20?\nMake the answer very short.",
+      "gt": "Five.",
+      "pred": "6",
+      "score": 0.0
+    },
+    {
+      "idx": 459,
+      "question": "Which algorithm has the highest accuracy?\nGive a very brief answer.",
+      "gt": "Faith.",
+      "pred": "faith",
+      "score": 1.0
+    },
+    {
+      "idx": 460,
+      "question": "How many groups of bars contain at least one bar with value greater than 100000000?\nOffer a very short reply.",
+      "gt": "One.",
+      "pred": "1.0",
+      "score": 0.0
+    },
+    {
+      "idx": 461,
+      "question": "How many groups of bars contain at least one bar with value greater than 9?\nYour response must be concise.",
+      "gt": "Zero.",
+      "pred": "0",
+      "score": 0.0
+    },
+    {
+      "idx": 462,
+      "question": "Which bar has the largest value?\nOffer a terse response.",
+      "gt": "Engine.",
+      "pred": "engine",
+      "score": 1.0
+    },
+    {
+      "idx": 463,
+      "question": "Which algorithm has the highest accuracy?\nOffer a terse response.",
+      "gt": "Good.",
+      "pred": "good",
+      "score": 1.0
+    },
+    {
+      "idx": 464,
+      "question": "How many groups of bars contain at least one bar with value greater than 9?\nYour answer should be compact.",
+      "gt": "Zero.",
+      "pred": "0",
+      "score": 0.0
+    },
+    {
+      "idx": 465,
+      "question": "How many items sold less than 5 units in at least one store?\nProvide a succinct answer.",
+      "gt": "Four.",
+      "pred": "3.0",
+      "score": 0.0
+    },
+    {
+      "idx": 466,
+      "question": "Which item sold the most units?\nYour answer should be compact.",
+      "gt": "Skirt.",
+      "pred": "skirt",
+      "score": 1.0
+    },
+    {
+      "idx": 467,
+      "question": "How many algorithms have accuracy lower than 7 in at least one dataset?\nOffer a terse response.",
+      "gt": "Two.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 468,
+      "question": "How many groups of bars contain at least one bar with value smaller than 10?\nYour answer should be very brief.",
+      "gt": "Zero.",
+      "pred": "1",
+      "score": 0.0
+    },
+    {
+      "idx": 469,
+      "question": "How many objects are preferred by less than 9 people in at least one category?\nGive a very brief answer.",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 470,
+      "question": "Which object is the most preferred?\nKeep it short and to the point.",
+      "gt": "Fool.",
+      "pred": "fool",
+      "score": 1.0
+    },
+    {
+      "idx": 471,
+      "question": "Which bar has the largest value?\nGive a very brief answer.",
+      "gt": "Effect.",
+      "pred": "effect",
+      "score": 1.0
+    },
+    {
+      "idx": 472,
+      "question": "How many groups of bars contain at least one bar with value smaller than 6?\nMake the answer very short.",
+      "gt": "Four.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 473,
+      "question": "How many items sold more than 1 units in at least one store?\nOffer a very short reply.",
+      "gt": "Five.",
+      "pred": "5.00",
+      "score": 0.0
+    },
+    {
+      "idx": 474,
+      "question": "Which object is the most preferred?\nKeep it short and to the point.",
+      "gt": "Lay.",
+      "pred": "lay",
+      "score": 1.0
+    },
+    {
+      "idx": 475,
+      "question": "How many groups of bars contain at least one bar with value smaller than 6?\nProvide a short and direct response.",
+      "gt": "Five.",
+      "pred": "5",
+      "score": 0.0
+    },
+    {
+      "idx": 476,
+      "question": "How many groups of bars contain at least one bar with value smaller than 1?\nOffer a terse response.",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 477,
+      "question": "Which object is the most preferred?\nOffer a terse response.",
+      "gt": "Price.",
+      "pred": "price",
+      "score": 1.0
+    },
+    {
+      "idx": 478,
+      "question": "How many items sold less than 1 units in at least one store?\nEnsure brevity in your answer. ",
+      "gt": "Zero.",
+      "pred": "0",
+      "score": 0.0
+    },
+    {
+      "idx": 479,
+      "question": "How many groups of bars contain at least one bar with value smaller than 10000?\nProvide a short and direct response.",
+      "gt": "Three.",
+      "pred": "2.00",
+      "score": 0.0
+    },
+    {
+      "idx": 480,
+      "question": "Which algorithm has the highest accuracy?\nEnsure brevity in your answer. ",
+      "gt": "Regime.",
+      "pred": "regime",
+      "score": 1.0
+    },
+    {
+      "idx": 481,
+      "question": "Which item sold the most units?\nProvide a short and direct response.",
+      "gt": "Act.",
+      "pred": "act",
+      "score": 1.0
+    },
+    {
+      "idx": 482,
+      "question": "How many groups of bars contain at least one bar with value greater than 60?\nEnsure brevity in your answer. ",
+      "gt": "Five.",
+      "pred": "4.00",
+      "score": 0.0
+    },
+    {
+      "idx": 483,
+      "question": "How many groups of bars contain at least one bar with value smaller than 0?\nOffer a terse response.",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 484,
+      "question": "How many items sold more than 8 units in at least one store?\nYour answer should be compact.",
+      "gt": "One.",
+      "pred": "1",
+      "score": 0.0
+    },
+    {
+      "idx": 485,
+      "question": "How many algorithms have accuracy lower than 7 in at least one dataset?\nMake the answer very short.",
+      "gt": "Three.",
+      "pred": "2",
+      "score": 0.0
+    },
+    {
+      "idx": 486,
+      "question": "How many groups of bars contain at least one bar with value greater than 5?\nYour answer should be very brief.",
+      "gt": "Four.",
+      "pred": "4",
+      "score": 0.0
+    },
+    {
+      "idx": 487,
+      "question": "Which algorithm has the highest accuracy?\nOffer a terse response.",
+      "gt": "Mother.",
+      "pred": "mother",
+      "score": 1.0
+    },
+    {
+      "idx": 488,
+      "question": "Which algorithm has the highest accuracy?\nProvide a short and direct response.",
+      "gt": "Bureau.",
+      "pred": "bureau",
+      "score": 1.0
+    },
+    {
+      "idx": 489,
+      "question": "Which bar has the smallest value?\nProvide a succinct answer.",
+      "gt": "Stuff.",
+      "pred": "stuff",
+      "score": 1.0
+    },
+    {
+      "idx": 490,
+      "question": "Which object is the most preferred?\nProvide a short and direct response.",
+      "gt": "Reach.",
+      "pred": "reach",
+      "score": 1.0
+    },
+    {
+      "idx": 491,
+      "question": "How many groups of bars contain at least one bar with value smaller than 100?\nProvide a short and direct response.",
+      "gt": "Zero.",
+      "pred": "3.00",
+      "score": 0.0
+    },
+    {
+      "idx": 492,
+      "question": "How many objects are preferred by less than 10 percent of people in at least one category?\nYour answer should be very brief.",
+      "gt": "Zero.",
+      "pred": "0",
+      "score": 0.0
+    },
+    {
+      "idx": 493,
+      "question": "How many objects are preferred by less than 9 people in at least one category?\nOffer a very short reply.",
+      "gt": "Three.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 494,
+      "question": "Which bar has the largest value?\nMake the answer very short.",
+      "gt": "Rule.",
+      "pred": "rule",
+      "score": 1.0
+    },
+    {
+      "idx": 495,
+      "question": "How many algorithms have accuracy lower than 2 in at least one dataset?\nYour response must be concise.",
+      "gt": "Four.",
+      "pred": "3",
+      "score": 0.0
+    },
+    {
+      "idx": 496,
+      "question": "Which bar has the largest value?\nYour answer should be very brief.",
+      "gt": "Study.",
+      "pred": "study",
+      "score": 1.0
+    },
+    {
+      "idx": 497,
+      "question": "How many algorithms have accuracies lower than 80?\nYour response must be concise.",
+      "gt": "Six.",
+      "pred": "6",
+      "score": 0.0
+    },
+    {
+      "idx": 498,
+      "question": "How many groups of bars contain at least one bar with value smaller than 2?\nEnsure brevity in your answer. ",
+      "gt": "Zero.",
+      "pred": "0.0",
+      "score": 0.0
+    },
+    {
+      "idx": 499,
+      "question": "Which algorithm has the highest accuracy?\nProvide a succinct answer.",
+      "gt": "Week.",
+      "pred": "week",
+      "score": 1.0
+    }
+  ],
+  "metric_note": "Re-scored with exact_match (strips trailing periods)"
+}

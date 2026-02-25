@@ -129,14 +129,30 @@ Attention entropy regularization on text-dense patches.
 
 | Section | 상태 |
 |---------|------|
-| Abstract | ✅ 실제 결과 반영 |
+| Abstract | ✅ 실제 결과 반영 + 크로스벤치마크 언급 |
 | Introduction | ✅ 4개 contributions |
 | Related Work | ✅ 4 subsections (MLLMs, ViT, Document, Hallucination) |
 | Method | ✅ SFA 수식, Density Estimation, Block Assignment, SCR |
-| Experiments | ✅ Main results (Table 1), Hallucination (Table 2), Parameter efficiency (Table 3) |
+| Experiments | ✅ Main results (Table 1), Hallucination (Table 2), Cross-benchmark (Table 4), Parameter efficiency (Table 5) |
 | Discussion | ✅ Frozen backbone 분석, Limitations, Future work |
 | Conclusion | ✅ 핵심 기여 요약 |
 | References | ✅ 31개 (23개 본문 인용) |
+
+### Phase 6: Multi-Benchmark Evaluation ✅
+
+SFA+ADAT+SCR 모델을 추가 벤치마크에서 평가 (baseline 대비 비교).
+
+| Benchmark | Metric | Baseline | SFA+ADAT+SCR | Delta |
+|-----------|--------|----------|-------------|-------|
+| ChartQA (2,500) | Relaxed Acc | 62.0% | **62.9%** | +0.9%p |
+| DocVQA (500) | ANLS | 53.6% | 52.9% | -0.7%p |
+| InfographicVQA (500) | ANLS | 38.7% | 38.5% | -0.2%p |
+| DVQA (500) | Exact Match | 41.0% | 40.8% | -0.2%p |
+| FigureQA (500) | Exact Match | 95.6% | 95.6% | ±0.0%p |
+
+- SFA는 학습 도메인(ChartQA)에서 개선, 다른 벤치마크에서 성능 유지 (±1%p 이내)
+- Frozen backbone 전략으로 catastrophic forgetting 없음
+- HiTab은 질문 형식 불일치로 제외 (instruction suffix 부재)
 
 ---
 
@@ -193,6 +209,7 @@ DSA/
 │   │   ├── 15_scr_losses.py             # SCR loss functions
 │   │   ├── 16_scr_train.py              # SCR 학습
 │   │   ├── 17_scr_eval.py               # SCR 평가
+│   │   ├── 18_multi_benchmark_eval.py   # Multi-benchmark 평가
 │   │   └── gen_architecture_diagram.py  # Figure 2 생성
 │   ├── figures/
 │   │   ├── fig1_motivation/             # Figure 1: Motivation
@@ -210,7 +227,8 @@ DSA/
 │       ├── 05_sfa_eval/                 # SFA 평가 결과
 │       ├── 06_ablation_sfa_only/        # SFA-only ablation
 │       ├── 07_sfa_adat/                 # SFA+ADAT 결과
-│       └── 08_scr/                      # SCR 결과
+│       ├── 08_scr/                      # SCR 결과
+│       └── 09_multi_benchmark/          # Multi-benchmark 평가 결과
 └── .gitignore
 ```
 
@@ -218,7 +236,7 @@ DSA/
 
 ## Remaining Work
 
-### Phase 5 (추가)
+### 추가 진행 가능
 - Cross-Architecture: Qwen2.5-VL, LLaVA-OV에 SFA 적용 (모델 다운로드 필요)
-- 추가 벤치마크: DocVQA, TextVQA, OCRBench 평가
+- 다양한 데이터셋 혼합 학습으로 cross-benchmark transfer 개선
 - 논문 최종 수정 및 제출

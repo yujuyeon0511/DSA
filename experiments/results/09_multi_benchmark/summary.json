@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-02-25",
+  "max_samples": 500,
+  "sfa_checkpoint": "experiments/results/08_scr/best.pth",
+  "density_checkpoint": "experiments/results/01_density/best.pth",
+  "note": "DVQA re-scored with exact_match (original relaxed_accuracy failed due to trailing periods). HiTab excluded (questions lack instruction suffixes, verbose model outputs).",
+  "results": {
+    "docvqa": {
+      "baseline": 0.5361,
+      "sfa": 0.5286,
+      "delta": -0.0075,
+      "metric": "anls"
+    },
+    "infographic_vqa": {
+      "baseline": 0.3874,
+      "sfa": 0.3851,
+      "delta": -0.0023,
+      "metric": "anls"
+    },
+    "dvqa": {
+      "baseline": 0.41,
+      "sfa": 0.408,
+      "delta": -0.002,
+      "metric": "exact_match"
+    },
+    "figureqa": {
+      "baseline": 0.956,
+      "sfa": 0.956,
+      "delta": 0.0,
+      "metric": "exact_match"
+    }
+  }
+}
