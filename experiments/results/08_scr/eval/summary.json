@@ -1,0 +1,10 @@
+{
+  "label": "SFA+ADAT+SCR(entropy)",
+  "checkpoint": "experiments/results/08_scr/best.pth",
+  "density_checkpoint": "experiments/results/01_density/best.pth",
+  "num_blocks": 16,
+  "chartqa_accuracy": 0.6288,
+  "chartqa_halluc_rate": 0.2,
+  "halluc_200_accuracy": 0.655,
+  "halluc_200_rate": 0.19
+}

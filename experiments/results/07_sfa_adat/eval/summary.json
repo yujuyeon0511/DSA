@@ -1,0 +1,10 @@
+{
+  "label": "SFA+ADAT (backbone frozen)",
+  "checkpoint": "experiments/results/07_sfa_adat/best.pth",
+  "density_checkpoint": "experiments/results/01_density/best.pth",
+  "num_blocks": 16,
+  "chartqa_accuracy": 0.6284,
+  "chartqa_halluc_rate": 0.2,
+  "halluc_200_accuracy": 0.65,
+  "halluc_200_rate": 0.195
+}

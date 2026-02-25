@@ -1,0 +1,8 @@
+{
+  "total": 200,
+  "correct": 131,
+  "number_hallucination": 38,
+  "wrong_other": 31,
+  "accuracy": 0.655,
+  "halluc_rate": 0.19
+}

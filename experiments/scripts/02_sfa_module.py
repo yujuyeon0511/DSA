@@ -139,11 +139,14 @@ class SFAAttention(nn.Module):
         """
         Args:
             x: [B, N, D] visual tokens (N may include CLS token)
-            block_ids: [N] block assignments (optional)
+            block_ids: [N] block assignments (optional).
+                       Falls back to self._block_ids if not provided.
 
         Returns:
             out: [B, N, D]
         """
+        if block_ids is None:
+            block_ids = getattr(self, '_block_ids', None)
         B, N, D = x.shape
         qkv = self.qkv(x).reshape(B, N, 3, self.num_heads, self.head_dim).permute(2, 0, 3, 1, 4)
         q, k, v = qkv.unbind(0)  # each: [B, H, N, d]
@@ -163,14 +166,130 @@ class SFAAttention(nn.Module):
         # else: skip structural bias if size doesn't match (fallback to content-only)
 
         attn = attn.softmax(dim=-1)
+
+        # Store WITH gradient for SCR training (entropy regularization)
+        if getattr(self, '_store_attn_for_scr', False):
+            self._last_attn_weights_grad = attn  # keeps gradient graph
+        # Store detached copy for analysis
+        self._last_attn_weights = attn.detach()
+
         out = (attn @ v).transpose(1, 2).reshape(B, N, D)
         out = self.proj(out)
         out = self.proj_drop(out)
 
-        # Store attention for analysis (accessible via hook)
-        self._last_attn_weights = attn.detach()
-
         return out
+
+
+# ─── Density-to-Blocks Conversion ───
+
+def density_to_block_ids(density_map, num_blocks=16, grid_h=32, grid_w=32):
+    """
+    Convert a density map to block assignment IDs.
+
+    Args:
+        density_map: [1, 1, H, W] or [H, W] tensor/ndarray with values in [0, 1]
+        num_blocks: number of discrete blocks (matches StructuralBias.num_blocks)
+        grid_h, grid_w: target patch grid size
+
+    Returns:
+        block_ids: [grid_h * grid_w] LongTensor of block indices in [0, num_blocks)
+    """
+    if isinstance(density_map, torch.Tensor):
+        dm = density_map.detach().float()
+    else:
+        dm = torch.from_numpy(density_map).float()
+
+    # Squeeze to 2D
+    while dm.dim() > 2:
+        dm = dm.squeeze(0)
+
+    # Resize to patch grid if needed
+    if dm.shape[0] != grid_h or dm.shape[1] != grid_w:
+        dm = F.interpolate(
+            dm.unsqueeze(0).unsqueeze(0),
+            size=(grid_h, grid_w), mode="bilinear", align_corners=False
+        ).squeeze(0).squeeze(0)
+
+    # Quantize into num_blocks bins
+    block_ids = (dm * num_blocks).long().clamp(0, num_blocks - 1)
+    return block_ids.reshape(-1)  # [N]
+
+
+def set_block_ids_on_model(model, block_ids):
+    """
+    Set block_ids on all SFA attention layers in the model.
+
+    Args:
+        model: InternVL model with SFA-patched vision encoder
+        block_ids: [N] LongTensor or None to clear
+    """
+    vision_model = getattr(model, "vision_model", None)
+    if vision_model is None and hasattr(model, "module"):
+        vision_model = getattr(model.module, "vision_model", None)
+    if vision_model is None:
+        return
+
+    for layer in vision_model.encoder.layers:
+        if hasattr(layer.attn, 'structural_bias'):
+            if block_ids is not None:
+                layer.attn._block_ids = block_ids.to(
+                    device=next(layer.attn.structural_bias.parameters()).device
+                )
+            else:
+                layer.attn._block_ids = None
+
+
+# ─── SCR (Structural Consistency Regularization) Utilities ───
+
+def enable_scr_on_model(model, layer_indices=None):
+    """
+    Enable gradient-connected attention weight storage for SCR training.
+
+    Args:
+        model: InternVL model with SFA-patched vision encoder
+        layer_indices: list of layer indices to enable (default: all layers)
+    """
+    vision_model = getattr(model, "vision_model", None)
+    if vision_model is None and hasattr(model, "module"):
+        vision_model = getattr(model.module, "vision_model", None)
+    if vision_model is None:
+        return
+
+    layers = vision_model.encoder.layers
+    if layer_indices is None:
+        layer_indices = range(len(layers))
+
+    for idx in layer_indices:
+        if hasattr(layers[idx].attn, 'structural_bias'):
+            layers[idx].attn._store_attn_for_scr = True
+
+
+def collect_scr_attn(model, layer_indices):
+    """
+    Collect and clear gradient-connected attention weights from SCR layers.
+
+    Args:
+        model: InternVL model with SCR-enabled SFA layers
+        layer_indices: list of layer indices to collect from
+
+    Returns:
+        list of [B, H, N, N] attention weight tensors (with gradient)
+    """
+    vision_model = getattr(model, "vision_model", None)
+    if vision_model is None and hasattr(model, "module"):
+        vision_model = getattr(model.module, "vision_model", None)
+    if vision_model is None:
+        return []
+
+    layers = vision_model.encoder.layers
+    weights = []
+    for idx in layer_indices:
+        attn_mod = layers[idx].attn
+        w = getattr(attn_mod, '_last_attn_weights_grad', None)
+        if w is not None:
+            weights.append(w)
+            attn_mod._last_attn_weights_grad = None  # free reference
+    return weights
 
 
 # ─── Attention Entropy Analysis ───

@@ -1,0 +1,48 @@
+{
+  "config": {
+    "model_path": "/NetDisk/j_son/internvl_35",
+    "train_data": "/NetDisk/juyeon/train/chartQA/ChartQA Dataset/train",
+    "sfa_checkpoint": "experiments/results/07_sfa_adat/best.pth",
+    "density_checkpoint": "experiments/results/01_density/best.pth",
+    "output_dir": "experiments/results/08_scr",
+    "epochs": 3,
+    "lr": 0.001,
+    "batch_size": 4,
+    "grad_accum": 8,
+    "max_samples": null,
+    "num_blocks": 16,
+    "alpha": 0.1,
+    "scr_layers": "18,19,20,21,22,23",
+    "density_threshold": 0.3,
+    "device": "cuda:0"
+  },
+  "logs": [
+    {
+      "epoch": 1,
+      "loss_total": 5.425525216521063,
+      "loss_task": 5.017300884097453,
+      "loss_entropy": 4.082243296464419,
+      "lr": 0.0008061899545501642,
+      "time_sec": 5677.458773136139,
+      "oom_count": 0
+    },
+    {
+      "epoch": 2,
+      "loss_total": 5.3950938730884275,
+      "loss_task": 4.987444453870371,
+      "loss_entropy": 4.076494160532985,
+      "lr": 0.00034117648545670674,
+      "time_sec": 5677.750275850296,
+      "oom_count": 0
+    },
+    {
+      "epoch": 3,
+      "loss_total": 5.390111555276633,
+      "loss_task": 4.982603344298501,
+      "loss_entropy": 4.075082075201525,
+      "lr": 0.0001,
+      "time_sec": 5692.524583101273,
+      "oom_count": 0
+    }
+  ]
+}

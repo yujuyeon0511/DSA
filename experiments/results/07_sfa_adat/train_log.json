@@ -1,0 +1,38 @@
+{
+  "config": {
+    "model_path": "/NetDisk/j_son/internvl_35",
+    "train_data": "/NetDisk/juyeon/train/chartQA/ChartQA Dataset/train",
+    "density_checkpoint": "experiments/results/01_density/best.pth",
+    "output_dir": "experiments/results/07_sfa_adat",
+    "epochs": 3,
+    "lr": 0.001,
+    "batch_size": 4,
+    "grad_accum": 8,
+    "max_samples": null,
+    "num_blocks": 16,
+    "device": "cuda:0"
+  },
+  "logs": [
+    {
+      "epoch": 1,
+      "loss": 5.200475786107726,
+      "lr": 0.0008061899545501642,
+      "time_sec": 5468.355846166611,
+      "oom_count": 0
+    },
+    {
+      "epoch": 2,
+      "loss": 5.065462754242563,
+      "lr": 0.00034117648545670674,
+      "time_sec": 5358.970598459244,
+      "oom_count": 0
+    },
+    {
+      "epoch": 3,
+      "loss": 5.069391181147433,
+      "lr": 0.0001,
+      "time_sec": 5432.605792045593,
+      "oom_count": 0
+    }
+  ]
+}
