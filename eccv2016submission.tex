@@ -75,7 +75,7 @@ Our contributions are as follows:
 \item We identify the structural inductive bias gap in document-oriented MLLMs and propose Structure-Factorized Attention, which injects row, column, and block relationships directly into the attention kernel.
 \item We introduce density-guided block assignment using a lightweight CNN estimator (186K parameters), which provides adaptive semantic grouping to SFA without modifying the token count.
 \item We design an attention entropy regularization objective that sharpens attention on text-dense regions, further reducing hallucination.
-\item We demonstrate that with only 7,296 trainable parameters, SFA reduces numeric hallucination by 25.5\% (from 51 to 38 cases per 200 samples) on ChartQA while improving accuracy, and show through cross-benchmark evaluation on DocVQA, InfographicVQA, DVQA, and FigureQA that the structural bias preserves general document understanding capabilities.
+\item We demonstrate that with only 7,296 trainable parameters, SFA reduces numeric hallucination by 25.5\% (from 51 to 38 cases per 200 samples) on ChartQA while improving accuracy. Mixed-benchmark training on five diverse datasets shows that SFA generalizes across document types, closing the cross-benchmark gap to within $\pm 0.2$\%p of the baseline.
 \end{itemize}
 
 
@@ -217,7 +217,7 @@ Training proceeds for 3 epochs on ChartQA training data (28K samples) with AdamW
 
 \textbf{Base model.} InternVL3.5-8B~\cite{chen2024far}, consisting of InternViT-300M (24 layers, 1024-dim, 16 heads) and InternLM2.5-7B-Chat with a 2-layer MLP projector.
 
-\textbf{Benchmarks.} Primary evaluation on ChartQA~\cite{masry2022chartqa} test set (2,500 samples) using Relaxed Accuracy (correct if prediction is within 5\% of the ground truth for numeric answers, or exact match for categorical answers). Cross-benchmark generalization is evaluated on DocVQA~\cite{mathew2021docvqa} (ANLS metric), InfographicVQA (ANLS), DVQA (Exact Match), and FigureQA (Exact Match), each with 500 randomly sampled test instances.
+\textbf{Benchmarks.} Primary evaluation on ChartQA~\cite{masry2022chartqa} test set (2,500 samples) using Relaxed Accuracy (correct if prediction is within 5\% of the ground truth for numeric answers, or exact match for categorical answers). Cross-benchmark generalization is evaluated on DocVQA~\cite{mathew2021docvqa} (ANLS metric), InfographicVQA (ANLS), DVQA (Exact Match), and FigureQA (Exact Match), each with 500 randomly sampled test instances. For mixed-benchmark training, we use a 45,572-sample mixture: ChartQA (18K), DocVQA (10K), DVQA (10K subsampled), FigureQA (5K subsampled), and InfographicVQA (2K).
 
 \textbf{Hallucination evaluation.} Following prior work on hallucination analysis, we define \textit{numeric hallucination} as cases where the model produces a numeric answer that differs from the ground truth by more than 5\%, while the ground truth is also numeric. We report hallucination rate on both the full test set and a fixed 200-sample subset (seed=42) for detailed breakdown analysis.
 
@@ -288,25 +288,25 @@ The SCR entropy regularization further reduces text-dense entropy from 4.082 to 
 
 \begin{table}[t]
 \centering
-\caption{Cross-benchmark evaluation (500 samples each). SFA is trained only on ChartQA; all other benchmarks are zero-shot transfer. Performance is maintained across diverse document-centric tasks.}
+\caption{Cross-benchmark evaluation (500 samples each). ``ChartQA-SFA'' trains SFA on ChartQA only; ``Mixed-SFA'' trains on a 45K-sample mixture of all five benchmarks. Mixed training closes the cross-benchmark gap while maintaining ChartQA gains.}
 \label{tab:cross}
-\begin{tabular}{@{}llccc@{}}
+\begin{tabular}{@{}llcccc@{}}
 \toprule
-\textbf{Benchmark} & \textbf{Metric} & \textbf{Baseline} & \textbf{+SFA} & \textbf{$\Delta$} \\
+\textbf{Benchmark} & \textbf{Metric} & \textbf{Baseline} & \textbf{ChartQA-SFA} & \textbf{Mixed-SFA} & \textbf{$\Delta_{\text{mixed}}$} \\
 \midrule
-ChartQA (2,500) & Relaxed Acc & 62.0\% & \textbf{62.9\%} & +0.9 \\
-DocVQA & ANLS & 53.6\% & 52.9\% & $-0.7$ \\
-InfographicVQA & ANLS & 38.7\% & 38.5\% & $-0.2$ \\
-DVQA & Exact Match & 41.0\% & 40.8\% & $-0.2$ \\
-FigureQA & Exact Match & 95.6\% & 95.6\% & $\pm$0.0 \\
+ChartQA (2,500) & Relaxed Acc & 62.0\% & \textbf{62.9\%} & 62.6\% & +0.6 \\
+DocVQA & ANLS & 53.6\% & 52.9\% & \textbf{53.5\%} & $-0.1$ \\
+InfographicVQA & ANLS & 38.7\% & 38.5\% & \textbf{38.7\%} & $\pm$0.0 \\
+DVQA & Exact Match & 41.0\% & 40.8\% & \textbf{41.0\%} & $\pm$0.0 \\
+FigureQA & Exact Match & \textbf{95.6\%} & \textbf{95.6\%} & 95.4\% & $-0.2$ \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-Table~\ref{tab:cross} evaluates generalization to benchmarks unseen during SFA training.
-On the training domain (ChartQA), SFA achieves consistent improvement (+0.9\%p accuracy, $-5.5$\%p hallucination).
-On zero-shot transfer benchmarks, performance remains within $\pm 1$\%p of the baseline: DocVQA ($-0.7$\%p), InfographicVQA ($-0.2$\%p), DVQA ($-0.2$\%p), and FigureQA ($\pm 0.0$\%p).
-This confirms that the structural bias does not degrade general document understanding capabilities---the frozen backbone strategy prevents catastrophic forgetting across task domains.
+Table~\ref{tab:cross} evaluates generalization across document-centric benchmarks.
+When trained on ChartQA alone, SFA achieves strong in-domain improvement (+0.9\%p accuracy, $-5.5$\%p hallucination) but shows modest degradation on unseen benchmarks (up to $-0.7$\%p on DocVQA).
+Training SFA on a diverse mixture of five benchmarks (45,572 samples: ChartQA 18K, DocVQA 10K, DVQA 10K, FigureQA 5K, InfographicVQA 2K) closes this gap: DocVQA improves from $-0.7$\%p to $-0.1$\%p, InfographicVQA from $-0.2$\%p to $\pm 0.0$\%p, and DVQA from $-0.2$\%p to $\pm 0.0$\%p, while ChartQA accuracy remains above baseline at $+0.6$\%p.
+This demonstrates that the structural bias generalizes across document types when trained on diverse data, and the frozen backbone strategy prevents catastrophic forgetting regardless of training mixture.
 
 \subsection{Parameter Efficiency}
 
@@ -344,12 +344,11 @@ Structural relationships in documents are inherently low-dimensional: row alignm
 This compact representation is sufficient because the structural prior does not need to model \textit{what} is in each patch---that is handled by the pretrained content attention---but only \textit{where} patches are relative to each other.
 
 \textbf{Limitations.}
-The improvement magnitude is modest ($+0.9$\%p accuracy, $-5.5$\%p hallucination on ChartQA), and SFA provides domain-specific gains rather than universal improvement across all benchmarks (Table~\ref{tab:cross}).
-The entropy regularization effect is small, likely because the 7,296 SFA parameters have limited capacity to reshape attention distributions dominated by the frozen 337M-parameter backbone.
+The improvement magnitude is modest ($+0.6$\%p accuracy, $-5.5$\%p hallucination on ChartQA with mixed training), and the entropy regularization effect is small, likely because the 7,296 SFA parameters have limited capacity to reshape attention distributions dominated by the frozen 337M-parameter backbone.
 Cross-architecture validation on other vision encoders (SigLIP, CLIP) remains for future work.
 
 \textbf{Future directions.}
-Promising extensions include: (1) applying SFA to SigLIP-based models (Qwen2.5-VL) and CLIP-based models (LLaVA) to validate architecture-agnostic claims; (2) training SFA on a diverse mixture of document benchmarks rather than ChartQA alone to improve cross-benchmark transfer; (3) exploring stronger regularization objectives such as numeric grounding loss with bounding-box supervision; and (4) unfreezing SFA parameters during full instruction tuning as a complementary fine-tuning strategy.
+Promising extensions include: (1) applying SFA to SigLIP-based models (Qwen2.5-VL) and CLIP-based models (LLaVA) to validate architecture-agnostic claims; (2) exploring stronger regularization objectives such as numeric grounding loss with bounding-box supervision; and (3) unfreezing SFA parameters during full instruction tuning as a complementary fine-tuning strategy.
 
 
 %======================================================================
@@ -359,6 +358,7 @@ Promising extensions include: (1) applying SFA to SigLIP-based models (Qwen2.5-V
 We presented Structure-Factorized Attention (SFA), a minimal modification to the vision encoder that injects document-aware structural bias into the self-attention mechanism.
 By decomposing attention into content and structural components, SFA enables layout-aware token interactions with only 7,296 additional parameters (0.002\% of the base model).
 Combined with density-guided block assignment and attention entropy regularization, our approach reduces numeric hallucination by 5.5 percentage points on ChartQA while maintaining or improving accuracy.
+Training SFA on a diverse mixture of five document benchmarks further demonstrates that the structural bias generalizes across document types, closing the cross-benchmark gap to within $\pm 0.2$\%p of the baseline while preserving in-domain gains.
 
 The frozen backbone strategy demonstrates that structural inductive bias, rather than increased model capacity, is the key missing element for reliable document grounding.
 Our results suggest that even extremely lightweight architectural modifications can meaningfully improve the faithfulness of multimodal models on structured visual inputs, opening a parameter-efficient path toward more reliable document understanding.

@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-02-26",
+  "training": {
+    "script": "experiments/scripts/19_mixed_train.py",
+    "checkpoint": "experiments/results/10_mixed_scr/best.pth",
+    "density_checkpoint": "experiments/results/01_density/best.pth",
+    "datasets": {
+      "chartqa": 18265,
+      "docvqa": 10189,
+      "infographic_vqa": 2118,
+      "dvqa": 10000,
+      "figureqa": 5000
+    },
+    "total_samples": 45572,
+    "epochs": 2,
+    "lr": 0.0005,
+    "best_loss": 6.3556,
+    "training_time_hours": 5.27
+  },
+  "results": {
+    "chartqa": {
+      "baseline": 0.62,
+      "chartqa_sfa": 0.6288,
+      "mixed_sfa": 0.626,
+      "metric": "relaxed_acc"
+    },
+    "docvqa": {
+      "baseline": 0.5361,
+      "chartqa_sfa": 0.5286,
+      "mixed_sfa": 0.5346,
+      "metric": "anls"
+    },
+    "infographic_vqa": {
+      "baseline": 0.3874,
+      "chartqa_sfa": 0.3851,
+      "mixed_sfa": 0.3867,
+      "metric": "anls"
+    },
+    "dvqa": {
+      "baseline": 0.41,
+      "chartqa_sfa": 0.408,
+      "mixed_sfa": 0.41,
+      "metric": "exact_match"
+    },
+    "figureqa": {
+      "baseline": 0.956,
+      "chartqa_sfa": 0.956,
+      "mixed_sfa": 0.954,
+      "metric": "exact_match"
+    }
+  },
+  "hallucination": {
+    "chartqa_2500": 0.1996,
+    "chartqa_200": 0.195
+  }
+}

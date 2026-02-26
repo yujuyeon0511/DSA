@@ -1,0 +1,55 @@
+{
+  "config": {
+    "model_path": "/NetDisk/j_son/internvl_35",
+    "cauldron_root": "/NetDisk/juyeon/train/cauldron_data",
+    "datasets": [
+      "chartqa",
+      "docvqa",
+      "infographic_vqa",
+      "dvqa",
+      "figureqa"
+    ],
+    "dvqa_max": 10000,
+    "figureqa_max": 5000,
+    "density_checkpoint": "experiments/results/01_density/best.pth",
+    "output_dir": "experiments/results/10_mixed_scr",
+    "epochs": 2,
+    "lr": 0.0005,
+    "batch_size": 4,
+    "grad_accum": 8,
+    "max_samples": null,
+    "num_blocks": 16,
+    "alpha": 0.1,
+    "scr_layers": "18,19,20,21,22,23",
+    "density_threshold": 0.3,
+    "device": "cuda:0",
+    "seed": 42
+  },
+  "dataset_sizes": {
+    "chartqa": 18265,
+    "docvqa": 10189,
+    "infographic_vqa": 2118,
+    "dvqa": 10000,
+    "figureqa": 5000
+  },
+  "logs": [
+    {
+      "epoch": 1,
+      "loss_total": 6.360363696672642,
+      "loss_task": 5.947839284229873,
+      "loss_entropy": 4.125244099922451,
+      "lr": 0.0002878543208680418,
+      "time_sec": 9567.533374071121,
+      "oom_count": 0
+    },
+    {
+      "epoch": 2,
+      "loss_total": 6.355597623079076,
+      "loss_task": 5.9434672242396225,
+      "loss_entropy": 4.121303965981972,
+      "lr": 5e-05,
+      "time_sec": 9389.977551460266,
+      "oom_count": 0
+    }
+  ]
+}

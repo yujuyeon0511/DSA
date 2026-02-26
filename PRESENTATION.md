@@ -493,6 +493,13 @@ Phase 6: Multi-Benchmark 평가 ──────── ✅ 완료
   ├→ InfographicVQA (ANLS): Baseline 0.387 → SFA 0.385
   ├→ DVQA (Exact Match): Baseline 0.410 → SFA 0.408
   └→ FigureQA (Exact Match): Baseline 0.956 → SFA 0.956
+
+Phase 7: Mixed-Dataset Training ────── ✅ 완료
+  ├→ 5개 데이터셋 혼합 (45K samples), SFA from scratch
+  ├→ DocVQA: 0.529 → 0.535 (+0.6%p), gap closed
+  ├→ InfographicVQA: 0.385 → 0.387 (+0.2%p), gap closed
+  ├→ DVQA: 0.408 → 0.410 (+0.2%p), fully recovered
+  └→ ChartQA: 0.629 → 0.626 (-0.3%p), still above baseline
 ```
 
 #### 📎 이 슬라이드에 포함할 자료
@@ -525,6 +532,7 @@ Phase 6: Multi-Benchmark 평가 ──────── ✅ 완료
 | 2/25 | Full System (SCR) 학습 + 평가 | ✅ 완료 |
 | 2/25 | 논문 작성 | ✅ 완료 |
 | 2/25 | Multi-Benchmark 평가 (DocVQA, InfographicVQA, DVQA, FigureQA) | ✅ 완료 |
+| 2/26 | Mixed-Dataset Training (5개 벤치마크 혼합, cross-benchmark 개선) | ✅ 완료 |
 
 #### 📎 이 슬라이드에 포함할 자료
 

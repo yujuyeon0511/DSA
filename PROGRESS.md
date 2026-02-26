@@ -1,7 +1,7 @@
 # DSA Project Progress Report
 
 **Project**: Structure-Factorized Attention (SFA) for Document-Centric Multimodal LLMs
-**Last Updated**: 2026-02-25
+**Last Updated**: 2026-02-26
 
 ---
 
@@ -35,7 +35,10 @@ InternVL3.5-8B 위에서 검증하는 연구 프로젝트.
 | + SFA (full encoder ft) | 337M (4.0%) | 0.509 | 23.0% |
 | + SFA-only (backbone frozen) | 7,296 (0.0%) | 0.6244 | 20.2% |
 | + SFA+ADAT (backbone frozen) | 7,296 (0.0%) | 0.6284 | 20.0% |
-| **+ SFA+ADAT+SCR (backbone frozen)** | **7,296 (0.0%)** | **0.6288** | **20.0%** |
+| + SFA+ADAT+SCR (backbone frozen) | 7,296 (0.0%) | 0.6288 | 20.0% |
+| **+ Mixed Training (5 datasets)** | **7,296 (0.0%)** | **0.6260** | **20.0%** |
+
+*Mixed Training: ChartQA Acc slightly lower (-0.28%p) but cross-benchmark gap closed (DocVQA -0.7→-0.1, InfoVQA -0.2→0.0, DVQA -0.2→0.0)*
 
 ---
 
@@ -210,6 +213,7 @@ DSA/
 │   │   ├── 16_scr_train.py              # SCR 학습
 │   │   ├── 17_scr_eval.py               # SCR 평가
 │   │   ├── 18_multi_benchmark_eval.py   # Multi-benchmark 평가
+│   │   ├── 19_mixed_train.py            # Mixed-dataset 학습
 │   │   └── gen_architecture_diagram.py  # Figure 2 생성
 │   ├── figures/
 │   │   ├── fig1_motivation/             # Figure 1: Motivation
@@ -228,9 +232,50 @@ DSA/
 │       ├── 06_ablation_sfa_only/        # SFA-only ablation
 │       ├── 07_sfa_adat/                 # SFA+ADAT 결과
 │       ├── 08_scr/                      # SCR 결과
-│       └── 09_multi_benchmark/          # Multi-benchmark 평가 결과
+│       ├── 09_multi_benchmark/          # Multi-benchmark 평가 결과
+│       ├── 10_mixed_scr/               # Mixed-dataset 학습 결과
+│       └── 11_mixed_eval/              # Mixed-dataset 평가 결과
 └── .gitignore
 ```
+
+---
+
+### Phase 7: Mixed-Dataset Training ✅
+
+5개 벤치마크 혼합 학습으로 cross-benchmark transfer 개선.
+
+#### 데이터 구성 (45,572 samples)
+| Dataset | Samples | 비율 |
+|---------|---------|------|
+| ChartQA | 18,265 | 40% |
+| DocVQA | 10,189 | 22% |
+| DVQA (subsampled) | 10,000 | 22% |
+| FigureQA (subsampled) | 5,000 | 11% |
+| InfographicVQA | 2,118 | 5% |
+
+#### 학습 설정
+- SFA from scratch (no pretrained checkpoint), LR=5e-4, 2 epochs
+- Total training time: 5.27 hours (2×45K steps)
+
+#### 학습 결과
+| Epoch | Total Loss | Task Loss | Entropy Loss |
+|-------|-----------|-----------|-------------|
+| 1 | 6.3604 | 5.9478 | 4.1252 |
+| 2 | **6.3556** | **5.9435** | **4.1213** |
+
+#### Cross-Benchmark 비교
+
+| Benchmark | Metric | Baseline | ChartQA-SFA | Mixed-SFA | Δ vs Baseline |
+|-----------|--------|----------|-------------|-----------|---------------|
+| ChartQA (2,500) | Relaxed Acc | 62.0% | 62.9% | **62.6%** | +0.6%p |
+| DocVQA (500) | ANLS | 53.6% | 52.9% | **53.5%** | -0.1%p |
+| InfographicVQA (500) | ANLS | 38.7% | 38.5% | **38.7%** | ±0.0%p |
+| DVQA (500) | Exact Match | 41.0% | 40.8% | **41.0%** | ±0.0%p |
+| FigureQA (500) | Exact Match | 95.6% | 95.6% | **95.4%** | -0.2%p |
+
+- Mixed training이 cross-benchmark gap을 효과적으로 줄임 (DocVQA -0.7→-0.1, InfoVQA -0.2→±0.0, DVQA -0.2→±0.0)
+- ChartQA 성능은 소폭 하락 (62.9→62.6%) but still above baseline
+- Hallucination rate: 20.0% (동일)
 
 ---
 
@@ -238,5 +283,4 @@ DSA/
 
 ### 추가 진행 가능
 - Cross-Architecture: Qwen2.5-VL, LLaVA-OV에 SFA 적용 (모델 다운로드 필요)
-- 다양한 데이터셋 혼합 학습으로 cross-benchmark transfer 개선
 - 논문 최종 수정 및 제출
